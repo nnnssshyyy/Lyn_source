@@ -1,0 +1,13 @@
+{
+  "result": [
+    {
+      "edit": {
+        "addr": "0x10065cd0",
+        "kind": "function",
+        "signature": "bool __thiscall L4D2_BasePlayer_CreateMove(void *self, float inputSampleTime, void *command);"
+      },
+      "kind": "function",
+      "ok": true
+    }
+  ]
+}

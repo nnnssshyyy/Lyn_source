@@ -1,0 +1,324 @@
+{
+  "scope": "Offline client render ABI verification; not live in-game alignment validation",
+  "binary": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\left4dead2\\bin\\client.dll",
+  "sha256": "c0a8e1e88f7312db11bcfd4b0ec574d224a34b2d9a615d6088b28335eeb4af1f",
+  "rtti_type": "C_WeaponSpawn",
+  "renderable_base_offset": 4,
+  "render_vtable_rva": "0x5b229c",
+  "render_bounds_slot": 17,
+  "render_to_world_slot": 32,
+  "render_bounds_rva": "0x305a0",
+  "render_to_world_rva": "0x44180",
+  "matrix_abi": "const matrix3x4 reference returned in EAX",
+  "projection": "Eight transformed local render-box corners, with near-plane edge clipping",
+  "instructions": {
+    "GetRenderBounds": [
+      {
+        "rva": "0x305a0",
+        "instruction": "push ebp"
+      },
+      {
+        "rva": "0x305a1",
+        "instruction": "mov ebp, esp"
+      },
+      {
+        "rva": "0x305a3",
+        "instruction": "sub esp, 0x10"
+      },
+      {
+        "rva": "0x305a6",
+        "instruction": "push ebx"
+      },
+      {
+        "rva": "0x305a7",
+        "instruction": "mov ebx, ecx"
+      },
+      {
+        "rva": "0x305a9",
+        "instruction": "cmp dword ptr [ebx + 0x638], 0"
+      },
+      {
+        "rva": "0x305b0",
+        "instruction": "push esi"
+      },
+      {
+        "rva": "0x305b1",
+        "instruction": "push edi"
+      },
+      {
+        "rva": "0x305b2",
+        "instruction": "mov dword ptr [ebp - 4], ebx"
+      },
+      {
+        "rva": "0x305b5",
+        "instruction": "je 0x10030632"
+      },
+      {
+        "rva": "0x305b7",
+        "instruction": "cmp byte ptr [ebx + 0x161], 0"
+      },
+      {
+        "rva": "0x305be",
+        "instruction": "je 0x10030632"
+      },
+      {
+        "rva": "0x305c0",
+        "instruction": "mov ecx, dword ptr [ebx + 0x638]"
+      },
+      {
+        "rva": "0x305c6",
+        "instruction": "mov edi, dword ptr [ebp + 0xc]"
+      },
+      {
+        "rva": "0x305c9",
+        "instruction": "mov eax, dword ptr [ecx]"
+      },
+      {
+        "rva": "0x305cb",
+        "instruction": "mov esi, dword ptr [ebp + 8]"
+      },
+      {
+        "rva": "0x305ce",
+        "instruction": "mov edx, dword ptr [eax + 0xc]"
+      },
+      {
+        "rva": "0x305d1",
+        "instruction": "push edi"
+      },
+      {
+        "rva": "0x305d2",
+        "instruction": "push esi"
+      },
+      {
+        "rva": "0x305d3",
+        "instruction": "call edx"
+      },
+      {
+        "rva": "0x305d5",
+        "instruction": "movss xmm0, dword ptr [0x1053df4c]"
+      },
+      {
+        "rva": "0x305dd",
+        "instruction": "movss xmm1, dword ptr [esi]"
+      },
+      {
+        "rva": "0x305e1",
+        "instruction": "subss xmm1, xmm0"
+      },
+      {
+        "rva": "0x305e5",
+        "instruction": "movss dword ptr [esi], xmm1"
+      },
+      {
+        "rva": "0x305e9",
+        "instruction": "movss xmm1, dword ptr [esi + 4]"
+      },
+      {
+        "rva": "0x305ee",
+        "instruction": "subss xmm1, xmm0"
+      },
+      {
+        "rva": "0x305f2",
+        "instruction": "movss dword ptr [esi + 4], xmm1"
+      },
+      {
+        "rva": "0x305f7",
+        "instruction": "movss xmm1, dword ptr [esi + 8]"
+      },
+      {
+        "rva": "0x305fc",
+        "instruction": "subss xmm1, xmm0"
+      },
+      {
+        "rva": "0x30600",
+        "instruction": "movss dword ptr [esi + 8], xmm1"
+      },
+      {
+        "rva": "0x30605",
+        "instruction": "movss xmm1, dword ptr [edi]"
+      },
+      {
+        "rva": "0x30609",
+        "instruction": "addss xmm1, xmm0"
+      },
+      {
+        "rva": "0x3060d",
+        "instruction": "movss dword ptr [edi], xmm1"
+      },
+      {
+        "rva": "0x30611",
+        "instruction": "movss xmm1, dword ptr [edi + 4]"
+      },
+      {
+        "rva": "0x30616",
+        "instruction": "addss xmm1, xmm0"
+      },
+      {
+        "rva": "0x3061a",
+        "instruction": "movss dword ptr [edi + 4], xmm1"
+      },
+      {
+        "rva": "0x3061f",
+        "instruction": "movss xmm1, dword ptr [edi + 8]"
+      },
+      {
+        "rva": "0x30624",
+        "instruction": "addss xmm1, xmm0"
+      },
+      {
+        "rva": "0x30628",
+        "instruction": "movss dword ptr [edi + 8], xmm1"
+      },
+      {
+        "rva": "0x3062d",
+        "instruction": "jmp 0x1003088f"
+      },
+      {
+        "rva": "0x30632",
+        "instruction": "mov eax, dword ptr [ebx]"
+      },
+      {
+        "rva": "0x30634",
+        "instruction": "mov edx, dword ptr [eax + 0x20]"
+      },
+      {
+        "rva": "0x30637",
+        "instruction": "call edx"
+      },
+      {
+        "rva": "0x30639",
+        "instruction": "test eax, eax"
+      },
+      {
+        "rva": "0x3063b",
+        "instruction": "je 0x1003083d"
+      },
+      {
+        "rva": "0x30641",
+        "instruction": "cmp dword ptr [ebx + 0x930], 0"
+      },
+      {
+        "rva": "0x30648",
+        "instruction": "jne 0x1003065f"
+      },
+      {
+        "rva": "0x3064a",
+        "instruction": "mov ecx, ebx"
+      },
+      {
+        "rva": "0x3064c",
+        "instruction": "mov eax, dword ptr [ecx]"
+      },
+      {
+        "rva": "0x3064e",
+        "instruction": "mov edx, dword ptr [eax + 0x20]"
+      },
+      {
+        "rva": "0x30651",
+        "instruction": "call edx"
+      },
+      {
+        "rva": "0x30653",
+        "instruction": "test eax, eax"
+      },
+      {
+        "rva": "0x30655",
+        "instruction": "je 0x1003065f"
+      },
+      {
+        "rva": "0x30657",
+        "instruction": "lea ecx, [ebx - 4]"
+      },
+      {
+        "rva": "0x3065a",
+        "instruction": "call 0x1002d610"
+      },
+      {
+        "rva": "0x3065f",
+        "instruction": "mov ebx, dword ptr [ebx + 0x930]"
+      },
+      {
+        "rva": "0x30665",
+        "instruction": "test ebx, ebx"
+      },
+      {
+        "rva": "0x30667",
+        "instruction": "je 0x100307e2"
+      },
+      {
+        "rva": "0x3066d",
+        "instruction": "cmp dword ptr [ebx], 0"
+      },
+      {
+        "rva": "0x30670",
+        "instruction": "je 0x100307e2"
+      },
+      {
+        "rva": "0x30676",
+        "instruction": "mov ecx, ebx"
+      },
+      {
+        "rva": "0x30678",
+        "instruction": "call 0x101a71d0"
+      },
+      {
+        "rva": "0x3067d",
+        "instruction": "test al, al"
+      },
+      {
+        "rva": "0x3067f",
+        "instruction": "je 0x100307e2"
+      },
+      {
+        "rva": "0x30685",
+        "instruction": "mov eax, dword ptr [ebp - 4]"
+      },
+      {
+        "rva": "0x30688",
+        "instruction": "cmp dword ptr [eax + 0x8a0], -1"
+      },
+      {
+        "rva": "0x3068f",
+        "instruction": "je 0x100307e2"
+      },
+      {
+        "rva": "0x30695",
+        "instruction": "mov esi, dword ptr [ebx]"
+      },
+      {
+        "rva": "0x30697",
+        "instruction": "mov ecx, dword ptr [esi + 0x80]"
+      }
+    ],
+    "RenderableToWorldTransform": [
+      {
+        "rva": "0x44180",
+        "instruction": "push esi"
+      },
+      {
+        "rva": "0x44181",
+        "instruction": "lea esi, [ecx - 4]"
+      },
+      {
+        "rva": "0x44184",
+        "instruction": "mov ecx, esi"
+      },
+      {
+        "rva": "0x44186",
+        "instruction": "call 0x10046d30"
+      },
+      {
+        "rva": "0x4418b",
+        "instruction": "lea eax, [esi + 0x350]"
+      },
+      {
+        "rva": "0x44191",
+        "instruction": "pop esi"
+      },
+      {
+        "rva": "0x44192",
+        "instruction": "ret "
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "addr": "0x10003960",
+  "code": "int sub_10003960()\n{\n  WCHAR *v0; // edi\n  int v1; // ebx\n  UINT v2; // eax\n  char *v9; // ecx\n  void *v10; // ecx\n  void *v11; // ecx\n  int result; // eax\n  WCHAR *v13; // ecx\n  int v14; // [esp+4h] [ebp-78h]\n  WCHAR Buffer[8]; // [esp+10h] [ebp-6Ch] BYREF\n  int cchWideChar; // [esp+20h] [ebp-5Ch]\n  unsigned int v17; // [esp+24h] [ebp-58h]\n  void *Block[4]; // [esp+28h] [ebp-54h] BYREF\n  __int64 v19; // [esp+38h] [ebp-44h]\n  void *Src[4]; // [esp+40h] [ebp-3Ch] BYREF\n  int v21; // [esp+50h] [ebp-2Ch]\n  unsigned int v22; // [esp+54h] [ebp-28h]\n  int v23[5]; // [esp+58h] [ebp-24h] BYREF\n  int v24; // [esp+6Ch] [ebp-10h]\n\n  v23[2] = (int)Buffer; /*0x10003969*/\n  v24 = -1; /*0x1000396c*/\n  v23[4] = (int)&loc_1001F8A0; /*0x10003976*/\n  v23[3] = (int)NtCurrentTeb()->NtTib.ExceptionList; /*0x10003984*/\n  sub_10180900(a1: off_1029E000[0]); /*0x10003993*/\n  sub_1017CB80(a1: off_1029E004[0]); /*0x1000399e*/\n  sub_1017F650(a1: off_1029E008); /*0x100039a9*/\n  sub_10176E30(a1: *(_DWORD *)ArgList); /*0x100039b4*/\n  sub_1017AED0(a1: off_1029E010); /*0x100039bf*/\n  if ( (*(unsigned __int8 (__thiscall **)(int))(*(_DWORD *)dword_103EC770 + 104))(a1: dword_103EC770) != 0 /*0x100039e0*/\n    && (*(unsigned __int8 (__thiscall **)(int))(*(_DWORD *)dword_103EC770 + 108))(a1: dword_103EC770) != 0 )\n  {\n    sub_1017A000(a1: off_1029E014); /*0x100039e8*/\n  }\n  sub_1017D550(a1: off_1029E018); /*0x100039f3*/\n  sub_10176B30(); /*0x100039f8*/\n  if ( *(_DWORD *)off_1029E01C != 0 ) /*0x10003a05*/\n    ChatSpy_RegisterEvents(this: *(_BYTE **)off_1029E01C); /*0x10003a07*/\n  sub_1014F460(); /*0x10003a0c*/\n  v23[0] = 0; /*0x10003a11*/\n  v23[1] = (int)&off_10184B2C; /*0x10003a18*/\n  v0 = Buffer; /*0x10003a22*/\n  sub_1001E0D0(lpBuffer: Buffer, a2: (int)v23); /*0x10003a27*/\n  if ( v23[0] != 0 ) /*0x10003a33*/\n  {\n    v24 = 0; /*0x10003bef*/\n    sub_1001E280(Str: \"current_path()\", a2: (int)v23); /*0x10003bfc*/\n  }\n  v1 = cchWideChar; /*0x10003a39*/\n  if ( v17 >= 8 ) /*0x10003a40*/\n    v0 = *(WCHAR **)Buffer; /*0x10003a42*/\n  v2 = sub_10182379(); /*0x10003a45*/\n  v24 = 1; /*0x10003a4a*/\n  sub_1001F4C0(lpMultiByteStr: (LPSTR)Src, CodePage: v2, lpWideCharStr: v0, cchWideChar: v1); /*0x10003a59*/\n  _ESI = v21; /*0x10003a61*/\n  if ( v22 - v21 >= 0x22 ) /*0x10003a6e*/\n  {\n    v21 += 34; /*0x10003aa6*/\n    _EAX = Src; /*0x10003aa9*/\n    _EDX = Src; /*0x10003aac*/\n    if ( v22 >= 0x10 ) /*0x10003ab1*/\n      _EDX = (void **)Src[0]; /*0x10003ab3*/\n    __asm /*0x10003ab6*/\n    {\n      vmovups ymm0, ymmword ptr ds:aRazehackbetaCo; \"\\\\RazeHackBeta\\\\configs\\\\default.json\"\n      vmovups ymmword ptr [edx+esi], ymm0\n    }\n    strcpy((char *)_EDX + _ESI + 32, \"on\"); /*0x10003ac3*/\n  }\n  else\n  {\n    v24 = 2; /*0x10003a70*/\n    LOBYTE(v14) = v23[0]; /*0x10003a7e*/\n    _EAX = (void **)sub_1000EB10(Src, a2: 34, a3: v14, a4: \"\\\\RazeHackBeta\\\\configs\\\\default.json\", Size: 0x22u); /*0x10003a9c*/\n  }\n  __asm /*0x10003acf*/\n  {\n    vmovsd xmm0, qword ptr [eax+10h]\n    vmovsd [ebp+var_44], xmm0\n    vmovups xmm0, xmmword ptr [eax]\n    vmovups xmmword ptr [ebp+Block], xmm0\n  }\n  _EAX[4] = nullptr; /*0x10003ae2*/\n  _EAX[5] = (void *)15; /*0x10003ae9*/\n  *(_BYTE *)_EAX = 0; /*0x10003af0*/\n  if ( HIDWORD(v19) < 0x10 ) /*0x10003af7*/\n    v9 = (char *)Block; /*0x10003afe*/\n  else\n    v9 = (char *)Block[0]; /*0x10003af9*/\n  v24 = 3; /*0x10003b01*/\n  __asm { vzeroupper } /*0x10003b08*/\n  sub_10003C90(a1: v9); /*0x10003b0b*/\n  if ( HIDWORD(v19) >= 0x10 ) /*0x10003b16*/\n  {\n    v10 = Block[0]; /*0x10003b18*/\n    if ( (unsigned int)(HIDWORD(v19) + 1) >= 0x1000 ) /*0x10003b24*/\n    {\n      if ( (unsigned int)Block[0] - *((_DWORD *)Block[0] - 1) - 4 >= 0x20 ) /*0x10003b31*/\n        goto LABEL_34; /*0x10003b31*/\n      v10 = *((void **)Block[0] - 1); /*0x10003b3c*/\n    }\n    sub_10180976(Block: v10); /*0x10003b40*/\n  }\n  v19 = 0xF00000000LL; /*0x10003b48*/\n  LOBYTE(Block[0]) = 0; /*0x10003b56*/\n  if ( v22 >= 0x10 ) /*0x10003b60*/\n  {\n    v11 = Src[0]; /*0x10003b62*/\n    if ( v22 + 1 >= 0x1000 ) /*0x10003b6e*/\n    {\n      if ( (unsigned int)Src[0] - *((_DWORD *)Src[0] - 1) - 4 >= 0x20 ) /*0x10003b7b*/\n        goto LABEL_34; /*0x10003b7b*/\n      v11 = *((void **)Src[0] - 1); /*0x10003b86*/\n    }\n    sub_10180976(Block: v11); /*0x10003b8a*/\n  }\n  v21 = 0; /*0x10003b92*/\n  v22 = 15; /*0x10003b99*/\n  LOBYTE(Src[0]) = 0; /*0x10003ba0*/\n  result = v17; /*0x10003ba4*/\n  if ( v17 < 8 ) /*0x10003baa*/\n    return result; /*0x10003baa*/\n  v13 = *(WCHAR **)Buffer; /*0x10003bac*/\n  if ( 2 * v17 + 2 >= 0x1000 ) /*0x10003bbc*/\n  {\n    if ( (unsigned int)(*(_DWORD *)Buffer - 4 - *(_DWORD *)(*(_DWORD *)Buffer - 4)) < 0x20 ) /*0x10003bc9*/\n    {\n      v13 = *(WCHAR **)(*(_DWORD *)Buffer - 4); /*0x10003bd2*/\n      return sub_10180976(Block: v13); /*0x10003bd2*/\n    }\nLABEL_34:\n    BUG(); /*0x10003c04*/\n  }\n  return sub_10180976(Block: v13); /*0x10003bde*/\n}",
+  "line_count": 137,
+  "total_lines": 137,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1001f8a0",
+      "name": "loc_1001F8A0"
+    },
+    {
+      "addr": "0x10180900",
+      "name": "sub_10180900"
+    },
+    {
+      "addr": "0x1029e000",
+      "name": "off_1029E000"
+    },
+    {
+      "addr": "0x1017cb80",
+      "name": "sub_1017CB80"
+    },
+    {
+      "addr": "0x1029e004",
+      "name": "off_1029E004"
+    },
+    {
+      "addr": "0x1017f650",
+      "name": "sub_1017F650"
+    },
+    {
+      "addr": "0x1029e008",
+      "name": "off_1029E008"
+    },
+    {
+      "addr": "0x10176e30",
+      "name": "sub_10176E30"
+    },
+    {
+      "addr": "0x1029e00c",
+      "name": "ArgList"
+    },
+    {
+      "addr": "0x1017aed0",
+      "name": "sub_1017AED0"
+    },
+    {
+      "addr": "0x1029e010",
+      "name": "off_1029E010"
+    },
+    {
+      "addr": "0x1017a000",
+      "name": "sub_1017A000"
+    },
+    {
+      "addr": "0x1029e014",
+      "name": "off_1029E014"
+    },
+    {
+      "addr": "0x103ec770",
+      "name": "dword_103EC770"
+    },
+    {
+      "addr": "0x1017d550",
+      "name": "sub_1017D550"
+    },
+    {
+      "addr": "0x1029e018",
+      "name": "off_1029E018"
+    },
+    {
+      "addr": "0x10176b30",
+      "name": "sub_10176B30"
+    },
+    {
+      "addr": "0x1003f550",
+      "name": "ChatSpy_RegisterEvents"
+    },
+    {
+      "addr": "0x1029e01c",
+      "name": "off_1029E01C"
+    },
+    {
+      "addr": "0x1014f460",
+      "name": "sub_1014F460"
+    },
+    {
+      "addr": "0x10184b2c",
+      "name": "off_10184B2C"
+    },
+    {
+      "addr": "0x1001e0d0",
+      "name": "sub_1001E0D0"
+    },
+    {
+      "addr": "0x1001e280",
+      "name": "sub_1001E280"
+    },
+    {
+      "addr": "0x1028fd93",
+      "name": "aCurrentPath",
+      "string": "current_path()"
+    },
+    {
+      "addr": "0x10182379",
+      "name": "sub_10182379"
+    },
+    {
+      "addr": "0x1001f4c0",
+      "name": "sub_1001F4C0"
+    },
+    {
+      "addr": "0x1000eb10",
+      "name": "sub_1000EB10"
+    },
+    {
+      "addr": "0x10286941",
+      "name": "aRazehackbetaCo",
+      "string": "\\RazeHackBeta\\configs\\default.json"
+    },
+    {
+      "addr": "0x10003c90",
+      "name": "sub_10003C90"
+    },
+    {
+      "addr": "0x10180976",
+      "name": "sub_10180976"
+    }
+  ]
+}

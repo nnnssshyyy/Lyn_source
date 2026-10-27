@@ -1,0 +1,295 @@
+{
+  "addr": "0x1022e11e",
+  "asm": {
+    "name": "<no function>",
+    "start_ea": "0x1022e11e",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "1022e11e",
+        "instruction": "push offset aShake; \"Shake\"",
+        "refs": [
+          {
+            "addr": "0x1058a8f0",
+            "name": "aShake",
+            "string": "Shake"
+          }
+        ]
+      },
+      {
+        "addr": "1022e123",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e128",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e12e",
+        "instruction": "push 0Ah"
+      },
+      {
+        "addr": "1022e130",
+        "instruction": "push offset aFade_0; \"Fade\"",
+        "refs": [
+          {
+            "addr": "0x1058a8e8",
+            "name": "aFade_0",
+            "string": "Fade"
+          }
+        ]
+      },
+      {
+        "addr": "1022e135",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e13a",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e140",
+        "instruction": "push 0FFFFFFFFh"
+      },
+      {
+        "addr": "1022e142",
+        "instruction": "push offset aVguimenu; \"VGUIMenu\"",
+        "refs": [
+          {
+            "addr": "0x105652c8",
+            "name": "aVguimenu",
+            "string": "VGUIMenu"
+          }
+        ]
+      },
+      {
+        "addr": "1022e147",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e14c",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e152",
+        "instruction": "push 3"
+      },
+      {
+        "addr": "1022e154",
+        "instruction": "push offset aRumble_0; \"Rumble\"",
+        "refs": [
+          {
+            "addr": "0x105652c0",
+            "name": "aRumble_0",
+            "string": "Rumble"
+          }
+        ]
+      },
+      {
+        "addr": "1022e159",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e15e",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e164",
+        "instruction": "push 0FFFFFFFFh"
+      },
+      {
+        "addr": "1022e166",
+        "instruction": "push offset aClosecaption_0; \"CloseCaption\"",
+        "refs": [
+          {
+            "addr": "0x1057125c",
+            "name": "aClosecaption_0",
+            "string": "CloseCaption"
+          }
+        ]
+      },
+      {
+        "addr": "1022e16b",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e170",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e176",
+        "instruction": "push 0FFFFFFFFh"
+      },
+      {
+        "addr": "1022e178",
+        "instruction": "push offset aClosecaptiondi; \"CloseCaptionDirect\"",
+        "refs": [
+          {
+            "addr": "0x10571248",
+            "name": "aClosecaptiondi",
+            "string": "CloseCaptionDirect"
+          }
+        ]
+      },
+      {
+        "addr": "1022e17d",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e182",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e188",
+        "instruction": "push 0FFFFFFFFh"
+      },
+      {
+        "addr": "1022e18a",
+        "instruction": "push offset aSendaudio; \"SendAudio\"",
+        "refs": [
+          {
+            "addr": "0x1056db30",
+            "name": "aSendaudio",
+            "string": "SendAudio"
+          }
+        ]
+      },
+      {
+        "addr": "1022e18f",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e194",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e19a",
+        "instruction": "push 0FFFFFFFFh"
+      },
+      {
+        "addr": "1022e19c",
+        "instruction": "push offset aRawaudio; \"RawAudio\"",
+        "refs": [
+          {
+            "addr": "0x105a36d8",
+            "name": "aRawaudio",
+            "string": "RawAudio"
+          }
+        ]
+      },
+      {
+        "addr": "1022e1a1",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e1a6",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e1ac",
+        "instruction": "push 9"
+      }
+    ]
+  },
+  "instruction_count": 32,
+  "total_instructions": null,
+  "cursor": {
+    "next": 32
+  }
+}

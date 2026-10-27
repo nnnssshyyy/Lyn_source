@@ -1,0 +1,122 @@
+{
+  "reviewed_at_utc": "2026-10-21T17:14:09.500778+00:00",
+  "transport": "ida-pro-mcp JSON-RPC http://127.0.0.1:8745/mcp",
+  "sessions": [
+    "raze-charger-turn",
+    "l4d2-charger-check"
+  ],
+  "binaries": {
+    "raze": {
+      "path": "C:\\Users\\User\\Desktop\\raze\\RZL4D2_[unknowncheats.me]_.dll",
+      "bytes": 4190720,
+      "sha256": "dfa8632e85c89c318577ef619f20bae2f4db5136042d680ee4dae4109234691a",
+      "ida_metadata_sha256_matches": true
+    },
+    "client": {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\left4dead2\\bin\\client.dll",
+      "bytes": 8305664,
+      "sha256": "c0a8e1e88f7312db11bcfd4b0ec574d224a34b2d9a615d6088b28335eeb4af1f",
+      "ida_metadata_sha256_matches": true
+    }
+  },
+  "charger_turn": {
+    "config_key": "bChargerTurn",
+    "enabled_va": "0x103F53CD",
+    "last_applied_va": "0x103F7FD4",
+    "apply_function_va": "0x1017CCA0",
+    "patch_helper_va": "0x1017C8E0",
+    "frame_stage_callback_va": "0x1016C610",
+    "stage": 5,
+    "client_function_va": "0x10065CD0",
+    "client_target_rva": "0x65DB4",
+    "original_bytes": "74 2d",
+    "raze_enabled_bytes": "eb 2d",
+    "patch_length": 1,
+    "both_branch_destinations": "0x10065DE3",
+    "disk_bytes_match_ida": true,
+    "ida_instruction_bytes_unmodified": true,
+    "server_trajectory_verified": false
+  },
+  "separate_carry_feature": {
+    "config_key": "bAutoTeleportCharger",
+    "enabled_va": "0x103F53CB",
+    "command_offset": "0x14",
+    "component": "roll",
+    "written_bits": "0x7cf0bdc2",
+    "written_float": 9.999999933815813e+36
+  },
+  "complete_disassembly_counts": {
+    "charger-turn-full": 72,
+    "patch-helper-full": 199,
+    "frame-stage-full": 181,
+    "hook-install-full": 7,
+    "client-createmove-full": 113
+  },
+  "complete_instruction_total": 572,
+  "runtime_integration_performed": false,
+  "project_dll_rebuilt": false,
+  "publication_performed": false,
+  "annotated_databases": {
+    "raze-save": {
+      "path": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\raze\\raze-charger-turn-annotated-20261021.i64",
+      "bytes": 33717929,
+      "sha256": "b19fe25dcbf7df14c63b7d7758eea59702e84980680c62ea5b9a4080d8529a84"
+    },
+    "client-save": {
+      "path": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\l4d2\\client-charger-annotated-20261021.i64",
+      "bytes": 151678257,
+      "sha256": "9b7d438289ff02b2374151bccbc2ce6b7fd1239ab89afea16a69b526271992bf"
+    }
+  },
+  "source_sdk_reference": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/client/c_baseplayer.cpp#L1098",
+  "evidence_sha256": {
+    "carry-roll-asm.json": "8f51fed221dd11910227226bafcca14cdb66182f1ea719580dc0fab243a2e97e",
+    "charger-turn-annotated.cpp": "17a3c33be487b95797f549124385e21a7407d221274659fa799157c8e233394f",
+    "charger-turn-annotated.json": "7b8307bb35e17e52925195a72dd9248b1c4f55d9f1b686752b3f49c5a0ee72df",
+    "charger-turn-asm.json": "6e789aa01aa268882df958d58fef583e0f4fe2678336f902e07d11795229f31c",
+    "charger-turn-full.json": "f57a0c4007a94a2e1221e61f179ff09ee99cc6a26a1dccc603c17ba004f42a1b",
+    "charger-turn.json": "eefc42fb53d829ebba4c7a7f14163cd804448663be42ed20efd13956b137fcf5",
+    "CHARGER_TURN_DISASSEMBLY.asm": "504c158fd973b39dd2da63077d89df35f36baa763c1681dfa31ae44703812ec1",
+    "client-before-target.json": "9d3d4d6d0e78a9634ad14541e4a13e287b79e5ebbace1b85a009ced233bce643",
+    "client-createmove-annotated.cpp": "b1702e93d2adccaeb1ece40025844cbd087f663af080dacc238baa70963b3743",
+    "client-createmove-annotated.json": "f79d41d6ed6f3029222e3ccbf9a7276c0949b81ced8fa06a90e59f88755bd426",
+    "client-createmove-full.json": "0eacbc743f54b264ce4371dc1095d7381913ddba72729bd1d834c14928aa33b6",
+    "client-createmove.json": "924a988fd356168c6920869a413b7b78528179a78e2e4f69194394f843d59f4e",
+    "client-define-function.json": "2f71b19ef0fdc3e612bf2e762fae46cea2235611b41e70d44a672cb79fcb2e61",
+    "client-open.json": "4190f29c89d457c192f215c4f7eec232772a34f3f8a10ae5dc20cce49011928e",
+    "client-prototype.json": "77a9beaec6b6b8b4570d2eb5df5bc36acb1e91f5c9048a09f7a3f791d6600782",
+    "client-save.json": "8335a4f31e81ec7718ab4dccaae3050574e1eb0a24a3c24ddcd27eb2f9c2c85c",
+    "client-survey.json": "947b8d67c32fa6544fb3db9a6fbf9b5da243e68349cdc6f88902db3e32439fa4",
+    "client-target-asm.json": "b2eeac3cef0b6543fdd2acbdc55e27b87616119f589ace236747ac382145866a",
+    "client-target-bytes.json": "2f434cdcea9e7480efe29270351233361000d7b2f3e09d79d701fd73eda055b2",
+    "client-target.json": "88b2d3243054d33a997894e6f6ef4894a612f862373194a2bdcae9c8ce7a35d1",
+    "client-unmodified-verification.json": "145bcdc4edb7da467b4aaaed341805eea4e7596ffa746614ec8a02eb4ea78186",
+    "comments-client.json": "dc8a941c8f72103bdbf3a4bb9e06cff5fe1d82b31f69b70b21fefa74921aacf0",
+    "comments-raze.json": "04480b23605ac1276f0a6ecf33fc699f7e682f3eecb2718acedc43153cc30bcc",
+    "config-defaults.json": "58a91ed23b1895664541279c3490502d2467a103b3a7bc7c262f9e379a7fa87b",
+    "config-load.json": "e759e3fd7da22235d10e14d9bd8977ad875b401dc4d8525a2406468e094d37ca",
+    "config-xrefs.json": "fbbf158861e122dcf8b2efef400abbea495fafdcc71d7f33dd0b53f26c101dd3",
+    "dispatch-switch-asm.json": "5499a6ef50f2850366036894230108a63ca96f6fc349c850aa25656dbe075c20",
+    "dispatch-xrefs.json": "6a95f1e2694e0642fd5b8a39d5013e8e0ce0a7ff019ab8b520573fe4e7b52100",
+    "frame-stage-full.json": "bbde43ca079be4fd472f77d4340fd2f7233eb977a066c03173304dcda20381e6",
+    "hook-install-full.json": "a858943ee412b9a2606cc381dfded5526ba3a8ae4faad0209717f8ddf0cc6c18",
+    "hook-install.json": "f206ee30aeb968c8ccbbe581585ff78d23e0a367b5b2b4461186efeafb15ce12",
+    "label-xrefs.json": "c489b59be8976c14925022db8d3c458264b4d82aee56358ee643ccf24572258e",
+    "menu-labels.json": "891da6d77046e0d8a79e753122229974860be8de4deef60ddb09b697a033ca35",
+    "menu-toggle-asm.json": "fbf4aaf807f71aca3a2608b556b5f32567a5931d9f7b83e909b563eab1895395",
+    "movement-options.json": "049c5309bcd379df98c860b9ad524d194b2d910af4bb5a0c7941f7e59be7971c",
+    "movement-runtime.json": "064a098ce4404fe639de0b474d50cb432323e892c6d71d10d1cd484516533bee",
+    "open.json": "5a861e2e70c5b5eb11f639d63d257066f569922f620311915a9e59391825cbea",
+    "patch-dispatch-asm.json": "6023022631ecc9149e0677b44204cd90c1ef2eb0da4ae7df64c170c1e62a4f55",
+    "patch-dispatch.json": "3da2af260bb9ad166c9a0dbe3606ade1ebd4347454144ad6ed334e9d933686ac",
+    "patch-helper-asm.json": "6264735e8b8009fadd93d10bb2da99b187376b178fe109d6986f1a28c6cae421",
+    "patch-helper-full.json": "52b0e2cbf580e2bff466833e2be332f805f602b56a723c275aa03bb325cc068a",
+    "patch-helper.json": "f0be4338bf0b3b11462d7a2ca6fa6bd012acbb5c5404532e9fba5261c79a2097",
+    "raze-save.json": "1e3d5ea5b04d471f398f6bff34600f8686caee3ec67ad328be7a8f871a4e9bb9",
+    "raze-survey.json": "f84fe3352743c08fff0d3313756a30ca9ab876d6dad93fe347eabf7d861c25d8",
+    "rename-client.json": "58b4763d665ee85ccbee705c8bc2f0364e59e24b32a2ed67ea9e55b03bf95556",
+    "rename-raze.json": "9f1466e785b82b55fd27ae01120860f311f38fae0ef0ddd97b1bcccf09f29654",
+    "runtime-callers.json": "c1e0f5a546763dd20faa60f413b058808d98b7c21170c5b503b359c5750d8173",
+    "strings.json": "b329331a3410f37af5b7b310801543f70aa9001dc4f81730e7af0e81a8b99f4d"
+  }
+}

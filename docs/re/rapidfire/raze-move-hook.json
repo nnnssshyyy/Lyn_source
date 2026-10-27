@@ -1,0 +1,134 @@
+{
+  "addr": "0x101486e0",
+  "code": "int __stdcall sub_101486E0(int a1, int a2)\n{\n  int result; // eax\n  int v5; // ebx\n  int v6; // ecx\n  int v7; // esi\n  int v8; // ecx\n  int v17; // esi\n  int v18; // ecx\n  int v23; // ecx\n  int v28; // ecx\n  int v29; // ecx\n  int v34; // ecx\n  int v35; // eax\n  int v36; // ecx\n  int v41; // ecx\n  int v42; // ecx\n  int v47; // ecx\n  int v48; // [esp+0h] [ebp-24h] BYREF\n  int v49; // [esp+4h] [ebp-20h]\n  int *v50; // [esp+8h] [ebp-1Ch]\n  struct _EXCEPTION_REGISTRATION_RECORD *ExceptionList; // [esp+Ch] [ebp-18h]\n  void *v52; // [esp+10h] [ebp-14h]\n  int v53; // [esp+14h] [ebp-10h]\n\n  _EDI = a1; /*0x101486ec*/\n  v50 = &v48; /*0x101486ef*/\n  v53 = -1; /*0x101486f2*/\n  v52 = &loc_101491F0; /*0x101486fc*/\n  ExceptionList = NtCurrentTeb()->NtTib.ExceptionList; /*0x1014870a*/\n  result = 150 * (*(_DWORD *)(a2 + 4) / 150); /*0x10148729*/\n  v5 = *(_DWORD *)(a2 + 4) % 150; /*0x1014872f*/\n  if ( byte_103F5380 != 1 ) /*0x10148738*/\n    goto LABEL_6; /*0x10148738*/\n  if ( GetAsyncKeyState(vKey: dword_103F5384) >= 0 ) /*0x10148749*/\n  {\n    result = *(_DWORD *)(a1 + 16); /*0x1014874f*/\n    v6 = 1; /*0x10148755*/\n    if ( result >= 2 ) /*0x1014875a*/\n      v6 = *(_DWORD *)(a1 + 16); /*0x1014875a*/\n    *(_DWORD *)(a1 + 16) = v6 - 1; /*0x1014875e*/\nLABEL_6:\n    if ( HIBYTE(word_103F53E0) != 1 ) /*0x10148768*/\n      goto LABEL_16; /*0x10148768*/\n    goto LABEL_7; /*0x10148768*/\n  }\n  _EAX = dword_103EC8D0; /*0x101487e8*/\n  __asm /*0x101487ed*/\n  {\n    vmovss xmm0, dword ptr [eax+1Ch]\n    vmovss dword ptr [edi+10h], xmm0\n  }\n  *(_DWORD *)(a1 + 20) = *(_DWORD *)(a2 + 4); /*0x101487fa*/\n  __asm /*0x10148802*/\n  {\n    vmovss xmm0, ds:dword_101852F4\n    vdivss xmm0, xmm0, dword ptr [eax+1Ch]\n    vcvttss2si eax, xmm0\n  }\n  result = _EAX & ~(_EAX >> 31); /*0x10148818*/\n  __asm { vcvtsi2ss xmm0, xmm1, eax } /*0x1014881d*/\n  dword_103F690C[2 * v5] = result; /*0x10148821*/\n  __asm /*0x10148828*/\n  {\n    vaddss xmm0, xmm0, ds:dword_10184184\n    vmulss xmm0, xmm0, dword ptr [edi+10h]\n    vmovss dword ptr [edi+10h], xmm0\n  }\n  byte_103F6908 = 1; /*0x1014883a*/\n  if ( HIBYTE(word_103F53E0) != 1 ) /*0x10148848*/\n    goto LABEL_16; /*0x10148848*/\nLABEL_7:\n  result = sub_10179540(a1: off_1029E014); /*0x1014876e*/\n  if ( result == 0 ) /*0x1014877b*/\n    goto LABEL_16; /*0x1014877b*/\n  v7 = result; /*0x10148781*/\n  if ( dword_103EEAD8 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1014879e*/\n  {\n    sub_101809C3(a1: &dword_103EEAD8); /*0x10148b4e*/\n    if ( dword_103EEAD8 == -1 ) /*0x10148b5d*/\n    {\n      v49 = v7; /*0x10148b63*/\n      v48 = v5; /*0x10148b66*/\n      v53 = 0; /*0x10148b69*/\n      dword_103EEAD4 = sub_1017C730(a1: \"CBaseEntity\", a2: \"m_iTeamNum\"); /*0x10148b82*/\n      sub_10180A43(a1: &dword_103EEAD8); /*0x10148b8c*/\n      _EDI = a1; /*0x10148b94*/\n      v5 = v48; /*0x10148b97*/\n      v7 = v49; /*0x10148b9a*/\n    }\n  }\n  result = dword_103EEAD4; /*0x101487a4*/\n  if ( *(_DWORD *)(dword_103EEAD4 + v7) != 3 ) /*0x101487ad*/\n  {\nLABEL_16:\n    if ( byte_103F53F0 != 1 ) /*0x10148855*/\n      goto LABEL_39; /*0x10148855*/\n    goto LABEL_17; /*0x10148855*/\n  }\n  if ( GetAsyncKeyState(vKey: dword_103F53E4) >= 0 ) /*0x101487c2*/\n  {\n    result = *(_DWORD *)(v7 + 16); /*0x101487c8*/\n    v8 = 1; /*0x101487ce*/\n    if ( result >= 2 ) /*0x101487d3*/\n      v8 = *(_DWORD *)(v7 + 16); /*0x101487d3*/\n    *(_DWORD *)(v7 + 16) = v8 - 1; /*0x101487d7*/\n    if ( byte_103F53F0 != 1 ) /*0x101487e1*/\n      goto LABEL_39; /*0x101487e1*/\nLABEL_17:\n    v53 = -1; /*0x1014885b*/\n    result = sub_10179540(a1: off_1029E014); /*0x10148868*/\n    if ( result != 0 ) /*0x1014886f*/\n    {\n      v17 = result; /*0x10148875*/\n      if ( dword_103EEAD8 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x10148892*/\n      {\n        sub_101809C3(a1: &dword_103EEAD8); /*0x10148ba7*/\n        if ( dword_103EEAD8 == -1 ) /*0x10148bb6*/\n        {\n          v49 = v17; /*0x10148bbc*/\n          v48 = v5; /*0x10148bbf*/\n          v53 = 1; /*0x10148bc2*/\n          dword_103EEAD4 = sub_1017C730(a1: \"CBaseEntity\", a2: \"m_iTeamNum\"); /*0x10148bdb*/\n          sub_10180A43(a1: &dword_103EEAD8); /*0x10148be5*/\n          _EDI = a1; /*0x10148bed*/\n          v5 = v48; /*0x10148bf0*/\n          v17 = v49; /*0x10148bf3*/\n        }\n      }\n      result = dword_103EEAD4; /*0x10148898*/\n      if ( *(_DWORD *)(dword_103EEAD4 + v17) == 2 ) /*0x101488a1*/\n      {\n        if ( GetAsyncKeyState(vKey: dword_103F53F8) < 0 ) /*0x101488b6*/\n        {\n          __asm /*0x10148932*/\n          {\n            vmovss xmm0, ds:dword_10191CD0\n            vdivss xmm0, xmm0, dword ptr [eax+1Ch]\n            vaddss xmm0, xmm0, ds:dword_10184EDC\n            vcvttss2si eax, xmm0\n          }\n          if ( dword_103F5400 > _EAX ) /*0x10148953*/\n            _EAX = dword_103F5400; /*0x10148953*/\n          v28 = 0; /*0x10148956*/\n          if ( _EAX >= 0 ) /*0x1014895a*/\n            v28 = _EAX; /*0x1014895a*/\n          dword_103F6DBC = _EAX; /*0x1014895d*/\n          dword_103F690C[2 * v5] = v28; /*0x10148962*/\n          result = *(_DWORD *)(v17 + 16) + 1; /*0x1014896c*/\n          if ( result >= v28 ) /*0x1014896f*/\n            result = v28; /*0x1014896f*/\n          *(_DWORD *)(v17 + 16) = result; /*0x10148972*/\n          byte_103F6908 = 1; /*0x10148975*/\n        }\n        else\n        {\n          result = *(_DWORD *)(v17 + 16); /*0x101488b8*/\n          v18 = 1; /*0x101488be*/\n          if ( result >= 2 ) /*0x101488c3*/\n            v18 = *(_DWORD *)(v17 + 16); /*0x101488c3*/\n          *(_DWORD *)(v17 + 16) = v18 - 1; /*0x101488c7*/\n        }\n      }\n    }\n    goto LABEL_39; /*0x101488ca*/\n  }\n  __asm /*0x101488d4*/\n  {\n    vmovss xmm0, ds:dword_10191CD0\n    vdivss xmm0, xmm0, dword ptr [eax+1Ch]\n    vaddss xmm0, xmm0, ds:dword_10184EDC\n    vcvttss2si eax, xmm0\n  }\n  if ( dword_103F53EC > _EAX ) /*0x101488f5*/\n    _EAX = dword_103F53EC; /*0x101488f5*/\n  v23 = 0; /*0x101488f8*/\n  if ( _EAX >= 0 ) /*0x101488fc*/\n    v23 = _EAX; /*0x101488fc*/\n  dword_103F6DBC = _EAX; /*0x101488ff*/\n  dword_103F690C[2 * v5] = v23; /*0x10148904*/\n  result = *(_DWORD *)(v7 + 16) + 1; /*0x1014890e*/\n  if ( result >= v23 ) /*0x10148911*/\n    result = v23; /*0x10148911*/\n  *(_DWORD *)(v7 + 16) = result; /*0x10148914*/\n  byte_103F6908 = 1; /*0x10148917*/\n  if ( byte_103F53F0 == 1 ) /*0x10148925*/\n    goto LABEL_17; /*0x10148925*/\nLABEL_39:\n  if ( byte_103F5404 != 1 ) /*0x10148983*/\n    return result; /*0x10148983*/\n  result = dword_103F540C; /*0x10148989*/\n  if ( dword_103F540C == 0 ) /*0x10148990*/\n  {\n    if ( GetAsyncKeyState(vKey: dword_103F5408) < 0 ) /*0x101489bc*/\n    {\n      __asm /*0x101489e1*/\n      {\n        vmovss xmm0, ds:dword_10191CD0\n        vdivss xmm0, xmm0, dword ptr [eax+1Ch]\n        vaddss xmm0, xmm0, ds:dword_10184EDC\n        vcvttss2si eax, xmm0\n      }\n      if ( dword_103F5410 > _EAX ) /*0x10148a02*/\n        _EAX = dword_103F5410; /*0x10148a02*/\n      v34 = 0; /*0x10148a05*/\n      if ( _EAX >= 0 ) /*0x10148a09*/\n        v34 = _EAX; /*0x10148a09*/\n      dword_103F6DBC = _EAX; /*0x10148a0c*/\n      dword_103F690C[2 * v5] = v34; /*0x10148a11*/\n      v35 = *(_DWORD *)(_EDI + 16) + 1; /*0x10148a1b*/\n      if ( v35 >= v34 ) /*0x10148a1e*/\n        v35 = v34; /*0x10148a1e*/\n      *(_DWORD *)(_EDI + 16) = v35; /*0x10148a21*/\n      byte_103F6908 = 1; /*0x10148a24*/\n      result = dword_103F540C; /*0x10148a2b*/\n      if ( dword_103F540C == 1 ) /*0x10148a33*/\n        goto LABEL_56; /*0x10148a33*/\n    }\n    else\n    {\n      v29 = 1; /*0x101489c4*/\n      if ( *(int *)(_EDI + 16) >= 2 ) /*0x101489c9*/\n        v29 = *(_DWORD *)(_EDI + 16); /*0x101489c9*/\n      *(_DWORD *)(_EDI + 16) = v29 - 1; /*0x101489cd*/\n      result = dword_103F540C; /*0x101489d0*/\n      if ( dword_103F540C == 1 ) /*0x101489d8*/\n        goto LABEL_56; /*0x101489d8*/\n    }\nLABEL_42:\n    if ( dword_103F540C != 2 ) /*0x101489a2*/\n      return result; /*0x101489a2*/\n    goto LABEL_68; /*0x101489a2*/\n  }\n  if ( dword_103F540C != 1 ) /*0x10148995*/\n    goto LABEL_42; /*0x10148995*/\nLABEL_56:\n  if ( GetAsyncKeyState(vKey: dword_103F5408) >= 0 ) /*0x10148a48*/\n  {\n    result = *(_DWORD *)(_EDI + 16); /*0x10148a4a*/\n    v36 = 1; /*0x10148a50*/\n    if ( result >= 2 ) /*0x10148a55*/\n      v36 = *(_DWORD *)(_EDI + 16); /*0x10148a55*/\n    *(_DWORD *)(_EDI + 16) = v36 - 1; /*0x10148a59*/\n    if ( dword_103F540C != 2 ) /*0x10148a63*/\n      return result; /*0x10148a63*/\nLABEL_68:\n    if ( GetAsyncKeyState(vKey: dword_103F5408) < 0 ) /*0x10148ad1*/\n    {\n      __asm /*0x10148aec*/\n      {\n        vmovss xmm0, ds:dword_10191CD0\n        vdivss xmm0, xmm0, dword ptr [eax+1Ch]\n        vaddss xmm0, xmm0, ds:dword_10184EDC\n        vcvttss2si eax, xmm0\n      }\n      if ( dword_103F5420 > _EAX ) /*0x10148b0d*/\n        _EAX = dword_103F5420; /*0x10148b0d*/\n      v47 = 0; /*0x10148b10*/\n      if ( _EAX >= 0 ) /*0x10148b14*/\n        v47 = _EAX; /*0x10148b14*/\n      dword_103F6DBC = _EAX; /*0x10148b17*/\n      dword_103F690C[2 * v5] = v47; /*0x10148b1c*/\n      result = *(_DWORD *)(_EDI + 16) + 1; /*0x10148b26*/\n      if ( result >= v47 ) /*0x10148b29*/\n        result = v47; /*0x10148b29*/\n      *(_DWORD *)(_EDI + 16) = result; /*0x10148b2c*/\n      byte_103F6908 = 1; /*0x10148b2f*/\n    }\n    else\n    {\n      result = *(_DWORD *)(_EDI + 16); /*0x10148ad3*/\n      v42 = 1; /*0x10148ad9*/\n      if ( result >= 2 ) /*0x10148ade*/\n        v42 = *(_DWORD *)(_EDI + 16); /*0x10148ade*/\n      *(_DWORD *)(_EDI + 16) = v42 - 1; /*0x10148ae2*/\n    }\n    return result; /*0x10148ae5*/\n  }\n  __asm /*0x10148a6f*/\n  {\n    vmovss xmm0, ds:dword_10191CD0\n    vdivss xmm0, xmm0, dword ptr [eax+1Ch]\n    vaddss xmm0, xmm0, ds:dword_10184EDC\n    vcvttss2si eax, xmm0\n  }\n  if ( dword_103F5418 > _EAX ) /*0x10148a90*/\n    _EAX = dword_103F5418; /*0x10148a90*/\n  v41 = 0; /*0x10148a93*/\n  if ( _EAX >= 0 ) /*0x10148a97*/\n    v41 = _EAX; /*0x10148a97*/\n  dword_103F6DBC = _EAX; /*0x10148a9a*/\n  dword_103F690C[2 * v5] = v41; /*0x10148a9f*/\n  result = *(_DWORD *)(_EDI + 16) + 1; /*0x10148aa9*/\n  if ( result >= v41 ) /*0x10148aac*/\n    result = v41; /*0x10148aac*/\n  *(_DWORD *)(_EDI + 16) = result; /*0x10148aaf*/\n  byte_103F6908 = 1; /*0x10148ab2*/\n  if ( dword_103F540C == 2 ) /*0x10148ac0*/\n    goto LABEL_68; /*0x10148ac0*/\n  return result; /*0x10148b36*/\n}",
+  "line_count": 301,
+  "total_lines": 301,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x101491f0",
+      "name": "loc_101491F0"
+    },
+    {
+      "addr": "0x103f5380",
+      "name": "byte_103F5380"
+    },
+    {
+      "addr": "0x103f53e0",
+      "name": "word_103F53E0"
+    },
+    {
+      "addr": "0x10293284",
+      "name": "GetAsyncKeyState"
+    },
+    {
+      "addr": "0x103f5384",
+      "name": "dword_103F5384"
+    },
+    {
+      "addr": "0x103ec8d0",
+      "name": "dword_103EC8D0"
+    },
+    {
+      "addr": "0x103f690c",
+      "name": "dword_103F690C"
+    },
+    {
+      "addr": "0x103f6908",
+      "name": "byte_103F6908"
+    },
+    {
+      "addr": "0x10179540",
+      "name": "sub_10179540"
+    },
+    {
+      "addr": "0x1029e014",
+      "name": "off_1029E014"
+    },
+    {
+      "addr": "0x101809c3",
+      "name": "sub_101809C3"
+    },
+    {
+      "addr": "0x103eead8",
+      "name": "dword_103EEAD8"
+    },
+    {
+      "addr": "0x103eead4",
+      "name": "dword_103EEAD4"
+    },
+    {
+      "addr": "0x1017c730",
+      "name": "sub_1017C730"
+    },
+    {
+      "addr": "0x10282c10",
+      "name": "aCbaseentity",
+      "string": "CBaseEntity"
+    },
+    {
+      "addr": "0x102870f9",
+      "name": "aMIteamnum",
+      "string": "m_iTeamNum"
+    },
+    {
+      "addr": "0x10180a43",
+      "name": "sub_10180A43"
+    },
+    {
+      "addr": "0x103f800c",
+      "name": "TlsIndex"
+    },
+    {
+      "addr": "0x103f53f0",
+      "name": "byte_103F53F0"
+    },
+    {
+      "addr": "0x103f5400",
+      "name": "dword_103F5400"
+    },
+    {
+      "addr": "0x103f6dbc",
+      "name": "dword_103F6DBC"
+    },
+    {
+      "addr": "0x103f53f8",
+      "name": "dword_103F53F8"
+    },
+    {
+      "addr": "0x103f53e4",
+      "name": "dword_103F53E4"
+    },
+    {
+      "addr": "0x103f53ec",
+      "name": "dword_103F53EC"
+    },
+    {
+      "addr": "0x103f5404",
+      "name": "byte_103F5404"
+    },
+    {
+      "addr": "0x103f540c",
+      "name": "dword_103F540C"
+    },
+    {
+      "addr": "0x103f5410",
+      "name": "dword_103F5410"
+    },
+    {
+      "addr": "0x103f5408",
+      "name": "dword_103F5408"
+    },
+    {
+      "addr": "0x103f5420",
+      "name": "dword_103F5420"
+    },
+    {
+      "addr": "0x103f5418",
+      "name": "dword_103F5418"
+    }
+  ]
+}

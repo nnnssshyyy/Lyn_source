@@ -1,0 +1,28 @@
+{
+  "addr": "0x1016ce60",
+  "code": "int sub_1016CE60()\n{\n  return sub_1017E990(lpAddress: dword_103EC2FC, a2: sub_1016CE80, a3: (int)&dword_103F7458); /*0x1016ce75*/\n}",
+  "line_count": 4,
+  "total_lines": 4,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1017e990",
+      "name": "sub_1017E990"
+    },
+    {
+      "addr": "0x103ec2fc",
+      "name": "dword_103EC2FC"
+    },
+    {
+      "addr": "0x1016ce80",
+      "name": "sub_1016CE80"
+    },
+    {
+      "addr": "0x103f7458",
+      "name": "dword_103F7458"
+    }
+  ]
+}

@@ -1,0 +1,538 @@
+{
+  "addr": "0x10001ab0",
+  "asm": {
+    "name": "sub_10001AB0",
+    "start_ea": "0x10001ab0",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "10001ab0",
+        "instruction": "push ebp",
+        "label": "sub_10001AB0"
+      },
+      {
+        "addr": "10001ab1",
+        "instruction": "mov ebp, esp"
+      },
+      {
+        "addr": "10001ab3",
+        "instruction": "sub esp, 80h"
+      },
+      {
+        "addr": "10001ab9",
+        "instruction": "push 0"
+      },
+      {
+        "addr": "10001abb",
+        "instruction": "push 0BCh"
+      },
+      {
+        "addr": "10001ac0",
+        "instruction": "push offset aEnginesoundcli; \"enginesoundclient.cpp\"",
+        "refs": [
+          {
+            "addr": "0x1034ffb8",
+            "name": "aEnginesoundcli",
+            "string": "enginesoundclient.cpp"
+          }
+        ]
+      },
+      {
+        "addr": "10001ac5",
+        "instruction": "lea ecx, [ebp+var_34]"
+      },
+      {
+        "addr": "10001ac8",
+        "instruction": "call sub_10052450",
+        "refs": [
+          {
+            "addr": "0x10052450",
+            "name": "sub_10052450"
+          }
+        ]
+      },
+      {
+        "addr": "10001acd",
+        "instruction": "movss xmm0, [ebp+arg_10]"
+      },
+      {
+        "addr": "10001ad2",
+        "instruction": "xorps xmm1, xmm1"
+      },
+      {
+        "addr": "10001ad5",
+        "instruction": "comiss xmm1, xmm0"
+      },
+      {
+        "addr": "10001ad8",
+        "instruction": "ja loc_10001DB0",
+        "refs": [
+          {
+            "addr": "0x10001db0",
+            "name": "loc_10001DB0"
+          }
+        ]
+      },
+      {
+        "addr": "10001ade",
+        "instruction": "comiss xmm0, ds:dword_1034FF24",
+        "refs": [
+          {
+            "addr": "0x1034ff24",
+            "name": "dword_1034FF24"
+          }
+        ]
+      },
+      {
+        "addr": "10001ae5",
+        "instruction": "ja loc_10001DB0",
+        "refs": [
+          {
+            "addr": "0x10001db0",
+            "name": "loc_10001DB0"
+          }
+        ]
+      },
+      {
+        "addr": "10001aeb",
+        "instruction": "mov eax, [ebp+arg_14]"
+      },
+      {
+        "addr": "10001aee",
+        "instruction": "cmp eax, 1FFh"
+      },
+      {
+        "addr": "10001af3",
+        "instruction": "ja loc_10001D8F",
+        "refs": [
+          {
+            "addr": "0x10001d8f",
+            "name": "loc_10001D8F"
+          }
+        ]
+      },
+      {
+        "addr": "10001af9",
+        "instruction": "mov eax, [ebp+arg_1C]"
+      },
+      {
+        "addr": "10001afc",
+        "instruction": "cmp eax, 0FFh"
+      },
+      {
+        "addr": "10001b01",
+        "instruction": "ja loc_10001D83",
+        "refs": [
+          {
+            "addr": "0x10001d83",
+            "name": "loc_10001D83"
+          }
+        ]
+      },
+      {
+        "addr": "10001b07",
+        "instruction": "cmp [ebp+arg_4], 0"
+      },
+      {
+        "addr": "10001b0b",
+        "instruction": "jge short loc_10001B21",
+        "refs": [
+          {
+            "addr": "0x10001b21",
+            "name": "loc_10001B21"
+          }
+        ]
+      },
+      {
+        "addr": "10001b0d",
+        "instruction": "push 0FFFFFFFFh"
+      },
+      {
+        "addr": "10001b0f",
+        "instruction": "call sub_10082C70",
+        "refs": [
+          {
+            "addr": "0x10082c70",
+            "name": "sub_10082C70"
+          }
+        ]
+      },
+      {
+        "addr": "10001b14",
+        "instruction": "add esp, 4"
+      },
+      {
+        "addr": "10001b17",
+        "instruction": "mov ecx, eax; this",
+        "comments": [
+          "this"
+        ]
+      },
+      {
+        "addr": "10001b19",
+        "instruction": "call ?GetDefaultDestination@UMSThreadVirtualProcessor@details@Concurrency@@UAEPAUIExecutionContext@3@XZ; Concurrency::details::UMSThreadVirtualProcessor::GetDefaultDestination(void)",
+        "refs": [
+          {
+            "addr": "0x10052440",
+            "name": "?GetDefaultDestination@UMSThreadVirtualProcessor@details@Concurrency@@UAEPAUIExecutionContext@3@XZ"
+          }
+        ]
+      },
+      {
+        "addr": "10001b1e",
+        "instruction": "mov [ebp+arg_4], eax"
+      },
+      {
+        "addr": "10001b21",
+        "instruction": "push ebx",
+        "label": "loc_10001B21"
+      },
+      {
+        "addr": "10001b22",
+        "instruction": "push esi"
+      }
+    ],
+    "stack_frame": [
+      {
+        "name": "var_88",
+        "offset": "0x14",
+        "size": "0x8",
+        "type": "double"
+      },
+      {
+        "name": "var_80",
+        "offset": "0x1c",
+        "size": "0x4",
+        "type": "char[4]"
+      },
+      {
+        "name": "var_7C",
+        "offset": "0x20",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_78",
+        "offset": "0x24",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_74",
+        "offset": "0x28",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_70",
+        "offset": "0x2c",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_6C",
+        "offset": "0x30",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_68",
+        "offset": "0x34",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_64",
+        "offset": "0x38",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_60",
+        "offset": "0x3c",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_5C",
+        "offset": "0x40",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_58",
+        "offset": "0x44",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_54",
+        "offset": "0x48",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_50",
+        "offset": "0x4c",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_4C",
+        "offset": "0x50",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_48",
+        "offset": "0x54",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_44",
+        "offset": "0x58",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_38",
+        "offset": "0x64",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_34",
+        "offset": "0x68",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_24",
+        "offset": "0x78",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_20",
+        "offset": "0x7c",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_1C",
+        "offset": "0x80",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_18",
+        "offset": "0x84",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_14",
+        "offset": "0x88",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_10",
+        "offset": "0x8c",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_C",
+        "offset": "0x90",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_8",
+        "offset": "0x94",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_4",
+        "offset": "0x98",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "__saved_registers",
+        "offset": "0x9c",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "__return_address",
+        "offset": "0xa0",
+        "size": "0x4",
+        "type": "_UNKNOWN *"
+      },
+      {
+        "name": "arg_0",
+        "offset": "0xa4",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_4",
+        "offset": "0xa8",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_8",
+        "offset": "0xac",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_C",
+        "offset": "0xb0",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_10",
+        "offset": "0xb4",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_14",
+        "offset": "0xb8",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_18",
+        "offset": "0xbc",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_1C",
+        "offset": "0xc0",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_20",
+        "offset": "0xc4",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_24",
+        "offset": "0xc8",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_28",
+        "offset": "0xcc",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_2C",
+        "offset": "0xd0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "arg_30",
+        "offset": "0xd4",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_34",
+        "offset": "0xd8",
+        "size": "0x4",
+        "type": "_DWORD"
+      }
+    ],
+    "return_type": "int",
+    "arguments": [
+      {
+        "name": "arg0",
+        "type": "int"
+      },
+      {
+        "name": "arg1",
+        "type": "int"
+      },
+      {
+        "name": "arg2",
+        "type": "int"
+      },
+      {
+        "name": "arg3",
+        "type": "int"
+      },
+      {
+        "name": "DefaultDestination",
+        "type": "struct Concurrency::IExecutionContext *"
+      },
+      {
+        "name": "arg5",
+        "type": "int"
+      },
+      {
+        "name": "arg6",
+        "type": "const char *"
+      },
+      {
+        "name": "arg7",
+        "type": "float"
+      },
+      {
+        "name": "arg8",
+        "type": "unsigned int"
+      },
+      {
+        "name": "arg9",
+        "type": "int"
+      },
+      {
+        "name": "arg10",
+        "type": "unsigned int"
+      },
+      {
+        "name": "arg11",
+        "type": "int *"
+      },
+      {
+        "name": "arg12",
+        "type": "int *"
+      },
+      {
+        "name": "arg13",
+        "type": "int"
+      },
+      {
+        "name": "arg14",
+        "type": "char"
+      },
+      {
+        "name": "arg15",
+        "type": "float"
+      },
+      {
+        "name": "arg16",
+        "type": "int"
+      }
+    ]
+  },
+  "instruction_count": 30,
+  "total_instructions": null,
+  "cursor": {
+    "next": 30
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "path": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\l4d2\\engine.dll.i64",
+    "module": "engine.dll",
+    "arch": "32",
+    "base_address": "0x10000000",
+    "image_size": "0x73f000",
+    "md5": "a16cd381409bab749909d5000c2302d8",
+    "sha256": "8a6d468059394bf4cfce32f11dcba12ef45de88da1373084d5a2916d0bf7ba86"
+  },
+  "statistics": {
+    "total_functions": 19066,
+    "named_functions": 352,
+    "library_functions": 748,
+    "unnamed_functions": 17966,
+    "total_strings": 11260,
+    "total_segments": 4
+  },
+  "segments": [
+    {
+      "name": ".text",
+      "start": "0x10001000",
+      "end": "0x1034e000",
+      "size": "0x34d000",
+      "permissions": "rx"
+    },
+    {
+      "name": ".idata",
+      "start": "0x1034e000",
+      "end": "0x1034e724",
+      "size": "0x724",
+      "permissions": "r"
+    },
+    {
+      "name": ".rdata",
+      "start": "0x1034e724",
+      "end": "0x10423000",
+      "size": "0xd48dc",
+      "permissions": "r"
+    },
+    {
+      "name": ".data",
+      "start": "0x10423000",
+      "end": "0x106e9000",
+      "size": "0x2c6000",
+      "permissions": "rw"
+    }
+  ],
+  "entrypoints": [
+    {
+      "addr": "0x101fdc50",
+      "name": "?F@@YAXPAPAVIEngineAPI@@@Z",
+      "ordinal": 1
+    },
+    {
+      "addr": "0x10286180",
+      "name": "CreateInterface",
+      "ordinal": 2
+    },
+    {
+      "addr": "0x106e097c",
+      "name": "cvar",
+      "ordinal": 3
+    },
+    {
+      "addr": "0x106e0980",
+      "name": "g_pCVar",
+      "ordinal": 4
+    },
+    {
+      "addr": "0x10315db8",
+      "name": "DllEntryPoint",
+      "ordinal": 271670712
+    }
+  ],
+  "_note": "Binary has 19066 functions; xref analysis was limited to the first 10000 for performance."
+}

@@ -1,0 +1,16 @@
+{
+  "result": [
+    {
+      "addr": "0x101b9b30",
+      "xrefs": [
+        {
+          "addr": "0x10390f70",
+          "type": "data",
+          "fn": null
+        }
+      ],
+      "more": false,
+      "xref_count": 1
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "addr": "0x10148c40",
+  "code": "__int16 __stdcall sub_10148C40(int a1, int a2)\n{\n  int v2; // edi\n  HMODULE ModuleHandleA; // eax\n  HMODULE v4; // esi\n  int v5; // eax\n  int v6; // ecx\n  int v7; // edi\n  int v13; // [esp+0h] [ebp-1Ch]\n\n  v2 = *(_DWORD *)(a2 + 4); /*0x10148c57*/\n  ModuleHandleA = GetModuleHandleA(lpModuleName: \"engine.dll\"); /*0x10148c71*/\n  if ( byte_103F5404 != 1 ) /*0x10148c7e*/\n    return (__int16)ModuleHandleA; /*0x10148c7e*/\n  v4 = ModuleHandleA; /*0x10148c84*/\n  LOWORD(ModuleHandleA) = dword_103F540C; /*0x10148c86*/\n  if ( dword_103F540C == 0 ) /*0x10148c8d*/\n  {\n    v13 = *(_DWORD *)(*((_DWORD *)v4 + 1088059) + 24); /*0x10148c9f*/\n    if ( GetAsyncKeyState(vKey: dword_103F5408) < 0 ) /*0x10148cb1*/\n    {\n      v5 = dword_103F5414; /*0x10148d49*/\n      if ( dword_103F5414 > 0 ) /*0x10148d50*/\n      {\n        v6 = v2 - 150 * ((v2 - 1) / 150) - 1; /*0x10148d7a*/\n        v7 = v2 % 150; /*0x10148d7b*/\n        if ( v7 == v6 ) /*0x10148d7f*/\n        {\n          dword_103F690C[2 * v7] = 0; /*0x10148d81*/\n          __asm /*0x10148d92*/\n          {\n            vmovss xmm0, ds:dword_10189E04\n            vdivss xmm1, xmm0, dword ptr [edx+1Ch]\n            vaddss xmm0, xmm1, xmm0\n            vcvttss2si edx, xmm0\n          }\n          if ( v5 > _EDX ) /*0x10148da9*/\n            _EDX = v5; /*0x10148da9*/\n          dword_103F6DBC = _EDX; /*0x10148dac*/\n        }\n        else\n        {\n          ++dword_103F68E8; /*0x10148db4*/\n        }\n        if ( dword_103F690C[2 * v6] == 0 ) /*0x10148dc2*/\n        {\n          *(_DWORD *)(v13 + 16) = -1; /*0x10148dcb*/\n          *(_DWORD *)(v13 + 28) = 255; /*0x10148dd2*/\n        }\n      }\n    }\n    LOWORD(ModuleHandleA) = dword_103F540C; /*0x10148cb7*/\n    if ( dword_103F540C != 1 ) /*0x10148cbf*/\n      goto LABEL_10; /*0x10148cbf*/\n  }\n  else if ( dword_103F540C != 1 ) /*0x10148c92*/\n  {\nLABEL_10:\n    if ( dword_103F540C == 2 ) /*0x10148d03*/\n    {\n      LOWORD(ModuleHandleA) = GetAsyncKeyState(vKey: dword_103F5408); /*0x10148d0b*/\n      if ( (__int16)ModuleHandleA < 0 ) /*0x10148d14*/\n      {\n        ModuleHandleA = *(HMODULE *)(*((_DWORD *)v4 + 1088059) + 24); /*0x10148d1c*/\n        *((_DWORD *)ModuleHandleA + 4) = -1; /*0x10148d1f*/\n        *((_DWORD *)ModuleHandleA + 7) = 255; /*0x10148d26*/\n        byte_103F6908 = 1; /*0x10148d2d*/\n      }\n    }\n    return (__int16)ModuleHandleA; /*0x10148d34*/\n  }\n  LOWORD(ModuleHandleA) = GetAsyncKeyState(vKey: dword_103F5408); /*0x10148cc1*/\n  if ( (__int16)ModuleHandleA < 0 ) /*0x10148cd0*/\n  {\n    ModuleHandleA = (HMODULE)(*(int (__thiscall **)(int))(*(_DWORD *)dword_103EC770 + 296))(a1: dword_103EC770); /*0x10148cda*/\n    if ( ModuleHandleA != nullptr ) /*0x10148ce2*/\n    {\n      LOWORD(ModuleHandleA) = dword_103F541C; /*0x10148ce4*/\n      *(_DWORD *)(*(_DWORD *)(dword_103EC9A8 + 24) + 28) = dword_103F541C; /*0x10148cf2*/\n      byte_103F6908 = 1; /*0x10148cf5*/\n    }\n  }\n  goto LABEL_10; /*0x10148cf5*/\n}",
+  "line_count": 84,
+  "total_lines": 84,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1029334c",
+      "name": "GetModuleHandleA"
+    },
+    {
+      "addr": "0x10287364",
+      "name": "ModuleName",
+      "string": "engine.dll"
+    },
+    {
+      "addr": "0x103f5404",
+      "name": "byte_103F5404"
+    },
+    {
+      "addr": "0x103f540c",
+      "name": "dword_103F540C"
+    },
+    {
+      "addr": "0x103f5414",
+      "name": "dword_103F5414"
+    },
+    {
+      "addr": "0x103f690c",
+      "name": "dword_103F690C"
+    },
+    {
+      "addr": "0x103f6dbc",
+      "name": "dword_103F6DBC"
+    },
+    {
+      "addr": "0x103f68e8",
+      "name": "dword_103F68E8"
+    },
+    {
+      "addr": "0x10293284",
+      "name": "GetAsyncKeyState"
+    },
+    {
+      "addr": "0x103f5408",
+      "name": "dword_103F5408"
+    },
+    {
+      "addr": "0x103f6908",
+      "name": "byte_103F6908"
+    },
+    {
+      "addr": "0x103ec770",
+      "name": "dword_103EC770"
+    },
+    {
+      "addr": "0x103f541c",
+      "name": "dword_103F541C"
+    },
+    {
+      "addr": "0x103ec9a8",
+      "name": "dword_103EC9A8"
+    }
+  ]
+}

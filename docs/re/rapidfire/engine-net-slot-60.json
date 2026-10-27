@@ -1,0 +1,10 @@
+{
+  "addr": "0x101b3350",
+  "code": "BOOL __thiscall sub_101B3350(int *this)\n{\n  return *(this + 11) > 0 || *(this + 51) > 0 || *(this + 56) > 0; /*0x101b336a*/\n}",
+  "line_count": 4,
+  "total_lines": 4,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  }
+}

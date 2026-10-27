@@ -1,0 +1,815 @@
+[
+  {
+    "addr": "0x10148c40",
+    "asm": {
+      "name": "RapidFire_ApplyNetChannelMode",
+      "start_ea": "0x10148c40",
+      "segment": ".text",
+      "lines": [
+        {
+          "addr": "10148c40",
+          "instruction": "push ebp",
+          "label": "RapidFire_ApplyNetChannelMode"
+        },
+        {
+          "addr": "10148c41",
+          "instruction": "push ebx"
+        },
+        {
+          "addr": "10148c42",
+          "instruction": "push edi"
+        },
+        {
+          "addr": "10148c43",
+          "instruction": "push esi"
+        },
+        {
+          "addr": "10148c44",
+          "instruction": "sub esp, 0Ch"
+        },
+        {
+          "addr": "10148c47",
+          "instruction": "mov eax, [esp+1Ch+arg_4]"
+        },
+        {
+          "addr": "10148c4b",
+          "instruction": "mov ecx, ___security_cookie",
+          "refs": [
+            {
+              "addr": "0x103ec080",
+              "name": "___security_cookie"
+            }
+          ]
+        },
+        {
+          "addr": "10148c51",
+          "instruction": "xor ecx, esp"
+        },
+        {
+          "addr": "10148c53",
+          "instruction": "mov [esp+1Ch+var_14], ecx"
+        },
+        {
+          "addr": "10148c57",
+          "instruction": "mov edi, [eax+4]"
+        },
+        {
+          "addr": "10148c5a",
+          "instruction": "mov ecx, 1B4E81B5h"
+        },
+        {
+          "addr": "10148c5f",
+          "instruction": "mov eax, edi"
+        },
+        {
+          "addr": "10148c61",
+          "instruction": "imul ecx"
+        },
+        {
+          "addr": "10148c63",
+          "instruction": "mov ebx, edx"
+        },
+        {
+          "addr": "10148c65",
+          "instruction": "lea eax, [edi-1]"
+        },
+        {
+          "addr": "10148c68",
+          "instruction": "imul ecx"
+        },
+        {
+          "addr": "10148c6a",
+          "instruction": "mov ebp, edx"
+        },
+        {
+          "addr": "10148c6c",
+          "instruction": "push offset ModuleName; \"engine.dll\"",
+          "refs": [
+            {
+              "addr": "0x10287364",
+              "name": "ModuleName",
+              "string": "engine.dll"
+            }
+          ]
+        },
+        {
+          "addr": "10148c71",
+          "instruction": "call ds:GetModuleHandleA; KERNEL32",
+          "refs": [
+            {
+              "addr": "0x1029334c",
+              "name": "GetModuleHandleA"
+            }
+          ]
+        },
+        {
+          "addr": "10148c77",
+          "instruction": "cmp RapidFire_Enabled, 1",
+          "refs": [
+            {
+              "addr": "0x103f5404",
+              "name": "RapidFire_Enabled"
+            }
+          ]
+        },
+        {
+          "addr": "10148c7e",
+          "instruction": "jnz loc_10148D34",
+          "refs": [
+            {
+              "addr": "0x10148d34",
+              "name": "loc_10148D34"
+            }
+          ]
+        },
+        {
+          "addr": "10148c84",
+          "instruction": "mov esi, eax"
+        },
+        {
+          "addr": "10148c86",
+          "instruction": "mov eax, RapidFire_Method",
+          "refs": [
+            {
+              "addr": "0x103f540c",
+              "name": "RapidFire_Method"
+            }
+          ]
+        },
+        {
+          "addr": "10148c8b",
+          "instruction": "test eax, eax"
+        },
+        {
+          "addr": "10148c8d",
+          "instruction": "jz short loc_10148C96",
+          "refs": [
+            {
+              "addr": "0x10148c96",
+              "name": "loc_10148C96"
+            }
+          ]
+        },
+        {
+          "addr": "10148c8f",
+          "instruction": "cmp eax, 1"
+        },
+        {
+          "addr": "10148c92",
+          "instruction": "jz short loc_10148CC1",
+          "refs": [
+            {
+              "addr": "0x10148cc1",
+              "name": "loc_10148CC1"
+            }
+          ]
+        },
+        {
+          "addr": "10148c94",
+          "instruction": "jmp short loc_10148CFC",
+          "refs": [
+            {
+              "addr": "0x10148cfc",
+              "name": "loc_10148CFC"
+            }
+          ]
+        },
+        {
+          "addr": "10148c96",
+          "instruction": "mov eax, [esi+4268ECh]",
+          "label": "loc_10148C96"
+        },
+        {
+          "addr": "10148c9c",
+          "instruction": "mov eax, [eax+18h]"
+        },
+        {
+          "addr": "10148c9f",
+          "instruction": "mov [esp+1Ch+var_1C], eax"
+        },
+        {
+          "addr": "10148ca2",
+          "instruction": "push RapidFire_Key; vKey",
+          "comments": [
+            "vKey"
+          ],
+          "refs": [
+            {
+              "addr": "0x103f5408",
+              "name": "RapidFire_Key"
+            }
+          ]
+        },
+        {
+          "addr": "10148ca8",
+          "instruction": "call ds:GetAsyncKeyState; USER32",
+          "refs": [
+            {
+              "addr": "0x10293284",
+              "name": "GetAsyncKeyState"
+            }
+          ]
+        },
+        {
+          "addr": "10148cae",
+          "instruction": "test ax, ax"
+        },
+        {
+          "addr": "10148cb1",
+          "instruction": "js loc_10148D49",
+          "refs": [
+            {
+              "addr": "0x10148d49",
+              "name": "loc_10148D49"
+            }
+          ]
+        },
+        {
+          "addr": "10148cb7",
+          "instruction": "mov eax, RapidFire_Method",
+          "label": "loc_10148CB7",
+          "refs": [
+            {
+              "addr": "0x103f540c",
+              "name": "RapidFire_Method"
+            }
+          ]
+        },
+        {
+          "addr": "10148cbc",
+          "instruction": "cmp eax, 1"
+        },
+        {
+          "addr": "10148cbf",
+          "instruction": "jnz short loc_10148CFC",
+          "refs": [
+            {
+              "addr": "0x10148cfc",
+              "name": "loc_10148CFC"
+            }
+          ]
+        },
+        {
+          "addr": "10148cc1",
+          "instruction": "push RapidFire_Key; vKey",
+          "label": "loc_10148CC1",
+          "comments": [
+            "vKey"
+          ],
+          "refs": [
+            {
+              "addr": "0x103f5408",
+              "name": "RapidFire_Key"
+            }
+          ]
+        },
+        {
+          "addr": "10148cc7",
+          "instruction": "call ds:GetAsyncKeyState; USER32",
+          "refs": [
+            {
+              "addr": "0x10293284",
+              "name": "GetAsyncKeyState"
+            }
+          ]
+        },
+        {
+          "addr": "10148ccd",
+          "instruction": "test ax, ax"
+        },
+        {
+          "addr": "10148cd0",
+          "instruction": "jns short loc_10148CFC",
+          "refs": [
+            {
+              "addr": "0x10148cfc",
+              "name": "loc_10148CFC"
+            }
+          ]
+        },
+        {
+          "addr": "10148cd2",
+          "instruction": "mov ecx, dword_103EC770",
+          "refs": [
+            {
+              "addr": "0x103ec770",
+              "name": "dword_103EC770"
+            }
+          ]
+        },
+        {
+          "addr": "10148cd8",
+          "instruction": "mov eax, [ecx]"
+        },
+        {
+          "addr": "10148cda",
+          "instruction": "call dword ptr [eax+128h]"
+        },
+        {
+          "addr": "10148ce0",
+          "instruction": "test eax, eax"
+        },
+        {
+          "addr": "10148ce2",
+          "instruction": "jz short loc_10148CFC",
+          "refs": [
+            {
+              "addr": "0x10148cfc",
+              "name": "loc_10148CFC"
+            }
+          ]
+        },
+        {
+          "addr": "10148ce4",
+          "instruction": "mov eax, RapidFire_Method2Choked; UI method 2 (index=1): netchannel+0x1C = configured ticks. Distinct from clientstate choked_commands.",
+          "comments": [
+            "UI method 2 (index=1): netchannel+0x1C = configured ticks. Distinct from clientstate choked_commands."
+          ],
+          "refs": [
+            {
+              "addr": "0x103f541c",
+              "name": "RapidFire_Method2Choked"
+            }
+          ]
+        },
+        {
+          "addr": "10148ce9",
+          "instruction": "mov ecx, dword_103EC9A8",
+          "refs": [
+            {
+              "addr": "0x103ec9a8",
+              "name": "dword_103EC9A8"
+            }
+          ]
+        },
+        {
+          "addr": "10148cef",
+          "instruction": "mov ecx, [ecx+18h]"
+        },
+        {
+          "addr": "10148cf2",
+          "instruction": "mov [ecx+1Ch], eax"
+        },
+        {
+          "addr": "10148cf5",
+          "instruction": "mov RapidFire_ForceSend, 1",
+          "refs": [
+            {
+              "addr": "0x103f6908",
+              "name": "RapidFire_ForceSend"
+            }
+          ]
+        },
+        {
+          "addr": "10148cfc",
+          "instruction": "cmp RapidFire_Method, 2",
+          "label": "loc_10148CFC",
+          "refs": [
+            {
+              "addr": "0x103f540c",
+              "name": "RapidFire_Method"
+            }
+          ]
+        },
+        {
+          "addr": "10148d03",
+          "instruction": "jnz short loc_10148D34",
+          "refs": [
+            {
+              "addr": "0x10148d34",
+              "name": "loc_10148D34"
+            }
+          ]
+        },
+        {
+          "addr": "10148d05",
+          "instruction": "push RapidFire_Key; vKey",
+          "comments": [
+            "vKey"
+          ],
+          "refs": [
+            {
+              "addr": "0x103f5408",
+              "name": "RapidFire_Key"
+            }
+          ]
+        },
+        {
+          "addr": "10148d0b",
+          "instruction": "call ds:GetAsyncKeyState; USER32",
+          "refs": [
+            {
+              "addr": "0x10293284",
+              "name": "GetAsyncKeyState"
+            }
+          ]
+        },
+        {
+          "addr": "10148d11",
+          "instruction": "test ax, ax"
+        },
+        {
+          "addr": "10148d14",
+          "instruction": "jns short loc_10148D34",
+          "refs": [
+            {
+              "addr": "0x10148d34",
+              "name": "loc_10148D34"
+            }
+          ]
+        },
+        {
+          "addr": "10148d16",
+          "instruction": "mov eax, [esi+4268ECh]"
+        },
+        {
+          "addr": "10148d1c",
+          "instruction": "mov eax, [eax+18h]"
+        },
+        {
+          "addr": "10148d1f",
+          "instruction": "mov dword ptr [eax+10h], 0FFFFFFFFh; UI method 3 (index=2): netchannel+0x10=-1; netchannel+0x1C=255. Current engine SendDatagram serializes low 8 bits of +0x1C; do not infer extra damage.",
+          "comments": [
+            "UI method 3 (index=2): netchannel+0x10=-1; netchannel+0x1C=255. Current engine SendDatagram serializes low 8 bits of +0x1C; do not infer extra damage."
+          ]
+        },
+        {
+          "addr": "10148d26",
+          "instruction": "mov dword ptr [eax+1Ch], 0FFh"
+        },
+        {
+          "addr": "10148d2d",
+          "instruction": "mov RapidFire_ForceSend, 1",
+          "refs": [
+            {
+              "addr": "0x103f6908",
+              "name": "RapidFire_ForceSend"
+            }
+          ]
+        },
+        {
+          "addr": "10148d34",
+          "instruction": "mov ecx, [esp+1Ch+var_14]",
+          "label": "loc_10148D34"
+        },
+        {
+          "addr": "10148d38",
+          "instruction": "xor ecx, esp; StackCookie",
+          "comments": [
+            "StackCookie"
+          ]
+        },
+        {
+          "addr": "10148d3a",
+          "instruction": "call @__security_check_cookie@4; __security_check_cookie(x)",
+          "refs": [
+            {
+              "addr": "0x101809b5",
+              "name": "@__security_check_cookie@4"
+            }
+          ]
+        },
+        {
+          "addr": "10148d3f",
+          "instruction": "add esp, 0Ch"
+        },
+        {
+          "addr": "10148d42",
+          "instruction": "pop esi"
+        },
+        {
+          "addr": "10148d43",
+          "instruction": "pop edi"
+        },
+        {
+          "addr": "10148d44",
+          "instruction": "pop ebx"
+        },
+        {
+          "addr": "10148d45",
+          "instruction": "pop ebp"
+        },
+        {
+          "addr": "10148d46",
+          "instruction": "retn 8"
+        },
+        {
+          "addr": "10148d49",
+          "instruction": "mov eax, RapidFire_StormTicks",
+          "label": "loc_10148D49",
+          "refs": [
+            {
+              "addr": "0x103f5414",
+              "name": "RapidFire_StormTicks"
+            }
+          ]
+        },
+        {
+          "addr": "10148d4e",
+          "instruction": "test eax, eax"
+        },
+        {
+          "addr": "10148d50",
+          "instruction": "jle loc_10148CB7",
+          "refs": [
+            {
+              "addr": "0x10148cb7",
+              "name": "loc_10148CB7"
+            }
+          ]
+        }
+      ],
+      "stack_frame": [
+        {
+          "name": "var_1C",
+          "offset": "0x0",
+          "size": "0x4",
+          "type": "_DWORD"
+        },
+        {
+          "name": "var_14",
+          "offset": "0x8",
+          "size": "0x4",
+          "type": "_DWORD"
+        },
+        {
+          "name": "__return_address",
+          "offset": "0x1c",
+          "size": "0x4",
+          "type": "_UNKNOWN *"
+        },
+        {
+          "name": "arg_4",
+          "offset": "0x24",
+          "size": "0x4",
+          "type": "_DWORD"
+        }
+      ],
+      "return_type": "__int16",
+      "arguments": [
+        {
+          "name": "arg0",
+          "type": "int"
+        },
+        {
+          "name": "arg1",
+          "type": "int"
+        }
+      ]
+    },
+    "instruction_count": 75,
+    "total_instructions": 108,
+    "cursor": {
+      "next": 75
+    }
+  },
+  {
+    "addr": "0x10148c40",
+    "asm": {
+      "name": "RapidFire_ApplyNetChannelMode",
+      "start_ea": "0x10148c40",
+      "segment": ".text",
+      "lines": [
+        {
+          "addr": "10148d56",
+          "instruction": "mov ecx, ebx"
+        },
+        {
+          "addr": "10148d58",
+          "instruction": "shr ecx, 1Fh"
+        },
+        {
+          "addr": "10148d5b",
+          "instruction": "sar ebx, 4"
+        },
+        {
+          "addr": "10148d5e",
+          "instruction": "add ebx, ecx"
+        },
+        {
+          "addr": "10148d60",
+          "instruction": "imul edx, ebx, 96h"
+        },
+        {
+          "addr": "10148d66",
+          "instruction": "mov ecx, ebp"
+        },
+        {
+          "addr": "10148d68",
+          "instruction": "shr ecx, 1Fh"
+        },
+        {
+          "addr": "10148d6b",
+          "instruction": "sar ebp, 4"
+        },
+        {
+          "addr": "10148d6e",
+          "instruction": "add ebp, ecx"
+        },
+        {
+          "addr": "10148d70",
+          "instruction": "imul ecx, ebp, 96h"
+        },
+        {
+          "addr": "10148d76",
+          "instruction": "neg ecx"
+        },
+        {
+          "addr": "10148d78",
+          "instruction": "add ecx, edi"
+        },
+        {
+          "addr": "10148d7a",
+          "instruction": "dec ecx"
+        },
+        {
+          "addr": "10148d7b",
+          "instruction": "sub edi, edx"
+        },
+        {
+          "addr": "10148d7d",
+          "instruction": "cmp edi, ecx"
+        },
+        {
+          "addr": "10148d7f",
+          "instruction": "jnz short loc_10148DB4; Storm branch compares cmd%150 to (cmd-1)%150; unequal for normal positive commands. Preserve as observed; do not silently replace with a recharge condition.",
+          "comments": [
+            "Storm branch compares cmd%150 to (cmd-1)%150; unequal for normal positive commands. Preserve as observed; do not silently replace with a recharge condition."
+          ],
+          "refs": [
+            {
+              "addr": "0x10148db4",
+              "name": "loc_10148DB4"
+            }
+          ]
+        },
+        {
+          "addr": "10148d81",
+          "instruction": "mov RapidFire_TickbaseShiftRing[edi*8], 0",
+          "refs": [
+            {
+              "addr": "0x103f690c",
+              "name": "RapidFire_TickbaseShiftRing"
+            }
+          ]
+        },
+        {
+          "addr": "10148d8c",
+          "instruction": "mov edx, dword_103EC8D0",
+          "refs": [
+            {
+              "addr": "0x103ec8d0",
+              "name": "dword_103EC8D0"
+            }
+          ]
+        },
+        {
+          "addr": "10148d92",
+          "instruction": "vmovss xmm0, ds:dword_10189E04",
+          "refs": [
+            {
+              "addr": "0x10189e04",
+              "name": "dword_10189E04"
+            }
+          ]
+        },
+        {
+          "addr": "10148d9a",
+          "instruction": "vdivss xmm1, xmm0, dword ptr [edx+1Ch]"
+        },
+        {
+          "addr": "10148d9f",
+          "instruction": "vaddss xmm0, xmm1, xmm0"
+        },
+        {
+          "addr": "10148da3",
+          "instruction": "vcvttss2si edx, xmm0"
+        },
+        {
+          "addr": "10148da7",
+          "instruction": "cmp eax, edx"
+        },
+        {
+          "addr": "10148da9",
+          "instruction": "cmovg edx, eax"
+        },
+        {
+          "addr": "10148dac",
+          "instruction": "mov RapidFire_ExtraMovesRemaining, edx",
+          "refs": [
+            {
+              "addr": "0x103f6dbc",
+              "name": "RapidFire_ExtraMovesRemaining"
+            }
+          ]
+        },
+        {
+          "addr": "10148db2",
+          "instruction": "jmp short loc_10148DBA",
+          "refs": [
+            {
+              "addr": "0x10148dba",
+              "name": "loc_10148DBA"
+            }
+          ]
+        },
+        {
+          "addr": "10148db4",
+          "instruction": "inc dword_103F68E8",
+          "label": "loc_10148DB4",
+          "refs": [
+            {
+              "addr": "0x103f68e8",
+              "name": "dword_103F68E8"
+            }
+          ]
+        },
+        {
+          "addr": "10148dba",
+          "instruction": "cmp RapidFire_TickbaseShiftRing[ecx*8], 0",
+          "label": "loc_10148DBA",
+          "refs": [
+            {
+              "addr": "0x103f690c",
+              "name": "RapidFire_TickbaseShiftRing"
+            }
+          ]
+        },
+        {
+          "addr": "10148dc2",
+          "instruction": "jnz loc_10148CB7",
+          "refs": [
+            {
+              "addr": "0x10148cb7",
+              "name": "loc_10148CB7"
+            }
+          ]
+        },
+        {
+          "addr": "10148dc8",
+          "instruction": "mov eax, [esp+1Ch+var_1C]"
+        },
+        {
+          "addr": "10148dcb",
+          "instruction": "mov dword ptr [eax+10h], 0FFFFFFFFh"
+        },
+        {
+          "addr": "10148dd2",
+          "instruction": "mov dword ptr [eax+1Ch], 0FFh"
+        },
+        {
+          "addr": "10148dd9",
+          "instruction": "jmp loc_10148CB7",
+          "refs": [
+            {
+              "addr": "0x10148cb7",
+              "name": "loc_10148CB7"
+            }
+          ]
+        }
+      ],
+      "stack_frame": [
+        {
+          "name": "var_1C",
+          "offset": "0x0",
+          "size": "0x4",
+          "type": "_DWORD"
+        },
+        {
+          "name": "var_14",
+          "offset": "0x8",
+          "size": "0x4",
+          "type": "_DWORD"
+        },
+        {
+          "name": "__return_address",
+          "offset": "0x1c",
+          "size": "0x4",
+          "type": "_UNKNOWN *"
+        },
+        {
+          "name": "arg_4",
+          "offset": "0x24",
+          "size": "0x4",
+          "type": "_DWORD"
+        }
+      ],
+      "return_type": "__int16",
+      "arguments": [
+        {
+          "name": "arg0",
+          "type": "int"
+        },
+        {
+          "name": "arg1",
+          "type": "int"
+        }
+      ]
+    },
+    "instruction_count": 33,
+    "total_instructions": 108,
+    "cursor": {
+      "done": true
+    }
+  }
+]

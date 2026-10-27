@@ -1,0 +1,10 @@
+{
+  "addr": "0x101b1e90",
+  "code": "int __thiscall sub_101B1E90(_DWORD *this, int a2)\n{\n  return *(this + 1931 * a2 + 347); /*0x101b1ea3*/\n}",
+  "line_count": 4,
+  "total_lines": 4,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  }
+}

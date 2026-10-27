@@ -1,0 +1,86 @@
+{
+  "addr": "0x10023180",
+  "code": "bool __userpurge sub_10023180@<al>(int a1@<ecx>, __int128 _XMM0@<xmm0>, int a3)\n{\n  int v7; // ecx\n  bool v8; // cf\n  int v11; // ecx\n  bool v12; // cf\n  int v14; // [esp-4h] [ebp-28h] BYREF\n  int v15; // [esp-4h] [ebp-28h] BYREF\n  int v16; // [esp+0h] [ebp-24h] BYREF\n  int *v18; // [esp+8h] [ebp-1Ch]\n  struct _EXCEPTION_REGISTRATION_RECORD *ExceptionList; // [esp+Ch] [ebp-18h]\n  void *v20; // [esp+10h] [ebp-14h]\n  int v21; // [esp+14h] [ebp-10h]\n\n  _EDI = a1; /*0x10023189*/\n  _ESI = a3; /*0x1002318b*/\n  v18 = &v16; /*0x1002318e*/\n  v21 = -1; /*0x10023191*/\n  v20 = &loc_10026B80; /*0x1002319b*/\n  ExceptionList = NtCurrentTeb()->NtTib.ExceptionList; /*0x100231a9*/\n  if ( a3 == 0 ) /*0x100231b4*/\n    return false; /*0x100231b4*/\n  if ( dword_103EEAF0 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x100231d1*/\n  {\n    sub_101809C3(a1: &dword_103EEAF0); /*0x10023263*/\n    if ( dword_103EEAF0 == -1 ) /*0x10023272*/\n    {\n      v16 = _EDI; /*0x10023278*/\n      v21 = 0; /*0x1002327b*/\n      dword_103EEAEC = sub_1017C730(a1: \"CBasePlayer\", a2: \"m_nTickBase\"); /*0x10023294*/\n      sub_10180A43(a1: &dword_103EEAF0); /*0x1002329e*/\n      _ESI = a3; /*0x100232a6*/\n      _EDI = v16; /*0x100232a9*/\n    }\n  }\n  __asm { vcvtsi2ss xmm0, xmm0, dword ptr [eax+esi] } /*0x100231dc*/\n  __asm { vmulss xmm0, xmm0, dword ptr [eax+1Ch] }\n  v7 = *((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex); /*0x100231fd*/\n  v8 = (unsigned int)dword_103EEAF8 < *(_DWORD *)(v7 + 4); /*0x10023200*/\n  if ( dword_103EEAF8 > *(_DWORD *)(v7 + 4) ) /*0x10023206*/\n  {\n    __asm { vmovss [ebp+var_20], xmm0 } /*0x100232b6*/\n    sub_101809C3(a1: &dword_103EEAF8); /*0x100232bb*/\n    __asm { vmovss xmm0, [ebp+var_20] } /*0x100232c0*/\n    v8 = dword_103EEAF8 != -1; /*0x100232c8*/\n    if ( dword_103EEAF8 == -1 ) /*0x100232cf*/\n    {\n      v16 = _EDI; /*0x100232d5*/\n      v21 = 1; /*0x100232d8*/\n      dword_103EEAF4 = sub_1017C730(a1: \"CBaseCombatWeapon\", a2: \"m_flNextPrimaryAttack\"); /*0x100232f1*/\n      sub_10180A43(a1: &dword_103EEAF8); /*0x100232fb*/\n      v8 = __CFADD__(&v14, 4); /*0x10023300*/\n      _ESI = a3; /*0x10023303*/\n      _EDI = v16; /*0x10023306*/\n      __asm { vmovss xmm0, [ebp+var_20] } /*0x10023309*/\n    }\n  }\n  _EAX = dword_103EEAF4; /*0x1002320c*/\n  __asm { vucomiss xmm0, dword ptr [eax+edi] } /*0x10023211*/\n  if ( v8 ) /*0x10023216*/\n    return false; /*0x10023218*/\n  v11 = *((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex); /*0x1002322e*/\n  v12 = (unsigned int)dword_103EEB00 < *(_DWORD *)(v11 + 4); /*0x10023231*/\n  if ( dword_103EEB00 > *(_DWORD *)(v11 + 4) ) /*0x10023237*/\n  {\n    __asm { vmovss [ebp+var_20], xmm0 } /*0x10023318*/\n    sub_101809C3(a1: &dword_103EEB00); /*0x1002331d*/\n    __asm { vmovss xmm0, [ebp+var_20] } /*0x10023322*/\n    v12 = dword_103EEB00 != -1; /*0x1002332a*/\n    if ( dword_103EEB00 == -1 ) /*0x10023331*/\n    {\n      v21 = 2; /*0x10023337*/\n      dword_103EEAFC = sub_1017C730(a1: \"CBaseCombatCharacter\", a2: \"m_flNextAttack\"); /*0x10023350*/\n      sub_10180A43(a1: &dword_103EEB00); /*0x1002335a*/\n      v12 = __CFADD__(&v15, 4); /*0x1002335f*/\n      _ESI = a3; /*0x10023362*/\n      __asm { vmovss xmm0, [ebp+var_20] } /*0x10023365*/\n    }\n  }\n  _EAX = dword_103EEAFC; /*0x1002323d*/\n  __asm { vucomiss xmm0, dword ptr [eax+esi] } /*0x10023242*/\n  return !v12; /*0x1002324a*/\n}",
+  "line_count": 83,
+  "total_lines": 83,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x10026b80",
+      "name": "loc_10026B80"
+    },
+    {
+      "addr": "0x101809c3",
+      "name": "sub_101809C3"
+    },
+    {
+      "addr": "0x103eeaf0",
+      "name": "dword_103EEAF0"
+    },
+    {
+      "addr": "0x103eeaec",
+      "name": "dword_103EEAEC"
+    },
+    {
+      "addr": "0x1017c730",
+      "name": "sub_1017C730"
+    },
+    {
+      "addr": "0x1028578f",
+      "name": "aCbaseplayer",
+      "string": "CBasePlayer"
+    },
+    {
+      "addr": "0x10288d37",
+      "name": "aMNtickbase",
+      "string": "m_nTickBase"
+    },
+    {
+      "addr": "0x10180a43",
+      "name": "sub_10180A43"
+    },
+    {
+      "addr": "0x103f800c",
+      "name": "TlsIndex"
+    },
+    {
+      "addr": "0x103eeaf8",
+      "name": "dword_103EEAF8"
+    },
+    {
+      "addr": "0x103eeaf4",
+      "name": "dword_103EEAF4"
+    },
+    {
+      "addr": "0x1028698f",
+      "name": "aCbasecombatwea",
+      "string": "CBaseCombatWeapon"
+    },
+    {
+      "addr": "0x10287e71",
+      "name": "aMFlnextprimary",
+      "string": "m_flNextPrimaryAttack"
+    },
+    {
+      "addr": "0x103eeb00",
+      "name": "dword_103EEB00"
+    },
+    {
+      "addr": "0x103eeafc",
+      "name": "dword_103EEAFC"
+    },
+    {
+      "addr": "0x1028583f",
+      "name": "aCbasecombatcha",
+      "string": "CBaseCombatCharacter"
+    },
+    {
+      "addr": "0x10287e9f",
+      "name": "aMFlnextattack",
+      "string": "m_flNextAttack"
+    }
+  ]
+}

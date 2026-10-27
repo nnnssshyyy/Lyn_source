@@ -1,0 +1,314 @@
+{
+  "addr": "0x102547e0",
+  "asm": {
+    "name": "<no function>",
+    "start_ea": "0x102547e0",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "102547e0",
+        "instruction": "push ebp",
+        "label": "sub_102547E0"
+      },
+      {
+        "addr": "102547e1",
+        "instruction": "mov ebp, esp"
+      },
+      {
+        "addr": "102547e3",
+        "instruction": "push ecx"
+      },
+      {
+        "addr": "102547e4",
+        "instruction": "mov eax, [ecx+2890h]"
+      },
+      {
+        "addr": "102547ea",
+        "instruction": "test eax, eax"
+      },
+      {
+        "addr": "102547ec",
+        "instruction": "jz short loc_10254808",
+        "refs": [
+          {
+            "addr": "0x10254808",
+            "name": "loc_10254808"
+          }
+        ]
+      },
+      {
+        "addr": "102547ee",
+        "instruction": "cmp dword ptr [eax+58h], 0"
+      },
+      {
+        "addr": "102547f2",
+        "instruction": "jz short loc_10254808",
+        "refs": [
+          {
+            "addr": "0x10254808",
+            "name": "loc_10254808"
+          }
+        ]
+      },
+      {
+        "addr": "102547f4",
+        "instruction": "lea ecx, [eax+8]"
+      },
+      {
+        "addr": "102547f7",
+        "instruction": "lea edx, [ebp-1]"
+      },
+      {
+        "addr": "102547fa",
+        "instruction": "mov byte ptr [ebp-1], 0FFh"
+      },
+      {
+        "addr": "102547fe",
+        "instruction": "mov eax, [ecx]"
+      },
+      {
+        "addr": "10254800",
+        "instruction": "mov eax, [eax+24h]"
+      },
+      {
+        "addr": "10254803",
+        "instruction": "push edx"
+      },
+      {
+        "addr": "10254804",
+        "instruction": "push 1"
+      },
+      {
+        "addr": "10254806",
+        "instruction": "call eax"
+      },
+      {
+        "addr": "10254808",
+        "instruction": "mov esp, ebp",
+        "label": "loc_10254808"
+      },
+      {
+        "addr": "1025480a",
+        "instruction": "pop ebp"
+      },
+      {
+        "addr": "1025480b",
+        "instruction": "retn"
+      },
+      {
+        "addr": "1025480c",
+        "instruction": "align 10h"
+      },
+      {
+        "addr": "10254810",
+        "instruction": "push ebp",
+        "label": "sub_10254810"
+      },
+      {
+        "addr": "10254811",
+        "instruction": "mov ebp, esp"
+      },
+      {
+        "addr": "10254813",
+        "instruction": "sub esp, 0B4h"
+      },
+      {
+        "addr": "10254819",
+        "instruction": "push esi"
+      },
+      {
+        "addr": "1025481a",
+        "instruction": "mov esi, ecx"
+      },
+      {
+        "addr": "1025481c",
+        "instruction": "cmp byte ptr [esi+147h], 0"
+      },
+      {
+        "addr": "10254823",
+        "instruction": "push edi"
+      },
+      {
+        "addr": "10254824",
+        "instruction": "jnz loc_10254B18",
+        "refs": [
+          {
+            "addr": "0x10254b18",
+            "name": "loc_10254B18"
+          }
+        ]
+      },
+      {
+        "addr": "1025482a",
+        "instruction": "mov eax, [esi]"
+      },
+      {
+        "addr": "1025482c",
+        "instruction": "mov edx, [eax+13Ch]"
+      },
+      {
+        "addr": "10254832",
+        "instruction": "call edx"
+      },
+      {
+        "addr": "10254834",
+        "instruction": "cmp eax, 3"
+      },
+      {
+        "addr": "10254837",
+        "instruction": "jnz loc_10254B18",
+        "refs": [
+          {
+            "addr": "0x10254b18",
+            "name": "loc_10254B18"
+          }
+        ]
+      },
+      {
+        "addr": "1025483d",
+        "instruction": "cmp dword ptr [esi+1C90h], 4"
+      },
+      {
+        "addr": "10254844",
+        "instruction": "jnz loc_10254B18",
+        "refs": [
+          {
+            "addr": "0x10254b18",
+            "name": "loc_10254B18"
+          }
+        ]
+      },
+      {
+        "addr": "1025484a",
+        "instruction": "mov eax, [esi]"
+      },
+      {
+        "addr": "1025484c",
+        "instruction": "mov edx, [eax+3C0h]"
+      },
+      {
+        "addr": "10254852",
+        "instruction": "mov ecx, esi"
+      },
+      {
+        "addr": "10254854",
+        "instruction": "call edx"
+      },
+      {
+        "addr": "10254856",
+        "instruction": "test al, al"
+      },
+      {
+        "addr": "10254858",
+        "instruction": "jnz loc_10254B18",
+        "refs": [
+          {
+            "addr": "0x10254b18",
+            "name": "loc_10254B18"
+          }
+        ]
+      },
+      {
+        "addr": "1025485e",
+        "instruction": "cmp dword ptr [esi+28F8h], 0"
+      },
+      {
+        "addr": "10254865",
+        "instruction": "jnz short loc_10254884",
+        "refs": [
+          {
+            "addr": "0x10254884",
+            "name": "loc_10254884"
+          }
+        ]
+      },
+      {
+        "addr": "10254867",
+        "instruction": "mov ecx, dword_10735E44",
+        "refs": [
+          {
+            "addr": "0x10735e44",
+            "name": "dword_10735E44"
+          }
+        ]
+      },
+      {
+        "addr": "1025486d",
+        "instruction": "mov edx, [esi+58h]"
+      },
+      {
+        "addr": "10254870",
+        "instruction": "mov eax, [ecx]"
+      },
+      {
+        "addr": "10254872",
+        "instruction": "mov eax, [eax+14h]"
+      },
+      {
+        "addr": "10254875",
+        "instruction": "add edx, 20000000h"
+      },
+      {
+        "addr": "1025487b",
+        "instruction": "push edx"
+      },
+      {
+        "addr": "1025487c",
+        "instruction": "call eax"
+      },
+      {
+        "addr": "1025487e",
+        "instruction": "mov [esi+28F8h], eax"
+      },
+      {
+        "addr": "10254884",
+        "instruction": "mov edx, [esi]",
+        "label": "loc_10254884"
+      },
+      {
+        "addr": "10254886",
+        "instruction": "mov eax, [edx+14h]"
+      },
+      {
+        "addr": "10254889",
+        "instruction": "mov ecx, esi"
+      },
+      {
+        "addr": "1025488b",
+        "instruction": "call eax"
+      },
+      {
+        "addr": "1025488d",
+        "instruction": "mov ecx, [esi+28F8h]"
+      },
+      {
+        "addr": "10254893",
+        "instruction": "mov [ecx+40h], eax"
+      },
+      {
+        "addr": "10254896",
+        "instruction": "mov edx, [esi+4]"
+      },
+      {
+        "addr": "10254899",
+        "instruction": "mov eax, [edx+84h]"
+      },
+      {
+        "addr": "1025489f",
+        "instruction": "push offset aMouth; \"mouth\"",
+        "refs": [
+          {
+            "addr": "0x105414a8",
+            "name": "aMouth",
+            "string": "mouth"
+          }
+        ]
+      }
+    ]
+  },
+  "instruction_count": 60,
+  "total_instructions": null,
+  "cursor": {
+    "next": 60
+  }
+}

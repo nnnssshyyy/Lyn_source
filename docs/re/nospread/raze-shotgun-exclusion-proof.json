@@ -1,0 +1,296 @@
+{
+  "jump_instruction": "0x10026c77",
+  "table": "0x10185140",
+  "index": "weapon_id - 1",
+  "return_false": "0x10026c43",
+  "return_true": "0x10026c45",
+  "accepted_weapon_ids": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    9,
+    10,
+    26,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "entries": [
+    {
+      "weapon_id": 1,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 2,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 3,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 4,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 5,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 6,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 7,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 8,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 9,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 10,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 11,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 12,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 13,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 14,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 15,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 16,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 17,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 18,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 19,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 20,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 21,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 22,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 23,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 24,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 25,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 26,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 27,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 28,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 29,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 30,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 31,
+      "destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "weapon_id": 32,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 33,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 34,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 35,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 36,
+      "destination": "0x10026c45",
+      "accepted": true
+    },
+    {
+      "weapon_id": 37,
+      "destination": "0x10026c45",
+      "accepted": true
+    }
+  ],
+  "shotguns": [
+    {
+      "class": "CPumpShotgun",
+      "vtable": "0x105ff6fc",
+      "method_slot": 383,
+      "method": "0x10306550",
+      "instructions": [
+        {
+          "addr": "0x10306550",
+          "mnemonic": "mov",
+          "op_str": "eax, 3"
+        },
+        {
+          "addr": "0x10306555",
+          "mnemonic": "ret",
+          "op_str": ""
+        }
+      ],
+      "weapon_id": 3,
+      "raze_gate_destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "class": "CShotgun_Chrome",
+      "vtable": "0x1060212c",
+      "method_slot": 383,
+      "method": "0x103072c0",
+      "instructions": [
+        {
+          "addr": "0x103072c0",
+          "mnemonic": "mov",
+          "op_str": "eax, 8"
+        },
+        {
+          "addr": "0x103072c5",
+          "mnemonic": "ret",
+          "op_str": ""
+        }
+      ],
+      "weapon_id": 8,
+      "raze_gate_destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "class": "CAutoShotgun",
+      "vtable": "0x105eb8fc",
+      "method_slot": 383,
+      "method": "0x102f0740",
+      "instructions": [
+        {
+          "addr": "0x102f0740",
+          "mnemonic": "mov",
+          "op_str": "eax, 4"
+        },
+        {
+          "addr": "0x102f0745",
+          "mnemonic": "ret",
+          "op_str": ""
+        }
+      ],
+      "weapon_id": 4,
+      "raze_gate_destination": "0x10026c43",
+      "accepted": false
+    },
+    {
+      "class": "CShotgun_SPAS",
+      "vtable": "0x10602994",
+      "method_slot": 383,
+      "method": "0x103074c0",
+      "instructions": [
+        {
+          "addr": "0x103074c0",
+          "mnemonic": "mov",
+          "op_str": "eax, 0xb"
+        },
+        {
+          "addr": "0x103074c5",
+          "mnemonic": "ret",
+          "op_str": ""
+        }
+      ],
+      "weapon_id": 11,
+      "raze_gate_destination": "0x10026c43",
+      "accepted": false
+    }
+  ]
+}

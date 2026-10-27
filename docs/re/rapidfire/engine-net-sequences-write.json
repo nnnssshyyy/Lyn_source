@@ -1,0 +1,10 @@
+{
+  "addr": "0x101b1350",
+  "code": "int __thiscall sub_101B1350(_DWORD *this, _DWORD *a2, _DWORD *a3, _DWORD *a4)\n{\n  int result; // eax\n\n  *a2 = *(this + 2); /*0x101b1359*/\n  *a3 = *(this + 3); /*0x101b1361*/\n  result = *(this + 4); /*0x101b1363*/\n  *a4 = result; /*0x101b1369*/\n  return result; /*0x101b136b*/\n}",
+  "line_count": 10,
+  "total_lines": 10,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  }
+}

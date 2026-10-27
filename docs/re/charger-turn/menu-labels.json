@@ -1,0 +1,3712 @@
+{
+  "addr": "0x10174490",
+  "asm": {
+    "name": "sub_101725B0",
+    "start_ea": "0x10174490",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "10174492",
+        "instruction": "push offset aSinEmpuje; \"Sin empuje\"",
+        "refs": [
+          {
+            "addr": "0x1028940b",
+            "name": "aSinEmpuje",
+            "string": "Sin empuje"
+          }
+        ]
+      },
+      {
+        "addr": "10174497",
+        "instruction": "push offset aNoPush; \"No push\"",
+        "refs": [
+          {
+            "addr": "0x102880db",
+            "name": "aNoPush",
+            "string": "No push"
+          }
+        ]
+      },
+      {
+        "addr": "1017449c",
+        "instruction": "call sub_10100860",
+        "refs": [
+          {
+            "addr": "0x10100860",
+            "name": "sub_10100860"
+          }
+        ]
+      },
+      {
+        "addr": "101744a1",
+        "instruction": "lea ecx, [ebp+var_23B0]; void *",
+        "comments": [
+          "void *"
+        ]
+      },
+      {
+        "addr": "101744a7",
+        "instruction": "mov [ebp+var_20], ecx"
+      },
+      {
+        "addr": "101744aa",
+        "instruction": "push offset aParadaRapida; \"Parada rapida\"",
+        "refs": [
+          {
+            "addr": "0x1028a868",
+            "name": "aParadaRapida",
+            "string": "Parada rapida"
+          }
+        ]
+      },
+      {
+        "addr": "101744af",
+        "instruction": "push offset aFastStop; \"Fast Stop\"",
+        "refs": [
+          {
+            "addr": "0x102861b4",
+            "name": "aFastStop",
+            "string": "Fast Stop"
+          }
+        ]
+      },
+      {
+        "addr": "101744b4",
+        "instruction": "call sub_10100860",
+        "refs": [
+          {
+            "addr": "0x10100860",
+            "name": "sub_10100860"
+          }
+        ]
+      },
+      {
+        "addr": "101744b9",
+        "instruction": "lea ecx, [ebp+var_2380]; void *",
+        "comments": [
+          "void *"
+        ]
+      },
+      {
+        "addr": "101744bf",
+        "instruction": "mov [ebp+var_20], ecx"
+      },
+      {
+        "addr": "101744c2",
+        "instruction": "push offset aGiroCharger; \"Giro charger\"",
+        "refs": [
+          {
+            "addr": "0x10285b2e",
+            "name": "aGiroCharger",
+            "string": "Giro charger"
+          }
+        ]
+      },
+      {
+        "addr": "101744c7",
+        "instruction": "push offset aChargerTurn; \"Charger turn\"",
+        "refs": [
+          {
+            "addr": "0x102868a9",
+            "name": "aChargerTurn",
+            "string": "Charger turn"
+          }
+        ]
+      },
+      {
+        "addr": "101744cc",
+        "instruction": "call sub_10100860",
+        "refs": [
+          {
+            "addr": "0x10100860",
+            "name": "sub_10100860"
+          }
+        ]
+      },
+      {
+        "addr": "101744d1",
+        "instruction": "lea ecx, [ebp+var_2350]; void *",
+        "comments": [
+          "void *"
+        ]
+      },
+      {
+        "addr": "101744d7",
+        "instruction": "mov [ebp+var_20], ecx"
+      },
+      {
+        "addr": "101744da",
+        "instruction": "push offset aComboTank; \"Combo tank\"",
+        "refs": [
+          {
+            "addr": "0x10287d36",
+            "name": "aComboTank",
+            "string": "Combo tank"
+          }
+        ]
+      },
+      {
+        "addr": "101744df",
+        "instruction": "push offset aTankCombo; \"Tank combo\"",
+        "refs": [
+          {
+            "addr": "0x102867e5",
+            "name": "aTankCombo",
+            "string": "Tank combo"
+          }
+        ]
+      },
+      {
+        "addr": "101744e4",
+        "instruction": "call sub_10100860",
+        "refs": [
+          {
+            "addr": "0x10100860",
+            "name": "sub_10100860"
+          }
+        ]
+      },
+      {
+        "addr": "101744e9",
+        "instruction": "lea ecx, [ebp+var_2320]; void *",
+        "comments": [
+          "void *"
+        ]
+      },
+      {
+        "addr": "101744ef",
+        "instruction": "mov [ebp+var_20], ecx"
+      },
+      {
+        "addr": "101744f2",
+        "instruction": "push offset aCombinacionDel; \"Combinacion del ataque de\\nroca y golpe\"...",
+        "refs": [
+          {
+            "addr": "0x1028f1e8",
+            "name": "aCombinacionDel",
+            "string": "Combinacion del ataque de\nroca y golpe del Tank."
+          }
+        ]
+      },
+      {
+        "addr": "101744f7",
+        "instruction": "push offset aThisIsACombina; \"This is a combination of the\\nTank's ro\"...",
+        "refs": [
+          {
+            "addr": "0x1028f25c",
+            "name": "aThisIsACombina",
+            "string": "This is a combination of the\nTank's rock and punch attack."
+          }
+        ]
+      },
+      {
+        "addr": "101744fc",
+        "instruction": "call sub_10100860",
+        "refs": [
+          {
+            "addr": "0x10100860",
+            "name": "sub_10100860"
+          }
+        ]
+      },
+      {
+        "addr": "10174501",
+        "instruction": "lea ecx, [ebp+var_22F0]; void *",
+        "comments": [
+          "void *"
+        ]
+      },
+      {
+        "addr": "10174507",
+        "instruction": "mov [ebp+var_20], ecx"
+      },
+      {
+        "addr": "1017450a",
+        "instruction": "push offset aTechoAutoHunte; \"Techo auto (Hunter)\"",
+        "refs": [
+          {
+            "addr": "0x1028fa8e",
+            "name": "aTechoAutoHunte",
+            "string": "Techo auto (Hunter)"
+          }
+        ]
+      },
+      {
+        "addr": "1017450f",
+        "instruction": "push offset aAutoCeilingHun; \"Auto ceiling (Hunter)\"",
+        "refs": [
+          {
+            "addr": "0x1028faa2",
+            "name": "aAutoCeilingHun",
+            "string": "Auto ceiling (Hunter)"
+          }
+        ]
+      },
+      {
+        "addr": "10174514",
+        "instruction": "call sub_10100860",
+        "refs": [
+          {
+            "addr": "0x10100860",
+            "name": "sub_10100860"
+          }
+        ]
+      },
+      {
+        "addr": "10174519",
+        "instruction": "lea ecx, [ebp+var_22C0]; void *",
+        "comments": [
+          "void *"
+        ]
+      },
+      {
+        "addr": "1017451f",
+        "instruction": "mov [ebp+var_20], ecx"
+      },
+      {
+        "addr": "10174522",
+        "instruction": "push offset aDa; \"Da\"",
+        "refs": [
+          {
+            "addr": "0x102859b8",
+            "name": "aDa",
+            "string": "Da"
+          }
+        ]
+      },
+      {
+        "addr": "10174527",
+        "instruction": "push offset aDamageWithASmo; \"Damage with a smoker\"",
+        "refs": [
+          {
+            "addr": "0x102859c9",
+            "name": "aDamageWithASmo",
+            "string": "Damage with a smoker"
+          }
+        ]
+      },
+      {
+        "addr": "1017452c",
+        "instruction": "call sub_10100860",
+        "refs": [
+          {
+            "addr": "0x10100860",
+            "name": "sub_10100860"
+          }
+        ]
+      },
+      {
+        "addr": "10174531",
+        "instruction": "lea ecx, [ebp+var_2290]; void *",
+        "comments": [
+          "void *"
+        ]
+      },
+      {
+        "addr": "10174537",
+        "instruction": "mov [ebp+var_20], ecx"
+      },
+      {
+        "addr": "1017453a",
+        "instruction": "push offset aSoloFuncionaCo; \"Solo funciona con Smoker y Charger.\\nCo\"...",
+        "refs": [
+          {
+            "addr": "0x1028efd2",
+            "name": "aSoloFuncionaCo",
+            "string": "Solo funciona con Smoker y Charger.\nCon Smoker, causa dano con el arrastre.\nCon Charger, causa dano al cargar."
+          }
+        ]
+      },
+      {
+        "addr": "1017453f",
+        "instruction": "push offset aWorksOnlyWithS; \"Works only with Smoker and Charger.\\nWi\"...",
+        "refs": [
+          {
+            "addr": "0x1028f2b3",
+            "name": "aWorksOnlyWithS",
+            "string": "Works only with Smoker and Charger.\nWith Smoker, deals damage with the tongue drag.\nWith Charger, deals damage while charging."
+          }
+        ]
+      },
+      {
+        "addr": "10174544",
+        "instruction": "call sub_10100860",
+        "refs": [
+          {
+            "addr": "0x10100860",
+            "name": "sub_10100860"
+          }
+        ]
+      },
+      {
+        "addr": "10174549",
+        "instruction": "lea ecx, [ebp+var_2260]; void *",
+        "comments": [
+          "void *"
+        ]
+      },
+      {
+        "addr": "1017454f",
+        "instruction": "mov [ebp+var_20], ecx"
+      },
+      {
+        "addr": "10174552",
+        "instruction": "push offset aDisparoRapido; \"Disparo rapido\"",
+        "refs": [
+          {
+            "addr": "0x102866bf",
+            "name": "aDisparoRapido",
+            "string": "Disparo rapido"
+          }
+        ]
+      },
+      {
+        "addr": "10174557",
+        "instruction": "push offset aRapidFire; \"Rapid Fire\"",
+        "refs": [
+          {
+            "addr": "0x10288e2c",
+            "name": "aRapidFire",
+            "string": "Rapid Fire"
+          }
+        ]
+      },
+      {
+        "addr": "1017455c",
+        "instruction": "call sub_10100860",
+        "refs": [
+          {
+            "addr": "0x10100860",
+            "name": "sub_10100860"
+          }
+        ]
+      },
+      {
+        "addr": "10174561",
+        "instruction": "lea ecx, [ebp+var_2230]; void *",
+        "comments": [
+          "void *"
+        ]
+      },
+      {
+        "addr": "10174567",
+        "instruction": "mov [ebp+var_20], ecx"
+      },
+      {
+        "addr": "1017456a",
+        "instruction": "push offset aPresionaLaTecl; \"Presiona la tecla asignada y luego M1 o\"...",
+        "refs": [
+          {
+            "addr": "0x1028ef0c",
+            "name": "aPresionaLaTecl",
+            "string": "Presiona la tecla asignada y luego M1 o M2\npara causar todo tipo de dano,\nespecialmente como infectado o survivor."
+          }
+        ]
+      },
+      {
+        "addr": "1017456f",
+        "instruction": "push offset aPressTheAssign; \"Press the assigned key first, then M1 o\"...",
+        "refs": [
+          {
+            "addr": "0x1028ee8e",
+            "name": "aPressTheAssign",
+            "string": "Press the assigned key first, then M1 or M2 to deal all types of damage,\nespecially M2 or M1 as infected, and M1 as survivor."
+          }
+        ]
+      },
+      {
+        "addr": "10174574",
+        "instruction": "call sub_10100860",
+        "refs": [
+          {
+            "addr": "0x10100860",
+            "name": "sub_10100860"
+          }
+        ]
+      },
+      {
+        "addr": "10174579",
+        "instruction": "lea ecx, [ebp+var_2200]; void *",
+        "comments": [
+          "void *"
+        ]
+      },
+      {
+        "addr": "1017457f",
+        "instruction": "mov [ebp+var_20], ecx"
+      },
+      {
+        "addr": "10174582",
+        "instruction": "push offset aMDisparoRapido; \"M.disparo rapido\"",
+        "refs": [
+          {
+            "addr": "0x102866ae",
+            "name": "aMDisparoRapido",
+            "string": "M.disparo rapido"
+          }
+        ]
+      },
+      {
+        "addr": "10174587",
+        "instruction": "push offset aRapidFireMetho; \"Rapid fire method\"",
+        "refs": [
+          {
+            "addr": "0x102899c8",
+            "name": "aRapidFireMetho",
+            "string": "Rapid fire method"
+          }
+        ]
+      },
+      {
+        "addr": "1017458c",
+        "instruction": "call sub_10100860",
+        "refs": [
+          {
+            "addr": "0x10100860",
+            "name": "sub_10100860"
+          }
+        ]
+      },
+      {
+        "addr": "10174591",
+        "instruction": "lea ecx, [ebp+var_21D0]; void *",
+        "comments": [
+          "void *"
+        ]
+      },
+      {
+        "addr": "10174597",
+        "instruction": "mov [ebp+var_20], ecx"
+      }
+    ],
+    "stack_frame": [
+      {
+        "name": "var_60A0",
+        "offset": "0x0",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_6090",
+        "offset": "0x10",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_608C",
+        "offset": "0x14",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "Block",
+        "offset": "0x18",
+        "size": "0x4",
+        "type": "void *"
+      },
+      {
+        "name": "var_6078",
+        "offset": "0x28",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_6074",
+        "offset": "0x2c",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "Buf1",
+        "offset": "0x30",
+        "size": "0x4",
+        "type": "void *"
+      },
+      {
+        "name": "var_605C",
+        "offset": "0x44",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_6058",
+        "offset": "0x48",
+        "size": "0x4",
+        "type": "void *"
+      },
+      {
+        "name": "var_6048",
+        "offset": "0x58",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_6044",
+        "offset": "0x5c",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_6040",
+        "offset": "0x60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_6010",
+        "offset": "0x90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5FE0",
+        "offset": "0xc0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5FB0",
+        "offset": "0xf0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5F80",
+        "offset": "0x120",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5F50",
+        "offset": "0x150",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5F20",
+        "offset": "0x180",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5EF0",
+        "offset": "0x1b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5EC0",
+        "offset": "0x1e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5E90",
+        "offset": "0x210",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5E60",
+        "offset": "0x240",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5E30",
+        "offset": "0x270",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5E00",
+        "offset": "0x2a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5DD0",
+        "offset": "0x2d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5DA0",
+        "offset": "0x300",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5D70",
+        "offset": "0x330",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5D40",
+        "offset": "0x360",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5D10",
+        "offset": "0x390",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5CE0",
+        "offset": "0x3c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5CB0",
+        "offset": "0x3f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5C80",
+        "offset": "0x420",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5C50",
+        "offset": "0x450",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5C20",
+        "offset": "0x480",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5BF0",
+        "offset": "0x4b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5BC0",
+        "offset": "0x4e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5B90",
+        "offset": "0x510",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5B60",
+        "offset": "0x540",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5B30",
+        "offset": "0x570",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5B00",
+        "offset": "0x5a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5AD0",
+        "offset": "0x5d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5AA0",
+        "offset": "0x600",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5A70",
+        "offset": "0x630",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5A40",
+        "offset": "0x660",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5A10",
+        "offset": "0x690",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_59E0",
+        "offset": "0x6c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_59B0",
+        "offset": "0x6f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5980",
+        "offset": "0x720",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5950",
+        "offset": "0x750",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5920",
+        "offset": "0x780",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_58F0",
+        "offset": "0x7b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_58C0",
+        "offset": "0x7e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5890",
+        "offset": "0x810",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5860",
+        "offset": "0x840",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5830",
+        "offset": "0x870",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5800",
+        "offset": "0x8a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_57D0",
+        "offset": "0x8d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_57A0",
+        "offset": "0x900",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5770",
+        "offset": "0x930",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5740",
+        "offset": "0x960",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5710",
+        "offset": "0x990",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_56E0",
+        "offset": "0x9c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_56B0",
+        "offset": "0x9f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5680",
+        "offset": "0xa20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5650",
+        "offset": "0xa50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5620",
+        "offset": "0xa80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_55F0",
+        "offset": "0xab0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_55C0",
+        "offset": "0xae0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5590",
+        "offset": "0xb10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5560",
+        "offset": "0xb40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5530",
+        "offset": "0xb70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5500",
+        "offset": "0xba0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_54D0",
+        "offset": "0xbd0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_54A0",
+        "offset": "0xc00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5470",
+        "offset": "0xc30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5440",
+        "offset": "0xc60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5410",
+        "offset": "0xc90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_53E0",
+        "offset": "0xcc0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_53B0",
+        "offset": "0xcf0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5380",
+        "offset": "0xd20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5350",
+        "offset": "0xd50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5320",
+        "offset": "0xd80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_52F0",
+        "offset": "0xdb0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_52C0",
+        "offset": "0xde0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5290",
+        "offset": "0xe10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5260",
+        "offset": "0xe40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5230",
+        "offset": "0xe70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5200",
+        "offset": "0xea0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_51D0",
+        "offset": "0xed0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_51A0",
+        "offset": "0xf00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5170",
+        "offset": "0xf30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5140",
+        "offset": "0xf60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5110",
+        "offset": "0xf90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_50E0",
+        "offset": "0xfc0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_50B0",
+        "offset": "0xff0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5080",
+        "offset": "0x1020",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5050",
+        "offset": "0x1050",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5020",
+        "offset": "0x1080",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4FF0",
+        "offset": "0x10b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4FC0",
+        "offset": "0x10e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4F90",
+        "offset": "0x1110",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4F60",
+        "offset": "0x1140",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4F30",
+        "offset": "0x1170",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4F00",
+        "offset": "0x11a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4ED0",
+        "offset": "0x11d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4EA0",
+        "offset": "0x1200",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4E70",
+        "offset": "0x1230",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4E40",
+        "offset": "0x1260",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4E10",
+        "offset": "0x1290",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4DE0",
+        "offset": "0x12c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4DB0",
+        "offset": "0x12f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4D80",
+        "offset": "0x1320",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4D50",
+        "offset": "0x1350",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4D20",
+        "offset": "0x1380",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4CF0",
+        "offset": "0x13b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4CC0",
+        "offset": "0x13e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4C90",
+        "offset": "0x1410",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4C60",
+        "offset": "0x1440",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4C30",
+        "offset": "0x1470",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4C00",
+        "offset": "0x14a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4BD0",
+        "offset": "0x14d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4BA0",
+        "offset": "0x1500",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4B70",
+        "offset": "0x1530",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4B40",
+        "offset": "0x1560",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4B10",
+        "offset": "0x1590",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4AE0",
+        "offset": "0x15c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4AB0",
+        "offset": "0x15f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4A80",
+        "offset": "0x1620",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4A50",
+        "offset": "0x1650",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4A20",
+        "offset": "0x1680",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_49F0",
+        "offset": "0x16b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_49C0",
+        "offset": "0x16e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4990",
+        "offset": "0x1710",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4960",
+        "offset": "0x1740",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4930",
+        "offset": "0x1770",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4900",
+        "offset": "0x17a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_48D0",
+        "offset": "0x17d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_48A0",
+        "offset": "0x1800",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4870",
+        "offset": "0x1830",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4840",
+        "offset": "0x1860",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4810",
+        "offset": "0x1890",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_47E0",
+        "offset": "0x18c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_47B0",
+        "offset": "0x18f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4780",
+        "offset": "0x1920",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4750",
+        "offset": "0x1950",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4720",
+        "offset": "0x1980",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_46F0",
+        "offset": "0x19b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_46C0",
+        "offset": "0x19e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4690",
+        "offset": "0x1a10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4660",
+        "offset": "0x1a40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4630",
+        "offset": "0x1a70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4600",
+        "offset": "0x1aa0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_45D0",
+        "offset": "0x1ad0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_45A0",
+        "offset": "0x1b00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4570",
+        "offset": "0x1b30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4540",
+        "offset": "0x1b60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4510",
+        "offset": "0x1b90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_44E0",
+        "offset": "0x1bc0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_44B0",
+        "offset": "0x1bf0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4480",
+        "offset": "0x1c20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4450",
+        "offset": "0x1c50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4420",
+        "offset": "0x1c80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_43F0",
+        "offset": "0x1cb0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_43C0",
+        "offset": "0x1ce0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4390",
+        "offset": "0x1d10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4360",
+        "offset": "0x1d40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4330",
+        "offset": "0x1d70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4300",
+        "offset": "0x1da0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_42D0",
+        "offset": "0x1dd0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_42A0",
+        "offset": "0x1e00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4270",
+        "offset": "0x1e30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4240",
+        "offset": "0x1e60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4210",
+        "offset": "0x1e90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_41E0",
+        "offset": "0x1ec0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_41B0",
+        "offset": "0x1ef0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4180",
+        "offset": "0x1f20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4150",
+        "offset": "0x1f50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4120",
+        "offset": "0x1f80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_40F0",
+        "offset": "0x1fb0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_40C0",
+        "offset": "0x1fe0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4090",
+        "offset": "0x2010",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4060",
+        "offset": "0x2040",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4030",
+        "offset": "0x2070",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4000",
+        "offset": "0x20a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3FD0",
+        "offset": "0x20d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3FA0",
+        "offset": "0x2100",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3F70",
+        "offset": "0x2130",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3F40",
+        "offset": "0x2160",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3F10",
+        "offset": "0x2190",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3EE0",
+        "offset": "0x21c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3EB0",
+        "offset": "0x21f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3E80",
+        "offset": "0x2220",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3E50",
+        "offset": "0x2250",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3E20",
+        "offset": "0x2280",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3DF0",
+        "offset": "0x22b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3DC0",
+        "offset": "0x22e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3D90",
+        "offset": "0x2310",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3D60",
+        "offset": "0x2340",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3D30",
+        "offset": "0x2370",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3D00",
+        "offset": "0x23a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3CD0",
+        "offset": "0x23d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3CA0",
+        "offset": "0x2400",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3C70",
+        "offset": "0x2430",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3C40",
+        "offset": "0x2460",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3C10",
+        "offset": "0x2490",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3BE0",
+        "offset": "0x24c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3BB0",
+        "offset": "0x24f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3B80",
+        "offset": "0x2520",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3B50",
+        "offset": "0x2550",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3B20",
+        "offset": "0x2580",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3AF0",
+        "offset": "0x25b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3AC0",
+        "offset": "0x25e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3A90",
+        "offset": "0x2610",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3A60",
+        "offset": "0x2640",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3A30",
+        "offset": "0x2670",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3A00",
+        "offset": "0x26a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_39D0",
+        "offset": "0x26d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_39A0",
+        "offset": "0x2700",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3970",
+        "offset": "0x2730",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3940",
+        "offset": "0x2760",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3910",
+        "offset": "0x2790",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_38E0",
+        "offset": "0x27c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_38B0",
+        "offset": "0x27f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3880",
+        "offset": "0x2820",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3850",
+        "offset": "0x2850",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3820",
+        "offset": "0x2880",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_37F0",
+        "offset": "0x28b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_37C0",
+        "offset": "0x28e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3790",
+        "offset": "0x2910",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3760",
+        "offset": "0x2940",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3730",
+        "offset": "0x2970",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3700",
+        "offset": "0x29a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_36D0",
+        "offset": "0x29d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_36A0",
+        "offset": "0x2a00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3670",
+        "offset": "0x2a30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3640",
+        "offset": "0x2a60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3610",
+        "offset": "0x2a90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_35E0",
+        "offset": "0x2ac0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_35B0",
+        "offset": "0x2af0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3580",
+        "offset": "0x2b20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3550",
+        "offset": "0x2b50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3520",
+        "offset": "0x2b80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_34F0",
+        "offset": "0x2bb0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_34C0",
+        "offset": "0x2be0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3490",
+        "offset": "0x2c10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3460",
+        "offset": "0x2c40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3430",
+        "offset": "0x2c70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3400",
+        "offset": "0x2ca0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_33D0",
+        "offset": "0x2cd0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_33A0",
+        "offset": "0x2d00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3370",
+        "offset": "0x2d30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3340",
+        "offset": "0x2d60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3310",
+        "offset": "0x2d90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_32E0",
+        "offset": "0x2dc0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_32B0",
+        "offset": "0x2df0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3280",
+        "offset": "0x2e20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3250",
+        "offset": "0x2e50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3220",
+        "offset": "0x2e80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_31F0",
+        "offset": "0x2eb0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_31C0",
+        "offset": "0x2ee0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3190",
+        "offset": "0x2f10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3160",
+        "offset": "0x2f40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3130",
+        "offset": "0x2f70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3100",
+        "offset": "0x2fa0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_30D0",
+        "offset": "0x2fd0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_30A0",
+        "offset": "0x3000",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3070",
+        "offset": "0x3030",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3040",
+        "offset": "0x3060",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3010",
+        "offset": "0x3090",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2FE0",
+        "offset": "0x30c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2FB0",
+        "offset": "0x30f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2F80",
+        "offset": "0x3120",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2F50",
+        "offset": "0x3150",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2F20",
+        "offset": "0x3180",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2EF0",
+        "offset": "0x31b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2EC0",
+        "offset": "0x31e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2E90",
+        "offset": "0x3210",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2E60",
+        "offset": "0x3240",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2E30",
+        "offset": "0x3270",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2E00",
+        "offset": "0x32a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2DD0",
+        "offset": "0x32d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2DA0",
+        "offset": "0x3300",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2D70",
+        "offset": "0x3330",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2D40",
+        "offset": "0x3360",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2D10",
+        "offset": "0x3390",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2CE0",
+        "offset": "0x33c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2CB0",
+        "offset": "0x33f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2C80",
+        "offset": "0x3420",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2C50",
+        "offset": "0x3450",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2C20",
+        "offset": "0x3480",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2BF0",
+        "offset": "0x34b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2BC0",
+        "offset": "0x34e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2B90",
+        "offset": "0x3510",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2B60",
+        "offset": "0x3540",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2B30",
+        "offset": "0x3570",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2B00",
+        "offset": "0x35a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2AD0",
+        "offset": "0x35d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2AA0",
+        "offset": "0x3600",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2A70",
+        "offset": "0x3630",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2A40",
+        "offset": "0x3660",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2A10",
+        "offset": "0x3690",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_29E0",
+        "offset": "0x36c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_29B0",
+        "offset": "0x36f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2980",
+        "offset": "0x3720",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2950",
+        "offset": "0x3750",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2920",
+        "offset": "0x3780",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_28F0",
+        "offset": "0x37b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_28C0",
+        "offset": "0x37e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2890",
+        "offset": "0x3810",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2860",
+        "offset": "0x3840",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2830",
+        "offset": "0x3870",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2800",
+        "offset": "0x38a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_27D0",
+        "offset": "0x38d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_27A0",
+        "offset": "0x3900",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2770",
+        "offset": "0x3930",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2740",
+        "offset": "0x3960",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2710",
+        "offset": "0x3990",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_26E0",
+        "offset": "0x39c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_26B0",
+        "offset": "0x39f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2680",
+        "offset": "0x3a20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2650",
+        "offset": "0x3a50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2620",
+        "offset": "0x3a80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_25F0",
+        "offset": "0x3ab0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_25C0",
+        "offset": "0x3ae0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2590",
+        "offset": "0x3b10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2560",
+        "offset": "0x3b40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2530",
+        "offset": "0x3b70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2500",
+        "offset": "0x3ba0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_24D0",
+        "offset": "0x3bd0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_24A0",
+        "offset": "0x3c00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2470",
+        "offset": "0x3c30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2440",
+        "offset": "0x3c60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2410",
+        "offset": "0x3c90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_23E0",
+        "offset": "0x3cc0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_23B0",
+        "offset": "0x3cf0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2380",
+        "offset": "0x3d20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2350",
+        "offset": "0x3d50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2320",
+        "offset": "0x3d80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_22F0",
+        "offset": "0x3db0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_22C0",
+        "offset": "0x3de0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2290",
+        "offset": "0x3e10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2260",
+        "offset": "0x3e40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2230",
+        "offset": "0x3e70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2200",
+        "offset": "0x3ea0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_21D0",
+        "offset": "0x3ed0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_21A0",
+        "offset": "0x3f00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2170",
+        "offset": "0x3f30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2140",
+        "offset": "0x3f60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2110",
+        "offset": "0x3f90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_20E0",
+        "offset": "0x3fc0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_20B0",
+        "offset": "0x3ff0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2080",
+        "offset": "0x4020",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2050",
+        "offset": "0x4050",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2020",
+        "offset": "0x4080",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1FF0",
+        "offset": "0x40b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1FC0",
+        "offset": "0x40e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1F90",
+        "offset": "0x4110",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1F60",
+        "offset": "0x4140",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1F30",
+        "offset": "0x4170",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1F00",
+        "offset": "0x41a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1ED0",
+        "offset": "0x41d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1EA0",
+        "offset": "0x4200",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1E70",
+        "offset": "0x4230",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1E40",
+        "offset": "0x4260",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1E10",
+        "offset": "0x4290",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1DE0",
+        "offset": "0x42c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1DB0",
+        "offset": "0x42f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1D80",
+        "offset": "0x4320",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1D50",
+        "offset": "0x4350",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1D20",
+        "offset": "0x4380",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1CF0",
+        "offset": "0x43b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1CC0",
+        "offset": "0x43e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1C90",
+        "offset": "0x4410",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1C60",
+        "offset": "0x4440",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1C30",
+        "offset": "0x4470",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1C00",
+        "offset": "0x44a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1BD0",
+        "offset": "0x44d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1BA0",
+        "offset": "0x4500",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1B70",
+        "offset": "0x4530",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1B40",
+        "offset": "0x4560",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1B10",
+        "offset": "0x4590",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1AE0",
+        "offset": "0x45c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1AB0",
+        "offset": "0x45f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1A80",
+        "offset": "0x4620",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1A50",
+        "offset": "0x4650",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1A20",
+        "offset": "0x4680",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_19F0",
+        "offset": "0x46b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_19C0",
+        "offset": "0x46e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1990",
+        "offset": "0x4710",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1960",
+        "offset": "0x4740",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1930",
+        "offset": "0x4770",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1900",
+        "offset": "0x47a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_18D0",
+        "offset": "0x47d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_18A0",
+        "offset": "0x4800",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1870",
+        "offset": "0x4830",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1840",
+        "offset": "0x4860",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1810",
+        "offset": "0x4890",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_17E0",
+        "offset": "0x48c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_17B0",
+        "offset": "0x48f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1780",
+        "offset": "0x4920",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1750",
+        "offset": "0x4950",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1720",
+        "offset": "0x4980",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_16F0",
+        "offset": "0x49b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_16C0",
+        "offset": "0x49e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1690",
+        "offset": "0x4a10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1660",
+        "offset": "0x4a40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1630",
+        "offset": "0x4a70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1600",
+        "offset": "0x4aa0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_15D0",
+        "offset": "0x4ad0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_15A0",
+        "offset": "0x4b00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1570",
+        "offset": "0x4b30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1540",
+        "offset": "0x4b60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1510",
+        "offset": "0x4b90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_14E0",
+        "offset": "0x4bc0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_14B0",
+        "offset": "0x4bf0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1480",
+        "offset": "0x4c20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1450",
+        "offset": "0x4c50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1420",
+        "offset": "0x4c80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_13F0",
+        "offset": "0x4cb0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_13C0",
+        "offset": "0x4ce0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1390",
+        "offset": "0x4d10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1360",
+        "offset": "0x4d40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1330",
+        "offset": "0x4d70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1300",
+        "offset": "0x4da0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_12D0",
+        "offset": "0x4dd0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_12A0",
+        "offset": "0x4e00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1270",
+        "offset": "0x4e30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1240",
+        "offset": "0x4e60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1210",
+        "offset": "0x4e90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_11E0",
+        "offset": "0x4ec0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_11B0",
+        "offset": "0x4ef0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1180",
+        "offset": "0x4f20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1150",
+        "offset": "0x4f50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1120",
+        "offset": "0x4f80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_10F0",
+        "offset": "0x4fb0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_10C0",
+        "offset": "0x4fe0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1090",
+        "offset": "0x5010",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1060",
+        "offset": "0x5040",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1030",
+        "offset": "0x5070",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1000",
+        "offset": "0x50a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_FD0",
+        "offset": "0x50d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_FA0",
+        "offset": "0x5100",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_F70",
+        "offset": "0x5130",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_F40",
+        "offset": "0x5160",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_F10",
+        "offset": "0x5190",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_EE0",
+        "offset": "0x51c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_EB0",
+        "offset": "0x51f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_E80",
+        "offset": "0x5220",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_E50",
+        "offset": "0x5250",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_E20",
+        "offset": "0x5280",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_DF0",
+        "offset": "0x52b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_DC0",
+        "offset": "0x52e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_D90",
+        "offset": "0x5310",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_D60",
+        "offset": "0x5340",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_D30",
+        "offset": "0x5370",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_D00",
+        "offset": "0x53a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_CD0",
+        "offset": "0x53d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_CA0",
+        "offset": "0x5400",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_C70",
+        "offset": "0x5430",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_C40",
+        "offset": "0x5460",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_C10",
+        "offset": "0x5490",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_BE0",
+        "offset": "0x54c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_BB0",
+        "offset": "0x54f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_B80",
+        "offset": "0x5520",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_B50",
+        "offset": "0x5550",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_B20",
+        "offset": "0x5580",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_AF0",
+        "offset": "0x55b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_AC0",
+        "offset": "0x55e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_A90",
+        "offset": "0x5610",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_A60",
+        "offset": "0x5640",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_A30",
+        "offset": "0x5670",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_A00",
+        "offset": "0x56a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_9D0",
+        "offset": "0x56d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_9A0",
+        "offset": "0x5700",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_970",
+        "offset": "0x5730",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_940",
+        "offset": "0x5760",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_910",
+        "offset": "0x5790",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_8E0",
+        "offset": "0x57c0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_8B0",
+        "offset": "0x57f0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_880",
+        "offset": "0x5820",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_850",
+        "offset": "0x5850",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_820",
+        "offset": "0x5880",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_7F0",
+        "offset": "0x58b0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_7C0",
+        "offset": "0x58e0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_790",
+        "offset": "0x5910",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_760",
+        "offset": "0x5940",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_730",
+        "offset": "0x5970",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_700",
+        "offset": "0x59a0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_6D0",
+        "offset": "0x59d0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_6A0",
+        "offset": "0x5a00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_670",
+        "offset": "0x5a30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_640",
+        "offset": "0x5a60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_610",
+        "offset": "0x5a90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5E0",
+        "offset": "0x5ac0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_5B0",
+        "offset": "0x5af0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_580",
+        "offset": "0x5b20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_550",
+        "offset": "0x5b50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_520",
+        "offset": "0x5b80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4F0",
+        "offset": "0x5bb0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_4C0",
+        "offset": "0x5be0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_490",
+        "offset": "0x5c10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_460",
+        "offset": "0x5c40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_430",
+        "offset": "0x5c70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_400",
+        "offset": "0x5ca0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3D0",
+        "offset": "0x5cd0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_3A0",
+        "offset": "0x5d00",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_370",
+        "offset": "0x5d30",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_340",
+        "offset": "0x5d60",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_310",
+        "offset": "0x5d90",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2E0",
+        "offset": "0x5dc0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_2B0",
+        "offset": "0x5df0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_280",
+        "offset": "0x5e20",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_250",
+        "offset": "0x5e50",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_220",
+        "offset": "0x5e80",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1F0",
+        "offset": "0x5eb0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_1C0",
+        "offset": "0x5ee0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_190",
+        "offset": "0x5f10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_160",
+        "offset": "0x5f40",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_130",
+        "offset": "0x5f70",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_100",
+        "offset": "0x5fa0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_D0",
+        "offset": "0x5fd0",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_A0",
+        "offset": "0x6000",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_70",
+        "offset": "0x6030",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_40",
+        "offset": "0x6060",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_3C",
+        "offset": "0x6064",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_38",
+        "offset": "0x6068",
+        "size": "0x4",
+        "type": "int"
+      },
+      {
+        "name": "var_30",
+        "offset": "0x6070",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_2C",
+        "offset": "0x6074",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_28",
+        "offset": "0x6078",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_21",
+        "offset": "0x607f",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "var_20",
+        "offset": "0x6080",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_1C",
+        "offset": "0x6084",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_18",
+        "offset": "0x6088",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_14",
+        "offset": "0x608c",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_10",
+        "offset": "0x6090",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "__saved_registers",
+        "offset": "0x60a0",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "__return_address",
+        "offset": "0x60a4",
+        "size": "0x4",
+        "type": "_UNKNOWN *"
+      }
+    ]
+  },
+  "instruction_count": 55,
+  "total_instructions": null,
+  "cursor": {
+    "next": 55
+  }
+}

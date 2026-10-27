@@ -1,0 +1,53 @@
+{
+  "scope": "Offline client ABI, vanilla scripts and native RNG; no live Valve hit/damage test",
+  "client_sha256": "c0a8e1e88f7312db11bcfd4b0ec574d224a34b2d9a615d6088b28335eeb4af1f",
+  "vstdlib_sha256": "37d0c98ddfe7fa199d741dfc24526eb435f71f66d2d0e3d0500c4c1be33cb6c5",
+  "unique_executable_signatures": {
+    "write_usercmd": "0x1aadd0",
+    "input_delta_writer_call": "0x13492e",
+    "pellet_counter_loop": "0x2f5f56"
+  },
+  "write_usercmd_abi": "cdecl(buffer, to, from); only temporary copies translated",
+  "native_rng_and_preset_checks": 328,
+  "unit_pattern_checks": 604,
+  "ctest_suites_passed": 26,
+  "vanilla_scripts": {
+    "scripts/weapon_autoshotgun.txt": {
+      "archive": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\update\\pak01_dir.vpk",
+      "bullets": 11
+    },
+    "scripts/weapon_pumpshotgun.txt": {
+      "archive": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\update\\pak01_dir.vpk",
+      "bullets": 10
+    },
+    "scripts/weapon_shotgun_chrome.txt": {
+      "archive": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\update\\pak01_dir.vpk",
+      "bullets": 8
+    },
+    "scripts/weapon_shotgun_spas.txt": {
+      "archive": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\update\\pak01_dir.vpk",
+      "bullets": 9
+    }
+  },
+  "presets": {
+    "pellets": {
+      "pump": 10,
+      "chrome": 8,
+      "auto": 11,
+      "spas": 9
+    },
+    "maximum_normalized_radius_at_100": {
+      "pump": 0.159848,
+      "chrome": 0.109097,
+      "auto": 0.216262,
+      "spas": 0.128493
+    },
+    "candidates": 34,
+    "searched_positive_commands": 10000000,
+    "local_command_number_preserved": true,
+    "wire_delta_both_sides": true,
+    "history_commands": 150,
+    "residual_spread_remains": true
+  },
+  "official_valve_live_verified": false
+}

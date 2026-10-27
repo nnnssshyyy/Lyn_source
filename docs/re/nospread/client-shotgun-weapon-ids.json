@@ -1,0 +1,74 @@
+[
+  {
+    "class": "CPumpShotgun",
+    "vtable": "0x105ff6fc",
+    "method_slot": 383,
+    "method": "0x10306550",
+    "instructions": [
+      {
+        "addr": "0x10306550",
+        "mnemonic": "mov",
+        "op_str": "eax, 3"
+      },
+      {
+        "addr": "0x10306555",
+        "mnemonic": "ret",
+        "op_str": ""
+      }
+    ]
+  },
+  {
+    "class": "CShotgun_Chrome",
+    "vtable": "0x1060212c",
+    "method_slot": 383,
+    "method": "0x103072c0",
+    "instructions": [
+      {
+        "addr": "0x103072c0",
+        "mnemonic": "mov",
+        "op_str": "eax, 8"
+      },
+      {
+        "addr": "0x103072c5",
+        "mnemonic": "ret",
+        "op_str": ""
+      }
+    ]
+  },
+  {
+    "class": "CAutoShotgun",
+    "vtable": "0x105eb8fc",
+    "method_slot": 383,
+    "method": "0x102f0740",
+    "instructions": [
+      {
+        "addr": "0x102f0740",
+        "mnemonic": "mov",
+        "op_str": "eax, 4"
+      },
+      {
+        "addr": "0x102f0745",
+        "mnemonic": "ret",
+        "op_str": ""
+      }
+    ]
+  },
+  {
+    "class": "CShotgun_SPAS",
+    "vtable": "0x10602994",
+    "method_slot": 383,
+    "method": "0x103074c0",
+    "instructions": [
+      {
+        "addr": "0x103074c0",
+        "mnemonic": "mov",
+        "op_str": "eax, 0xb"
+      },
+      {
+        "addr": "0x103074c5",
+        "mnemonic": "ret",
+        "op_str": ""
+      }
+    ]
+  }
+]

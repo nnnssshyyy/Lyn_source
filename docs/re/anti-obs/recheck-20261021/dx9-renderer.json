@@ -1,0 +1,10 @@
+{
+  "addr": "0x1006cc30",
+  "code": "void __cdecl StreamProof_DX9SubmitDrawData(int a1)\n{\n  _EBX = a1; /*0x1006cc3a*/\n  __asm /*0x1006cc4f*/\n  { // Device slot59 CreateStateBlock(D3DSBT_ALL=1); Capture via stateblock slot4 follows. This is a state block, not an extra presentation chain.\n    vxorps xmm0, xmm0, xmm0\n    vucomiss xmm0, dword ptr [ebx+24h]\n  }\n}",
+  "line_count": 9,
+  "total_lines": 9,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  }
+}

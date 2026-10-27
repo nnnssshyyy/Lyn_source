@@ -1,0 +1,10 @@
+{
+  "addr": "0x101b1eb0",
+  "code": "int __thiscall sub_101B1EB0(_DWORD *this, int a2)\n{\n  if ( a2 == 0 ) /*0x101b1eb8*/\n    return *(this + 2); /*0x101b1eba*/\n  if ( a2 == 1 ) /*0x101b1ec4*/\n    return *(this + 3); /*0x101b1ec6*/\n  return 0; /*0x101b1ebd*/\n}",
+  "line_count": 8,
+  "total_lines": 8,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  }
+}

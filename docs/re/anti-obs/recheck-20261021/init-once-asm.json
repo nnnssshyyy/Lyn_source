@@ -1,0 +1,71 @@
+{
+  "addr": "0x101827d8",
+  "asm": {
+    "name": "sub_101827D8",
+    "start_ea": "0x101827d8",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "101827d8",
+        "instruction": "push ebp",
+        "label": "sub_101827D8"
+      },
+      {
+        "addr": "101827d9",
+        "instruction": "mov ebp, esp"
+      },
+      {
+        "addr": "101827db",
+        "instruction": "pop ebp"
+      },
+      {
+        "addr": "101827dc",
+        "instruction": "jmp ds:InitOnceBeginInitialize; KERNEL32",
+        "refs": [
+          {
+            "addr": "0x10293388",
+            "name": "InitOnceBeginInitialize"
+          }
+        ]
+      }
+    ],
+    "stack_frame": [
+      {
+        "name": "__saved_registers",
+        "offset": "0x0",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "__return_address",
+        "offset": "0x4",
+        "size": "0x4",
+        "type": "_UNKNOWN *"
+      }
+    ],
+    "return_type": "BOOL",
+    "arguments": [
+      {
+        "name": "arg0",
+        "type": "union _RTL_RUN_ONCE *"
+      },
+      {
+        "name": "arg1",
+        "type": "DWORD"
+      },
+      {
+        "name": "arg2",
+        "type": "BOOL *"
+      },
+      {
+        "name": "arg3",
+        "type": "LPVOID *"
+      }
+    ]
+  },
+  "instruction_count": 4,
+  "total_instructions": 4,
+  "cursor": {
+    "done": true
+  }
+}

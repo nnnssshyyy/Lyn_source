@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "path": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\l4d2\\client-charger-20261021.i64",
+    "module": "client.dll",
+    "arch": "32",
+    "base_address": "0x10000000",
+    "image_size": "0x963000",
+    "md5": "21565d29a23caeabe3d0ffc6156c3e5c",
+    "sha256": "c0a8e1e88f7312db11bcfd4b0ec574d224a34b2d9a615d6088b28335eeb4af1f"
+  },
+  "statistics": {
+    "total_functions": 274,
+    "named_functions": 3,
+    "library_functions": 7,
+    "unnamed_functions": 264,
+    "total_strings": 20184,
+    "total_segments": 4
+  },
+  "segments": [
+    {
+      "name": ".text",
+      "start": "0x10001000",
+      "end": "0x10529000",
+      "size": "0x528000",
+      "permissions": "rx"
+    },
+    {
+      "name": ".idata",
+      "start": "0x10529000",
+      "end": "0x1052931c",
+      "size": "0x31c",
+      "permissions": "r"
+    },
+    {
+      "name": ".rdata",
+      "start": "0x1052931c",
+      "end": "0x106bc000",
+      "size": "0x192ce4",
+      "permissions": "r"
+    },
+    {
+      "name": ".data",
+      "start": "0x106bc000",
+      "end": "0x10894000",
+      "size": "0x1d8000",
+      "permissions": "rw"
+    }
+  ],
+  "entrypoints": [
+    {
+      "addr": "0x103d92d0",
+      "name": "CreateInterface",
+      "ordinal": 1
+    },
+    {
+      "addr": "0x10889254",
+      "name": "cvar",
+      "ordinal": 2
+    },
+    {
+      "addr": "0x10889258",
+      "name": "g_pCVar",
+      "ordinal": 3
+    },
+    {
+      "addr": "0x1048305b",
+      "name": "DllEntryPoint",
+      "ordinal": 273166427
+    }
+  ]
+}

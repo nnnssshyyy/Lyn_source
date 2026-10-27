@@ -1,0 +1,28 @@
+{
+  "addr": "0x1016e6b0",
+  "code": "int StreamProof_InstallEndScene()\n{\n  return sub_1017E990( /*0x1016e6cc*/\n           lpAddress: *(LPCVOID *)(*(_DWORD *)dword_103ECBBC + 168),\n           a2: StreamProof_EndSceneHook,\n           a3: (int)&StreamProof_OriginalEndScene); // DX9 device vtable byte offset 168 = slot 42 EndScene. Callback receives one stdcall device pointer; no separate swapchain is installed by this route.\n}",
+  "line_count": 7,
+  "total_lines": 7,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1017e990",
+      "name": "sub_1017E990"
+    },
+    {
+      "addr": "0x103ecbbc",
+      "name": "dword_103ECBBC"
+    },
+    {
+      "addr": "0x1016e6d0",
+      "name": "StreamProof_EndSceneHook"
+    },
+    {
+      "addr": "0x103f746c",
+      "name": "StreamProof_OriginalEndScene"
+    }
+  ]
+}

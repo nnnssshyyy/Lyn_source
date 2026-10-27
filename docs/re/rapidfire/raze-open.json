@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "session": {
+    "session_id": "raze-rapid",
+    "input_path": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\raze\\raze-chatspy-annotated.i64",
+    "filename": "raze-chatspy-annotated.i64",
+    "created_at": "2026-10-17T03:15:15.150576",
+    "last_accessed": "2026-10-17T03:15:15.150578",
+    "is_analyzing": false,
+    "metadata": {}
+  },
+  "warmup": {
+    "ok": true,
+    "steps": [
+      {
+        "step": "init_caches",
+        "ok": true,
+        "ms": 3002.67
+      },
+      {
+        "step": "init_hexrays",
+        "ok": true,
+        "ms": 0.02
+      }
+    ],
+    "health": {
+      "status": "ok",
+      "uptime_sec": 3.699,
+      "idb_path": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\raze\\raze-chatspy-annotated.i64",
+      "module": "raze.dll",
+      "input_path": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\raze\\raze.dll",
+      "imagebase": "0x10000000",
+      "auto_analysis_ready": true,
+      "hexrays_ready": true,
+      "strings_cache_ready": true,
+      "strings_cache_size": 18094
+    }
+  },
+  "message": "Binary opened: raze-chatspy-annotated.i64 (raze-rapid)"
+}

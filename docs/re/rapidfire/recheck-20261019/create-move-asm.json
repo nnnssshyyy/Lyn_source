@@ -1,0 +1,141 @@
+{
+  "addr": "0x1016FF00",
+  "asm": {
+    "name": "RapidFire_Hook_CreateMove",
+    "start_ea": "0x1016ff00",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "1016ff00",
+        "instruction": "push ebp",
+        "label": "RapidFire_Hook_CreateMove"
+      },
+      {
+        "addr": "1016ff01",
+        "instruction": "mov ebp, esp"
+      },
+      {
+        "addr": "1016ff03",
+        "instruction": "push ebx"
+      },
+      {
+        "addr": "1016ff04",
+        "instruction": "push edi"
+      },
+      {
+        "addr": "1016ff05",
+        "instruction": "push esi"
+      },
+      {
+        "addr": "1016ff06",
+        "instruction": "sub esp, 3Ch"
+      },
+      {
+        "addr": "1016ff09",
+        "instruction": "mov esi, edx"
+      },
+      {
+        "addr": "1016ff0b",
+        "instruction": "mov edi, ecx"
+      },
+      {
+        "addr": "1016ff0d",
+        "instruction": "mov ebx, [ebp+arg_4]"
+      },
+      {
+        "addr": "1016ff10",
+        "instruction": "mov [ebp+var_1C], esp"
+      }
+    ],
+    "stack_frame": [
+      {
+        "name": "var_50",
+        "offset": "0x0",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_4C",
+        "offset": "0x4",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_48",
+        "offset": "0x8",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_44",
+        "offset": "0xc",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_40",
+        "offset": "0x10",
+        "size": "0x10",
+        "type": "_OWORD"
+      },
+      {
+        "name": "var_30",
+        "offset": "0x20",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_2C",
+        "offset": "0x24",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_28",
+        "offset": "0x28",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_24",
+        "offset": "0x2c",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_20",
+        "offset": "0x30",
+        "size": "0x4",
+        "type": "_DWORD"
+      }
+    ],
+    "return_type": "int",
+    "arguments": [
+      {
+        "name": "arg0",
+        "type": "int"
+      },
+      {
+        "name": "arg1",
+        "type": "int"
+      },
+      {
+        "name": "xmm0_0",
+        "type": "__int128"
+      },
+      {
+        "name": "arg3",
+        "type": "int"
+      },
+      {
+        "name": "arg4",
+        "type": "int"
+      }
+    ]
+  },
+  "instruction_count": 749,
+  "total_instructions": 749,
+  "cursor": {
+    "done": true
+  }
+}

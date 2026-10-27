@@ -1,0 +1,40 @@
+{
+  "n": 8,
+  "matches": [
+    {
+      "addr": "0x10260c83",
+      "string": "bezier-curve"
+    },
+    {
+      "addr": "0x102616b2",
+      "string": "\n/curved"
+    },
+    {
+      "addr": "0x10285b2e",
+      "string": "Giro charger"
+    },
+    {
+      "addr": "0x10285b3b",
+      "string": "bAutoTeleportCharger"
+    },
+    {
+      "addr": "0x102868a9",
+      "string": "Charger turn"
+    },
+    {
+      "addr": "0x102868b6",
+      "string": "bChargerTurn"
+    },
+    {
+      "addr": "0x1028efd2",
+      "string": "Solo funciona con Smoker y Charger.\nCon Smoker, causa dano con el arrastre.\nCon Charger, causa dano al cargar."
+    },
+    {
+      "addr": "0x1028f2b3",
+      "string": "Works only with Smoker and Charger.\nWith Smoker, deals damage with the tongue drag.\nWith Charger, deals damage while charging."
+    }
+  ],
+  "cursor": {
+    "done": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "charger": {
+    "count": 1,
+    "file_offsets": [
+      "0x651a4"
+    ]
+  },
+  "vomit_render": {
+    "count": 1,
+    "file_offsets": [
+      "0x253be0"
+    ]
+  }
+}

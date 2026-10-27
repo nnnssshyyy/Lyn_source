@@ -1,0 +1,274 @@
+{
+  "addr": "0x10040550",
+  "code": "int __thiscall sub_10040550(_BYTE *this, int a2)\n{\n  int v3; // edi\n  unsigned __int64 v4; // rax\n  const char *v5; // esi\n  __int64 perf_frequency; // rdi\n  __int64 perf_counter; // rax\n  unsigned __int64 v8; // rcx\n  int v9; // edi\n  int v10; // eax\n  int v11; // eax\n  int v12; // esi\n  int v13; // eax\n  int (__thiscall *v14)(int, const char *, void *); // eax\n  wchar_t *v15; // eax\n  int *v16; // eax\n  unsigned int v17; // edi\n  unsigned int v18; // eax\n  int v19; // ebx\n  __int64 v20; // rax\n  __int64 v21; // rax\n  __int64 v22; // rax\n  char *v23; // ecx\n  char *v24; // edx\n  int *v25; // eax\n  _BYTE Src[24]; // [esp+0h] [ebp-12Ch] BYREF\n  _BYTE v28[24]; // [esp+18h] [ebp-114h] BYREF\n  int v29[19]; // [esp+30h] [ebp-FCh] BYREF\n  _BYTE v30[24]; // [esp+7Ch] [ebp-B0h] BYREF\n  int v31[6]; // [esp+94h] [ebp-98h] BYREF\n  unsigned int v32; // [esp+ACh] [ebp-80h]\n  unsigned __int64 v33; // [esp+B0h] [ebp-7Ch]\n  int v34[5]; // [esp+B8h] [ebp-74h] BYREF\n  unsigned int v35; // [esp+CCh] [ebp-60h]\n  int v36[6]; // [esp+D0h] [ebp-5Ch] BYREF\n  int v37[6]; // [esp+E8h] [ebp-44h] BYREF\n  int v38; // [esp+100h] [ebp-2Ch]\n  _BYTE *v39; // [esp+104h] [ebp-28h]\n  int v40; // [esp+108h] [ebp-24h]\n  char *Str; // [esp+10Ch] [ebp-20h]\n  _BYTE *v42; // [esp+110h] [ebp-1Ch]\n  _DWORD v43[2]; // [esp+114h] [ebp-18h] BYREF\n  int v44; // [esp+11Ch] [ebp-10h]\n\n  v3 = a2; /*0x1004055e*/\n  v42 = Src; /*0x10040561*/\n  v44 = -1; /*0x10040564*/\n  LODWORD(v4) = v43; /*0x1004056b*/\n  v43[1] = &loc_10048100; /*0x1004056e*/\n  v43[0] = NtCurrentTeb()->NtTib.ExceptionList; /*0x1004057c*/\n  if ( a2 != 0 ) /*0x10040587*/\n  {\n    LODWORD(v4) = (*(int (__thiscall **)(int))(*(_DWORD *)a2 + 4))(a1: a2); /*0x10040591*/\n    if ( (_DWORD)v4 != 0 ) /*0x10040596*/\n    {\n      v5 = (const char *)v4; /*0x1004059c*/\n      if ( stricmp(String1: (const char *)v4, String2: \"player_say\") == 0 ) /*0x100405af*/\n      {\n        v11 = (*(int (__thiscall **)(int, const char *, _DWORD))(*(_DWORD *)a2 + 24))(a1: a2, a2: \"userid\", a3: 0); /*0x100406b1*/\n        v12 = (*(int (__thiscall **)(int, int))(*(_DWORD *)dword_103EC770 + 36))(a1: dword_103EC770, a2: v11); /*0x100406c0*/\n        LODWORD(v4) = v12 - 65; /*0x100406c2*/\n        if ( (unsigned int)(v12 - 65) >= 0xFFFFFFC0 ) /*0x100406c8*/\n        {\n          LODWORD(v4) = (*(int (__thiscall **)(int, int))(*(_DWORD *)dword_103EC7B8 + 12))(a1: dword_103EC7B8, a2: v12); /*0x100406d7*/\n          if ( (_DWORD)v4 != 0 ) /*0x100406dc*/\n          {\n            Str = (char *)v4; /*0x100406e2*/\n            v40 = sub_10179540(a1: off_1029E014); /*0x100406f0*/\n            v13 = dword_103EEAD8; /*0x100406f3*/\n            if ( dword_103EEAD8 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1004070e*/\n            {\n              sub_101809C3(a1: &dword_103EEAD8); /*0x10040c4b*/\n              v13 = dword_103EEAD8; /*0x10040c53*/\n              if ( dword_103EEAD8 == -1 ) /*0x10040c5b*/\n              {\n                v38 = v12; /*0x10040c61*/\n                v39 = this; /*0x10040c64*/\n                v44 = 0; /*0x10040c67*/\n                dword_103EEAD4 = sub_1017C730(a1: \"CBaseEntity\", a2: \"m_iTeamNum\"); /*0x10040c80*/\n                sub_10180A43(a1: &dword_103EEAD8); /*0x10040c8a*/\n                v13 = dword_103EEAD8; /*0x10040c92*/\n                this = v39; /*0x10040c97*/\n                v3 = a2; /*0x10040c9a*/\n                v12 = v38; /*0x10040c9d*/\n              }\n            }\n            v40 = *(_DWORD *)(dword_103EEAD4 + v40); /*0x10040720*/\n            if ( v13 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x10040739*/\n            {\n              sub_101809C3(a1: &dword_103EEAD8); /*0x10040caa*/\n              if ( dword_103EEAD8 == -1 ) /*0x10040cb9*/\n              {\n                v38 = v12; /*0x10040cbf*/\n                v39 = this; /*0x10040cc2*/\n                v44 = 1; /*0x10040cc5*/\n                dword_103EEAD4 = sub_1017C730(a1: \"CBaseEntity\", a2: \"m_iTeamNum\"); /*0x10040cde*/\n                sub_10180A43(a1: &dword_103EEAD8); /*0x10040ce8*/\n                this = v39; /*0x10040cf0*/\n                v3 = a2; /*0x10040cf3*/\n                v12 = v38; /*0x10040cf6*/\n              }\n            }\n            LODWORD(v4) = *(_DWORD *)&Str[dword_103EEAD4]; /*0x10040747*/\n            if ( (_DWORD)v4 != v40 ) /*0x1004074d*/\n            {\n              Str = *(char **)&Str[dword_103EEAD4]; /*0x10040753*/\n              v39 = this; /*0x10040756*/\n              v44 = -1; /*0x10040759*/\n              sub_1003F660(a1: v31, a2: v12); /*0x10040768*/\n              if ( v31[4] == 0 ) /*0x10040774*/\n              {\n                v44 = 2; /*0x10040776*/\n                sub_1002BB30(a1: v31, Str: \"Unknown\"); /*0x10040788*/\n                v3 = a2; /*0x1004078d*/\n              }\n              v14 = *(int (__thiscall **)(int, const char *, void *))(*(_DWORD *)v3 + 36); /*0x10040792*/\n              v44 = 2; /*0x10040795*/\n              v15 = (wchar_t *)v14(a1: v3, a2: \"text\", a3: &unk_1029205C); /*0x100407a8*/\n              if ( v15 != nullptr && *v15 != 0 ) /*0x100407b6*/\n              {\n                v40 = (int)v15; /*0x100407c3*/\n                sub_100387C0(a1: Src, String: v15); /*0x100407c6*/\n                v44 = 3; /*0x100407ce*/\n                sub_1003E910(Src: v30, a2: v40); /*0x100407dd*/\n                v44 = 4; /*0x100407e5*/\n                sub_100385F0(Src: v31); /*0x100407f9*/\n                v44 = 17; /*0x10040804*/\n                sub_1001F3F0(Src); /*0x10040812*/\n                v44 = 18; /*0x1004081d*/\n                sub_100385F0(Src: v30); /*0x1004082b*/\n                v29[18] = (int)Str; /*0x10040839*/\n                v44 = 19; /*0x1004083f*/\n                sub_10040F80(a1: v29); /*0x1004084d*/\n                sub_10041040(a1: v29); /*0x10040858*/\n                if ( byte_103F5A76 == 1 ) /*0x10040864*/\n                {\n                  v44 = 4; /*0x1004086a*/\n                  if ( (unsigned __int8)sub_1003F080(a1: v31, a2: v30) == 0 && byte_103F5A74 == 1 ) /*0x10040896*/\n                  {\n                    sub_1000E5E0(a1: v29, Str: (char *)&Buf); /*0x100408a7*/\n                    if ( byte_103F5A78 != 0 ) /*0x100408b3*/\n                    {\n                      v44 = 5; /*0x100408b9*/\n                      sub_1000E5E0(a1: v28, Str: (char *)&byte_10291CA8); /*0x100408cb*/\n                      v44 = 6; /*0x100408d0*/\n                      sub_10040230(a1: (int)v37, a2: v28, Src: v31); /*0x100408e9*/\n                      v44 = 7; /*0x100408f1*/\n                      sub_1000BBE0(a1: (int)v36, Src: v37, Str: (char *)&byte_10290911); /*0x10040905*/\n                      v44 = 8; /*0x1004090d*/\n                      sub_10040230(a1: (int)v34, a2: v36, Src: v30); /*0x10040923*/\n                      sub_1000BC90(a1: v36); /*0x1004092e*/\n                      sub_1000BC90(a1: v37); /*0x10040936*/\n                      sub_1000BC90(a1: v28); /*0x10040941*/\n                      v16 = v34; /*0x10040950*/\n                      if ( v35 >= 0x10 ) /*0x10040953*/\n                        v16 = (int *)v34[0]; /*0x10040955*/\n                      v44 = 16; /*0x10040958*/\n                      sub_10040410(a1: v16); /*0x10040960*/\n                    }\n                    else\n                    {\n                      if ( dword_103F59E4 == 1 ) /*0x10040a7f*/\n                      {\n                        v23 = \"(Infectado) \"; /*0x10040a92*/\n                        v24 = \"(Superviviente) \"; /*0x10040a97*/\n                      }\n                      else if ( dword_103F59E4 == 2 ) /*0x10040a84*/\n                      {\n                        v23 = \"(Zarazhyonnyy) \"; /*0x10040a86*/\n                        v24 = \"(Vyzhivshiy) \"; /*0x10040a8b*/\n                      }\n                      else\n                      {\n                        v23 = \"(Infected) \"; /*0x10040a9e*/\n                        v24 = \"(Survivor) \"; /*0x10040aa3*/\n                      }\n                      if ( Str == (char *)3 ) /*0x10040aae*/\n                      {\n                        Str = v23; /*0x10040ab0*/\n                        v44 = 5; /*0x10040ab3*/\n                        sub_1000E5E0(a1: v37, Str: (char *)&byte_10291CAA); /*0x10040ac2*/\n                        v44 = 10; /*0x10040ac7*/\n                        sub_1000BBE0(a1: (int)v36, Src: v37, Str); /*0x10040ad9*/\n                        v44 = 11; /*0x10040ae1*/\n                      }\n                      else\n                      {\n                        Str = v24; /*0x10040aff*/\n                        v44 = 5; /*0x10040b02*/\n                        sub_1000E5E0(a1: v37, Str: (char *)&byte_10291CAC); /*0x10040b11*/\n                        v44 = 12; /*0x10040b16*/\n                        sub_1000BBE0(a1: (int)v36, Src: v37, Str); /*0x10040b28*/\n                        v44 = 13; /*0x10040b30*/\n                      }\n                      sub_1000BBE0(a1: (int)v34, Src: v36, Str: (char *)&byte_10291CA8); /*0x10040af5*/\n                      sub_1002DD40(a1: v34); /*0x10040b56*/\n                      sub_1000BC90(a1: v34); /*0x10040b5d*/\n                      sub_1000BC90(a1: v36); /*0x10040b65*/\n                      sub_1000BC90(a1: v37); /*0x10040b6d*/\n                      v44 = 5; /*0x10040b72*/\n                      sub_100402F0(a1: v37, a2: (int)v29, a3: (int)v31); /*0x10040b8b*/\n                      v44 = 14; /*0x10040b93*/\n                      sub_1000BBE0(a1: (int)v36, Src: v37, Str: (char *)&byte_10290911); /*0x10040ba7*/\n                      v44 = 15; /*0x10040baf*/\n                      sub_10040230(a1: (int)v34, a2: v36, Src: v30); /*0x10040bc5*/\n                      sub_1000BC90(a1: v36); /*0x10040bd0*/\n                      sub_1000BC90(a1: v37); /*0x10040bd8*/\n                      v25 = v34; /*0x10040be7*/\n                      if ( v35 >= 0x10 ) /*0x10040bea*/\n                        v25 = (int *)v34[0]; /*0x10040bec*/\n                      v44 = 9; /*0x10040bef*/\n                      sub_10040410(a1: v25); /*0x10040bf7*/\n                    }\n                    sub_1000BC90(a1: v34); /*0x10040bff*/\n                    sub_1000BC90(a1: v29); /*0x10040c0a*/\n                  }\n                }\n                sub_1000BC90(a1: v30); /*0x10040c15*/\n                sub_1000BCE0(a1: Src); /*0x10040c20*/\n              }\n              LODWORD(v4) = sub_1000BC90(a1: v31); /*0x10040c2b*/\n            }\n          }\n        }\n      }\n      else if ( stricmp(String1: v5, String2: \"vote_cast_yes\") == 0 /*0x100405dd*/\n             || stricmp(String1: v5, String2: \"vote_cast_no\") == 0 )\n      {\n        LODWORD(v4) = (*(int (__thiscall **)(int, const char *, _DWORD))(*(_DWORD *)a2 + 24))( /*0x10040675*/\n                        a1: a2,\n                        a2: \"entityid\",\n                        a3: 0);\n        if ( (int)v4 > 0 ) /*0x1004067a*/\n        {\n          v9 = v4; /*0x10040680*/\n          v10 = stricmp(String1: v5, String2: \"vote_cast_yes\"); /*0x10040688*/\n          LODWORD(v4) = sub_1003F790(a1: v9, a2: v10 == 0); /*0x1004069c*/\n        }\n      }\n      else if ( stricmp(String1: v5, String2: \"vote_failed\") == 0 /*0x1004061a*/\n             || stricmp(String1: v5, String2: \"vote_passed\") == 0\n             || (LODWORD(v4) = stricmp(String1: v5, String2: \"vote_ended\"), (_DWORD)v4 == 0) )\n      {\n        *(this + 52) = 1; /*0x10040620*/\n        perf_frequency = Query_perf_frequency(); /*0x10040629*/\n        perf_counter = Query_perf_counter(); /*0x1004062d*/\n        if ( perf_frequency == 24000000 ) /*0x1004063c*/\n        {\n          Str = (char *)HIDWORD(perf_counter); /*0x10040975*/\n          v17 = perf_counter; /*0x10040975*/\n          v18 = sub_10180AB0(a1: perf_counter, a2: HIDWORD(perf_counter), a3: 24000000, a4: 0); /*0x10040978*/\n          v38 = (1000000000 * (unsigned __int64)v18) >> 32; /*0x1004098b*/\n          v40 = 1000000000 * v18; /*0x10040993*/\n          v39 = this; /*0x10040996*/\n          v19 = v38; /*0x1004099f*/\n          v20 = sub_10180AB0( /*0x100409d5*/\n                  a1: 1000000000 * v17,\n                  a2: (1000000000 * __PAIR64__((unsigned int)Str, v17)) >> 32,\n                  a3: 24000000,\n                  a4: 0);\n          v4 = __PAIR64__(v19, v40) + v20; /*0x100409dd*/\n          HIDWORD(v8) = v39; /*0x100409df*/\n        }\n        else if ( perf_frequency == 10000000 ) /*0x1004064c*/\n        {\n          HIDWORD(v8) = 0; /*0x1004065b*/\n          LODWORD(v4) = 0; /*0x1004065b*/\n          HIDWORD(v4) = 100 * HIDWORD(perf_counter); /*0x10040663*/\n        }\n        else\n        {\n          Str = (char *)HIDWORD(perf_counter); /*0x100409ee*/\n          v32 = perf_counter; /*0x100409ee*/\n          v21 = sub_10180AB0( /*0x100409f1*/\n                  a1: perf_counter,\n                  a2: HIDWORD(perf_counter),\n                  a3: perf_frequency,\n                  a4: HIDWORD(perf_frequency));\n          v39 = nullptr; /*0x10040a0c*/\n          v33 = (unsigned int)v21 * (unsigned __int64)(unsigned int)perf_frequency; /*0x10040a1a*/\n          v38 = 1000000000 * HIDWORD(v21); /*0x10040a26*/\n          v40 = 0; /*0x10040a4b*/\n          v8 = (__PAIR64__((unsigned int)Str, v32) - v21 * (unsigned int)perf_frequency) >> 32; /*0x10040a51*/\n          v22 = sub_10180AB0(a1: 0, a2: 1000000000 * (int)v8, a3: perf_frequency, a4: 0); /*0x10040a61*/\n          v4 = __PAIR64__(v38, (unsigned int)v39) + v22; /*0x10040a69*/\n        }\n        *(_QWORD *)(HIDWORD(v8) + 40) = v4; /*0x10040a6c*/\n      }\n    }\n  }\n  return v4; /*0x10040c30*/\n}",
+  "line_count": 292,
+  "total_lines": 292,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x10048100",
+      "name": "loc_10048100"
+    },
+    {
+      "addr": "0x10289aad",
+      "name": "aUserid",
+      "string": "userid"
+    },
+    {
+      "addr": "0x103ec770",
+      "name": "dword_103EC770"
+    },
+    {
+      "addr": "0x103ec7b8",
+      "name": "dword_103EC7B8"
+    },
+    {
+      "addr": "0x10179540",
+      "name": "sub_10179540"
+    },
+    {
+      "addr": "0x1029e014",
+      "name": "off_1029E014"
+    },
+    {
+      "addr": "0x103eead8",
+      "name": "dword_103EEAD8"
+    },
+    {
+      "addr": "0x101809c3",
+      "name": "sub_101809C3"
+    },
+    {
+      "addr": "0x103eead4",
+      "name": "dword_103EEAD4"
+    },
+    {
+      "addr": "0x1017c730",
+      "name": "sub_1017C730"
+    },
+    {
+      "addr": "0x10282c10",
+      "name": "aCbaseentity",
+      "string": "CBaseEntity"
+    },
+    {
+      "addr": "0x102870f9",
+      "name": "aMIteamnum",
+      "string": "m_iTeamNum"
+    },
+    {
+      "addr": "0x10180a43",
+      "name": "sub_10180A43"
+    },
+    {
+      "addr": "0x103f800c",
+      "name": "TlsIndex"
+    },
+    {
+      "addr": "0x1003f660",
+      "name": "sub_1003F660"
+    },
+    {
+      "addr": "0x1002bb30",
+      "name": "sub_1002BB30"
+    },
+    {
+      "addr": "0x10286819",
+      "name": "aUnknown",
+      "string": "Unknown"
+    },
+    {
+      "addr": "0x10283357",
+      "name": "aContext",
+      "string": "context"
+    },
+    {
+      "addr": "0x1029205c",
+      "name": "unk_1029205C"
+    },
+    {
+      "addr": "0x100387c0",
+      "name": "sub_100387C0"
+    },
+    {
+      "addr": "0x1003e910",
+      "name": "sub_1003E910"
+    },
+    {
+      "addr": "0x100385f0",
+      "name": "sub_100385F0"
+    },
+    {
+      "addr": "0x1001f3f0",
+      "name": "sub_1001F3F0"
+    },
+    {
+      "addr": "0x10040f80",
+      "name": "sub_10040F80"
+    },
+    {
+      "addr": "0x10041040",
+      "name": "sub_10041040"
+    },
+    {
+      "addr": "0x1000e5e0",
+      "name": "sub_1000E5E0"
+    },
+    {
+      "addr": "0x10291d2f",
+      "name": "Buf"
+    },
+    {
+      "addr": "0x10291ca8",
+      "name": "byte_10291CA8"
+    },
+    {
+      "addr": "0x10040230",
+      "name": "sub_10040230"
+    },
+    {
+      "addr": "0x1000bbe0",
+      "name": "sub_1000BBE0"
+    },
+    {
+      "addr": "0x10290911",
+      "name": "byte_10290911"
+    },
+    {
+      "addr": "0x1000bc90",
+      "name": "sub_1000BC90"
+    },
+    {
+      "addr": "0x10040410",
+      "name": "sub_10040410"
+    },
+    {
+      "addr": "0x10290947",
+      "name": "aInfectado",
+      "string": "(Infectado) "
+    },
+    {
+      "addr": "0x10290954",
+      "name": "aSuperviviente",
+      "string": "(Superviviente) "
+    },
+    {
+      "addr": "0x1029091d",
+      "name": "aZarazhyonnyy",
+      "string": "(Zarazhyonnyy) "
+    },
+    {
+      "addr": "0x1029092d",
+      "name": "aVyzhivshiy",
+      "string": "(Vyzhivshiy) "
+    },
+    {
+      "addr": "0x10290965",
+      "name": "aInfected",
+      "string": "(Infected) "
+    },
+    {
+      "addr": "0x1029093b",
+      "name": "aSurvivor",
+      "string": "(Survivor) "
+    },
+    {
+      "addr": "0x103f59e4",
+      "name": "dword_103F59E4"
+    },
+    {
+      "addr": "0x10291caa",
+      "name": "byte_10291CAA"
+    },
+    {
+      "addr": "0x10291cac",
+      "name": "byte_10291CAC"
+    },
+    {
+      "addr": "0x1002dd40",
+      "name": "sub_1002DD40"
+    },
+    {
+      "addr": "0x100402f0",
+      "name": "sub_100402F0"
+    },
+    {
+      "addr": "0x103f5a78",
+      "name": "byte_103F5A78"
+    },
+    {
+      "addr": "0x1003f080",
+      "name": "sub_1003F080"
+    },
+    {
+      "addr": "0x103f5a74",
+      "name": "byte_103F5A74"
+    },
+    {
+      "addr": "0x103f5a76",
+      "name": "byte_103F5A76"
+    },
+    {
+      "addr": "0x1000bce0",
+      "name": "sub_1000BCE0"
+    },
+    {
+      "addr": "0x10289aa4",
+      "name": "aEntityid",
+      "string": "entityid"
+    },
+    {
+      "addr": "0x102936a4",
+      "name": "_stricmp"
+    },
+    {
+      "addr": "0x10284a4e",
+      "name": "aVoteCastYes",
+      "string": "vote_cast_yes"
+    },
+    {
+      "addr": "0x1003f790",
+      "name": "sub_1003F790"
+    },
+    {
+      "addr": "0x10183360",
+      "name": "_Query_perf_frequency"
+    },
+    {
+      "addr": "0x1018335a",
+      "name": "_Query_perf_counter"
+    },
+    {
+      "addr": "0x10180ab0",
+      "name": "sub_10180AB0"
+    },
+    {
+      "addr": "0x10289f80",
+      "name": "aVoteFailed",
+      "string": "vote_failed"
+    },
+    {
+      "addr": "0x10289e2c",
+      "name": "aVotePassed",
+      "string": "vote_passed"
+    },
+    {
+      "addr": "0x1028a09d",
+      "name": "aVoteEnded",
+      "string": "vote_ended"
+    },
+    {
+      "addr": "0x10286455",
+      "name": "aVoteCastNo",
+      "string": "vote_cast_no"
+    },
+    {
+      "addr": "0x10282dfd",
+      "name": "String2",
+      "string": "player_say"
+    }
+  ]
+}

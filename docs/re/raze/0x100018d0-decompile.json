@@ -1,0 +1,31 @@
+{
+  "addr": "0x100018d0",
+  "code": "int sub_100018D0()\n{\n  __int128 v1; // [esp-10h] [ebp-10h]\n\n  HIDWORD(v1) = \"CBaseHudChat_ChatPrintf\"; /*0x100018d5*/\n  DWORD2(v1) = 0; /*0x100018da*/\n  DWORD1(v1) = \"55 8B EC B8 ? ? ? ? E8 ? ? ? ? A1 ? ? ? ? 33 C5 89 45 ? 8B 4D ? 53\"; /*0x100018dc*/\n  LODWORD(v1) = \"client.dll\"; /*0x100018e1*/\n  return sub_101804E0(a1: v1); /*0x100018eb*/\n}",
+  "line_count": 10,
+  "total_lines": 10,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x102886af",
+      "name": "aCbasehudchatCh",
+      "string": "CBaseHudChat_ChatPrintf"
+    },
+    {
+      "addr": "0x1028de81",
+      "name": "a558bEcB8E8A133_0",
+      "string": "55 8B EC B8 ? ? ? ? E8 ? ? ? ? A1 ? ? ? ? 33 C5 89 45 ? 8B 4D ? 53"
+    },
+    {
+      "addr": "0x10287305",
+      "name": "aClientDll",
+      "string": "client.dll"
+    },
+    {
+      "addr": "0x101804e0",
+      "name": "sub_101804E0"
+    }
+  ]
+}

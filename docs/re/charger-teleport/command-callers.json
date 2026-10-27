@@ -1,0 +1,20 @@
+{
+  "result": [
+    {
+      "addr": "0x101472B0",
+      "xrefs": [
+        {
+          "addr": "0x10170100",
+          "type": "code",
+          "fn": {
+            "addr": "0x1016ff00",
+            "name": "RapidFire_Hook_CreateMove",
+            "size": "0xb84"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 1
+    }
+  ]
+}

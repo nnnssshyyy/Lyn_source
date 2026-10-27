@@ -1,0 +1,110 @@
+{
+  "addr": "0x10026d60",
+  "code": "// NoSpread path: gated by NoSpread_ShouldRun. Current switch explicitly rejects Pump/Auto/Chrome/SPAS IDs 3,4,8,11; this routine is not a full shotgun pellet collapse algorithm.\nchar __userpurge NoSpread_ApplyShotAngles@<al>(__int128 xmm0_0@<xmm0>, __int128 _XMM2@<xmm2>, int a1)\n{\n  int v3; // esi\n  char *v5; // eax\n  char v31; // dl\n  int v32; // ecx\n  float X; // [esp+0h] [ebp-6Ch]\n  float Xa; // [esp+0h] [ebp-6Ch]\n  int Y; // [esp+4h] [ebp-68h]\n  int Ya; // [esp+4h] [ebp-68h]\n  int v38; // [esp+8h] [ebp-64h]\n  int v39; // [esp+8h] [ebp-64h]\n  __int64 v40; // [esp+10h] [ebp-5Ch] BYREF\n  int v41; // [esp+18h] [ebp-54h]\n  float v43; // [esp+20h] [ebp-4Ch]\n  float v44; // [esp+24h] [ebp-48h]\n  float v45; // [esp+28h] [ebp-44h]\n  float v46; // [esp+2Ch] [ebp-40h]\n\n  if ( dword_103EEF34 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x10026d81*/\n  {\n    sub_101809C3(a1: &dword_103EEF34); /*0x10027038*/\n    if ( dword_103EEF34 == -1 ) /*0x10027044*/\n    {\n      NoSpread_CachedSharedRandomFloat = (double (__cdecl *)(_DWORD, _DWORD, _DWORD, _DWORD))NoSpread_SharedRandomFloat; /*0x1002704f*/\n      sub_10180A43(a1: &dword_103EEF34); /*0x1002705b*/\n    }\n  }\n  v3 = sub_10179540(); /*0x10026d92*/\n  _EDI = sub_10179560(); /*0x10026d9f*/\n  LOBYTE(v5) = v3 == 0; /*0x10026da3*/\n  if ( v3 != 0 && _EDI != 0 && byte_103F4BB0 == 0 ) /*0x10026dba*/\n  {\n    _EBX = a1; /*0x10026dc0*/\n    LOBYTE(v5) = NoSpread_ShouldRun(a1: v3, a2: _EDI, a3: a1); /*0x10026dcf*/\n    if ( (_BYTE)v5 != 0 ) /*0x10026dd9*/\n    {\n      LOBYTE(v5) = Weapon_CanFireFromTickbase(a1: _EDI, _XMM0: xmm0_0, a3: v3); /*0x10026de4*/\n      if ( (_BYTE)v5 != 0 ) /*0x10026dee*/\n      {\n        __asm { vmovsd xmm1, qword ptr [ebx+0Ch] } /*0x10026df4*/\n        if ( NoSpread_Enabled == 1 ) /*0x10026e00*/\n        {\n          __asm /*0x10026e06*/\n          {\n            vmovss xmm0, dword ptr [edi+0D0Ch]\n            vmovss [esp+6Ch+var_50], xmm0\n          }\n          __asm { vmovups [esp+6Ch+var_3C], xmm1 }\n          NoSpread_NativeUpdateSpread(a1: _EDI);// Native CTerrorGun::UpdateSpread called with weapon in ECX. Old float weapon+0xD0C saved before call and restored after reading RNG offsets. /*0x10026e1c*/\n          __asm /*0x10026e22*/\n          {\n            vmovss xmm1, dword ptr [edi+0D0Ch]\n            vmovups [esp+6Ch+var_1C], xmm1\n            vbroadcastss xmm0, ds:dword_1018513C\n            vxorps xmm0, xmm1, xmm0\n            vmovups [esp+6Ch+var_2C], xmm0\n            vmovss [esp+6Ch+var_64], xmm1\n            vmovss [esp+6Ch+Y], xmm0\n          }\n          v46 = NoSpread_CachedSharedRandomFloat(a1: \"CTerrorGun::FireBullet HorizSpread\", a2: Y, a3: v38, a4: 0);// SharedRandomFloat(\"CTerrorGun::FireBullet HorizSpread\", -spread, spread, 0). Horizontal label is the pitch-axis offset in the installed client. /*0x10026e64*/\n          __asm /*0x10026e68*/\n          {\n            vmovups xmm0, [esp+6Ch+var_1C]\n            vmovss [esp+6Ch+var_64], xmm0\n            vmovups xmm0, [esp+6Ch+var_2C]\n            vmovss [esp+6Ch+Y], xmm0\n          }\n          v45 = NoSpread_CachedSharedRandomFloat(a1: \"CTerrorGun::FireBullet VertSpread\", a2: Ya, a3: v39, a4: 0);// SharedRandomFloat(\"CTerrorGun::FireBullet VertSpread\", -spread, spread, 0). Vertical label is the yaw-axis offset in the installed client. /*0x10026e95*/\n          __asm /*0x10026e99*/\n          {\n            vmovss xmm0, [esp+6Ch+var_40]\n            vinsertps xmm0, xmm0, [esp+6Ch+var_44], 10h\n            vmovups xmm1, [esp+6Ch+var_3C]\n            vsubps xmm0, xmm1, xmm0\n            vmovups [esp+6Ch+var_3C], xmm0\n            vextractps dword ptr [esp+6Ch+var_5C+4], xmm0, 1\n            vmovss xmm0, [esp+6Ch+var_50]\n            vmovss dword ptr [edi+0D0Ch], xmm0\n          }\n          _EAX = (*(int (__thiscall **)(int))(*(_DWORD *)v3 + 1244))(a1: v3);// Player vtable+0x4DC is also used by native FireBullet for punch angles. This NoSpread-enabled block subtracts punch after subtracting the two spread offsets. /*0x10026ed1*/\n          __asm /*0x10026ed7*/\n          {\n            vmovsd xmm0, qword ptr [eax]\n            vmovups xmm1, [esp+6Ch+var_3C]\n            vsubps xmm1, xmm1, xmm0\n          }\n        }\n        __asm { vmovd eax, xmm1 } /*0x10026ee5*/\n        __asm\n        {\n          vxorps xmm2, xmm2, xmm2\n          vxorps xmm0, xmm0, xmm0\n        }\n        if ( (_EAX & 0x7FFFFFFFu) <= 0x7F7FFFFF ) /*0x10026efb*/\n        {\n          __asm { vmovss [esp+6Ch+X], xmm1 } /*0x10026efd*/\n          __asm { vmovups [esp+6Ch+var_3C], xmm1 }\n          __asm\n          {\n            vxorps xmm2, xmm2, xmm2\n            vmovups xmm1, [esp+6Ch+var_3C]\n          }\n          v44 = remainderf(X, Y: 360.0); /*0x10026f20*/\n          __asm { vmovss xmm0, [esp+6Ch+var_48] } /*0x10026f24*/\n        }\n        __asm /*0x10026f2a*/\n        {\n          vminss xmm0, xmm0, ds:dword_10184EF4\n          vmaxss xmm0, xmm0, ds:dword_10184EF8\n          vmovss dword ptr [esp+6Ch+var_5C], xmm0\n          vmovshdup xmm0, xmm1\n          vmovd eax, xmm0\n        }\n        if ( (_EAX & 0x7FFFFFFFu) <= 0x7F7FFFFF ) /*0x10026f52*/\n        {\n          __asm { vmovss [esp+6Ch+X], xmm0 } /*0x10026f54*/\n          v43 = remainderf(X: Xa, Y: 360.0); /*0x10026f67*/\n          __asm { vmovss xmm2, [esp+6Ch+var_4C] } /*0x10026f6b*/\n        }\n        __asm { vmovss dword ptr [esp+6Ch+var_5C+4], xmm2 } /*0x10026f71*/\n        v41 = 0; /*0x10026f77*/\n        NoSpread_FixMovement(a1, a2: (int)&v40); /*0x10026f90*/\n        __asm /*0x10026f98*/\n        {\n          vmovsd xmm0, [esp+6Ch+var_5C]\n          vmovsd qword ptr [ebx+0Ch], xmm0\n          vmovss xmm1, [esp+6Ch+var_54]\n          vmovss dword ptr [ebx+14h], xmm1\n        }\n        if ( byte_103F4BFC == 1 ) /*0x10026fb5*/\n        {\n          byte_103EEAAA = 1; /*0x10026fb7*/\n          __asm /*0x10026fbe*/\n          {\n            vmovlps qword ptr [ebx+0Ch], xmm0\n            vmovss dword ptr [ebx+14h], xmm1\n          }\n        }\n        if ( byte_103F5CDC == 0 && NoSpread_Enabled == 1 ) /*0x10026fd8*/\n          byte_103EEAAA = 1; /*0x10026fda*/\n        if ( (unsigned int)(dword_103F5CF8 - 2) < 2 ) /*0x10026fed*/\n        {\n          v5 = &byte_103EEAAA; /*0x10027020*/\nLABEL_24:\n          *v5 = 1; /*0x10027025*/\n          return (char)v5; /*0x10027025*/\n        }\n        v5 = &byte_103EEAA9; /*0x10026fef*/\n        if ( dword_103F5CF8 == 1 ) /*0x10026ff7*/\n          goto LABEL_24; /*0x10026ff7*/\n        if ( dword_103F5CF8 == 0 ) /*0x10026ffb*/\n        {\n          v31 = byte_103EEA61; /*0x10026ffd*/\n          v32 = dword_1029E4D0; /*0x10027004*/\n          __asm /*0x1002700a*/\n          {\n            vmovlps qword ptr [ebx+0Ch], xmm0\n            vmovss dword ptr [ebx+14h], xmm1\n          }\n          if ( v31 != 1 || v32 == -1 ) /*0x1002701c*/\n            goto LABEL_24; /*0x1002701c*/\n        }\n      }\n    }\n  }\n  return (char)v5; /*0x10027028*/\n}",
+  "line_count": 169,
+  "total_lines": 169,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x101809c3",
+      "name": "sub_101809C3"
+    },
+    {
+      "addr": "0x103eef34",
+      "name": "dword_103EEF34"
+    },
+    {
+      "addr": "0x103eef30",
+      "name": "NoSpread_CachedSharedRandomFloat"
+    },
+    {
+      "addr": "0x103ec694",
+      "name": "NoSpread_SharedRandomFloat"
+    },
+    {
+      "addr": "0x10180a43",
+      "name": "sub_10180A43"
+    },
+    {
+      "addr": "0x103f800c",
+      "name": "TlsIndex"
+    },
+    {
+      "addr": "0x10179540",
+      "name": "sub_10179540"
+    },
+    {
+      "addr": "0x10179560",
+      "name": "sub_10179560"
+    },
+    {
+      "addr": "0x10026bb0",
+      "name": "NoSpread_ShouldRun"
+    },
+    {
+      "addr": "0x10023180",
+      "name": "Weapon_CanFireFromTickbase"
+    },
+    {
+      "addr": "0x103ec680",
+      "name": "NoSpread_NativeUpdateSpread"
+    },
+    {
+      "addr": "0x1028a144",
+      "name": "aCterrorgunFire",
+      "string": "CTerrorGun::FireBullet HorizSpread"
+    },
+    {
+      "addr": "0x1028a167",
+      "name": "aCterrorgunFire_0",
+      "string": "CTerrorGun::FireBullet VertSpread"
+    },
+    {
+      "addr": "0x103f4bf2",
+      "name": "NoSpread_Enabled"
+    },
+    {
+      "addr": "0x1029367c",
+      "name": "remainderf"
+    },
+    {
+      "addr": "0x10027ea0",
+      "name": "NoSpread_FixMovement"
+    },
+    {
+      "addr": "0x103eeaaa",
+      "name": "byte_103EEAAA"
+    },
+    {
+      "addr": "0x103f4bfc",
+      "name": "byte_103F4BFC"
+    },
+    {
+      "addr": "0x103f5cdc",
+      "name": "byte_103F5CDC"
+    },
+    {
+      "addr": "0x103f5cf8",
+      "name": "dword_103F5CF8"
+    },
+    {
+      "addr": "0x103eeaa9",
+      "name": "byte_103EEAA9"
+    },
+    {
+      "addr": "0x103eea61",
+      "name": "byte_103EEA61"
+    },
+    {
+      "addr": "0x1029e4d0",
+      "name": "dword_1029E4D0"
+    },
+    {
+      "addr": "0x103f4bb0",
+      "name": "byte_103F4BB0"
+    }
+  ]
+}

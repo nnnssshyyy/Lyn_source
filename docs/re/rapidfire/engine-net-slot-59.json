@@ -1,0 +1,16 @@
+{
+  "addr": "0x101b1d00",
+  "code": "bool __thiscall sub_101B1D00(float *this)\n{\n  return *(this + 4226) != -1.0 && dbl_106B2B48 > *(this + 41) + *(this + 4226); /*0x101b1d22*/\n}",
+  "line_count": 4,
+  "total_lines": 4,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x106b2b48",
+      "name": "dbl_106B2B48"
+    }
+  ]
+}

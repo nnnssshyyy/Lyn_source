@@ -1,0 +1,106 @@
+{
+  "addr": "0x1016efd0",
+  "code": "int __userpurge sub_1016EFD0@<eax>(\n        int a1@<edx>,\n        int a2@<ecx>,\n        __int128 _XMM1@<xmm1>,\n        __int128 _XMM4@<xmm4>,\n        int a5,\n        int a6,\n        int a7)\n{\n  int v7; // edx\n  int v8; // ebx\n  int v9; // esi\n  int result; // eax\n  int v11; // edi\n  bool v12; // cc\n  void (__thiscall *v13)(int, int, bool); // edx\n  int v14; // eax\n  int v26; // ecx\n  bool v29; // zf\n  char v32; // al\n  int (__thiscall *v33)(int, const char *, const char *, int, _DWORD); // eax\n  int v34; // [esp+0h] [ebp-34h] BYREF\n  __int64 v35; // [esp+4h] [ebp-30h] BYREF\n  int v36; // [esp+Ch] [ebp-28h]\n  int v37; // [esp+10h] [ebp-24h]\n  int v38; // [esp+14h] [ebp-20h]\n  int *v39; // [esp+18h] [ebp-1Ch]\n  struct _EXCEPTION_REGISTRATION_RECORD *ExceptionList; // [esp+1Ch] [ebp-18h]\n  void *v41; // [esp+20h] [ebp-14h]\n  int v42; // [esp+24h] [ebp-10h]\n\n  v34 = a1; /*0x1016efd9*/\n  v7 = a2; /*0x1016efdc*/\n  v8 = a7; /*0x1016efde*/\n  v9 = a6; /*0x1016efe1*/\n  v39 = &v34; /*0x1016efe4*/\n  v42 = -1; /*0x1016efe7*/\n  v41 = &loc_101769D0; /*0x1016efee*/\n  ExceptionList = NtCurrentTeb()->NtTib.ExceptionList; /*0x1016effb*/\n  result = a5; /*0x1016f007*/\n  if ( byte_103EEF74 != 0 ) /*0x1016f011*/\n    goto LABEL_17; /*0x1016f011*/\n  v37 = a2; /*0x1016f017*/\n  v11 = (*(int (__thiscall **)(int, _DWORD))(*(_DWORD *)dword_103EC7B8 + 12))( /*0x1016f028*/\n          a1: dword_103EC7B8,\n          a2: *(_DWORD *)(a6 + 48));\n  v12 = dword_103F73C0 <= *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4); /*0x1016f03f*/\n  v38 = v11; /*0x1016f045*/\n  if ( !v12 ) /*0x1016f048*/\n  {\n    sub_101809C3(a1: &dword_103F73C0); /*0x1016f259*/\n    if ( dword_103F73C0 == -1 ) /*0x1016f268*/\n    {\n      v33 = *(int (__thiscall **)(int, const char *, const char *, int, _DWORD))(*(_DWORD *)dword_103EC858 + 284); /*0x1016f276*/\n      v42 = 0; /*0x1016f27c*/\n      dword_103F73BC = v33( /*0x1016f293*/\n                         a1: dword_103EC858,\n                         a2: \"particle/screenspaceboomervomit\",\n                         a3: \"Particle textures\",\n                         a4: 1,\n                         a5: 0);\n      sub_10180A43(a1: &dword_103F73C0); /*0x1016f29d*/\n      v9 = a6; /*0x1016f2a5*/\n      v8 = a7; /*0x1016f2a8*/\n      v11 = v38; /*0x1016f2ab*/\n    }\n  }\n  v7 = v37; /*0x1016f050*/\n  result = a5; /*0x1016f053*/\n  if ( v11 == 0 ) /*0x1016f056*/\n    goto LABEL_17; /*0x1016f056*/\n  if ( dword_103F73BC != 0 ) /*0x1016f064*/\n  {\n    v13 = *(void (__thiscall **)(int, int, bool))(*(_DWORD *)dword_103F73BC + 116); /*0x1016f074*/\n    v42 = -1; /*0x1016f077*/\n    v13(a1: dword_103F73BC, a2: 4, a3: dword_103F50F4 == 1); /*0x1016f081*/\n  }\n  v42 = -1; /*0x1016f08a*/\n  if ( byte_103F4BA8 == 1 ) /*0x1016f093*/\n    (*(void (__thiscall **)(int))(*(_DWORD *)dword_103EC770 + 356))(a1: dword_103EC770); /*0x1016f09d*/\n  v14 = (*(int (__thiscall **)(int))(*(_DWORD *)(v38 + 8) + 4))(a1: v38 + 8); /*0x1016f0ae*/\n  if ( v14 != 0 && *(_DWORD *)(v14 + 20) == 52 ) /*0x1016f0bd*/\n  {\n    if ( dword_103F5104 != 0 || (_BYTE)word_103F5100 != 1 ) /*0x1016f0d7*/\n    {\n      v26 = dword_103EC8B8; /*0x1016f1cc*/\n      __asm /*0x1016f1d2*/\n      {\n        vbroadcastss xmm0, ds:dword_10184184\n        vmovlps [ebp+var_30], xmm0\n      }\n      v36 = 1065353216; /*0x1016f1e0*/\n    }\n    else\n    {\n      __asm /*0x1016f0dd*/\n      {\n        vmovss xmm0, dword_103F5128\n        vxorps xmm1, xmm1, xmm1\n        vucomiss xmm0, xmm1\n      }\n      if ( !__SETP__(word_103F5100, 1) ) /*0x1016f0ef*/\n      {\nLABEL_23:\n        dword_103F74D8(a1: v37, a2: v34, a3: a5, a4: v9, a5: v8); /*0x1016f1f0*/\n        __asm /*0x1016f207*/\n        {\n          vbroadcastss xmm0, ds:dword_10184184\n          vmovlps [ebp+var_30], xmm0\n        }\n        v36 = 1065353216; /*0x1016f215*/\n        return (*(int (__thiscall **)(int, __int64 *))(*(_DWORD *)dword_103EC8B8 + 24))(a1: dword_103EC8B8, a2: &v35); /*0x1016f225*/\n      }\n      __asm /*0x1016f0f5*/\n      {\n        vdivss xmm0, xmm0, ds:dword_101861A8\n        vmaxss xmm1, xmm1, xmm0\n        vmovss xmm2, ds:dword_10184380\n        vfmadd132ss xmm1, xmm2, ds:dword_10261E10\n        vmovss xmm3, ds:dword_10184184\n        vcmpltss xmm0, xmm3, xmm0\n        vbroadcastss xmm3, ds:dword_10185314\n        vblendvps xmm0, xmm1, xmm3, xmm0\n        vcvttss2si eax, xmm0\n      }\n      v26 = dword_103EC8B8; /*0x1016f132*/\n      __asm /*0x1016f13b*/\n      {\n        vcvtsi2ss xmm0, xmm4, eax\n        vdivss xmm0, xmm0, xmm2\n        vmovss dword ptr [ebp+var_30], xmm0\n        vmovss dword ptr [ebp+var_30+4], xmm0\n        vmovss [ebp+var_28], xmm0\n      }\n    }\n    (*(void (__thiscall **)(int, __int64 *))(*(_DWORD *)v26 + 24))(a1: v26, a2: &v35); /*0x1016f1ed*/\n    goto LABEL_23; /*0x1016f1ed*/\n  }\n  v29 = (*(unsigned __int8 (__thiscall **)(int))(*(_DWORD *)dword_103EC770 + 356))(a1: dword_103EC770) == 0; /*0x1016f165*/\n  v7 = v37; /*0x1016f167*/\n  result = a5; /*0x1016f16a*/\n  if ( !v29 /*0x1016f249*/\n    || (result = a5, LOBYTE(off_1029E020[0][1].m256_f32[6]) != 0)\n    || LOBYTE(off_1029E024[1].m256_f32[2]) != 0\n    || (_BYTE)(result = sub_1016F2E0(a1: v38)) == 0\n    && (v32 = sub_1014E170(a1: v38), v7 = v37, v29 = v32 == 0, result = a5, v29) )\n  {\nLABEL_17:\n    if ( HIBYTE(word_103F50FC) == 1 ) /*0x1016f194*/\n    {\n      *(_DWORD *)(result + 24) = 5; /*0x1016f196*/\n      v42 = -1; /*0x1016f19d*/\n    }\n    v42 = -1; /*0x1016f1a4*/\n    return dword_103F74D8(a1: v7, a2: v34, a3: result, a4: v9, a5: v8); /*0x1016f1b3*/\n  }\n  return result; /*0x1016f1b9*/\n}",
+  "line_count": 158,
+  "total_lines": 158,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x101769d0",
+      "name": "loc_101769D0"
+    },
+    {
+      "addr": "0x103eef74",
+      "name": "byte_103EEF74"
+    },
+    {
+      "addr": "0x103ec7b8",
+      "name": "dword_103EC7B8"
+    },
+    {
+      "addr": "0x103f73c0",
+      "name": "dword_103F73C0"
+    },
+    {
+      "addr": "0x103f800c",
+      "name": "TlsIndex"
+    },
+    {
+      "addr": "0x101809c3",
+      "name": "sub_101809C3"
+    },
+    {
+      "addr": "0x103ec858",
+      "name": "dword_103EC858"
+    },
+    {
+      "addr": "0x103f73bc",
+      "name": "dword_103F73BC"
+    },
+    {
+      "addr": "0x10283aca",
+      "name": "aParticleScreen",
+      "string": "particle/screenspaceboomervomit"
+    },
+    {
+      "addr": "0x10284b6a",
+      "name": "aParticleTextur",
+      "string": "Particle textures"
+    },
+    {
+      "addr": "0x10180a43",
+      "name": "sub_10180A43"
+    },
+    {
+      "addr": "0x103f50f4",
+      "name": "dword_103F50F4"
+    },
+    {
+      "addr": "0x103ec770",
+      "name": "dword_103EC770"
+    },
+    {
+      "addr": "0x103f4ba8",
+      "name": "byte_103F4BA8"
+    },
+    {
+      "addr": "0x103ec8b8",
+      "name": "dword_103EC8B8"
+    },
+    {
+      "addr": "0x103f74d8",
+      "name": "dword_103F74D8"
+    },
+    {
+      "addr": "0x103f5100",
+      "name": "word_103F5100"
+    },
+    {
+      "addr": "0x103f5104",
+      "name": "dword_103F5104"
+    },
+    {
+      "addr": "0x103f50fc",
+      "name": "word_103F50FC"
+    },
+    {
+      "addr": "0x1029e020",
+      "name": "off_1029E020"
+    },
+    {
+      "addr": "0x1029e024",
+      "name": "off_1029E024"
+    },
+    {
+      "addr": "0x1016f2e0",
+      "name": "sub_1016F2E0"
+    },
+    {
+      "addr": "0x1014e170",
+      "name": "sub_1014E170"
+    }
+  ]
+}

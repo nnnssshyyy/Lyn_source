@@ -1,0 +1,20 @@
+{
+  "addr": "0x1010cdb0",
+  "code": "char *__cdecl sub_1010CDB0(int a1)\n{\n  int v1; // eax\n\n  v1 = a1; /*0x1010cdb3*/\n  if ( a1 == -1 ) /*0x1010cdb9*/\n    v1 = (*(int (__thiscall **)(int))(*(_DWORD *)dword_10735E3C + 504))(a1: dword_10735E3C); /*0x1010cdc9*/\n  return (char *)&unk_10757740 + 168 * v1; /*0x1010cdd6*/\n}",
+  "line_count": 9,
+  "total_lines": 9,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x10735e3c",
+      "name": "dword_10735E3C"
+    },
+    {
+      "addr": "0x10757740",
+      "name": "unk_10757740"
+    }
+  ]
+}

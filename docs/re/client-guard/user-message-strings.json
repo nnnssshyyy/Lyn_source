@@ -1,0 +1,16 @@
+{
+  "n": 2,
+  "matches": [
+    {
+      "addr": "0x1058a8f0",
+      "string": "Shake"
+    },
+    {
+      "addr": "0x1058bac0",
+      "string": "BlurFade"
+    }
+  ],
+  "cursor": {
+    "done": true
+  }
+}

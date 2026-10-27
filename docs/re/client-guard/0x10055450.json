@@ -1,0 +1,47 @@
+{
+  "addr": "0x10055450",
+  "code": "char __thiscall sub_10055450(_DWORD **this, int a2)\n{\n  const char *v3; // esi\n  int v5; // [esp+0h] [ebp-Ch] BYREF\n  int v6; // [esp+8h] [ebp-4h]\n  int v7; // [esp+14h] [ebp+8h]\n\n  if ( (*(unsigned __int8 (__thiscall **)(_DWORD))(**(this + 2) + 24))(a1: *(this + 2)) == 0 )\n  {\n    v6 = 0;\n    if ( *(int *)(a2 + 96) > 0 )\n    {\n      v7 = 0;\n      do\n      {\n        v3 = (const char *)(v7 + *(_DWORD *)(a2 + 84));\n        sub_10283E60(a1: v3);\n        if ( (unsigned __int8)sub_102833C0(a1: &v5) != 0 )\n        {\n          if ( (*(unsigned __int8 (__thiscall **)(int, int))(*(_DWORD *)v5 + 24))(a1: v5, a2: 0x2000) != 0 )\n          {\n            if ( dword_1064555C < 2 )\n            {\n              (*(void (__thiscall **)(int, const char *))(*(_DWORD *)v5 + 12))(a1: v5, a2: v3 + 260);\n              DevMsg(a1: \"SetConVar: %s = \\\"%s\\\"\\n\", v3, v3 + 260);\n            }\n          }\n          else\n          {\n            ConMsg(\n              a1: \"SetConVar: Can't set server cvar %s to %s, not marked as FCVAR_REPLICATED on client\\n\",\n              v3,\n              v3 + 260);\n          }\n        }\n        else\n        {\n          ConMsg(a1: \"SetConVar: No such cvar ( %s set to %s), skipping\\n\", v3, v3 + 260);\n        }\n        v7 += 520;\n        ++v6;\n      }\n      while ( v6 < *(_DWORD *)(a2 + 96) );\n    }\n  }\n  return 1;\n}",
+  "line_count": 47,
+  "total_lines": 47,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x10283e60",
+      "name": "sub_10283E60"
+    },
+    {
+      "addr": "0x1034e528",
+      "name": "?DevMsg@@YAXPBDZZ"
+    },
+    {
+      "addr": "0x103588c0",
+      "name": "aSetconvarSS",
+      "string": "SetConVar: %s = \"%s\"\n"
+    },
+    {
+      "addr": "0x1064555c",
+      "name": "dword_1064555C"
+    },
+    {
+      "addr": "0x1034e4f0",
+      "name": "?ConMsg@@YAXPBDZZ"
+    },
+    {
+      "addr": "0x103588d8",
+      "name": "aSetconvarCanTS",
+      "string": "SetConVar: Can't set server cvar %s to %s, not marked as FCVAR_REPLICATED on client\n"
+    },
+    {
+      "addr": "0x10358930",
+      "name": "aSetconvarNoSuc",
+      "string": "SetConVar: No such cvar ( %s set to %s), skipping\n"
+    },
+    {
+      "addr": "0x102833c0",
+      "name": "sub_102833C0"
+    }
+  ]
+}

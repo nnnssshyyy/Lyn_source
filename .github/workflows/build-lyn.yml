@@ -1,0 +1,65 @@
+name: Build Lyn
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-2022
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Install .NET 8 SDK
+        uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Configure Win32
+        run: cmake -S . -B build -A Win32 -DFREE_BUILD_AIM_TESTS=ON
+
+      - name: Build DLL and C++ tests
+        run: cmake --build build --config Release --parallel 4
+
+      - name: Run C++ tests
+        run: ctest --test-dir build -C Release --output-on-failure
+
+      - name: Run loader tests
+        run: |
+          dotnet run --project tests/loader_hardware/LoaderHardware.Tests.csproj -c Release
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          dotnet run --project tests/loader_credentials/LoaderCredentials.Tests.csproj -c Release
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Build self-contained loader
+        run: ./loader/build-loader.ps1 -Configuration Release -NoPackageCompression
+
+      - name: Prepare download
+        run: |
+          $packagePath = 'build/download'
+          New-Item -ItemType Directory -Path $packagePath -Force | Out-Null
+          Copy-Item build/loader/Lyn.Loader.exe, build/Release/lyn.dll, build/loader/LEEME.md -Destination $packagePath
+          Copy-Item BUILDING.md -Destination $packagePath
+          Get-ChildItem $packagePath -File | Sort-Object Name | ForEach-Object {
+            '{0}  {1}' -f (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant(), $_.Name
+          } | Set-Content "$packagePath/SHA256SUMS.txt" -Encoding utf8
+
+      - name: Upload download
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: lyn-windows-x86
+          path: build/download/
+          if-no-files-found: error
+          retention-days: 90

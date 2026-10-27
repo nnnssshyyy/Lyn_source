@@ -1,0 +1,418 @@
+{
+  "addr": "0x10065c70",
+  "asm": {
+    "name": "<no function>",
+    "start_ea": "0x10065c70",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "10065c70",
+        "instruction": "and dword ptr [esi+24h], 0FFFFF7FEh"
+      },
+      {
+        "addr": "10065c71",
+        "instruction": "pop edi"
+      },
+      {
+        "addr": "10065c72",
+        "instruction": "pop esi"
+      },
+      {
+        "addr": "10065c73",
+        "instruction": "pop ebx"
+      },
+      {
+        "addr": "10065c74",
+        "instruction": "mov esp, ebp"
+      },
+      {
+        "addr": "10065c76",
+        "instruction": "pop ebp"
+      },
+      {
+        "addr": "10065c77",
+        "instruction": "retn 4"
+      },
+      {
+        "addr": "10065c7a",
+        "instruction": "cmp esi, 0FFFFFFFFh",
+        "label": "loc_10065C7A"
+      },
+      {
+        "addr": "10065c7d",
+        "instruction": "jz short loc_10065CA3",
+        "refs": [
+          {
+            "addr": "0x10065ca3",
+            "name": "loc_10065CA3"
+          }
+        ]
+      },
+      {
+        "addr": "10065c7f",
+        "instruction": "mov edx, off_106C50A8",
+        "refs": [
+          {
+            "addr": "0x106c50a8",
+            "name": "off_106C50A8"
+          }
+        ]
+      },
+      {
+        "addr": "10065c85",
+        "instruction": "mov ecx, esi"
+      },
+      {
+        "addr": "10065c87",
+        "instruction": "and ecx, 0FFFh"
+      },
+      {
+        "addr": "10065c8d",
+        "instruction": "add ecx, ecx"
+      },
+      {
+        "addr": "10065c8f",
+        "instruction": "lea eax, [edx+ecx*8+4]"
+      },
+      {
+        "addr": "10065c93",
+        "instruction": "test eax, eax"
+      },
+      {
+        "addr": "10065c95",
+        "instruction": "jz short loc_10065CA3",
+        "refs": [
+          {
+            "addr": "0x10065ca3",
+            "name": "loc_10065CA3"
+          }
+        ]
+      },
+      {
+        "addr": "10065c97",
+        "instruction": "shr esi, 0Ch"
+      },
+      {
+        "addr": "10065c9a",
+        "instruction": "cmp [eax+4], esi"
+      },
+      {
+        "addr": "10065c9d",
+        "instruction": "jnz short loc_10065CA3",
+        "refs": [
+          {
+            "addr": "0x10065ca3",
+            "name": "loc_10065CA3"
+          }
+        ]
+      },
+      {
+        "addr": "10065c9f",
+        "instruction": "mov eax, [eax]"
+      },
+      {
+        "addr": "10065ca1",
+        "instruction": "jmp short loc_10065CA5",
+        "refs": [
+          {
+            "addr": "0x10065ca5",
+            "name": "loc_10065CA5"
+          }
+        ]
+      },
+      {
+        "addr": "10065ca3",
+        "instruction": "xor eax, eax",
+        "label": "loc_10065CA3"
+      },
+      {
+        "addr": "10065ca5",
+        "instruction": "push eax",
+        "label": "loc_10065CA5"
+      },
+      {
+        "addr": "10065ca6",
+        "instruction": "call sub_100A4860",
+        "refs": [
+          {
+            "addr": "0x100a4860",
+            "name": "sub_100A4860"
+          }
+        ]
+      },
+      {
+        "addr": "10065cab",
+        "instruction": "mov dword ptr [ebx+14D4h], 0FFFFFFFFh"
+      },
+      {
+        "addr": "10065cb5",
+        "instruction": "add esp, 4"
+      },
+      {
+        "addr": "10065cb8",
+        "instruction": "pop edi",
+        "label": "loc_10065CB8"
+      },
+      {
+        "addr": "10065cb9",
+        "instruction": "pop esi"
+      },
+      {
+        "addr": "10065cba",
+        "instruction": "pop ebx"
+      },
+      {
+        "addr": "10065cbb",
+        "instruction": "mov esp, ebp"
+      },
+      {
+        "addr": "10065cbd",
+        "instruction": "pop ebp"
+      },
+      {
+        "addr": "10065cbe",
+        "instruction": "retn 4"
+      },
+      {
+        "addr": "10065cc1",
+        "instruction": "align 10h"
+      },
+      {
+        "addr": "10065cd0",
+        "instruction": "push ebp",
+        "label": "sub_10065CD0"
+      },
+      {
+        "addr": "10065cd1",
+        "instruction": "mov ebp, esp"
+      },
+      {
+        "addr": "10065cd3",
+        "instruction": "push esi"
+      },
+      {
+        "addr": "10065cd4",
+        "instruction": "mov esi, ecx"
+      },
+      {
+        "addr": "10065cd6",
+        "instruction": "mov ecx, [esi+1408h]"
+      },
+      {
+        "addr": "10065cdc",
+        "instruction": "push edi"
+      },
+      {
+        "addr": "10065cdd",
+        "instruction": "mov edi, [ebp+0Ch]"
+      },
+      {
+        "addr": "10065ce0",
+        "instruction": "cmp ecx, 0FFFFFFFFh"
+      },
+      {
+        "addr": "10065ce3",
+        "instruction": "jz short loc_10065D46",
+        "refs": [
+          {
+            "addr": "0x10065d46",
+            "name": "loc_10065D46"
+          }
+        ]
+      },
+      {
+        "addr": "10065ce5",
+        "instruction": "mov edx, off_106C50A8",
+        "refs": [
+          {
+            "addr": "0x106c50a8",
+            "name": "off_106C50A8"
+          }
+        ]
+      },
+      {
+        "addr": "10065ceb",
+        "instruction": "mov eax, ecx"
+      },
+      {
+        "addr": "10065ced",
+        "instruction": "and eax, 0FFFh"
+      },
+      {
+        "addr": "10065cf2",
+        "instruction": "add eax, eax"
+      },
+      {
+        "addr": "10065cf4",
+        "instruction": "lea eax, [edx+eax*8+4]"
+      },
+      {
+        "addr": "10065cf8",
+        "instruction": "test eax, eax"
+      },
+      {
+        "addr": "10065cfa",
+        "instruction": "jz short loc_10065D46",
+        "refs": [
+          {
+            "addr": "0x10065d46",
+            "name": "loc_10065D46"
+          }
+        ]
+      },
+      {
+        "addr": "10065cfc",
+        "instruction": "shr ecx, 0Ch"
+      },
+      {
+        "addr": "10065cff",
+        "instruction": "cmp [eax+4], ecx"
+      },
+      {
+        "addr": "10065d02",
+        "instruction": "jnz short loc_10065D46",
+        "refs": [
+          {
+            "addr": "0x10065d46",
+            "name": "loc_10065D46"
+          }
+        ]
+      },
+      {
+        "addr": "10065d04",
+        "instruction": "cmp dword ptr [eax], 0"
+      },
+      {
+        "addr": "10065d07",
+        "instruction": "jz short loc_10065D46",
+        "refs": [
+          {
+            "addr": "0x10065d46",
+            "name": "loc_10065D46"
+          }
+        ]
+      },
+      {
+        "addr": "10065d09",
+        "instruction": "test eax, eax"
+      },
+      {
+        "addr": "10065d0b",
+        "instruction": "jz short loc_10065D16",
+        "refs": [
+          {
+            "addr": "0x10065d16",
+            "name": "loc_10065D16"
+          }
+        ]
+      },
+      {
+        "addr": "10065d0d",
+        "instruction": "cmp [eax+4], ecx"
+      },
+      {
+        "addr": "10065d10",
+        "instruction": "jnz short loc_10065D16",
+        "refs": [
+          {
+            "addr": "0x10065d16",
+            "name": "loc_10065D16"
+          }
+        ]
+      },
+      {
+        "addr": "10065d12",
+        "instruction": "mov eax, [eax]"
+      },
+      {
+        "addr": "10065d14",
+        "instruction": "jmp short loc_10065D18",
+        "refs": [
+          {
+            "addr": "0x10065d18",
+            "name": "loc_10065D18"
+          }
+        ]
+      },
+      {
+        "addr": "10065d16",
+        "instruction": "xor eax, eax",
+        "label": "loc_10065D16"
+      },
+      {
+        "addr": "10065d18",
+        "instruction": "mov edx, [eax]",
+        "label": "loc_10065D18"
+      },
+      {
+        "addr": "10065d1a",
+        "instruction": "mov ecx, eax"
+      },
+      {
+        "addr": "10065d1c",
+        "instruction": "mov eax, [edx+178h]"
+      },
+      {
+        "addr": "10065d22",
+        "instruction": "call eax"
+      },
+      {
+        "addr": "10065d24",
+        "instruction": "test eax, eax"
+      },
+      {
+        "addr": "10065d26",
+        "instruction": "jz short loc_10065DA4",
+        "refs": [
+          {
+            "addr": "0x10065da4",
+            "name": "loc_10065DA4"
+          }
+        ]
+      },
+      {
+        "addr": "10065d28",
+        "instruction": "mov edx, [eax]"
+      },
+      {
+        "addr": "10065d2a",
+        "instruction": "push edi"
+      },
+      {
+        "addr": "10065d2b",
+        "instruction": "mov ecx, eax"
+      },
+      {
+        "addr": "10065d2d",
+        "instruction": "mov eax, [edx+24h]"
+      },
+      {
+        "addr": "10065d30",
+        "instruction": "push esi"
+      },
+      {
+        "addr": "10065d31",
+        "instruction": "call eax"
+      },
+      {
+        "addr": "10065d33",
+        "instruction": "mov ecx, dword_10735E3C",
+        "refs": [
+          {
+            "addr": "0x10735e3c",
+            "name": "dword_10735E3C"
+          }
+        ]
+      },
+      {
+        "addr": "10065d39",
+        "instruction": "mov edx, [ecx]"
+      }
+    ]
+  },
+  "instruction_count": 75,
+  "total_instructions": null,
+  "cursor": {
+    "next": 75
+  }
+}

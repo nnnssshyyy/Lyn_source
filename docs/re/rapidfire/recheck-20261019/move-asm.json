@@ -1,0 +1,221 @@
+{
+  "addr": "0x1016CE80",
+  "asm": {
+    "name": "RapidFire_Hook_CL_Move",
+    "start_ea": "0x1016ce80",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "1016ce80",
+        "instruction": "push esi",
+        "label": "RapidFire_Hook_CL_Move"
+      },
+      {
+        "addr": "1016ce81",
+        "instruction": "sub esp, 8"
+      },
+      {
+        "addr": "1016ce84",
+        "instruction": "mov eax, 0FFFFFFFFh"
+      },
+      {
+        "addr": "1016ce89",
+        "instruction": "movzx esi, [esp+0Ch+arg_4]"
+      },
+      {
+        "addr": "1016ce8e",
+        "instruction": "jmp short loc_1016CEB2",
+        "refs": [
+          {
+            "addr": "0x1016ceb2",
+            "name": "loc_1016CEB2"
+          }
+        ]
+      },
+      {
+        "addr": "1016ce90",
+        "instruction": "mov [esp+0Ch+var_8], esi",
+        "label": "loc_1016CE90"
+      },
+      {
+        "addr": "1016ce94",
+        "instruction": "vmovss xmm0, [esp+0Ch+arg_0]"
+      },
+      {
+        "addr": "1016ce9a",
+        "instruction": "vmovss [esp+0Ch+var_C], xmm0"
+      },
+      {
+        "addr": "1016ce9f",
+        "instruction": "call RapidFire_Original_CL_Move",
+        "refs": [
+          {
+            "addr": "0x103f7458",
+            "name": "RapidFire_Original_CL_Move"
+          }
+        ]
+      },
+      {
+        "addr": "1016cea5",
+        "instruction": "mov ecx, RapidFire_ExtraMovesRemaining",
+        "refs": [
+          {
+            "addr": "0x103f6dbc",
+            "name": "RapidFire_ExtraMovesRemaining"
+          }
+        ]
+      },
+      {
+        "addr": "1016ceab",
+        "instruction": "lea eax, [ecx-1]"
+      },
+      {
+        "addr": "1016ceae",
+        "instruction": "test ecx, ecx"
+      },
+      {
+        "addr": "1016ceb0",
+        "instruction": "jle short loc_1016CED3",
+        "refs": [
+          {
+            "addr": "0x1016ced3",
+            "name": "loc_1016CED3"
+          }
+        ]
+      },
+      {
+        "addr": "1016ceb2",
+        "instruction": "mov RapidFire_ExtraMovesRemaining, eax; Reset -1 before base CL_Move; initial CreateMove may arm N; after each move decrement counter and repeat while previous value >0. Total N+1 native calls. Same original args each call.",
+        "label": "loc_1016CEB2",
+        "comments": [
+          "Reset -1 before base CL_Move; initial CreateMove may arm N; after each move decrement counter and repeat while previous value >0. Total N+1 native calls. Same original args each call."
+        ],
+        "refs": [
+          {
+            "addr": "0x103f6dbc",
+            "name": "RapidFire_ExtraMovesRemaining"
+          }
+        ]
+      },
+      {
+        "addr": "1016ceb7",
+        "instruction": "cmp byte ptr word_103F538C, 1",
+        "refs": [
+          {
+            "addr": "0x103f538c",
+            "name": "word_103F538C"
+          }
+        ]
+      },
+      {
+        "addr": "1016cebe",
+        "instruction": "jnz short loc_1016CE90",
+        "refs": [
+          {
+            "addr": "0x1016ce90",
+            "name": "loc_1016CE90"
+          }
+        ]
+      },
+      {
+        "addr": "1016cec0",
+        "instruction": "mov ecx, off_102A4248",
+        "refs": [
+          {
+            "addr": "0x102a4248",
+            "name": "off_102A4248"
+          }
+        ]
+      },
+      {
+        "addr": "1016cec6",
+        "instruction": "mov [esp+0Ch+var_C], esi"
+      },
+      {
+        "addr": "1016cec9",
+        "instruction": "call sub_1014B6C0",
+        "refs": [
+          {
+            "addr": "0x1014b6c0",
+            "name": "sub_1014B6C0"
+          }
+        ]
+      },
+      {
+        "addr": "1016cece",
+        "instruction": "sub esp, 4"
+      },
+      {
+        "addr": "1016ced1",
+        "instruction": "jmp short loc_1016CE90",
+        "refs": [
+          {
+            "addr": "0x1016ce90",
+            "name": "loc_1016CE90"
+          }
+        ]
+      },
+      {
+        "addr": "1016ced3",
+        "instruction": "add esp, 8",
+        "label": "loc_1016CED3"
+      },
+      {
+        "addr": "1016ced6",
+        "instruction": "pop esi"
+      },
+      {
+        "addr": "1016ced7",
+        "instruction": "retn"
+      }
+    ],
+    "stack_frame": [
+      {
+        "name": "var_C",
+        "offset": "0x0",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "var_8",
+        "offset": "0x4",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "__return_address",
+        "offset": "0xc",
+        "size": "0x4",
+        "type": "_UNKNOWN *"
+      },
+      {
+        "name": "arg_0",
+        "offset": "0x10",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "arg_4",
+        "offset": "0x14",
+        "size": "0x1",
+        "type": "_BYTE"
+      }
+    ],
+    "return_type": "int",
+    "arguments": [
+      {
+        "name": "arg0",
+        "type": "int"
+      },
+      {
+        "name": "arg1",
+        "type": "char"
+      }
+    ]
+  },
+  "instruction_count": 24,
+  "total_instructions": 24,
+  "cursor": {
+    "done": true
+  }
+}

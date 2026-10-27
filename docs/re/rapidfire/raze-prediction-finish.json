@@ -1,0 +1,44 @@
+{
+  "addr": "0x101471e0",
+  "code": "void __stdcall sub_101471E0(int a1, int a2)\n{\n  int v4; // esi\n  int v5; // ecx\n  int v10; // esi\n  int v13; // ecx\n\n  if ( byte_103F5350 == 1 ) /*0x101471e7*/\n  {\n    _EDI = a1; /*0x101471f4*/\n    v4 = *(_DWORD *)(a2 + 4); /*0x101471f8*/\n    if ( GetAsyncKeyState(vKey: dword_103F5354) < 0 ) /*0x1014720a*/\n    {\n      _ECX = dword_103EC8D0; /*0x1014723c*/\n      __asm /*0x10147242*/\n      {\n        vmovss xmm0, dword ptr [ecx+1Ch]\n        vmovss dword ptr [edi+10h], xmm0\n      }\n      *(_DWORD *)(a1 + 20) = *(_DWORD *)(a2 + 4); /*0x1014724f*/\n      __asm /*0x10147258*/\n      {\n        vxorps xmm0, xmm0, xmm0\n        vdivss xmm1, xmm0, dword ptr [ecx+1Ch]\n      }\n      v10 = v4 % 150; /*0x10147261*/\n      __asm /*0x10147263*/\n      {\n        vaddss xmm0, xmm1, xmm0\n        vcvttss2si eax, xmm0\n      }\n      if ( dword_103F535C > _EAX ) /*0x10147273*/\n        _EAX = dword_103F535C; /*0x10147273*/\n      v13 = 0; /*0x10147276*/\n      if ( _EAX >= 0 ) /*0x1014727a*/\n        v13 = _EAX; /*0x1014727a*/\n      __asm { vcvtsi2ss xmm0, xmm2, ecx } /*0x1014727d*/\n      dword_103F6DBC = _EAX; /*0x10147281*/\n      dword_103F690C[2 * v10] = v13; /*0x10147286*/\n      __asm /*0x1014728d*/\n      {\n        vaddss xmm0, xmm0, ds:dword_10184184\n        vmulss xmm0, xmm0, dword ptr [edi+10h]\n        vmovss dword ptr [edi+10h], xmm0\n      }\n      byte_103F6908 = 1; /*0x1014729f*/\n    }\n    else\n    {\n      v5 = 1; /*0x10147212*/\n      if ( *(int *)(a1 + 16) >= 2 ) /*0x10147217*/\n        v5 = *(_DWORD *)(a1 + 16); /*0x10147217*/\n      *(_DWORD *)(a1 + 16) = v5 - 1; /*0x1014721b*/\n    }\n  }\n}",
+  "line_count": 56,
+  "total_lines": 56,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x103ec8d0",
+      "name": "dword_103EC8D0"
+    },
+    {
+      "addr": "0x103f535c",
+      "name": "dword_103F535C"
+    },
+    {
+      "addr": "0x103f6dbc",
+      "name": "dword_103F6DBC"
+    },
+    {
+      "addr": "0x103f690c",
+      "name": "dword_103F690C"
+    },
+    {
+      "addr": "0x103f6908",
+      "name": "byte_103F6908"
+    },
+    {
+      "addr": "0x10293284",
+      "name": "GetAsyncKeyState"
+    },
+    {
+      "addr": "0x103f5354",
+      "name": "dword_103F5354"
+    },
+    {
+      "addr": "0x103f5350",
+      "name": "byte_103F5350"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "func": [
+    {
+      "addr": "0x100f4f40",
+      "old": "sub_100F4F40",
+      "name": "RapidFire_DrawSettings",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x101486e0",
+      "old": "sub_101486E0",
+      "name": "RapidFire_ArmExtraMoves",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x10148c40",
+      "old": "sub_10148C40",
+      "name": "RapidFire_ApplyNetChannelMode",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x1016ce80",
+      "old": "sub_1016CE80",
+      "name": "RapidFire_Hook_CL_Move",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x1016cf10",
+      "old": "sub_1016CF10",
+      "name": "RapidFire_Hook_RunCommand",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x1016ff00",
+      "old": "sub_1016FF00",
+      "name": "RapidFire_Hook_CreateMove",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x1016ce60",
+      "old": "sub_1016CE60",
+      "name": "RapidFire_Install_CL_Move",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x1016cef0",
+      "old": "sub_1016CEF0",
+      "name": "RapidFire_Install_RunCommand",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x1016fee0",
+      "old": "sub_1016FEE0",
+      "name": "RapidFire_Install_CreateMove",
+      "dir": "vibe"
+    }
+  ],
+  "data": [
+    {
+      "addr": "0x103f5404",
+      "old": "byte_103F5404",
+      "new": "RapidFire_Enabled"
+    },
+    {
+      "addr": "0x103f5408",
+      "old": "dword_103F5408",
+      "new": "RapidFire_Key"
+    },
+    {
+      "addr": "0x103f540c",
+      "old": "dword_103F540C",
+      "new": "RapidFire_Method"
+    },
+    {
+      "addr": "0x103f5410",
+      "old": "dword_103F5410",
+      "new": "RapidFire_StormSpeed"
+    },
+    {
+      "addr": "0x103f5414",
+      "old": "dword_103F5414",
+      "new": "RapidFire_StormTicks"
+    },
+    {
+      "addr": "0x103f5418",
+      "old": "dword_103F5418",
+      "new": "RapidFire_Method2Speed"
+    },
+    {
+      "addr": "0x103f541c",
+      "old": "dword_103F541C",
+      "new": "RapidFire_Method2Choked"
+    },
+    {
+      "addr": "0x103f5420",
+      "old": "dword_103F5420",
+      "new": "RapidFire_Method3Speed"
+    },
+    {
+      "addr": "0x103f6dbc",
+      "old": "dword_103F6DBC",
+      "new": "RapidFire_ExtraMovesRemaining"
+    },
+    {
+      "addr": "0x103f690c",
+      "old": "dword_103F690C",
+      "new": "RapidFire_TickbaseShiftRing"
+    },
+    {
+      "addr": "0x103f6908",
+      "old": "byte_103F6908",
+      "new": "RapidFire_ForceSend"
+    },
+    {
+      "addr": "0x103f7458",
+      "old": "dword_103F7458",
+      "new": "RapidFire_Original_CL_Move"
+    },
+    {
+      "addr": "0x103f745c",
+      "old": "dword_103F745C",
+      "new": "RapidFire_Original_RunCommand"
+    },
+    {
+      "addr": "0x103f74e8",
+      "old": "dword_103F74E8",
+      "new": "RapidFire_Original_CreateMove"
+    }
+  ],
+  "summary": {
+    "total": 23,
+    "ok": 23,
+    "failed": 0,
+    "stopped": false
+  }
+}

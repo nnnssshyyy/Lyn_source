@@ -1,0 +1,28 @@
+{
+  "addr": "0x1016ef60",
+  "code": "int __fastcall sub_1016EF60(int a1, int a2)\n{\n  int v2; // esi\n  int v3; // edi\n  char v4; // al\n\n  if ( byte_103F4BA8 == 1 ) /*0x1016ef67*/\n  {\n    v2 = a1; /*0x1016ef73*/\n    v3 = a2; /*0x1016ef77*/\n    v4 = (*(int (__thiscall **)(int))(*(_DWORD *)dword_103EC770 + 356))(a1: dword_103EC770); /*0x1016ef79*/\n    a1 = v2; /*0x1016ef7f*/\n    a2 = v3; /*0x1016ef81*/\n    if ( v4 != 0 ) /*0x1016ef88*/\n      return dword_103F74D4(a1, a2); /*0x1016ef88*/\n  }\n  if ( byte_103F50F1 == 0 ) /*0x1016ef91*/\n    return dword_103F74D4(a1, a2); /*0x1016ef9b*/\n  else\n    return 0; /*0x1016ef93*/\n}",
+  "line_count": 21,
+  "total_lines": 21,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x103ec770",
+      "name": "dword_103EC770"
+    },
+    {
+      "addr": "0x103f74d4",
+      "name": "dword_103F74D4"
+    },
+    {
+      "addr": "0x103f4ba8",
+      "name": "byte_103F4BA8"
+    },
+    {
+      "addr": "0x103f50f1",
+      "name": "byte_103F50F1"
+    }
+  ]
+}

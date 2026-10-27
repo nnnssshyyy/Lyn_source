@@ -1,0 +1,40 @@
+{
+  "addr": "0x1003eab0",
+  "code": "int __userpurge sub_1003EAB0@<eax>(_DWORD *a1@<ecx>, __int128 _XMM0@<xmm0>, _DWORD *a3, _DWORD *a4)\n{\n  void *v5; // ecx\n  void *v8; // ecx\n  _DWORD *v12; // edx\n  unsigned int v13; // esi\n  int v14; // eax\n  unsigned int v15; // esi\n  int v16; // edi\n  int v17; // edi\n  int v18; // esi\n  unsigned int v19; // eax\n  void *v20; // ecx\n  int result; // eax\n  void *v22; // ecx\n  __int128 Src; // [esp+0h] [ebp-74h] BYREF\n  void *Block[4]; // [esp+18h] [ebp-5Ch] BYREF\n  __int64 v26; // [esp+28h] [ebp-4Ch]\n  void *v27[4]; // [esp+30h] [ebp-44h] BYREF\n  int v28; // [esp+40h] [ebp-34h]\n  unsigned int v29; // [esp+44h] [ebp-30h]\n  int v30; // [esp+48h] [ebp-2Ch]\n  int v31; // [esp+4Ch] [ebp-28h]\n  _DWORD *v32; // [esp+50h] [ebp-24h]\n  _DWORD *v33; // [esp+54h] [ebp-20h]\n  __int128 *p_Src; // [esp+58h] [ebp-1Ch]\n  struct _EXCEPTION_REGISTRATION_RECORD *ExceptionList; // [esp+5Ch] [ebp-18h]\n  void *v36; // [esp+60h] [ebp-14h]\n  int v37; // [esp+64h] [ebp-10h]\n\n  v33 = a1; /*0x1003eab9*/\n  p_Src = &Src; /*0x1003eabf*/\n  v36 = &loc_100480C0; /*0x1003eacc*/\n  ExceptionList = NtCurrentTeb()->NtTib.ExceptionList; /*0x1003eada*/\n  __asm /*0x1003eae3*/\n  {\n    vxorps xmm0, xmm0, xmm0\n    vmovups xmmword ptr [ebp+Block], xmm0\n  }\n  v26 = 0xF00000000LL; /*0x1003eaec*/\n  __asm { vmovups xmmword ptr [ebp+var_44], xmm0 } /*0x1003eafa*/\n  v28 = 0; /*0x1003eaff*/\n  v29 = 15; /*0x1003eb06*/\n  v37 = 0; /*0x1003eb0d*/\n  sub_1003ED00(&Src, a2: a3, _XMM0); /*0x1003eb17*/\n  if ( HIDWORD(v26) >= 0x10 ) /*0x1003eb22*/\n  {\n    v5 = Block[0]; /*0x1003eb24*/\n    if ( (unsigned int)(HIDWORD(v26) + 1) >= 0x1000 ) /*0x1003eb30*/\n    {\n      if ( (unsigned int)Block[0] - *((_DWORD *)Block[0] - 1) - 4 >= 0x20 ) /*0x1003eb3d*/\n        goto LABEL_28; /*0x1003eb3d*/\n      v5 = *((void **)Block[0] - 1); /*0x1003eb48*/\n    }\n    sub_10180976(Block: v5); /*0x1003eb4c*/\n  }\n  __asm /*0x1003eb57*/\n  {\n    vmovsd xmm0, [ebp+var_64]\n    vmovsd [ebp+var_4C], xmm0\n    vmovups xmm0, [ebp+Src]\n    vmovups xmmword ptr [ebp+Block], xmm0\n  }\n  sub_1003ED00(&Src, a2: a4, _XMM0); /*0x1003eb6e*/\n  if ( v29 >= 0x10 ) /*0x1003eb79*/\n  {\n    v8 = v27[0]; /*0x1003eb7b*/\n    if ( v29 + 1 >= 0x1000 ) /*0x1003eb87*/\n    {\n      if ( (unsigned int)v27[0] - *((_DWORD *)v27[0] - 1) - 4 >= 0x20 ) /*0x1003eb94*/\n        goto LABEL_28; /*0x1003eb94*/\n      v8 = *((void **)v27[0] - 1); /*0x1003eb9f*/\n    }\n    sub_10180976(Block: v8); /*0x1003eba3*/\n  }\n  _EAX = v27; /*0x1003ebab*/\n  __asm /*0x1003ebae*/\n  {\n    vmovsd xmm0, [ebp+var_64]\n    vmovsd qword ptr [eax+10h], xmm0\n    vmovups xmm0, [ebp+Src]\n    vmovups xmmword ptr [eax], xmm0\n  }\n  v12 = v33; /*0x1003ebc1*/\n  v32 = v33 + 14; /*0x1003ebc7*/\n  v13 = v33[16]; /*0x1003ebca*/\n  v14 = v33[18]; /*0x1003ebcd*/\n  if ( v13 <= v14 + 1 ) /*0x1003ebd5*/\n  {\n    sub_10047C10(a1: 1); /*0x1003ebdc*/\n    v12 = v33; /*0x1003ebe1*/\n    v13 = v33[16]; /*0x1003ebe4*/\n    v14 = v33[18]; /*0x1003ebe7*/\n  }\n  v15 = v13 - 1; /*0x1003ebea*/\n  v16 = v15 & v12[17]; /*0x1003ebee*/\n  v12[17] = v16; /*0x1003ebf0*/\n  v17 = v14 + v16; /*0x1003ebf3*/\n  v18 = v17 & v15; /*0x1003ebf5*/\n  if ( *(_DWORD *)(v12[15] + 4 * v18) == 0 ) /*0x1003ebff*/\n  {\n    v31 = v17; /*0x1003ec01*/\n    v30 = v18; /*0x1003ec04*/\n    *(_DWORD *)(v33[15] + 4 * v18) = sub_10180946(Size: 0x30u); /*0x1003ec1a*/\n  }\n  sub_10047E00(Src: Block); /*0x1003ec2e*/\n  v19 = v33[18] + 1; /*0x1003ec39*/\n  v33[18] = v19; /*0x1003ec3a*/\n  if ( v19 >= 0xFB ) /*0x1003ec42*/\n    sub_1003EF20(a1: v32); /*0x1003ec47*/\n  if ( v29 >= 0x10 ) /*0x1003ec52*/\n  {\n    v20 = v27[0]; /*0x1003ec54*/\n    if ( v29 + 1 >= 0x1000 ) /*0x1003ec60*/\n    {\n      if ( (unsigned int)v27[0] - *((_DWORD *)v27[0] - 1) - 4 >= 0x20 ) /*0x1003ec6d*/\n        goto LABEL_28; /*0x1003ec6d*/\n      v20 = *((void **)v27[0] - 1); /*0x1003ec74*/\n    }\n    sub_10180976(Block: v20); /*0x1003ec78*/\n  }\n  v28 = 0; /*0x1003ec80*/\n  v29 = 15; /*0x1003ec87*/\n  LOBYTE(v27[0]) = 0; /*0x1003ec8e*/\n  result = HIDWORD(v26); /*0x1003ec92*/\n  if ( HIDWORD(v26) < 0x10 ) /*0x1003ec98*/\n    return result; /*0x1003ec98*/\n  v22 = Block[0]; /*0x1003ec9a*/\n  if ( (unsigned int)(HIDWORD(v26) + 1) >= 0x1000 ) /*0x1003eca6*/\n  {\n    if ( (unsigned int)Block[0] - *((_DWORD *)Block[0] - 1) - 4 < 0x20 ) /*0x1003ecb3*/\n    {\n      v22 = *((void **)Block[0] - 1); /*0x1003ecba*/\n      return sub_10180976(Block: v22); /*0x1003ecba*/\n    }\nLABEL_28:\n    BUG(); /*0x1003ecd9*/\n  }\n  return sub_10180976(Block: v22); /*0x1003ecc6*/\n}",
+  "line_count": 140,
+  "total_lines": 140,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x100480c0",
+      "name": "loc_100480C0"
+    },
+    {
+      "addr": "0x1003ed00",
+      "name": "sub_1003ED00"
+    },
+    {
+      "addr": "0x10180976",
+      "name": "sub_10180976"
+    },
+    {
+      "addr": "0x10047c10",
+      "name": "sub_10047C10"
+    },
+    {
+      "addr": "0x10180946",
+      "name": "sub_10180946"
+    },
+    {
+      "addr": "0x10047e00",
+      "name": "sub_10047E00"
+    },
+    {
+      "addr": "0x1003ef20",
+      "name": "sub_1003EF20"
+    }
+  ]
+}

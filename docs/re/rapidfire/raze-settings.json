@@ -1,0 +1,117 @@
+{
+  "addr": "0x100f4f40",
+  "code": "// bad sp value at call has been detected, the output may be wrong!\nint __usercall sub_100F4F40@<eax>(int a1@<eax>)\n{\n  char *v37; // eax\n  _DWORD *v38; // eax\n  int result; // eax\n  char v46; // [esp-2Ch] [ebp-B8h]\n  int v47; // [esp-28h] [ebp-B4h]\n  int v48; // [esp-24h] [ebp-B0h]\n  int v49; // [esp-20h] [ebp-ACh]\n  int v50; // [esp-1Ch] [ebp-A8h]\n  int v51; // [esp-18h] [ebp-A4h]\n  int v52; // [esp-14h] [ebp-A0h]\n  int v53; // [esp-10h] [ebp-9Ch]\n  int v54; // [esp-Ch] [ebp-98h]\n  _BYTE v56[25]; // [esp+1h] [ebp-8Bh] BYREF\n  __int128 v57; // [esp+1Ah] [ebp-72h]\n  __int64 v59; // [esp+3Ah] [ebp-52h]\n  _BYTE v61[5]; // [esp+61h] [ebp-2Bh]\n  _BYTE v62[26]; // [esp+66h] [ebp-26h]\n  char v63; // [esp+80h] [ebp-Ch]\n\n  __asm /*0x100f4f67*/\n  {\n    vmovsd xmm0, ds:qword_101965C0\n    vmovsd qword ptr [ebp+var_8B], xmm0\n  }\n  strcpy(&v56[8], \"ire\"); /*0x100f4f77*/\n  LOBYTE(a1) = 0; /*0x100f4f98*/\n  sub_100630B0( /*0x100f4f9c*/\n    Str: &v56[1],\n    a2: (int)&byte_103F5404,\n    a3: (int)&dword_103F5408,\n    a4: 0,\n    a5: v46,\n    a6: v47,\n    a7: v48,\n    a8: v49,\n    a9: v50,\n    a10: v51,\n    a11: v52,\n    a12: v53,\n    a13: v54,\n    a14: 0,\n    a15: a1);\n  if ( dword_103EF180 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x100f4fbe*/\n  {\n    sub_101809C3(a1: &dword_103EF180); /*0x100f52c6*/\n    if ( dword_103EF180 == -1 ) /*0x100f52d5*/\n    {\n      sub_10180BFB(Function: sub_10045670); /*0x100f52e0*/\n      sub_10180A43(a1: &dword_103EF180); /*0x100f52ed*/\n    }\n  }\n  __asm /*0x100f4fc4*/\n  {\n    vmovaps ymm0, ds:ymmword_101965E0\n    vmovups [ebp+var_8B], ymm0\n  }\n  v56[0] = _RT0; /*0x100f4fcc*/\n  __asm /*0x100f4fd4*/\n  {\n    vmovaps ymm0, ds:ymmword_10196600\n    vmovups [ebp+var_6B], ymm0\n  }\n  BYTE7(v57) = _RT0; /*0x100f4fdc*/\n  __asm /*0x100f4fe1*/\n  {\n    vmovaps ymm0, ds:ymmword_10196620\n    vmovups [ebp+var_4B], ymm0\n  }\n  HIBYTE(v59) = _RT0; /*0x100f4fe9*/\n  *(_DWORD *)v61 = 1515345180; /*0x100f4fee*/\n  v61[4] = 89; /*0x100f4ff5*/\n  _EAX = v56[0]; /*0x100f4ff9*/\n  v62[0] = v56[0] ^ 0x63; /*0x100f5005*/\n  __asm /*0x100f5008*/\n  {\n    vmovd xmm0, eax\n    vpbroadcastb ymm0, xmm0\n    vpxor xmm1, xmm0, ds:xmmword_10196640\n    vpxor xmm2, xmm0, ds:xmmword_10196650\n    vmovdqu xmmword ptr [ebp+var_26+1], xmm1\n    vmovq [ebp+var_15], xmm2\n  }\n  __asm\n  {\n    vmovq xmm1, qword ptr [ebp+var_8B+11h]\n    vmovsd xmm2, qword ptr [ebp+var_8B+19h]\n    vpxor xmm1, xmm1, xmm0\n    vpxor xmm3, xmm0, xmmword ptr [ebp+var_8B+1]\n    vmovdqu xmmword ptr [ebp+var_8B+1], xmm3\n    vmovq qword ptr [ebp+var_8B+11h], xmm1\n    vmovhps xmm1, xmm2, qword ptr [ebp+var_6B+1]\n    vpxor xmm1, xmm1, xmm0\n    vmovdqu xmmword ptr [ebp+var_8B+19h], xmm1\n    vmovq xmm1, qword ptr [ebp+var_6B+19h]\n    vpxor xmm1, xmm1, xmm0\n    vpxor xmm2, xmm0, xmmword ptr [ebp+var_6B+9]\n    vmovdqu xmmword ptr [ebp+var_6B+9], xmm2\n    vmovq qword ptr [ebp+var_6B+19h], xmm1\n    vpxor ymm1, ymm0, [ebp+var_4B+1]\n    vmovdqu [ebp+var_4B+1], ymm1\n    vmovd xmm1, [ebp+var_2B+1]\n    vpxor xmm1, xmm1, xmm0\n    vmovd [ebp+var_2B+1], xmm1\n    vmovd xmm1, [ebp+var_26]\n    vpxor xmm1, xmm1, xmm0\n    vmovd [ebp+var_26], xmm1\n    vmovd xmm1, [ebp+var_22]\n    vpxor xmm1, xmm1, xmm0\n    vmovd [ebp+var_22], xmm1\n    vmovd xmm1, [ebp+var_1E]\n    vpxor xmm1, xmm1, xmm0\n    vmovd [ebp+var_1E], xmm1\n    vmovd xmm1, [ebp+var_1A]\n    vpxor xmm1, xmm1, xmm0\n    vmovd [ebp+var_1A], xmm1\n    vmovd xmm1, dword ptr [ebp-16h]\n    vpxor xmm1, xmm1, xmm0\n    vmovd dword ptr [ebp-16h], xmm1\n    vmovd xmm1, dword ptr [ebp+var_15+3]\n    vpxor xmm0, xmm1, xmm0\n    vmovd dword ptr [ebp+var_15+3], xmm0\n  }\n  *(_WORD *)&v62[20] = _RT0; /*0x100f50df*/\n  __asm { vzeroupper } /*0x100f50f1*/\n  v37 = (char *)sub_10041820(Str: &v56[1]); /*0x100f50f4*/\n  sub_10090350(Format: v37, a2: v63); /*0x100f50fa*/\n  v38 = (_DWORD *)sub_10180946(Size: 0xCu); /*0x100f5111*/\n  v62[14] = (_BYTE)v38; /*0x100f5119*/\n  *(_DWORD *)&v62[22] = v38 + 3; /*0x100f511f*/\n  *v38 = \"Methot 1\"; /*0x100f5122*/\n  v38[1] = \"Methot 2\"; /*0x100f5128*/\n  v38[2] = \"Methot 3\"; /*0x100f512f*/\n  __asm /*0x100f5139*/\n  {\n    vmovaps xmm0, ds:xmmword_10196660\n    vmovups xmmword ptr [ebp+var_8B], xmm0\n  }\n  strcpy(&v56[16], \"od\"); /*0x100f5149*/\n  sub_10064DA0(Str: &v56[1], a2: (int)&dword_103F540C, a3: v62[14], a4: (int)(v38 + 3), a5: *(int *)&v62[22]); /*0x100f5164*/\n  result = dword_103F540C; /*0x100f516b*/\n  switch ( dword_103F540C ) /*0x100f5173*/\n  {\n    case 2: /*0x100f5173*/\n      __asm /*0x100f528c*/\n      {\n        vmovaps xmm0, ds:xmmword_10196670\n        vmovups xmmword ptr [ebp+var_8B], xmm0\n      }\n      *(_DWORD *)&v62[22] = \"%ds\"; /*0x100f529c*/\n      *(_QWORD *)&v62[14] = 0xC800000001LL; /*0x100f52a6*/\n      *(_DWORD *)&v62[10] = &dword_103F5420; /*0x100f52a8*/\n      *(_DWORD *)&v62[6] = &v56[1]; /*0x100f52b3*/\n      break;\n    case 1: /*0x100f5173*/\n      __asm /*0x100f520b*/\n      {\n        vmovsd xmm0, ds:qword_10196680\n        vmovsd qword ptr [ebp+var_8B], xmm0\n      }\n      strcpy(&v56[8], \"actor.\"); /*0x100f521b*/\n      sub_100641A0(Str: &v56[1], a2: (int)&dword_103F5418, a3: 1, a4: 200, a5: (int)\"%ds\"); /*0x100f5247*/\n      __asm /*0x100f5252*/\n      {\n        vmovsd xmm0, ds:qword_10196690\n        vmovsd qword ptr [ebp+var_8B], xmm0\n      }\n      strcpy(&v56[8], \"tick.\"); /*0x100f5262*/\n      *(_DWORD *)&v62[22] = \"%dt\"; /*0x100f5272*/\n      *(_QWORD *)&v62[14] = 0xFF00000001LL; /*0x100f527c*/\n      *(_DWORD *)&v62[10] = &dword_103F541C; /*0x100f527e*/\n      *(_DWORD *)&v62[6] = &v56[1]; /*0x100f5283*/\n      break;\n    case 0: /*0x100f5173*/\n      __asm /*0x100f5196*/\n      {\n        vmovsd xmm0, ds:qword_101966A0\n        vmovsd qword ptr [ebp+var_8B], xmm0\n      }\n      strcpy(&v56[8], \"torm\"); /*0x100f51a6*/\n      sub_100641A0(Str: &v56[1], a2: (int)&dword_103F5410, a3: 1, a4: 200, a5: (int)\"%ds\"); /*0x100f51c6*/\n      __asm /*0x100f51d1*/\n      {\n        vmovsd xmm0, ds:qword_101966B0\n        vmovsd qword ptr [ebp+var_8B], xmm0\n      }\n      strcpy(&v56[8], \"ticks\"); /*0x100f51e1*/\n      *(_DWORD *)&v62[22] = \"%dt\"; /*0x100f51f1*/\n      *(_QWORD *)&v62[14] = 0x6400000001LL; /*0x100f51f8*/\n      *(_DWORD *)&v62[10] = &dword_103F5414; /*0x100f51fa*/\n      *(_DWORD *)&v62[6] = &v56[1]; /*0x100f51ff*/\n      break;\n    default:\n      return result; /*0x100f518a*/\n  }\n  return sub_100641A0( /*0x100f52b9*/\n           Str: *(char **)&v62[6],\n           a2: *(int *)&v62[10],\n           a3: *(int *)&v62[14],\n           a4: *(int *)&v62[18],\n           a5: *(int *)&v62[22]);\n}",
+  "line_count": 204,
+  "total_lines": 204,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x100630b0",
+      "name": "sub_100630B0"
+    },
+    {
+      "addr": "0x103f5404",
+      "name": "byte_103F5404"
+    },
+    {
+      "addr": "0x103f5408",
+      "name": "dword_103F5408"
+    },
+    {
+      "addr": "0x101809c3",
+      "name": "sub_101809C3"
+    },
+    {
+      "addr": "0x103ef180",
+      "name": "dword_103EF180"
+    },
+    {
+      "addr": "0x10180bfb",
+      "name": "sub_10180BFB"
+    },
+    {
+      "addr": "0x10045670",
+      "name": "sub_10045670"
+    },
+    {
+      "addr": "0x10180a43",
+      "name": "sub_10180A43"
+    },
+    {
+      "addr": "0x103f800c",
+      "name": "TlsIndex"
+    },
+    {
+      "addr": "0x10041820",
+      "name": "sub_10041820"
+    },
+    {
+      "addr": "0x10090350",
+      "name": "sub_10090350"
+    },
+    {
+      "addr": "0x10180946",
+      "name": "sub_10180946"
+    },
+    {
+      "addr": "0x1028e55b",
+      "name": "aMethot1",
+      "string": "Methot 1"
+    },
+    {
+      "addr": "0x1028e2cf",
+      "name": "aMethot2",
+      "string": "Methot 2"
+    },
+    {
+      "addr": "0x1028e057",
+      "name": "aMethot3",
+      "string": "Methot 3"
+    },
+    {
+      "addr": "0x10064da0",
+      "name": "sub_10064DA0"
+    },
+    {
+      "addr": "0x103f540c",
+      "name": "dword_103F540C"
+    },
+    {
+      "addr": "0x10284df1",
+      "name": "aDs",
+      "string": "%ds"
+    },
+    {
+      "addr": "0x103f5420",
+      "name": "dword_103F5420"
+    },
+    {
+      "addr": "0x100641a0",
+      "name": "sub_100641A0"
+    },
+    {
+      "addr": "0x103f5418",
+      "name": "dword_103F5418"
+    },
+    {
+      "addr": "0x10283d56",
+      "name": "aDt",
+      "string": "%dt"
+    },
+    {
+      "addr": "0x103f541c",
+      "name": "dword_103F541C"
+    },
+    {
+      "addr": "0x103f5410",
+      "name": "dword_103F5410"
+    },
+    {
+      "addr": "0x103f5414",
+      "name": "dword_103F5414"
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "addr": "0x1022e394",
+  "asm": {
+    "name": "<no function>",
+    "start_ea": "0x1022e394",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "1022e394",
+        "instruction": "push offset aBlurfade; \"BlurFade\"",
+        "refs": [
+          {
+            "addr": "0x1058bac0",
+            "name": "aBlurfade",
+            "string": "BlurFade"
+          }
+        ]
+      },
+      {
+        "addr": "1022e399",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e39e",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3a4",
+        "instruction": "push 0FFFFFFFFh"
+      },
+      {
+        "addr": "1022e3a6",
+        "instruction": "push offset aMusiccmd; \"MusicCmd\"",
+        "refs": [
+          {
+            "addr": "0x105a4454",
+            "name": "aMusiccmd",
+            "string": "MusicCmd"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3ab",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3b0",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3b6",
+        "instruction": "push 0FFFFFFFFh"
+      },
+      {
+        "addr": "1022e3b8",
+        "instruction": "push offset aWitchbloodspla; \"WitchBloodSplatter\"",
+        "refs": [
+          {
+            "addr": "0x105a4440",
+            "name": "aWitchbloodspla",
+            "string": "WitchBloodSplatter"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3bd",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3c2",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3c8",
+        "instruction": "push 0FFFFFFFFh"
+      },
+      {
+        "addr": "1022e3ca",
+        "instruction": "push offset aAchievementeve; \"AchievementEvent\"",
+        "refs": [
+          {
+            "addr": "0x1052f678",
+            "name": "aAchievementeve",
+            "string": "AchievementEvent"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3cf",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3d4",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3da",
+        "instruction": "push 0FFFFFFFFh"
+      },
+      {
+        "addr": "1022e3dc",
+        "instruction": "push offset aPzdmgmsg; \"PZDmgMsg\"",
+        "refs": [
+          {
+            "addr": "0x105a4434",
+            "name": "aPzdmgmsg",
+            "string": "PZDmgMsg"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3e1",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3e6",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3ec",
+        "instruction": "push 0"
+      },
+      {
+        "addr": "1022e3ee",
+        "instruction": "push offset aAllplayersconn; \"AllPlayersConnectedGameStarting\"",
+        "refs": [
+          {
+            "addr": "0x105a4414",
+            "name": "aAllplayersconn",
+            "string": "AllPlayersConnectedGameStarting"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3f3",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3f8",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e3fe",
+        "instruction": "push 1"
+      },
+      {
+        "addr": "1022e400",
+        "instruction": "push offset aVoteregistered; \"VoteRegistered\"",
+        "refs": [
+          {
+            "addr": "0x105a4404",
+            "name": "aVoteregistered",
+            "string": "VoteRegistered"
+          }
+        ]
+      },
+      {
+        "addr": "1022e405",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e40a",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e410",
+        "instruction": "push 0"
+      },
+      {
+        "addr": "1022e412",
+        "instruction": "push offset aDisconnecttolo; \"DisconnectToLobby\"",
+        "refs": [
+          {
+            "addr": "0x105a43f0",
+            "name": "aDisconnecttolo",
+            "string": "DisconnectToLobby"
+          }
+        ]
+      },
+      {
+        "addr": "1022e417",
+        "instruction": "call sub_101AC500",
+        "refs": [
+          {
+            "addr": "0x101ac500",
+            "name": "sub_101AC500"
+          }
+        ]
+      },
+      {
+        "addr": "1022e41c",
+        "instruction": "mov ecx, off_106DE3A4",
+        "refs": [
+          {
+            "addr": "0x106de3a4",
+            "name": "off_106DE3A4"
+          }
+        ]
+      },
+      {
+        "addr": "1022e422",
+        "instruction": "push 1"
+      }
+    ]
+  },
+  "instruction_count": 32,
+  "total_instructions": null,
+  "cursor": {
+    "next": 32
+  }
+}

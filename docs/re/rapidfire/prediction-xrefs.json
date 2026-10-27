@@ -1,0 +1,36 @@
+{
+  "result": [
+    {
+      "addr": "0x10367120",
+      "xrefs": [
+        {
+          "addr": "0x10080dbc",
+          "type": "data",
+          "fn": {
+            "addr": "0x10080da0",
+            "name": "sub_10080DA0",
+            "size": "0x109"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 1
+    },
+    {
+      "addr": "0x10377c58",
+      "xrefs": [
+        {
+          "addr": "0x10116e0d",
+          "type": "data",
+          "fn": {
+            "addr": "0x10116c90",
+            "name": "sub_10116C90",
+            "size": "0x19e"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 1
+    }
+  ]
+}

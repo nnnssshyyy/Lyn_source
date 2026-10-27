@@ -1,0 +1,114 @@
+{
+  "addr": "0x1016c610",
+  "code": "int __stdcall sub_1016C610(int a1)\n{\n  int result; // eax\n  int *v2; // ecx\n  int v3; // edx\n  int *v4; // esi\n  int *v5; // edx\n  int *v6; // esi\n  int v7; // esi\n  int (__thiscall *v10)(int); // eax\n  int v11; // esi\n  _DWORD v13[4]; // [esp+0h] [ebp-20h] BYREF\n  int v14; // [esp+10h] [ebp-10h]\n\n  v13[1] = v13; /*0x1016c61c*/\n  v14 = -1; /*0x1016c61f*/\n  v13[3] = &loc_10176990; /*0x1016c629*/\n  v13[2] = NtCurrentTeb()->NtTib.ExceptionList; /*0x1016c637*/\n  result = dword_103F743C(a1); /*0x1016c641*/\n  switch ( a1 ) /*0x1016c651*/\n  {\n    case 1: /*0x1016c651*/\n      result = *(_DWORD *)off_1029E014; /*0x1016c65d*/\n      v2 = **(int ***)off_1029E014; /*0x1016c65f*/\n      if ( v2 != *(int **)off_1029E014 ) /*0x1016c663*/\n      {\n        do /*0x1016c674*/\n        {\n          v3 = v2[5]; /*0x1016c67a*/\n          if ( v3 != v2[6] ) /*0x1016c680*/\n            v2[6] = v3; /*0x1016c682*/\n          v4 = (int *)v2[2]; /*0x1016c685*/\n          if ( *((_BYTE *)v4 + 13) != 0 ) /*0x1016c68c*/\n          {\n            do /*0x1016c6a0*/\n            {\n              v5 = (int *)v2[1]; /*0x1016c690*/\n              if ( *((_BYTE *)v5 + 13) != 0 ) /*0x1016c697*/\n                break; /*0x1016c697*/\n              v6 = v2; /*0x1016c699*/\n              v2 = (int *)v2[1]; /*0x1016c69b*/\n            }\n            while ( v6 == (int *)v5[2] ); /*0x1016c6a0*/\n          }\n          else\n          {\n            do /*0x1016c6b8*/\n            {\n              v5 = v4; /*0x1016c6b0*/\n              v4 = (int *)*v4; /*0x1016c6b2*/\n            }\n            while ( *((_BYTE *)v4 + 13) == 0 ); /*0x1016c6b8*/\n          }\n          v2 = v5; /*0x1016c670*/\n        }\n        while ( v5 != (int *)result ); /*0x1016c674*/\n      }\n      break; /*0x1016c674*/\n    case 4: /*0x1016c651*/\n      result = sub_10179590(a1: off_1029E014); /*0x1016c796*/\n      break; /*0x1016c79b*/\n    case 5: /*0x1016c651*/\n      sub_1017B9E0(a1: off_1029E4E0); /*0x1016c6c2*/\n      sub_1016BDB0(a1: off_1029E028); /*0x1016c6cd*/\n      sub_1017CCA0(a1: off_1029E004[0]); /*0x1016c6d8*/\n      sub_1017CD70(a1: off_1029E004[0]); /*0x1016c6e3*/\n      sub_1017CE70(a1: off_1029E004[0]); /*0x1016c6ee*/\n      result = sub_101470E0(a1: off_103EBDF0); /*0x1016c6f9*/\n      if ( (_BYTE)dword_103F4B80 == 1 ) /*0x1016c705*/\n      {\n        result = sub_10179540(); /*0x1016c711*/\n        if ( result != 0 && byte_103EEAA9 == 1 ) /*0x1016c725*/\n        {\n          v7 = result; /*0x1016c72b*/\n          if ( dword_103EF190 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1016c748*/\n          {\n            sub_101809C3(a1: &dword_103EF190); /*0x1016c81f*/\n            if ( dword_103EF190 == -1 ) /*0x1016c82e*/\n            {\n              v13[0] = v7; /*0x1016c834*/\n              v14 = 0; /*0x1016c837*/\n              dword_103EF18C = sub_1017C730(a1: \"CTerrorPlayer\", a2: \"m_iThrowGrenadeCounter\") - 24; /*0x1016c853*/\n              sub_10180A43(a1: &dword_103EF190); /*0x1016c85d*/\n              v7 = v13[0]; /*0x1016c865*/\n            }\n          }\n          _EAX = *(_DWORD *)(dword_103EF18C + v7); /*0x1016c753*/\n          if ( _EAX != 0 ) /*0x1016c758*/\n          {\n            __asm /*0x1016c75a*/\n            {\n              vmovss xmm0, dword_103F7440\n              vmovss dword ptr [eax+80h], xmm0\n              vmovss dword ptr [eax+7Ch], xmm0\n              vmovss dword ptr [eax+74h], xmm0\n            }\n            v14 = -1; /*0x1016c774*/\n          }\n          v10 = *(int (__thiscall **)(int))(*(_DWORD *)v7 + 808); /*0x1016c77d*/\n          v14 = -1; /*0x1016c783*/\n          result = v10(a1: v7); /*0x1016c78c*/\n        }\n      }\n      break; /*0x1016c78e*/\n    case 6: /*0x1016c651*/\n      if ( (_BYTE)dword_103F4B80 == 1 && byte_103EEAA9 == 1 ) /*0x1016c7ad*/\n      {\n        result = sub_10179540(); /*0x1016c7b5*/\n        if ( result != 0 ) /*0x1016c7bc*/\n        {\n          v11 = result; /*0x1016c7be*/\n          if ( dword_103EF190 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1016c7db*/\n          {\n            sub_101809C3(a1: &dword_103EF190); /*0x1016c872*/\n            if ( dword_103EF190 == -1 ) /*0x1016c881*/\n            {\n              v13[0] = v11; /*0x1016c887*/\n              v14 = 1; /*0x1016c88a*/\n              dword_103EF18C = sub_1017C730(a1: \"CTerrorPlayer\", a2: \"m_iThrowGrenadeCounter\") - 24; /*0x1016c8a6*/\n              sub_10180A43(a1: &dword_103EF190); /*0x1016c8b0*/\n              v11 = v13[0]; /*0x1016c8b8*/\n            }\n          }\n          result = *(_DWORD *)(dword_103EF18C + v11); /*0x1016c7e6*/\n          if ( result != 0 ) /*0x1016c7eb*/\n          {\n            __asm /*0x1016c7ed*/\n            {\n              vmovss xmm0, dword_103F7444\n              vmovss dword ptr [eax+80h], xmm0\n              vmovss dword ptr [eax+7Ch], xmm0\n              vmovss dword ptr [eax+74h], xmm0\n            }\n          }\n        }\n      }\n      break; /*0x1016c802*/\n    default:\n      return result;\n  }\n  return result; /*0x1016c807*/\n}",
+  "line_count": 142,
+  "total_lines": 142,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x10176990",
+      "name": "loc_10176990"
+    },
+    {
+      "addr": "0x103f743c",
+      "name": "dword_103F743C"
+    },
+    {
+      "addr": "0x1029e014",
+      "name": "off_1029E014"
+    },
+    {
+      "addr": "0x10179590",
+      "name": "sub_10179590"
+    },
+    {
+      "addr": "0x1017b9e0",
+      "name": "sub_1017B9E0"
+    },
+    {
+      "addr": "0x1029e4e0",
+      "name": "off_1029E4E0"
+    },
+    {
+      "addr": "0x1016bdb0",
+      "name": "sub_1016BDB0"
+    },
+    {
+      "addr": "0x1029e028",
+      "name": "off_1029E028"
+    },
+    {
+      "addr": "0x1017cca0",
+      "name": "sub_1017CCA0"
+    },
+    {
+      "addr": "0x1029e004",
+      "name": "off_1029E004"
+    },
+    {
+      "addr": "0x1017cd70",
+      "name": "sub_1017CD70"
+    },
+    {
+      "addr": "0x1017ce70",
+      "name": "sub_1017CE70"
+    },
+    {
+      "addr": "0x101470e0",
+      "name": "sub_101470E0"
+    },
+    {
+      "addr": "0x103ebdf0",
+      "name": "off_103EBDF0"
+    },
+    {
+      "addr": "0x10179540",
+      "name": "sub_10179540"
+    },
+    {
+      "addr": "0x101809c3",
+      "name": "sub_101809C3"
+    },
+    {
+      "addr": "0x103ef190",
+      "name": "dword_103EF190"
+    },
+    {
+      "addr": "0x103ef18c",
+      "name": "dword_103EF18C"
+    },
+    {
+      "addr": "0x1017c730",
+      "name": "sub_1017C730"
+    },
+    {
+      "addr": "0x1028575e",
+      "name": "aCterrorplayer",
+      "string": "CTerrorPlayer"
+    },
+    {
+      "addr": "0x10285808",
+      "name": "aMIthrowgrenade",
+      "string": "m_iThrowGrenadeCounter"
+    },
+    {
+      "addr": "0x10180a43",
+      "name": "sub_10180A43"
+    },
+    {
+      "addr": "0x103f800c",
+      "name": "TlsIndex"
+    },
+    {
+      "addr": "0x103eeaa9",
+      "name": "byte_103EEAA9"
+    },
+    {
+      "addr": "0x103f4b80",
+      "name": "dword_103F4B80"
+    }
+  ]
+}

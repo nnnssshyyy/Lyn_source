@@ -1,0 +1,436 @@
+{
+  "addr": "0x101c4730",
+  "asm": {
+    "name": "<no function>",
+    "start_ea": "0x101c4730",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "101c4730",
+        "instruction": "lea ecx, [ebp-1]"
+      },
+      {
+        "addr": "101c4731",
+        "instruction": "mov [edi+40h], eax"
+      },
+      {
+        "addr": "101c4734",
+        "instruction": "mov eax, [esi]"
+      },
+      {
+        "addr": "101c4736",
+        "instruction": "mov edx, [eax+2Ch]"
+      },
+      {
+        "addr": "101c4739",
+        "instruction": "push ecx"
+      },
+      {
+        "addr": "101c473a",
+        "instruction": "push offset aNoisescale; \"$noiseScale\"",
+        "refs": [
+          {
+            "addr": "0x1058b3bc",
+            "name": "aNoisescale",
+            "string": "$noiseScale"
+          }
+        ]
+      },
+      {
+        "addr": "101c473f",
+        "instruction": "mov ecx, esi"
+      },
+      {
+        "addr": "101c4741",
+        "instruction": "call edx"
+      },
+      {
+        "addr": "101c4743",
+        "instruction": "push 0"
+      },
+      {
+        "addr": "101c4745",
+        "instruction": "lea ecx, [ebp-1]"
+      },
+      {
+        "addr": "101c4748",
+        "instruction": "mov [edi+44h], eax"
+      },
+      {
+        "addr": "101c474b",
+        "instruction": "mov eax, [esi]"
+      },
+      {
+        "addr": "101c474d",
+        "instruction": "push ecx"
+      },
+      {
+        "addr": "101c474e",
+        "instruction": "mov edx, [eax+2Ch]"
+      },
+      {
+        "addr": "101c4751",
+        "instruction": "push offset aTopvignettesca; \"$topVignetteScale\"",
+        "refs": [
+          {
+            "addr": "0x1058b3a8",
+            "name": "aTopvignettesca",
+            "string": "$topVignetteScale"
+          }
+        ]
+      },
+      {
+        "addr": "101c4756",
+        "instruction": "mov ecx, esi"
+      },
+      {
+        "addr": "101c4758",
+        "instruction": "call edx"
+      },
+      {
+        "addr": "101c475a",
+        "instruction": "push 0"
+      },
+      {
+        "addr": "101c475c",
+        "instruction": "lea ecx, [ebp-1]"
+      },
+      {
+        "addr": "101c475f",
+        "instruction": "mov [edi+48h], eax"
+      },
+      {
+        "addr": "101c4762",
+        "instruction": "mov eax, [esi]"
+      },
+      {
+        "addr": "101c4764",
+        "instruction": "mov edx, [eax+2Ch]"
+      },
+      {
+        "addr": "101c4767",
+        "instruction": "push ecx"
+      },
+      {
+        "addr": "101c4768",
+        "instruction": "push offset aVomitenable; \"$vomitEnable\"",
+        "refs": [
+          {
+            "addr": "0x1058b398",
+            "name": "aVomitenable",
+            "string": "$vomitEnable"
+          }
+        ]
+      },
+      {
+        "addr": "101c476d",
+        "instruction": "mov ecx, esi"
+      },
+      {
+        "addr": "101c476f",
+        "instruction": "call edx"
+      },
+      {
+        "addr": "101c4771",
+        "instruction": "push 0"
+      },
+      {
+        "addr": "101c4773",
+        "instruction": "lea ecx, [ebp-1]"
+      },
+      {
+        "addr": "101c4776",
+        "instruction": "mov [edi+4Ch], eax"
+      },
+      {
+        "addr": "101c4779",
+        "instruction": "mov eax, [esi]"
+      },
+      {
+        "addr": "101c477b",
+        "instruction": "mov edx, [eax+2Ch]"
+      },
+      {
+        "addr": "101c477e",
+        "instruction": "push ecx"
+      },
+      {
+        "addr": "101c477f",
+        "instruction": "push offset aFadecolor; \"$fadeColor\"",
+        "refs": [
+          {
+            "addr": "0x1058b38c",
+            "name": "aFadecolor",
+            "string": "$fadeColor"
+          }
+        ]
+      },
+      {
+        "addr": "101c4784",
+        "instruction": "mov ecx, esi"
+      },
+      {
+        "addr": "101c4786",
+        "instruction": "call edx"
+      },
+      {
+        "addr": "101c4788",
+        "instruction": "push 0"
+      },
+      {
+        "addr": "101c478a",
+        "instruction": "lea ecx, [ebp-1]"
+      },
+      {
+        "addr": "101c478d",
+        "instruction": "mov [edi+50h], eax"
+      },
+      {
+        "addr": "101c4790",
+        "instruction": "mov eax, [esi]"
+      },
+      {
+        "addr": "101c4792",
+        "instruction": "mov edx, [eax+2Ch]"
+      },
+      {
+        "addr": "101c4795",
+        "instruction": "push ecx"
+      },
+      {
+        "addr": "101c4796",
+        "instruction": "push offset aFade; \"$fade\"",
+        "refs": [
+          {
+            "addr": "0x1058b384",
+            "name": "aFade",
+            "string": "$fade"
+          }
+        ]
+      },
+      {
+        "addr": "101c479b",
+        "instruction": "mov ecx, esi"
+      },
+      {
+        "addr": "101c479d",
+        "instruction": "call edx"
+      },
+      {
+        "addr": "101c479f",
+        "instruction": "mov [edi+54h], eax"
+      },
+      {
+        "addr": "101c47a2",
+        "instruction": "pop edi"
+      },
+      {
+        "addr": "101c47a3",
+        "instruction": "mov al, 1"
+      },
+      {
+        "addr": "101c47a5",
+        "instruction": "pop esi"
+      },
+      {
+        "addr": "101c47a6",
+        "instruction": "mov esp, ebp"
+      },
+      {
+        "addr": "101c47a8",
+        "instruction": "pop ebp"
+      },
+      {
+        "addr": "101c47a9",
+        "instruction": "retn 8"
+      },
+      {
+        "addr": "101c47ac",
+        "instruction": "align 10h"
+      },
+      {
+        "addr": "101c47b0",
+        "instruction": "push esi",
+        "label": "sub_101C47B0"
+      },
+      {
+        "addr": "101c47b1",
+        "instruction": "mov esi, ecx"
+      },
+      {
+        "addr": "101c47b3",
+        "instruction": "mov ecx, dword_10735E3C",
+        "refs": [
+          {
+            "addr": "0x10735e3c",
+            "name": "dword_10735E3C"
+          }
+        ]
+      },
+      {
+        "addr": "101c47b9",
+        "instruction": "mov eax, [ecx]"
+      },
+      {
+        "addr": "101c47bb",
+        "instruction": "mov edx, [eax+1F8h]"
+      },
+      {
+        "addr": "101c47c1",
+        "instruction": "push edi"
+      },
+      {
+        "addr": "101c47c2",
+        "instruction": "call edx"
+      },
+      {
+        "addr": "101c47c4",
+        "instruction": "cmp dword ptr [esi+4], 0"
+      },
+      {
+        "addr": "101c47c8",
+        "instruction": "mov edi, eax"
+      },
+      {
+        "addr": "101c47ca",
+        "instruction": "jz short loc_101C47DD",
+        "refs": [
+          {
+            "addr": "0x101c47dd",
+            "name": "loc_101C47DD"
+          }
+        ]
+      },
+      {
+        "addr": "101c47cc",
+        "instruction": "mov ecx, [esi+4]"
+      },
+      {
+        "addr": "101c47cf",
+        "instruction": "mov eax, [ecx]"
+      },
+      {
+        "addr": "101c47d1",
+        "instruction": "mov edx, [eax+30h]"
+      },
+      {
+        "addr": "101c47d4",
+        "instruction": "push 4"
+      },
+      {
+        "addr": "101c47d6",
+        "instruction": "push offset dword_107A34F8",
+        "refs": [
+          {
+            "addr": "0x107a34f8",
+            "name": "dword_107A34F8"
+          }
+        ]
+      },
+      {
+        "addr": "101c47db",
+        "instruction": "call edx"
+      },
+      {
+        "addr": "101c47dd",
+        "instruction": "cmp dword ptr [esi+8], 0",
+        "label": "loc_101C47DD"
+      },
+      {
+        "addr": "101c47e1",
+        "instruction": "jz short loc_101C47F4",
+        "refs": [
+          {
+            "addr": "0x101c47f4",
+            "name": "loc_101C47F4"
+          }
+        ]
+      },
+      {
+        "addr": "101c47e3",
+        "instruction": "mov ecx, [esi+8]"
+      },
+      {
+        "addr": "101c47e6",
+        "instruction": "mov eax, [ecx]"
+      },
+      {
+        "addr": "101c47e8",
+        "instruction": "mov edx, [eax+30h]"
+      },
+      {
+        "addr": "101c47eb",
+        "instruction": "push 4"
+      },
+      {
+        "addr": "101c47ed",
+        "instruction": "push offset dword_107A3508",
+        "refs": [
+          {
+            "addr": "0x107a3508",
+            "name": "dword_107A3508"
+          }
+        ]
+      },
+      {
+        "addr": "101c47f2",
+        "instruction": "call edx"
+      },
+      {
+        "addr": "101c47f4",
+        "instruction": "cmp dword ptr [esi+14h], 0",
+        "label": "loc_101C47F4"
+      },
+      {
+        "addr": "101c47f8",
+        "instruction": "jz short loc_101C480B",
+        "refs": [
+          {
+            "addr": "0x101c480b",
+            "name": "loc_101C480B"
+          }
+        ]
+      },
+      {
+        "addr": "101c47fa",
+        "instruction": "mov ecx, [esi+14h]"
+      },
+      {
+        "addr": "101c47fd",
+        "instruction": "mov eax, [ecx]"
+      },
+      {
+        "addr": "101c47ff",
+        "instruction": "mov edx, [eax+30h]"
+      },
+      {
+        "addr": "101c4802",
+        "instruction": "push 4"
+      },
+      {
+        "addr": "101c4804",
+        "instruction": "push offset dword_107A3518",
+        "refs": [
+          {
+            "addr": "0x107a3518",
+            "name": "dword_107A3518"
+          }
+        ]
+      },
+      {
+        "addr": "101c4809",
+        "instruction": "call edx"
+      },
+      {
+        "addr": "101c480b",
+        "instruction": "cmp dword ptr [esi+0Ch], 0",
+        "label": "loc_101C480B"
+      }
+    ]
+  },
+  "instruction_count": 85,
+  "total_instructions": null,
+  "cursor": {
+    "next": 85
+  }
+}

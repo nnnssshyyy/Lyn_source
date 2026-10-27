@@ -1,0 +1,45 @@
+{
+  "result": [
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1014d5b7",
+        "end": "0x1014d5c0",
+        "offset": 0,
+        "count": 10,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1014d5b7",
+          "end": "0x1014d5c0"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1014d5b7",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x1014d5be",
+          "disasm": "jnz short loc_1014D559"
+        }
+      ],
+      "count": 2,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 2,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    }
+  ]
+}

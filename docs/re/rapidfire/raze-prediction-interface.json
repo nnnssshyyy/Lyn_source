@@ -1,0 +1,30 @@
+{
+  "addr": "0x10001e80",
+  "code": "int sub_10001E80()\n{\n  __int128 v1; // [esp-14h] [ebp-14h]\n\n  HIDWORD(v1) = -1; /*0x10001e87*/\n  DWORD2(v1) = \"VClientPrediction001\"; /*0x10001e89*/\n  DWORD1(v1) = \"client.dll\"; /*0x10001e8e*/\n  LODWORD(v1) = &dword_103EC918; /*0x10001e93*/\n  return sub_1017F5F0(a1: v1, a2: 0); /*0x10001e9d*/\n}",
+  "line_count": 10,
+  "total_lines": 10,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1028e4c8",
+      "name": "aVclientpredict",
+      "string": "VClientPrediction001"
+    },
+    {
+      "addr": "0x10287305",
+      "name": "aClientDll",
+      "string": "client.dll"
+    },
+    {
+      "addr": "0x103ec918",
+      "name": "dword_103EC918"
+    },
+    {
+      "addr": "0x1017f5f0",
+      "name": "sub_1017F5F0"
+    }
+  ]
+}

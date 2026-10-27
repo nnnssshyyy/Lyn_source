@@ -1,0 +1,16 @@
+{
+  "addr": "0x10144C10",
+  "code": "int __thiscall sub_10144C10(_DWORD *this)\n{\n  return (*(int (__thiscall **)(int, _DWORD))(*(_DWORD *)dword_103EC7B8 + 16))(a1: dword_103EC7B8, a2: *this); /*0x10144c43*/\n}",
+  "line_count": 4,
+  "total_lines": 4,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x103ec7b8",
+      "name": "dword_103EC7B8"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "addr": "0x10080da0",
+  "code": "int sub_10080DA0()\n{\n  int v0; // ebx\n  int result; // eax\n  _DWORD *v2; // edi\n  int v3; // [esp+4h] [ebp-14h]\n  int v4; // [esp+10h] [ebp-8h] BYREF\n  int v5; // [esp+14h] [ebp-4h]\n\n  v4 = 0; /*0x10080dad*/\n  v5 = 0; /*0x10080db0*/\n  if ( g_Telemetry[0] != 0 ) /*0x10080db7*/\n    (*(void (**)(_DWORD, int *, _DWORD, _DWORD, _DWORD, _DWORD, const char *, int, void *, const char *, ...))(g_Telemetry[0] + 80))( /*0x10080ddb*/\n      a1: g_Telemetry[0],\n      a2: &v4,\n      a3: 0,\n      a4: 0,\n      a5: 0,\n      a6: 0,\n      a7: \"cl_pred.cpp\",\n      a8: 43,\n      a9: &unk_104FD9D0,\n      a10: \"%s\",\n      \"CL_RunPrediction\");\n  v0 = v4; /*0x10080de9*/\n  v3 = v5; /*0x10080df0*/\n  result = sub_10082CA0(); /*0x10080df3*/\n  v2 = (_DWORD *)result; /*0x10080df8*/\n  if ( *(_DWORD *)(result + 104) != 6 ) /*0x10080dfe*/\n  {\n    if ( g_Telemetry[0] == 0 ) /*0x10080e02*/\n      return result; /*0x10080e02*/\n    return (*(int (__stdcall **)(_DWORD, int, int, _DWORD, _DWORD, _DWORD))(g_Telemetry[0] + 84))( /*0x10080e02*/\n             a1: g_Telemetry[0],\n             a2: v0,\n             a3: v3,\n             a4: 0,\n             a5: 0,\n             a6: 0);\n  }\n  if ( *(int *)(result + 204) < 0 ) /*0x10080e27*/\n  {\n    if ( g_Telemetry[0] == 0 ) /*0x10080e2b*/\n      return result; /*0x10080e2b*/\n    return (*(int (__stdcall **)(_DWORD, int, int, _DWORD, _DWORD, _DWORD))(g_Telemetry[0] + 84))( /*0x10080e2b*/\n             a1: g_Telemetry[0],\n             a2: v0,\n             a3: v3,\n             a4: 0,\n             a5: 0,\n             a6: 0);\n  }\n  result = (*(int (__thiscall **)(int))(*(_DWORD *)dword_104EF2F0 + 36))(a1: dword_104EF2F0); /*0x10080e50*/\n  if ( (_BYTE)result == 0 ) /*0x10080e54*/\n    result = (*(int (__thiscall **)(int, _DWORD, bool, _DWORD, int))(*(_DWORD *)dword_104EE784 + 12))( /*0x10080e8b*/\n               a1: dword_104EE784,\n               a2: v2[51],\n               a3: v2[51] > 0,\n               a4: v2[4755],\n               a5: v2[4753] + v2[4754]);\n  if ( g_Telemetry[0] != 0 ) /*0x10080e8f*/\n    return (*(int (__stdcall **)(_DWORD, int, int, _DWORD, _DWORD, _DWORD))(g_Telemetry[0] + 84))( /*0x10080e91*/\n             a1: g_Telemetry[0],\n             a2: v0,\n             a3: v3,\n             a4: 0,\n             a5: 0,\n             a6: 0);\n  return result; /*0x10080e1c*/\n}",
+  "line_count": 70,
+  "total_lines": 70,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1034e4e8",
+      "name": "g_Telemetry"
+    },
+    {
+      "addr": "0x10367114",
+      "name": "aClPredCpp",
+      "string": "cl_pred.cpp"
+    },
+    {
+      "addr": "0x104fd9d0",
+      "name": "unk_104FD9D0"
+    },
+    {
+      "addr": "0x103525b8",
+      "name": "aS_1",
+      "string": "%s"
+    },
+    {
+      "addr": "0x10367120",
+      "name": "aClRunpredictio",
+      "string": "CL_RunPrediction"
+    },
+    {
+      "addr": "0x10082ca0",
+      "name": "sub_10082CA0"
+    },
+    {
+      "addr": "0x104ef2f0",
+      "name": "dword_104EF2F0"
+    },
+    {
+      "addr": "0x104ee784",
+      "name": "dword_104EE784"
+    }
+  ]
+}

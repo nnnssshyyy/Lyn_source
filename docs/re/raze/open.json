@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "session": {
+    "session_id": "raze-chatspy",
+    "input_path": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\raze\\raze.dll",
+    "filename": "raze.dll",
+    "created_at": "2026-10-17T01:28:46.518512",
+    "last_accessed": "2026-10-17T01:28:46.518514",
+    "is_analyzing": false,
+    "metadata": {}
+  },
+  "warmup": {
+    "ok": true,
+    "steps": [
+      {
+        "step": "init_caches",
+        "ok": true,
+        "ms": 3071.1
+      },
+      {
+        "step": "init_hexrays",
+        "ok": true,
+        "ms": 0.04
+      }
+    ],
+    "health": {
+      "status": "ok",
+      "uptime_sec": 53.198,
+      "idb_path": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\raze\\raze.dll.i64",
+      "module": "raze.dll",
+      "input_path": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\raze\\raze.dll",
+      "imagebase": "0x10000000",
+      "auto_analysis_ready": true,
+      "hexrays_ready": true,
+      "strings_cache_ready": true,
+      "strings_cache_size": 18094
+    }
+  },
+  "message": "Binary opened: raze.dll (raze-chatspy)"
+}

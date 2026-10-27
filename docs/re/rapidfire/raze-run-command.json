@@ -1,0 +1,108 @@
+{
+  "addr": "0x1016cf10",
+  "code": "char __fastcall sub_1016CF10(int a1, int a2, int a3, int a4, int a5)\n{\n  int v7; // edi\n  bool v8; // cl\n  int v10; // eax\n  int v11; // esi\n  int v12; // ebx\n  int v13; // esi\n  int v14; // ecx\n  void (__thiscall *v21)(int, int, int); // eax\n  int v26; // [esp+10h] [ebp-34h]\n  int v27; // [esp+14h] [ebp-30h]\n  int v28; // [esp+14h] [ebp-30h]\n  int v29; // [esp+18h] [ebp-2Ch] BYREF\n  int v30; // [esp+1Ch] [ebp-28h]\n  int v31; // [esp+20h] [ebp-24h]\n  int v32; // [esp+24h] [ebp-20h]\n  int *v33; // [esp+28h] [ebp-1Ch]\n  struct _EXCEPTION_REGISTRATION_RECORD *ExceptionList; // [esp+2Ch] [ebp-18h]\n  void *v35; // [esp+30h] [ebp-14h]\n  int v36; // [esp+34h] [ebp-10h]\n\n  v7 = a3; /*0x1016cf1d*/\n  v33 = &v29; /*0x1016cf20*/\n  v36 = -1; /*0x1016cf23*/\n  v35 = &loc_101769A0; /*0x1016cf2d*/\n  ExceptionList = NtCurrentTeb()->NtTib.ExceptionList; /*0x1016cf3b*/\n  if ( byte_103EEA60 != 1 /*0x1016cf64*/\n    || (_EAX = sub_10179540(a1: off_1029E014),\n        v8 = _EAX != 0,\n        LOBYTE(_EAX) = a3 == _EAX,\n        ((unsigned __int8)_EAX & v8) == 0) )\n  {\n    v29 = a1; /*0x1016cf6a*/\n    v32 = a2; /*0x1016cf6d*/\n    v10 = sub_10179540(a1: off_1029E014); /*0x1016cf76*/\n    if ( v10 != 0 ) /*0x1016cf7d*/\n    {\n      v11 = v10; /*0x1016cf83*/\n      v12 = dword_103F690C[2 * (*(_DWORD *)(a4 + 4) % 150)]; /*0x1016cfa6*/\n      if ( dword_103EEAF0 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1016cfc8*/\n      {\n        sub_101809C3(a1: &dword_103EEAF0); /*0x1016d143*/\n        if ( dword_103EEAF0 == -1 ) /*0x1016d152*/\n        {\n          v30 = v12; /*0x1016d158*/\n          v31 = v11; /*0x1016d15b*/\n          v36 = 0; /*0x1016d15e*/\n          dword_103EEAEC = sub_1017C730(a1: \"CBasePlayer\", a2: \"m_nTickBase\"); /*0x1016d177*/\n          sub_10180A43(a1: &dword_103EEAF0); /*0x1016d181*/\n          v7 = a3; /*0x1016d189*/\n          v11 = v31; /*0x1016d18c*/\n          v12 = v30; /*0x1016d18f*/\n        }\n      }\n      *(_DWORD *)(dword_103EEAEC + v11) -= v12; /*0x1016cfd3*/\n      if ( v7 == v11 ) /*0x1016cfd8*/\n      {\n        if ( dword_103EEAF0 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1016cff5*/\n        {\n          sub_101809C3(a1: &dword_103EEAF0); /*0x1016d19c*/\n          if ( dword_103EEAF0 == -1 ) /*0x1016d1ab*/\n          {\n            v31 = v11; /*0x1016d1b1*/\n            v36 = 1; /*0x1016d1b4*/\n            dword_103EEAEC = sub_1017C730(a1: \"CBasePlayer\", a2: \"m_nTickBase\"); /*0x1016d1cd*/\n            sub_10180A43(a1: &dword_103EEAF0); /*0x1016d1d7*/\n            v7 = a3; /*0x1016d1df*/\n            v11 = v31; /*0x1016d1e2*/\n          }\n        }\n        dword_103F7460 = *(_DWORD *)(dword_103EEAEC + v11); /*0x1016d003*/\n        v36 = -1; /*0x1016d008*/\n      }\n    }\n    v36 = -1; /*0x1016d012*/\n    dword_103F745C(a1: v29, a2: v32, a3: v7, a4, a5); /*0x1016d024*/\n    dword_103EF050 = a5; /*0x1016d02a*/\n    _EAX = sub_10179540(a1: off_1029E014); /*0x1016d036*/\n    if ( _EAX != 0 && byte_103F5D42 == 1 && byte_103EEA60 == 0 ) /*0x1016d057*/\n    {\n      v13 = _EAX; /*0x1016d05d*/\n      if ( v7 == _EAX ) /*0x1016d061*/\n      {\n        LOBYTE(_EAX) = a4; /*0x1016d067*/\n        if ( *(_BYTE *)(a4 + 60) == 0 ) /*0x1016d06e*/\n        {\n          if ( dword_103EF190 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1016d08f*/\n          {\n            sub_101809C3(a1: &dword_103EF190); /*0x1016d1ef*/\n            if ( dword_103EF190 == -1 ) /*0x1016d1fe*/\n            {\n              v32 = v13; /*0x1016d204*/\n              v36 = 2; /*0x1016d207*/\n              dword_103EF18C = sub_1017C730(a1: \"CTerrorPlayer\", a2: \"m_iThrowGrenadeCounter\") - 24; /*0x1016d223*/\n              sub_10180A43(a1: &dword_103EF190); /*0x1016d22d*/\n              v7 = a3; /*0x1016d235*/\n              v13 = v32; /*0x1016d238*/\n            }\n          }\n          LOBYTE(_EAX) = dword_103EF18C; /*0x1016d095*/\n          v14 = *(_DWORD *)(dword_103EF18C + v7); /*0x1016d09a*/\n          if ( v14 != 0 ) /*0x1016d09f*/\n          {\n            _EAX = dword_103EC8D0; /*0x1016d0a5*/\n            __asm /*0x1016d0aa*/\n            {\n              vmovss xmm0, dword ptr [eax+10h]\n              vmovss [ebp+var_20], xmm0\n            }\n            __asm { vxorps xmm0, xmm0, xmm0 }\n            if ( *(_BYTE *)(dword_103EC918 + 10) == 0 ) /*0x1016d0c2*/\n            {\n              __asm { vmovss xmm0, dword ptr [eax+1Ch] } /*0x1016d0c4*/\n              v36 = -1; /*0x1016d0c9*/\n            }\n            __asm { vmovss dword ptr [eax+10h], xmm0 } /*0x1016d0d0*/\n            _EAX = a4; /*0x1016d0d5*/\n            __asm /*0x1016d0d8*/\n            {\n              vmovss xmm0, dword ptr [eax+0Ch]\n              vmovss xmm1, dword ptr [eax+10h]\n            }\n            v21 = *(void (__thiscall **)(int, int, int))(*(_DWORD *)v14 + 12); /*0x1016d0e4*/\n            v36 = -1; /*0x1016d0e7*/\n            __asm /*0x1016d0f1*/\n            {\n              vmovss [esp+34h+var_30], xmm0\n              vmovss [esp+34h+var_34], xmm1\n            }\n            v21(a1: v14, a2: v26, a3: v27); /*0x1016d0fc*/\n            _EAX = dword_103EC8D0; /*0x1016d0fe*/\n            __asm { vmovss xmm0, dword ptr [eax+10h] } /*0x1016d103*/\n            __asm { vmovss [esp+30h+var_30], xmm0 }\n            (*(void (__thiscall **)(int, int))(*(_DWORD *)v13 + 800))(a1: v13, a2: v28); /*0x1016d114*/\n            _EAX = dword_103EC8D0; /*0x1016d11c*/\n            __asm /*0x1016d121*/\n            {\n              vmovss xmm0, [ebp+var_20]\n              vmovss dword ptr [eax+10h], xmm0\n            }\n          }\n        }\n      }\n    }\n  }\n  return _EAX; /*0x1016d12b*/\n}",
+  "line_count": 148,
+  "total_lines": 148,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x101769a0",
+      "name": "loc_101769A0"
+    },
+    {
+      "addr": "0x10179540",
+      "name": "sub_10179540"
+    },
+    {
+      "addr": "0x1029e014",
+      "name": "off_1029E014"
+    },
+    {
+      "addr": "0x103f690c",
+      "name": "dword_103F690C"
+    },
+    {
+      "addr": "0x101809c3",
+      "name": "sub_101809C3"
+    },
+    {
+      "addr": "0x103eeaf0",
+      "name": "dword_103EEAF0"
+    },
+    {
+      "addr": "0x103eeaec",
+      "name": "dword_103EEAEC"
+    },
+    {
+      "addr": "0x1017c730",
+      "name": "sub_1017C730"
+    },
+    {
+      "addr": "0x1028578f",
+      "name": "aCbaseplayer",
+      "string": "CBasePlayer"
+    },
+    {
+      "addr": "0x10288d37",
+      "name": "aMNtickbase",
+      "string": "m_nTickBase"
+    },
+    {
+      "addr": "0x10180a43",
+      "name": "sub_10180A43"
+    },
+    {
+      "addr": "0x103f800c",
+      "name": "TlsIndex"
+    },
+    {
+      "addr": "0x103f7460",
+      "name": "dword_103F7460"
+    },
+    {
+      "addr": "0x103f745c",
+      "name": "dword_103F745C"
+    },
+    {
+      "addr": "0x103ef050",
+      "name": "dword_103EF050"
+    },
+    {
+      "addr": "0x103ef190",
+      "name": "dword_103EF190"
+    },
+    {
+      "addr": "0x103ef18c",
+      "name": "dword_103EF18C"
+    },
+    {
+      "addr": "0x1028575e",
+      "name": "aCterrorplayer",
+      "string": "CTerrorPlayer"
+    },
+    {
+      "addr": "0x10285808",
+      "name": "aMIthrowgrenade",
+      "string": "m_iThrowGrenadeCounter"
+    },
+    {
+      "addr": "0x103ec8d0",
+      "name": "dword_103EC8D0"
+    },
+    {
+      "addr": "0x103ec918",
+      "name": "dword_103EC918"
+    },
+    {
+      "addr": "0x103f5d42",
+      "name": "byte_103F5D42"
+    },
+    {
+      "addr": "0x103eea60",
+      "name": "byte_103EEA60"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "addr": "0x100017b0",
+  "code": "int sub_100017B0()\n{\n  __int128 v1; // [esp-10h] [ebp-10h]\n\n  HIDWORD(v1) = \"CUserMessages_DispatchUserMessage\"; /*0x100017b5*/\n  DWORD2(v1) = 0; /*0x100017ba*/\n  DWORD1(v1) = \"55 8B EC 8B 45 ? 83 EC ? 85 C0 0F 88\"; /*0x100017bc*/\n  LODWORD(v1) = \"client.dll\"; /*0x100017c1*/\n  return sub_101804E0(a1: v1); /*0x100017cb*/\n}",
+  "line_count": 10,
+  "total_lines": 10,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x102895b6",
+      "name": "aCusermessagesD",
+      "string": "CUserMessages_DispatchUserMessage"
+    },
+    {
+      "addr": "0x1028cf9d",
+      "name": "a558bEc8b4583Ec",
+      "string": "55 8B EC 8B 45 ? 83 EC ? 85 C0 0F 88"
+    },
+    {
+      "addr": "0x10287305",
+      "name": "aClientDll",
+      "string": "client.dll"
+    },
+    {
+      "addr": "0x101804e0",
+      "name": "sub_101804E0"
+    }
+  ]
+}

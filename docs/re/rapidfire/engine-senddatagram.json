@@ -1,0 +1,205 @@
+{
+  "addr": "0x101b9b30",
+  "code": "int __thiscall sub_101B9B30(_DWORD *this, _DWORD *a2)\n{\n  _DWORD *v2; // edi\n  int v4; // ebx\n  int v5; // eax\n  int v6; // edi\n  const char *v7; // eax\n  int v9; // ebx\n  int v10; // eax\n  int v11; // eax\n  int v12; // edi\n  int i; // eax\n  int v14; // ecx\n  bool v15; // zf\n  unsigned __int16 v16; // ax\n  int v17; // edi\n  int v18; // eax\n  __int64 v19; // rax\n  int v20; // eax\n  char v21; // al\n  int v22; // eax\n  char v23; // al\n  float v24; // edi\n  double v25; // st7\n  double v26; // st6\n  double v27; // st7\n  int v28; // esi\n  int v29; // [esp+0h] [ebp-128h]\n  int v30; // [esp+4h] [ebp-124h]\n  __int64 v31; // [esp+8h] [ebp-120h]\n  __int64 v32; // [esp+Ch] [ebp-11Ch]\n  int v33; // [esp+10h] [ebp-118h]\n  int v34; // [esp+10h] [ebp-118h]\n  int v35; // [esp+38h] [ebp-F0h]\n  int v36; // [esp+40h] [ebp-E8h] BYREF\n  int v37; // [esp+48h] [ebp-E0h]\n  int v38; // [esp+4Ch] [ebp-DCh]\n  float v39; // [esp+58h] [ebp-D0h]\n  char v40[4]; // [esp+5Ch] [ebp-CCh] BYREF\n  unsigned __int8 v41; // [esp+63h] [ebp-C5h]\n  char v42[128]; // [esp+64h] [ebp-C4h] BYREF\n  char Buffer[64]; // [esp+E4h] [ebp-44h] BYREF\n\n  v2 = a2; /*0x101b9b46*/\n  *(_DWORD *)v40 = a2; /*0x101b9b4b*/\n  v4 = sub_101C9FE0(); /*0x101b9b56*/\n  v35 = v4; /*0x101b9b61*/\n  if ( *(_DWORD *)(dword_10696B1C + 48) != 0 && a2 != nullptr ) /*0x101b9b6b*/\n  {\n    v5 = (a2[3] + 7) >> 3; /*0x101b9b73*/\n    if ( v5 > 0 ) /*0x101b9b78*/\n      (*(void (__cdecl **)(const char *, _DWORD, int))(g_pVCR + 144))(a1: \"datagram\", a2: *a2, a3: v5 - 1); /*0x101b9b92*/\n  }\n  if ( *(this + 35) == 0 ) /*0x101b9b9e*/\n  {\n    v6 = *(_DWORD *)(dword_106B2CB4 + 48); /*0x101b9ba8*/\n    if ( v6 != (*(int (__thiscall **)(_DWORD *))(*this + 280))(a1: this) ) /*0x101b9bb7*/\n      (*(void (__thiscall **)(_DWORD *, _DWORD))(*this + 276))(a1: this, a2: *(_DWORD *)(dword_106B2CB4 + 48)); /*0x101b9bcd*/\n    v2 = *(_DWORD **)v40; /*0x101b9bcf*/\n  }\n  if ( sub_10290650() != 0 )\n  {\n    if ( *((_WORD *)this + 8491) != 0 ) /*0x101b9c13*/\n    {\n      sub_101B9240(a1: 0, a2: this + 8); /*0x101b9c1d*/\n      sub_101B9240(a1: 1, a2: this + 17); /*0x101b9c2a*/\n      sub_101B9240(a1: 2, a2: this + 26); /*0x101b9c37*/\n    }\n    if ( *((_BYTE *)this + 48) != 0 ) /*0x101b9c40*/\n    {\n      v7 = (const char *)sub_102904F0(a1: 0); /*0x101b9c4a*/\n      ConMsg(a1: \"%s:send reliable stream overflow\\n\", v7); /*0x101b9c55*/\n      sub_101CA000(a1: v4); /*0x101b9c5c*/\n      return 0; /*0x101b9c76*/\n    }\n    if ( (int)*(this + 11) > 0 ) /*0x101b9c7d*/\n    {\n      sub_101B9720(a1: this + 8, a2: 0); /*0x101b9c87*/\n      sub_1028F5C0(a1: this + 8); /*0x101b9c8e*/\n      v2 = *(_DWORD **)v40; /*0x101b9c93*/\n    }\n    sub_1028FCA0(a1: \"CNetChan_TransmitBits->send\", a2: v4, a3: 228016, a4: -1); /*0x101b9cac*/\n    v34 = *(this + 2); /*0x101b9cb4*/\n    v41 = 0; /*0x101b9cbb*/\n    sub_10290330(a1: v34); /*0x101b9cc2*/\n    sub_10290330(a1: *(this + 3)); /*0x101b9cd1*/\n    sub_1028FBF0(a1: 0); /*0x101b9d26*/\n    if ( (unsigned __int8)sub_101C95E0() != 0 ) /*0x101b9d32*/\n      sub_10290310(a1: 0); /*0x101b9d3c*/\n    v9 = (v38 + 7) >> 3; /*0x101b9d54*/\n    sub_1028FBF0(a1: *(this + 6)); /*0x101b9d57*/\n    v10 = *(this + 7); /*0x101b9d5c*/\n    if ( v10 > 0 ) /*0x101b9d61*/\n    {\n      v41 = 16; /*0x101b9d6d*/\n      sub_1028FBF0(a1: (unsigned __int8)v10); /*0x101b9d74*/\n    }\n    if ( (unsigned __int8)sub_101B60D0(a1: &v36) != 0 ) /*0x101b9d89*/\n      v41 |= 1u; /*0x101b9d8b*/\n    if ( v2 != nullptr )\n    {\n      if ( v2[3] >= v37 - v38 )\n        ConDMsg(a1: \"CNetChan::SendDatagram:  data would overfow, ignoring\\n\");\n      else\n        sub_1028F690(a1: *v2, a2: v2[3]); /*0x101b9db3*/\n    }\n    if ( *(this + 20) >= v37 - v38 )\n      ConDMsg(a1: \"CNetChan::SendDatagram:  Unreliable would overfow, ignoring\\n\");\n    else\n      sub_1028F690(a1: *(this + 17), a2: *(this + 20)); /*0x101b9de6*/\n    sub_1028F5C0(a1: this + 17); /*0x101b9dfe*/\n    v11 = *(this + 29); /*0x101b9e03*/\n    if ( v11 > 0 && v11 < v37 - v38 ) /*0x101b9e18*/\n    {\n      sub_1028F690(a1: *(this + 26), a2: *(this + 29)); /*0x101b9e25*/\n      sub_1028F5C0(a1: this + 26); /*0x101b9e2d*/\n    }\n    v12 = 16; /*0x101b9e39*/\n    if ( *(this + 35) == 1 ) /*0x101b9e3e*/\n      v12 = *(_DWORD *)(dword_106B248C + 48); /*0x101b9e45*/\n    for ( i = v38; (v38 + 7) >> 3 < v12; i = v38 ) /*0x101b9e56*/\n      sub_10061340(a1: 0, a2: 6, a3: 1); /*0x101b9e64*/\n    if ( (unsigned int)(i % 8 - 1) <= 1 ) /*0x101b9e89*/\n      sub_10061340(a1: 0, a2: 6, a3: 1); /*0x101b9e97*/\n    v14 = v38 % 8; /*0x101b9eae*/\n    if ( v38 % 8 > 0 ) /*0x101b9eb1*/\n    {\n      v41 |= 32 * (8 - v14); /*0x101b9ebf*/\n      if ( 8 - v14 > 0 ) /*0x101b9ec7*/\n        sub_10061340(a1: dword_10427C20[(8 - v14) & 0x1F] - 1, a2: 8 - v14, a3: 1); /*0x101b9ede*/\n    }\n    v15 = *(_DWORD *)(dword_106B23B4 + 48) == 0; /*0x101b9ee9*/\n    v40[0] = 0; /*0x101b9eed*/\n    if ( !v15 ) /*0x101b9ef4*/\n      v40[0] = (v38 + 7) >> 3 >= *(_DWORD *)(dword_106B2444 + 48); /*0x101b9f0d*/\n    LODWORD(v39) = v41; /*0x101b9f22*/\n    sub_1028FBF0(a1: v41); /*0x101b9f28*/\n    if ( (unsigned __int8)sub_101C95E0() != 0 ) /*0x101b9f34*/\n    {\n      v16 = sub_101B1930(a1: v9 + v36, a2: ((v38 + 7) >> 3) - v9); /*0x101b9f4e*/\n      sub_10061340(a1: v16, a2: 16, a3: 1); /*0x101b9f64*/\n    }\n    v17 = sub_101CE860( /*0x101b9f9c*/\n            a1: (int)this,\n            a2: *(this + 35),\n            a3: (Concurrency::details::WorkItem *)(this + 38),\n            a4: v36,\n            a5: (v38 + 7) >> 3,\n            a6: 0,\n            a7: v40[0],\n            a8: 0);\n    sub_1028F5C0(a1: this + 26); /*0x101b9faa*/\n    v18 = *(_DWORD *)(dword_106B263C + 48); /*0x101b9fb5*/\n    if ( v18 != 0\n      && v18 != 2\n      && (*(_DWORD *)(dword_106B25F4 + 48) == 0\n       || (unsigned __int8)sub_102905E0(a1: this + 38) == 0\n       && !Concurrency::details::WorkItem::IsContext(this: (Concurrency::details::WorkItem *)(this + 38))) )\n    {\n      memset(Buffer, 0, sizeof(Buffer)); /*0x101b9ffb*/\n      if ( *(_DWORD *)(dword_106B23B4 + 48) != 0 && v17 != 0 ) /*0x101ba015*/\n      {\n        *(_DWORD *)v40 = (v38 + 7) >> 3; /*0x101ba023*/\n        if ( v17 < *(int *)v40 ) /*0x101ba02b*/\n          sub_10284980(Buffer, BufferCount: 0x40u, Format: \" compression=%5u [%5.2f %%]\", ArgList: v17); /*0x101ba051*/\n      }\n      v19 = ((__int64 (__thiscall *)(int *, _DWORD *))*(_DWORD *)(*off_10432404 + 28))(a1: off_10432404, a2: this + 38); /*0x101ba065*/\n      *(_DWORD *)v40 = -14336; /*0x101ba06d*/\n      if ( v19 != 0 ) /*0x101ba077*/\n      {\n        v40[0] = -1; /*0x101ba079*/\n        v40[1] = -1; /*0x101ba07f*/\n        v40[3] = -1; /*0x101ba085*/\n        v40[2] = 100; /*0x101ba08b*/\n        v32 = v19; /*0x101ba099*/\n        v20 = sub_102904F0(a1: 0); /*0x101ba0a8*/\n        v21 = (*(int (__thiscall **)(_DWORD *, int, _DWORD, _DWORD))*this)(a1: this, a2: v20, a3: v32, a4: HIDWORD(v32)); /*0x101ba0b4*/\n        sub_10284980(Buffer: v42, BufferCount: 0x80u, Format: \"%12.12s %21.21s s(%llx)\", ArgList: v21); /*0x101ba0c8*/\n      }\n      else\n      {\n        v22 = sub_102904F0(a1: 0); /*0x101ba0da*/\n        v23 = (*(int (__thiscall **)(_DWORD *, int))*this)(a1: this, a2: v22); /*0x101ba0e6*/\n        sub_10284980(Buffer: v42, BufferCount: 0x80u, Format: \"%12.12s %21.21s\", ArgList: v23); /*0x101ba0fa*/\n      }\n      ConColorMsg(\n        a1: (const struct Color *)v40,\n        a2: \"UDP -> %s: sz=%5i seq=%5i ack=%5i rel=%1i tm=%8.3f%s\\n\",\n        v42,\n        (v38 + 7) >> 3,\n        *(this + 2) & 0x3F,\n        *(this + 3) & 0x3F,\n        LOBYTE(v39) & 1,\n        dbl_106B2B48,\n        Buffer);\n    }\n    LODWORD(v24) = v17 + 28; /*0x101ba15c*/\n    v31 = (unsigned int)*(this + 7); /*0x101ba162*/\n    v30 = *(this + 3); /*0x101ba163*/\n    v29 = *(this + 2); /*0x101ba164*/\n    v39 = v24; /*0x101ba169*/\n    sub_101B14C0(a1: 0, a2: v29, a3: v30, a4: v31, a5: HIDWORD(v31), a6: LODWORD(v24)); /*0x101ba16f*/\n    sub_101B1670(a1: 0, a2: LODWORD(v24)); /*0x101ba179*/\n    if ( dbl_106B2B48 > *((double *)this + 23) ) /*0x101ba18e*/\n      *((double *)this + 23) = dbl_106B2B48; /*0x101ba190*/\n    v25 = (double)SLODWORD(v39) / (double)(int)*(this + 44) + *((double *)this + 23); /*0x101ba1a6*/\n    *((double *)this + 23) = v25; /*0x101ba1ac*/\n    v39 = *(float *)(dword_106B275C + 44); /*0x101ba1c4*/\n    if ( v39 > 0.0 ) /*0x101ba1cc*/\n    {\n      v26 = v25; /*0x101ba1da*/\n      v27 = v39 + dbl_106B2B48; /*0x101ba1da*/\n      if ( v26 > v27 ) /*0x101ba1de*/\n        *((double *)this + 23) = v27; /*0x101ba1e0*/\n    }\n    *(this + 7) = 0; /*0x101ba1f0*/\n    v33 = v35; /*0x101ba1f7*/\n  }\n  else\n  {\n    *((double *)this + 23) = 0.0; /*0x101b9bef*/\n    *(this + 7) = 0; /*0x101b9bf5*/\n    sub_1028F5C0(a1: this + 8); /*0x101b9bf8*/\n    sub_1028F5C0(a1: this + 17); /*0x101b9c00*/\n    v33 = v4; /*0x101b9c05*/\n  }\n  v28 = ++*(this + 2); /*0x101ba1fb*/\n  sub_101CA000(a1: v33); /*0x101ba1fe*/\n  return v28 - 1; /*0x101b9c64*/\n}",
+  "line_count": 230,
+  "total_lines": 230,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x101c9fe0",
+      "name": "sub_101C9FE0"
+    },
+    {
+      "addr": "0x1034e4d0",
+      "name": "g_pVCR"
+    },
+    {
+      "addr": "0x10390e58",
+      "name": "aDatagram",
+      "string": "datagram"
+    },
+    {
+      "addr": "0x10696b1c",
+      "name": "dword_10696B1C"
+    },
+    {
+      "addr": "0x106b2cb4",
+      "name": "dword_106B2CB4"
+    },
+    {
+      "addr": "0x101b9240",
+      "name": "sub_101B9240"
+    },
+    {
+      "addr": "0x102904f0",
+      "name": "sub_102904F0"
+    },
+    {
+      "addr": "0x1034e4f0",
+      "name": "?ConMsg@@YAXPBDZZ"
+    },
+    {
+      "addr": "0x10390e34",
+      "name": "aSSendReliableS",
+      "string": "%s:send reliable stream overflow\n"
+    },
+    {
+      "addr": "0x101ca000",
+      "name": "sub_101CA000"
+    },
+    {
+      "addr": "0x101b9720",
+      "name": "sub_101B9720"
+    },
+    {
+      "addr": "0x1028f5c0",
+      "name": "sub_1028F5C0"
+    },
+    {
+      "addr": "0x1028fca0",
+      "name": "sub_1028FCA0"
+    },
+    {
+      "addr": "0x10390e18",
+      "name": "aCnetchanTransm",
+      "string": "CNetChan_TransmitBits->send"
+    },
+    {
+      "addr": "0x10290330",
+      "name": "sub_10290330"
+    },
+    {
+      "addr": "0x1028fbf0",
+      "name": "sub_1028FBF0"
+    },
+    {
+      "addr": "0x10290310",
+      "name": "sub_10290310"
+    },
+    {
+      "addr": "0x101c95e0",
+      "name": "sub_101C95E0"
+    },
+    {
+      "addr": "0x101b60d0",
+      "name": "sub_101B60D0"
+    },
+    {
+      "addr": "0x1034e4c8",
+      "name": "ConDMsg"
+    },
+    {
+      "addr": "0x10390de0",
+      "name": "aCnetchanSendda",
+      "string": "CNetChan::SendDatagram:  data would overfow, ignoring\n"
+    },
+    {
+      "addr": "0x1028f690",
+      "name": "sub_1028F690"
+    },
+    {
+      "addr": "0x10390da0",
+      "name": "aCnetchanSendda_0",
+      "string": "CNetChan::SendDatagram:  Unreliable would overfow, ignoring\n"
+    },
+    {
+      "addr": "0x106b248c",
+      "name": "dword_106B248C"
+    },
+    {
+      "addr": "0x10061340",
+      "name": "sub_10061340"
+    },
+    {
+      "addr": "0x10427c20",
+      "name": "dword_10427C20"
+    },
+    {
+      "addr": "0x106b23b4",
+      "name": "dword_106B23B4"
+    },
+    {
+      "addr": "0x106b2444",
+      "name": "dword_106B2444"
+    },
+    {
+      "addr": "0x101b1930",
+      "name": "sub_101B1930"
+    },
+    {
+      "addr": "0x101ce860",
+      "name": "sub_101CE860"
+    },
+    {
+      "addr": "0x106b263c",
+      "name": "dword_106B263C"
+    },
+    {
+      "addr": "0x10284980",
+      "name": "sub_10284980"
+    },
+    {
+      "addr": "0x10390d84",
+      "name": "aCompression5u5",
+      "string": " compression=%5u [%5.2f %%]"
+    },
+    {
+      "addr": "0x10432404",
+      "name": "off_10432404"
+    },
+    {
+      "addr": "0x10390d6c",
+      "name": "a1212s2121sSLlx",
+      "string": "%12.12s %21.21s s(%llx)"
+    },
+    {
+      "addr": "0x10390d5c",
+      "name": "a1212s2121s",
+      "string": "%12.12s %21.21s"
+    },
+    {
+      "addr": "0x1034e5e4",
+      "name": "?ConColorMsg@@YAXABVColor@@PBDZZ"
+    },
+    {
+      "addr": "0x10390d24",
+      "name": "aUdpSSz5iSeq5iA",
+      "string": "UDP -> %s: sz=%5i seq=%5i ack=%5i rel=%1i tm=%8.3f%s\n"
+    },
+    {
+      "addr": "0x106b2b48",
+      "name": "dbl_106B2B48"
+    },
+    {
+      "addr": "0x106b25f4",
+      "name": "dword_106B25F4"
+    },
+    {
+      "addr": "0x102905e0",
+      "name": "sub_102905E0"
+    },
+    {
+      "addr": "0x10290600",
+      "name": "?IsContext@WorkItem@details@Concurrency@@QBE_NXZ"
+    },
+    {
+      "addr": "0x101b14c0",
+      "name": "sub_101B14C0"
+    },
+    {
+      "addr": "0x101b1670",
+      "name": "sub_101B1670"
+    },
+    {
+      "addr": "0x106b275c",
+      "name": "dword_106B275C"
+    },
+    {
+      "addr": "0x10290650",
+      "name": "sub_10290650"
+    }
+  ]
+}

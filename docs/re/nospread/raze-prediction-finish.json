@@ -1,0 +1,62 @@
+{
+  "addr": "0x1002d780",
+  "code": "int __thiscall NoSpread_PredictionEnd(_DWORD *this)\n{\n  int result; // eax\n  int v3; // edi\n  _DWORD v7[4]; // [esp+0h] [ebp-20h] BYREF\n  int v8; // [esp+10h] [ebp-10h]\n\n  _ESI = this; /*0x1002d789*/\n  v7[1] = v7; /*0x1002d78b*/\n  v8 = -1; /*0x1002d78e*/\n  v7[3] = &loc_1002D8B0; /*0x1002d798*/\n  v7[2] = NtCurrentTeb()->NtTib.ExceptionList; /*0x1002d7a6*/\n  result = sub_10179540(); /*0x1002d7b5*/\n  if ( result != 0 ) /*0x1002d7bc*/\n  {\n    v3 = result; /*0x1002d7be*/\n    __asm { vmovss xmm0, dword ptr [esi+0A8h] } /*0x1002d7c0*/\n    _EAX = dword_103EC8D0; /*0x1002d7c8*/\n    __asm /*0x1002d7cd*/\n    {\n      vmovss dword ptr [eax+0Ch], xmm0\n      vmovss xmm0, dword ptr [esi+0ACh]\n      vmovss dword ptr [eax+10h], xmm0\n    }\n    *(_DWORD *)(_EAX + 24) = _ESI[44]; /*0x1002d7e5*/\n    if ( dword_103EF060 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1002d803*/\n    {\n      sub_101809C3(a1: &dword_103EF060); /*0x1002d832*/\n      if ( dword_103EF060 == -1 ) /*0x1002d841*/\n      {\n        v7[0] = v3; /*0x1002d843*/\n        v8 = 0; /*0x1002d846*/\n        dword_103EF05C = sub_1017C730(a1: \"CBasePlayer\", a2: \"m_hConstraintEntity\") - 8; /*0x1002d862*/\n        sub_10180A43(a1: &dword_103EF060); /*0x1002d86c*/\n        v3 = v7[0]; /*0x1002d874*/\n      }\n    }\n    *(_DWORD *)(dword_103EF05C + v3) = 0; /*0x1002d80a*/\n    result = dword_103ECBD4; /*0x1002d811*/\n    *(_DWORD *)dword_103ECBD4 = -1; /*0x1002d816*/\n  }\n  return result; /*0x1002d81c*/\n}",
+  "line_count": 43,
+  "total_lines": 43,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1002d8b0",
+      "name": "loc_1002D8B0"
+    },
+    {
+      "addr": "0x10179540",
+      "name": "sub_10179540"
+    },
+    {
+      "addr": "0x103ec8d0",
+      "name": "dword_103EC8D0"
+    },
+    {
+      "addr": "0x101809c3",
+      "name": "sub_101809C3"
+    },
+    {
+      "addr": "0x103ef060",
+      "name": "dword_103EF060"
+    },
+    {
+      "addr": "0x103ef05c",
+      "name": "dword_103EF05C"
+    },
+    {
+      "addr": "0x1017c730",
+      "name": "sub_1017C730"
+    },
+    {
+      "addr": "0x1028578f",
+      "name": "aCbaseplayer",
+      "string": "CBasePlayer"
+    },
+    {
+      "addr": "0x10282bca",
+      "name": "aMHconstrainten",
+      "string": "m_hConstraintEntity"
+    },
+    {
+      "addr": "0x10180a43",
+      "name": "sub_10180A43"
+    },
+    {
+      "addr": "0x103f800c",
+      "name": "TlsIndex"
+    },
+    {
+      "addr": "0x103ecbd4",
+      "name": "Prediction_SeedPointer"
+    }
+  ]
+}

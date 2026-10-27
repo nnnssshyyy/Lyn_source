@@ -1,0 +1,1864 @@
+{
+  "result": [
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x100095e0",
+        "end": "0x10009608",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x100095e0",
+          "end": "0x10009608"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x100095e0",
+          "disasm": "mov StreamProof_Enabled, al"
+        },
+        {
+          "addr": "0x100095e5",
+          "disasm": "mov eax, [esi+4]"
+        },
+        {
+          "addr": "0x100095e8",
+          "disasm": "cmp byte ptr [eax], 1"
+        },
+        {
+          "addr": "0x100095eb",
+          "disasm": "jnz loc_1000A428"
+        },
+        {
+          "addr": "0x100095f1",
+          "disasm": "mov eax, [esi+8]"
+        },
+        {
+          "addr": "0x100095f4",
+          "disasm": "mov ecx, [eax]"
+        },
+        {
+          "addr": "0x100095f6",
+          "disasm": "push offset aBfreecamactive; \"bFreeCamActive\""
+        },
+        {
+          "addr": "0x100095fb",
+          "disasm": "call sub_1001C200"
+        },
+        {
+          "addr": "0x10009600",
+          "disasm": "mov ecx, [esi+8]"
+        },
+        {
+          "addr": "0x10009603",
+          "disasm": "mov ecx, [ecx]"
+        },
+        {
+          "addr": "0x10009605",
+          "disasm": "cmp eax, [ecx]"
+        },
+        {
+          "addr": "0x10009607",
+          "disasm": "jz short loc_1000962C"
+        }
+      ],
+      "count": 12,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 12,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x100288c6",
+        "end": "0x100288ee",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x100288c6",
+          "end": "0x100288ee"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x100288c6",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x100288cd",
+          "disasm": "jnz loc_10029D42"
+        },
+        {
+          "addr": "0x100288d3",
+          "disasm": "cmp byte_103F516C, 1"
+        },
+        {
+          "addr": "0x100288da",
+          "disasm": "jnz loc_10029D42"
+        },
+        {
+          "addr": "0x100288e0",
+          "disasm": "mov ecx, dword_103EC8A0"
+        },
+        {
+          "addr": "0x100288e6",
+          "disasm": "mov eax, [ecx]"
+        },
+        {
+          "addr": "0x100288e8",
+          "disasm": "call dword ptr [eax+8]"
+        },
+        {
+          "addr": "0x100288eb",
+          "disasm": "test al, al"
+        },
+        {
+          "addr": "0x100288ed",
+          "disasm": "jnz loc_10029D42"
+        }
+      ],
+      "count": 9,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 9,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1002ecc1",
+        "end": "0x1002ece9",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1002ecc1",
+          "end": "0x1002ece9"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1002ecc1",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x1002ecc8",
+          "disasm": "jnz loc_1003565A"
+        },
+        {
+          "addr": "0x1002ecce",
+          "disasm": "cmp byte ptr word_103F4BDD, 1"
+        },
+        {
+          "addr": "0x1002ecd5",
+          "disasm": "jnz loc_1003565A"
+        },
+        {
+          "addr": "0x1002ecdb",
+          "disasm": "mov ecx, dword_103EC8A0"
+        },
+        {
+          "addr": "0x1002ece1",
+          "disasm": "mov eax, [ecx]"
+        },
+        {
+          "addr": "0x1002ece3",
+          "disasm": "mov eax, [eax+8]"
+        },
+        {
+          "addr": "0x1002ece6",
+          "disasm": "mov dword ptr [esi+428h], 0FFFFFFFFh"
+        }
+      ],
+      "count": 8,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 8,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x10041e01",
+        "end": "0x10041e29",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x10041e01",
+          "end": "0x10041e29"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x10041e01",
+          "disasm": "cmp StreamProof_Enabled, 1"
+        },
+        {
+          "addr": "0x10041e08",
+          "disasm": "jnz loc_100421CF"
+        },
+        {
+          "addr": "0x10041e0e",
+          "disasm": "cmp byte_103F5A60, 1"
+        },
+        {
+          "addr": "0x10041e15",
+          "disasm": "jnz loc_100421CF"
+        },
+        {
+          "addr": "0x10041e1b",
+          "disasm": "cmp byte_103F4BA8, 1"
+        },
+        {
+          "addr": "0x10041e22",
+          "disasm": "jnz short loc_10041E3A"
+        },
+        {
+          "addr": "0x10041e24",
+          "disasm": "mov ecx, dword_103EC770"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x10048ce9",
+        "end": "0x10048d11",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x10048ce9",
+          "end": "0x10048d11"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x10048ce9",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x10048cf0",
+          "disasm": "jnz loc_1004AB1E"
+        },
+        {
+          "addr": "0x10048cf6",
+          "disasm": "mov ecx, dword_103EC858"
+        },
+        {
+          "addr": "0x10048cfc",
+          "disasm": "mov eax, [ecx]"
+        },
+        {
+          "addr": "0x10048cfe",
+          "disasm": "call dword ptr [eax+180h]"
+        },
+        {
+          "addr": "0x10048d04",
+          "disasm": "test eax, eax"
+        },
+        {
+          "addr": "0x10048d06",
+          "disasm": "jz loc_1004AB1E"
+        },
+        {
+          "addr": "0x10048d0c",
+          "disasm": "mov ebx, eax"
+        },
+        {
+          "addr": "0x10048d0e",
+          "disasm": "mov ecx, off_1029E014"
+        }
+      ],
+      "count": 9,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 9,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x100e57f1",
+        "end": "0x100e5819",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x100e57f1",
+          "end": "0x100e5819"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x100e57f1",
+          "disasm": "movzx eax, StreamProof_Enabled"
+        },
+        {
+          "addr": "0x100e57f8",
+          "disasm": "xor eax, 1"
+        },
+        {
+          "addr": "0x100e57fb",
+          "disasm": "mov dword_103F5A54, eax"
+        },
+        {
+          "addr": "0x100e5800",
+          "disasm": "mov eax, dword_103EF180"
+        },
+        {
+          "addr": "0x100e5805",
+          "disasm": "mov ecx, TlsIndex"
+        },
+        {
+          "addr": "0x100e580b",
+          "disasm": "mov edx, large fs:2Ch"
+        },
+        {
+          "addr": "0x100e5812",
+          "disasm": "mov ecx, [edx+ecx*4]"
+        },
+        {
+          "addr": "0x100e5815",
+          "disasm": "cmp eax, [ecx+4]"
+        }
+      ],
+      "count": 8,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 8,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x100e5851",
+        "end": "0x100e5879",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x100e5851",
+          "end": "0x100e5879"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x100e5851",
+          "disasm": "setz StreamProof_Enabled"
+        },
+        {
+          "addr": "0x100e5858",
+          "disasm": "mov ecx, [esi+168h]"
+        },
+        {
+          "addr": "0x100e585e",
+          "disasm": "xor ecx, ebp; StackCookie"
+        },
+        {
+          "addr": "0x100e5860",
+          "disasm": "call @__security_check_cookie@4; __security_check_cookie(x)"
+        },
+        {
+          "addr": "0x100e5865",
+          "disasm": "lea esp, [ebp-0Ch]"
+        },
+        {
+          "addr": "0x100e5868",
+          "disasm": "pop esi"
+        },
+        {
+          "addr": "0x100e5869",
+          "disasm": "pop edi"
+        },
+        {
+          "addr": "0x100e586a",
+          "disasm": "pop ebx"
+        },
+        {
+          "addr": "0x100e586b",
+          "disasm": "pop ebp"
+        },
+        {
+          "addr": "0x100e586c",
+          "disasm": "retn"
+        },
+        {
+          "addr": "0x100e586d",
+          "disasm": "push offset dword_103EF180"
+        },
+        {
+          "addr": "0x100e5872",
+          "disasm": "call sub_101809C3"
+        },
+        {
+          "addr": "0x100e5877",
+          "disasm": "add esp, 4"
+        }
+      ],
+      "count": 13,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 13,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x100f39de",
+        "end": "0x100f3a06",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x100f39de",
+          "end": "0x100f3a06"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x100f39de",
+          "disasm": "mov dword ptr [eax+4], offset StreamProof_Enabled"
+        },
+        {
+          "addr": "0x100f39e5",
+          "disasm": "mov dword ptr [eax+8], 0"
+        },
+        {
+          "addr": "0x100f39ec",
+          "disasm": "mov dword ptr [eax+0Ch], 0"
+        },
+        {
+          "addr": "0x100f39f3",
+          "disasm": "mov byte ptr [eax+38h], 0"
+        },
+        {
+          "addr": "0x100f39f7",
+          "disasm": "call sub_100630B0"
+        },
+        {
+          "addr": "0x100f39fc",
+          "disasm": "mov esp, esi"
+        },
+        {
+          "addr": "0x100f39fe",
+          "disasm": "mov eax, dword_103EF180"
+        },
+        {
+          "addr": "0x100f3a03",
+          "disasm": "mov ecx, TlsIndex"
+        }
+      ],
+      "count": 8,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 8,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1010bf31",
+        "end": "0x1010bf59",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1010bf31",
+          "end": "0x1010bf59"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1010bf31",
+          "disasm": "movzx eax, StreamProof_Enabled"
+        },
+        {
+          "addr": "0x1010bf38",
+          "disasm": "mov byte ptr [ecx], 4"
+        },
+        {
+          "addr": "0x1010bf3b",
+          "disasm": "mov [ecx+8], eax"
+        },
+        {
+          "addr": "0x1010bf3e",
+          "disasm": "mov [esi], ecx"
+        },
+        {
+          "addr": "0x1010bf40",
+          "disasm": "mov dword ptr [ecx+0Ch], 0"
+        },
+        {
+          "addr": "0x1010bf47",
+          "disasm": "mov dword ptr [esi+140h], 0A4h"
+        },
+        {
+          "addr": "0x1010bf51",
+          "disasm": "mov ecx, [esi+0Ch]"
+        },
+        {
+          "addr": "0x1010bf54",
+          "disasm": "push offset aBstreamproof; \"bStreamProof\""
+        }
+      ],
+      "count": 8,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 8,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x10144aca",
+        "end": "0x10144af2",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x10144aca",
+          "end": "0x10144af2"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x10144aca",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x10144ad1",
+          "disasm": "jz short loc_10144AE7"
+        },
+        {
+          "addr": "0x10144ad3",
+          "disasm": "jmp loc_10144B68"
+        },
+        {
+          "addr": "0x10144ad8",
+          "disasm": "xor edi, edi"
+        },
+        {
+          "addr": "0x10144ada",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x10144ae1",
+          "disasm": "jnz loc_10144B68"
+        },
+        {
+          "addr": "0x10144ae7",
+          "disasm": "cmp byte_103F5AB4, 1"
+        },
+        {
+          "addr": "0x10144aee",
+          "disasm": "jnz short loc_10144B68"
+        },
+        {
+          "addr": "0x10144af0",
+          "disasm": "mov ecx, dword_103EC8A0"
+        }
+      ],
+      "count": 9,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 9,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x10144ada",
+        "end": "0x10144b02",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x10144ada",
+          "end": "0x10144b02"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x10144ada",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x10144ae1",
+          "disasm": "jnz loc_10144B68"
+        },
+        {
+          "addr": "0x10144ae7",
+          "disasm": "cmp byte_103F5AB4, 1"
+        },
+        {
+          "addr": "0x10144aee",
+          "disasm": "jnz short loc_10144B68"
+        },
+        {
+          "addr": "0x10144af0",
+          "disasm": "mov ecx, dword_103EC8A0"
+        },
+        {
+          "addr": "0x10144af6",
+          "disasm": "mov eax, [ecx]"
+        },
+        {
+          "addr": "0x10144af8",
+          "disasm": "call dword ptr [eax+8]"
+        },
+        {
+          "addr": "0x10144afb",
+          "disasm": "test al, al"
+        },
+        {
+          "addr": "0x10144afd",
+          "disasm": "jnz short loc_10144B68"
+        },
+        {
+          "addr": "0x10144aff",
+          "disasm": "cmp byte_103EEF74, 0"
+        }
+      ],
+      "count": 10,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 10,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1014d5b7",
+        "end": "0x1014d5df",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1014d5b7",
+          "end": "0x1014d5df"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1014d5b7",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x1014d5be",
+          "disasm": "jnz short loc_1014D559"
+        },
+        {
+          "addr": "0x1014d5c0",
+          "disasm": "lea eax, [edi+2Ch]"
+        },
+        {
+          "addr": "0x1014d5c3",
+          "disasm": "mov [ebp+var_34], eax"
+        },
+        {
+          "addr": "0x1014d5c6",
+          "disasm": "vmovaps xmm0, ds:xmmword_1019A490"
+        },
+        {
+          "addr": "0x1014d5ce",
+          "disasm": "vmovups [ebp+var_98], xmm0"
+        },
+        {
+          "addr": "0x1014d5d6",
+          "disasm": "mov [ebp+var_88], 0"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1014e630",
+        "end": "0x1014e658",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1014e630",
+          "end": "0x1014e658"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1014e630",
+          "disasm": "cmp StreamProof_Enabled, 0; Native material/glow-like renderer is gated off whenever StreamProof_Enabled is set; not all world effects are preserved in stream-proof mode."
+        },
+        {
+          "addr": "0x1014e637",
+          "disasm": "jnz locret_1014F00B"
+        },
+        {
+          "addr": "0x1014e63d",
+          "disasm": "cmp byte ptr word_103F4BDD+1, 1"
+        },
+        {
+          "addr": "0x1014e644",
+          "disasm": "jnz locret_1014F00B"
+        },
+        {
+          "addr": "0x1014e64a",
+          "disasm": "push ebp"
+        },
+        {
+          "addr": "0x1014e64b",
+          "disasm": "push ebx"
+        },
+        {
+          "addr": "0x1014e64c",
+          "disasm": "push edi"
+        },
+        {
+          "addr": "0x1014e64d",
+          "disasm": "push esi"
+        },
+        {
+          "addr": "0x1014e64e",
+          "disasm": "sub esp, 0A0h"
+        },
+        {
+          "addr": "0x1014e654",
+          "disasm": "mov edi, ecx"
+        },
+        {
+          "addr": "0x1014e656",
+          "disasm": "mov ecx, dword_103EC8A0"
+        }
+      ],
+      "count": 11,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 11,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x101568e1",
+        "end": "0x10156909",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x101568e1",
+          "end": "0x10156909"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x101568e1",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x101568e8",
+          "disasm": "jnz loc_10158CB9"
+        },
+        {
+          "addr": "0x101568ee",
+          "disasm": "cmp byte_103F5210, 1"
+        },
+        {
+          "addr": "0x101568f5",
+          "disasm": "jnz loc_10158CB9"
+        },
+        {
+          "addr": "0x101568fb",
+          "disasm": "mov ecx, dword_103EC8A0"
+        },
+        {
+          "addr": "0x10156901",
+          "disasm": "mov eax, [ecx]"
+        },
+        {
+          "addr": "0x10156903",
+          "disasm": "mov eax, [eax+8]"
+        },
+        {
+          "addr": "0x10156906",
+          "disasm": "mov [ebp+var_10], 0FFFFFFFFh"
+        }
+      ],
+      "count": 8,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 8,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x10158f62",
+        "end": "0x10158f8a",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x10158f62",
+          "end": "0x10158f8a"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x10158f62",
+          "disasm": "cmp StreamProof_Enabled, 1"
+        },
+        {
+          "addr": "0x10158f69",
+          "disasm": "jnz loc_10159330"
+        },
+        {
+          "addr": "0x10158f6f",
+          "disasm": "cmp byte_103F5210, 1"
+        },
+        {
+          "addr": "0x10158f76",
+          "disasm": "jnz loc_10159330"
+        },
+        {
+          "addr": "0x10158f7c",
+          "disasm": "mov ecx, dword_103EC8A0"
+        },
+        {
+          "addr": "0x10158f82",
+          "disasm": "mov eax, [ecx]"
+        },
+        {
+          "addr": "0x10158f84",
+          "disasm": "call dword ptr [eax+8]"
+        },
+        {
+          "addr": "0x10158f87",
+          "disasm": "test al, al"
+        },
+        {
+          "addr": "0x10158f89",
+          "disasm": "jz short loc_10158F99"
+        }
+      ],
+      "count": 9,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 9,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1015bc02",
+        "end": "0x1015bc2a",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1015bc02",
+          "end": "0x1015bc2a"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1015bc02",
+          "disasm": "cmp StreamProof_Enabled, 1"
+        },
+        {
+          "addr": "0x1015bc09",
+          "disasm": "jnz loc_1015BEDA"
+        },
+        {
+          "addr": "0x1015bc0f",
+          "disasm": "cmp byte_103F5AA8, 1"
+        },
+        {
+          "addr": "0x1015bc16",
+          "disasm": "jnz loc_1015BEDA"
+        },
+        {
+          "addr": "0x1015bc1c",
+          "disasm": "cmp byte_103F4BA8, 1"
+        },
+        {
+          "addr": "0x1015bc23",
+          "disasm": "jnz short loc_1015BC3B"
+        },
+        {
+          "addr": "0x1015bc25",
+          "disasm": "mov ecx, dword_103EC770"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1015c8f6",
+        "end": "0x1015c91e",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1015c8f6",
+          "end": "0x1015c91e"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1015c8f6",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x1015c8fd",
+          "disasm": "jnz loc_1015CE68"
+        },
+        {
+          "addr": "0x1015c903",
+          "disasm": "cmp byte_103F52A4, 1"
+        },
+        {
+          "addr": "0x1015c90a",
+          "disasm": "jnz loc_1015CE68"
+        },
+        {
+          "addr": "0x1015c910",
+          "disasm": "cmp byte_103F4BA8, 1"
+        },
+        {
+          "addr": "0x1015c917",
+          "disasm": "jnz short loc_1015C92F"
+        },
+        {
+          "addr": "0x1015c919",
+          "disasm": "mov ecx, dword_103EC770"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1015d003",
+        "end": "0x1015d02b",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1015d003",
+          "end": "0x1015d02b"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1015d003",
+          "disasm": "cmp StreamProof_Enabled, 1"
+        },
+        {
+          "addr": "0x1015d00a",
+          "disasm": "jnz loc_1015D82E"
+        },
+        {
+          "addr": "0x1015d010",
+          "disasm": "cmp byte_103F52A4, 1"
+        },
+        {
+          "addr": "0x1015d017",
+          "disasm": "jnz loc_1015D82E"
+        },
+        {
+          "addr": "0x1015d01d",
+          "disasm": "cmp byte_103F4BA8, 1"
+        },
+        {
+          "addr": "0x1015d024",
+          "disasm": "jnz short loc_1015D03C"
+        },
+        {
+          "addr": "0x1015d026",
+          "disasm": "mov ecx, dword_103EC770"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1015e46a",
+        "end": "0x1015e492",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1015e46a",
+          "end": "0x1015e492"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1015e46a",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x1015e471",
+          "disasm": "jnz loc_1015EF25"
+        },
+        {
+          "addr": "0x1015e477",
+          "disasm": "cmp byte_103F569A, 1"
+        },
+        {
+          "addr": "0x1015e47e",
+          "disasm": "jnz loc_1015EF25"
+        },
+        {
+          "addr": "0x1015e484",
+          "disasm": "cmp byte_103F4BA8, 1"
+        },
+        {
+          "addr": "0x1015e48b",
+          "disasm": "jnz short loc_1015E4A3"
+        },
+        {
+          "addr": "0x1015e48d",
+          "disasm": "mov ecx, dword_103EC770"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1015fb6a",
+        "end": "0x1015fb92",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1015fb6a",
+          "end": "0x1015fb92"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1015fb6a",
+          "disasm": "cmp StreamProof_Enabled, 1"
+        },
+        {
+          "addr": "0x1015fb71",
+          "disasm": "jnz loc_101608B0"
+        },
+        {
+          "addr": "0x1015fb77",
+          "disasm": "cmp byte_103F569A, 1"
+        },
+        {
+          "addr": "0x1015fb7e",
+          "disasm": "jnz loc_101608B0"
+        },
+        {
+          "addr": "0x1015fb84",
+          "disasm": "cmp byte_103F4BA8, 1"
+        },
+        {
+          "addr": "0x1015fb8b",
+          "disasm": "jnz short loc_1015FBA3"
+        },
+        {
+          "addr": "0x1015fb8d",
+          "disasm": "mov ecx, dword_103EC770"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1016178d",
+        "end": "0x101617b5",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1016178d",
+          "end": "0x101617b5"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1016178d",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x10161794",
+          "disasm": "jnz loc_10161A33"
+        },
+        {
+          "addr": "0x1016179a",
+          "disasm": "cmp byte_103F52E4, 1"
+        },
+        {
+          "addr": "0x101617a1",
+          "disasm": "jnz loc_10161A33"
+        },
+        {
+          "addr": "0x101617a7",
+          "disasm": "cmp byte_103F4BA8, 1"
+        },
+        {
+          "addr": "0x101617ae",
+          "disasm": "jnz short loc_101617C6"
+        },
+        {
+          "addr": "0x101617b0",
+          "disasm": "mov ecx, dword_103EC770"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x10162c6c",
+        "end": "0x10162c94",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x10162c6c",
+          "end": "0x10162c94"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x10162c6c",
+          "disasm": "cmp StreamProof_Enabled, 1"
+        },
+        {
+          "addr": "0x10162c73",
+          "disasm": "jnz short loc_10162CB4"
+        },
+        {
+          "addr": "0x10162c75",
+          "disasm": "cmp byte_103F52E4, 1"
+        },
+        {
+          "addr": "0x10162c7c",
+          "disasm": "jnz short loc_10162CB4"
+        },
+        {
+          "addr": "0x10162c7e",
+          "disasm": "cmp byte_103F4BA8, 1"
+        },
+        {
+          "addr": "0x10162c85",
+          "disasm": "jnz short loc_10162C99"
+        },
+        {
+          "addr": "0x10162c87",
+          "disasm": "mov ecx, dword_103EC770"
+        },
+        {
+          "addr": "0x10162c8d",
+          "disasm": "mov eax, [ecx]"
+        },
+        {
+          "addr": "0x10162c8f",
+          "disasm": "call dword ptr [eax+164h]"
+        }
+      ],
+      "count": 9,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 9,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x10163ae8",
+        "end": "0x10163b10",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x10163ae8",
+          "end": "0x10163b10"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x10163ae8",
+          "disasm": "cmp StreamProof_Enabled, 1"
+        },
+        {
+          "addr": "0x10163aef",
+          "disasm": "jnz loc_1016439B"
+        },
+        {
+          "addr": "0x10163af5",
+          "disasm": "cmp byte_103F52E4, 1"
+        },
+        {
+          "addr": "0x10163afc",
+          "disasm": "jnz loc_1016439B"
+        },
+        {
+          "addr": "0x10163b02",
+          "disasm": "mov esi, ecx"
+        },
+        {
+          "addr": "0x10163b04",
+          "disasm": "call sub_10079720"
+        },
+        {
+          "addr": "0x10163b09",
+          "disasm": "vcvtsi2ss xmm4, xmm0, dword ptr qword_103F5320"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1016c91e",
+        "end": "0x1016c946",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1016c91e",
+          "end": "0x1016c946"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1016c91e",
+          "disasm": "cmp StreamProof_Enabled, 0"
+        },
+        {
+          "addr": "0x1016c925",
+          "disasm": "jnz loc_1016C9CE"
+        },
+        {
+          "addr": "0x1016c92b",
+          "disasm": "cmp byte_103F5654, 0"
+        },
+        {
+          "addr": "0x1016c932",
+          "disasm": "jnz loc_1016C9CE"
+        },
+        {
+          "addr": "0x1016c938",
+          "disasm": "vmovaps ymm0, ds:ymmword_10261900"
+        },
+        {
+          "addr": "0x1016c940",
+          "disasm": "vmovups [esp+60h+var_48], ymm0"
+        }
+      ],
+      "count": 6,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 6,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1016cca0",
+        "end": "0x1016ccc8",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1016cca0",
+          "end": "0x1016ccc8"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1016cca0",
+          "disasm": "movzx eax, StreamProof_Enabled"
+        },
+        {
+          "addr": "0x1016cca7",
+          "disasm": "test al, al"
+        },
+        {
+          "addr": "0x1016cca9",
+          "disasm": "jnz loc_1016CD62"
+        },
+        {
+          "addr": "0x1016ccaf",
+          "disasm": "mov ecx, dword_103EC728"
+        },
+        {
+          "addr": "0x1016ccb5",
+          "disasm": "call dword_103EC158"
+        },
+        {
+          "addr": "0x1016ccbb",
+          "disasm": "mov ecx, off_103EBDF4"
+        },
+        {
+          "addr": "0x1016ccc1",
+          "disasm": "call sub_101649F0"
+        },
+        {
+          "addr": "0x1016ccc6",
+          "disasm": "call sub_1016C900"
+        }
+      ],
+      "count": 8,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 8,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1016cd5b",
+        "end": "0x1016cd83",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1016cd5b",
+          "end": "0x1016cd83"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1016cd5b",
+          "disasm": "movzx eax, StreamProof_Enabled"
+        },
+        {
+          "addr": "0x1016cd62",
+          "disasm": "test al, 1"
+        },
+        {
+          "addr": "0x1016cd64",
+          "disasm": "jz short loc_1016CDB3; Stream proof disables ISurface drawing above and calls update/collection helpers here; the alternate DX9 visual pass runs in the selected EndScene call."
+        },
+        {
+          "addr": "0x1016cd66",
+          "disasm": "mov ecx, off_103EBDF8"
+        },
+        {
+          "addr": "0x1016cd6c",
+          "disasm": "call sub_10036160"
+        },
+        {
+          "addr": "0x1016cd71",
+          "disasm": "mov ecx, off_103EBDF8"
+        },
+        {
+          "addr": "0x1016cd77",
+          "disasm": "call sub_1003BA20"
+        },
+        {
+          "addr": "0x1016cd7c",
+          "disasm": "mov ecx, off_103EBDF8"
+        },
+        {
+          "addr": "0x1016cd82",
+          "disasm": "call sub_1003BF30"
+        }
+      ],
+      "count": 9,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 9,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1016e780",
+        "end": "0x1016e7a8",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1016e780",
+          "end": "0x1016e7a8"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1016e780",
+          "disasm": "cmp StreamProof_Enabled, 0; If enabled and caller return address is not the cached gameoverlay site, jump directly to original EndScene. No private draw or UI frame work on this rejected route."
+        },
+        {
+          "addr": "0x1016e787",
+          "disasm": "jnz loc_1016E963"
+        },
+        {
+          "addr": "0x1016e78d",
+          "disasm": "push 0"
+        },
+        {
+          "addr": "0x1016e78f",
+          "disasm": "push esi"
+        },
+        {
+          "addr": "0x1016e790",
+          "disasm": "push 0"
+        },
+        {
+          "addr": "0x1016e792",
+          "disasm": "push offset unk_103F73B4"
+        },
+        {
+          "addr": "0x1016e797",
+          "disasm": "call sub_101827D8"
+        },
+        {
+          "addr": "0x1016e79c",
+          "disasm": "test eax, eax"
+        },
+        {
+          "addr": "0x1016e79e",
+          "disasm": "jz loc_1016E981"
+        },
+        {
+          "addr": "0x1016e7a4",
+          "disasm": "cmp [ebp+Buffer.BaseAddress], 0"
+        }
+      ],
+      "count": 10,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 10,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1016e85f",
+        "end": "0x1016e887",
+        "offset": 0,
+        "count": 24,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1016e85f",
+          "end": "0x1016e887"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1016e85f",
+          "disasm": "cmp StreamProof_Enabled, 1"
+        },
+        {
+          "addr": "0x1016e866",
+          "disasm": "jnz loc_1016E935"
+        },
+        {
+          "addr": "0x1016e86c",
+          "disasm": "cmp byte_103F5A4D, 0"
+        },
+        {
+          "addr": "0x1016e873",
+          "disasm": "jnz short loc_1016E8A6"
+        },
+        {
+          "addr": "0x1016e875",
+          "disasm": "cmp byte_103F5654, 0"
+        },
+        {
+          "addr": "0x1016e87c",
+          "disasm": "jnz short loc_1016E8A6"
+        },
+        {
+          "addr": "0x1016e87e",
+          "disasm": "mov dword ptr [ebp+Filename], 0FFFFFFFFh"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    }
+  ]
+}

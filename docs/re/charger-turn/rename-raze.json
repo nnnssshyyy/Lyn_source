@@ -1,0 +1,51 @@
+{
+  "func": [
+    {
+      "addr": "0x1017cca0",
+      "old": "sub_1017CCA0",
+      "name": "ChargerTurn_ApplySetting",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x1017c8e0",
+      "old": "sub_1017C8E0",
+      "name": "PatchRegistry_BackupAndFill",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x1016c610",
+      "old": "sub_1016C610",
+      "name": "Hooks_FrameStageNotify",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x1016c5f0",
+      "old": "sub_1016C5F0",
+      "name": "Hooks_InstallFrameStageNotify",
+      "dir": "vibe"
+    }
+  ],
+  "data": [
+    {
+      "addr": "0x103f53cd",
+      "old": "byte_103F53CD",
+      "new": "ChargerTurn_Enabled"
+    },
+    {
+      "addr": "0x103f7fd4",
+      "old": "byte_103F7FD4",
+      "new": "ChargerTurn_Applied"
+    },
+    {
+      "addr": "0x103f7fd8",
+      "old": "lpAddress",
+      "new": "ChargerTurn_PatchSite"
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "ok": 7,
+    "failed": 0,
+    "stopped": false
+  }
+}

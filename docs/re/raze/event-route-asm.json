@@ -1,0 +1,301 @@
+{
+  "result": [
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x10040790",
+        "end": "0x100408c0",
+        "offset": 0,
+        "count": 100,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x10040790",
+          "end": "0x100408c0"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x10040790",
+          "disasm": "mov eax, [edi]"
+        },
+        {
+          "addr": "0x10040792",
+          "disasm": "mov eax, [eax+24h]"
+        },
+        {
+          "addr": "0x10040795",
+          "disasm": "mov [ebp+var_10], 2"
+        },
+        {
+          "addr": "0x1004079c",
+          "disasm": "mov ecx, edi"
+        },
+        {
+          "addr": "0x1004079e",
+          "disasm": "push offset unk_1029205C"
+        },
+        {
+          "addr": "0x100407a3",
+          "disasm": "push (offset aContext+3); \"text\""
+        },
+        {
+          "addr": "0x100407a8",
+          "disasm": "call eax"
+        },
+        {
+          "addr": "0x100407aa",
+          "disasm": "test eax, eax"
+        },
+        {
+          "addr": "0x100407ac",
+          "disasm": "jz loc_10040C25"
+        },
+        {
+          "addr": "0x100407b2",
+          "disasm": "cmp word ptr [eax], 0"
+        },
+        {
+          "addr": "0x100407b6",
+          "disasm": "jz loc_10040C25"
+        },
+        {
+          "addr": "0x100407bc",
+          "disasm": "lea ecx, [ebp+Src]; void *"
+        },
+        {
+          "addr": "0x100407c2",
+          "disasm": "push eax; String"
+        },
+        {
+          "addr": "0x100407c3",
+          "disasm": "mov [ebp+var_24], eax"
+        },
+        {
+          "addr": "0x100407c6",
+          "disasm": "call sub_100387C0"
+        },
+        {
+          "addr": "0x100407cb",
+          "disasm": "mov ecx, [ebp+var_24]"
+        },
+        {
+          "addr": "0x100407ce",
+          "disasm": "mov [ebp+var_10], 3"
+        },
+        {
+          "addr": "0x100407d5",
+          "disasm": "lea eax, [ebp+var_B0]"
+        },
+        {
+          "addr": "0x100407db",
+          "disasm": "push ecx; int"
+        },
+        {
+          "addr": "0x100407dc",
+          "disasm": "push eax; Src"
+        },
+        {
+          "addr": "0x100407dd",
+          "disasm": "call sub_1003E910"
+        },
+        {
+          "addr": "0x100407e2",
+          "disasm": "add esp, 8"
+        },
+        {
+          "addr": "0x100407e5",
+          "disasm": "mov [ebp+var_10], 4"
+        },
+        {
+          "addr": "0x100407ec",
+          "disasm": "lea ecx, [ebp+var_FC]"
+        },
+        {
+          "addr": "0x100407f2",
+          "disasm": "lea eax, [ebp+var_98]"
+        },
+        {
+          "addr": "0x100407f8",
+          "disasm": "push eax; Src"
+        },
+        {
+          "addr": "0x100407f9",
+          "disasm": "call sub_100385F0"
+        },
+        {
+          "addr": "0x100407fe",
+          "disasm": "lea ecx, [ebp+var_E4]"
+        },
+        {
+          "addr": "0x10040804",
+          "disasm": "mov [ebp+var_10], 11h"
+        },
+        {
+          "addr": "0x1004080b",
+          "disasm": "lea eax, [ebp+Src]"
+        },
+        {
+          "addr": "0x10040811",
+          "disasm": "push eax; Src"
+        },
+        {
+          "addr": "0x10040812",
+          "disasm": "call sub_1001F3F0"
+        },
+        {
+          "addr": "0x10040817",
+          "disasm": "lea ecx, [ebp+var_CC]"
+        },
+        {
+          "addr": "0x1004081d",
+          "disasm": "mov [ebp+var_10], 12h"
+        },
+        {
+          "addr": "0x10040824",
+          "disasm": "lea eax, [ebp+var_B0]"
+        },
+        {
+          "addr": "0x1004082a",
+          "disasm": "push eax; Src"
+        },
+        {
+          "addr": "0x1004082b",
+          "disasm": "call sub_100385F0"
+        },
+        {
+          "addr": "0x10040830",
+          "disasm": "mov eax, [ebp+var_28]"
+        },
+        {
+          "addr": "0x10040833",
+          "disasm": "lea ecx, [eax+18h]"
+        },
+        {
+          "addr": "0x10040836",
+          "disasm": "mov eax, [ebp+Str]"
+        },
+        {
+          "addr": "0x10040839",
+          "disasm": "mov [ebp+var_B4], eax"
+        },
+        {
+          "addr": "0x1004083f",
+          "disasm": "mov [ebp+var_10], 13h"
+        },
+        {
+          "addr": "0x10040846",
+          "disasm": "lea eax, [ebp+var_FC]"
+        },
+        {
+          "addr": "0x1004084c",
+          "disasm": "push eax"
+        },
+        {
+          "addr": "0x1004084d",
+          "disasm": "call sub_10040F80"
+        },
+        {
+          "addr": "0x10040852",
+          "disasm": "lea ecx, [ebp+var_FC]"
+        },
+        {
+          "addr": "0x10040858",
+          "disasm": "call sub_10041040"
+        },
+        {
+          "addr": "0x1004085d",
+          "disasm": "cmp byte_103F5A76, 1"
+        },
+        {
+          "addr": "0x10040864",
+          "disasm": "jnz loc_10040C0F"
+        },
+        {
+          "addr": "0x1004086a",
+          "disasm": "mov [ebp+var_10], 4"
+        },
+        {
+          "addr": "0x10040871",
+          "disasm": "mov ecx, [ebp+var_28]"
+        },
+        {
+          "addr": "0x10040874",
+          "disasm": "lea eax, [ebp+var_B0]"
+        },
+        {
+          "addr": "0x1004087a",
+          "disasm": "push eax"
+        },
+        {
+          "addr": "0x1004087b",
+          "disasm": "lea eax, [ebp+var_98]"
+        },
+        {
+          "addr": "0x10040881",
+          "disasm": "push eax"
+        },
+        {
+          "addr": "0x10040882",
+          "disasm": "call sub_1003F080"
+        },
+        {
+          "addr": "0x10040887",
+          "disasm": "test al, al"
+        },
+        {
+          "addr": "0x10040889",
+          "disasm": "jnz loc_10040C0F"
+        },
+        {
+          "addr": "0x1004088f",
+          "disasm": "cmp byte_103F5A74, 1"
+        },
+        {
+          "addr": "0x10040896",
+          "disasm": "jnz loc_10040C0F"
+        },
+        {
+          "addr": "0x1004089c",
+          "disasm": "lea ecx, [ebp+var_FC]; void *"
+        },
+        {
+          "addr": "0x100408a2",
+          "disasm": "push offset Buf; Str"
+        },
+        {
+          "addr": "0x100408a7",
+          "disasm": "call sub_1000E5E0"
+        },
+        {
+          "addr": "0x100408ac",
+          "disasm": "cmp byte_103F5A78, 0"
+        },
+        {
+          "addr": "0x100408b3",
+          "disasm": "jz loc_10040A77"
+        },
+        {
+          "addr": "0x100408b9",
+          "disasm": "mov [ebp+var_10], 5"
+        }
+      ],
+      "count": 66,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 66,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "result": [
+    {
+      "addr": "0x103ec5a4",
+      "xrefs": [
+        {
+          "addr": "0x100017b0",
+          "type": "data",
+          "fn": {
+            "addr": "0x100017b0",
+            "name": "sub_100017B0",
+            "size": "0x1c"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 1
+    },
+    {
+      "addr": "0x103ec658",
+      "xrefs": [
+        {
+          "addr": "0x100018d0",
+          "type": "data",
+          "fn": {
+            "addr": "0x100018d0",
+            "name": "sub_100018D0",
+            "size": "0x1c"
+          }
+        },
+        {
+          "addr": "0x1004050e",
+          "type": "data",
+          "fn": {
+            "addr": "0x10040410",
+            "name": "sub_10040410",
+            "size": "0x11a"
+          }
+        },
+        {
+          "addr": "0x10171b9a",
+          "type": "data",
+          "fn": {
+            "addr": "0x10171b90",
+            "name": "sub_10171B90",
+            "size": "0x16"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 3
+    },
+    {
+      "addr": "0x103f5a74",
+      "xrefs": [
+        {
+          "addr": "0x1000ade4",
+          "type": "data",
+          "fn": {
+            "addr": "0x10003c90",
+            "name": "sub_10003C90",
+            "size": "0x7c8f"
+          }
+        },
+        {
+          "addr": "0x1004088f",
+          "type": "data",
+          "fn": {
+            "addr": "0x10040550",
+            "name": "sub_10040550",
+            "size": "0x7ae"
+          }
+        },
+        {
+          "addr": "0x10042212",
+          "type": "data",
+          "fn": {
+            "addr": "0x100421e0",
+            "name": "sub_100421E0",
+            "size": "0x22eb"
+          }
+        },
+        {
+          "addr": "0x100e8a85",
+          "type": "data",
+          "fn": {
+            "addr": "0x100e8940",
+            "name": "sub_100E8940",
+            "size": "0x23b"
+          }
+        },
+        {
+          "addr": "0x100f3000",
+          "type": "data",
+          "fn": {
+            "addr": "0x100f2fc0",
+            "name": "sub_100F2FC0",
+            "size": "0x5aa"
+          }
+        },
+        {
+          "addr": "0x1010e1ff",
+          "type": "data",
+          "fn": {
+            "addr": "0x10102390",
+            "name": "sub_10102390",
+            "size": "0xce9a"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 6
+    }
+  ]
+}

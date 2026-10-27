@@ -1,0 +1,26 @@
+[
+  {
+    "type": "TerrorClientMode",
+    "vtable": "0x105bd4fc",
+    "fog_slot18": "0x100c2ed0",
+    "nearby_slots": [
+      "0x100c2ea0",
+      "0x100c2dc0",
+      "0x100c2ed0",
+      "0x1026ff40",
+      "0x100c3890"
+    ]
+  },
+  {
+    "type": "ClientModeShared",
+    "vtable": "0x105651ac",
+    "fog_slot18": "0x100c2ed0",
+    "nearby_slots": [
+      "0x100c2ea0",
+      "0x100c2dc0",
+      "0x100c2ed0",
+      "0x100c3ee0",
+      "0x100c3890"
+    ]
+  }
+]

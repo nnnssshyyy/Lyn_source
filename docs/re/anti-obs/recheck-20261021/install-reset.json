@@ -1,0 +1,28 @@
+{
+  "addr": "0x1016ea00",
+  "code": "int StreamProof_InstallReset()\n{\n  return sub_1017E990( /*0x1016ea19*/\n           lpAddress: *(LPCVOID *)(*(_DWORD *)dword_103ECBBC + 64),\n           a2: sub_1016EA20,\n           a3: (int)&dword_103F7470);\n}",
+  "line_count": 7,
+  "total_lines": 7,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1017e990",
+      "name": "sub_1017E990"
+    },
+    {
+      "addr": "0x103ecbbc",
+      "name": "dword_103ECBBC"
+    },
+    {
+      "addr": "0x1016ea20",
+      "name": "StreamProof_ResetHook"
+    },
+    {
+      "addr": "0x103f7470",
+      "name": "StreamProof_OriginalReset"
+    }
+  ]
+}

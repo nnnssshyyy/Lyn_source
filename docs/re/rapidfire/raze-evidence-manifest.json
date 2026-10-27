@@ -1,0 +1,31 @@
+{
+  "binary_sha256": "dfa8632e85c89c318577ef619f20bae2f4db5136042d680ee4dae4109234691a",
+  "functions": [
+    {
+      "name": "RapidFire_ArmExtraMoves",
+      "address": "0x101486e0",
+      "instructions": 331
+    },
+    {
+      "name": "RapidFire_ApplyNetChannelMode",
+      "address": "0x10148c40",
+      "instructions": 108
+    },
+    {
+      "name": "RapidFire_Hook_CL_Move",
+      "address": "0x1016ce80",
+      "instructions": 24
+    },
+    {
+      "name": "RapidFire_Hook_RunCommand",
+      "address": "0x1016cf10",
+      "instructions": 220
+    },
+    {
+      "name": "RapidFire_Hook_CreateMove",
+      "address": "0x1016ff00",
+      "instructions": 749
+    }
+  ],
+  "total_instructions": 1432
+}

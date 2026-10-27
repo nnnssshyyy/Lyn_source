@@ -1,0 +1,16 @@
+{
+  "addr": "0x1017c4a0",
+  "code": "int __cdecl sub_1017C4A0(int a1)\n{\n  __int128 v4; // [esp+0h] [ebp-60h] BYREF\n  int v5; // [esp+10h] [ebp-50h]\n  int v6; // [esp+14h] [ebp-4Ch]\n  int v7; // [esp+18h] [ebp-48h] BYREF\n  char v8; // [esp+1Ch] [ebp-44h]\n  int v10; // [esp+50h] [ebp-10h]\n  int v11; // [esp+54h] [ebp-Ch]\n\n  __asm /*0x1017c4b4*/\n  {\n    vmovaps xmm0, ds:xmmword_10262140\n    vmovups [esp+60h+var_60], xmm0\n  }\n  v5 = 32; /*0x1017c4c1*/\n  v6 = 0; /*0x1017c4c9*/\n  v7 = a1; /*0x1017c4d5*/\n  v8 = 0x80; /*0x1017c4d9*/\n  __asm /*0x1017c4de*/\n  {\n    vxorps xmm0, xmm0, xmm0\n    vmovups ymmword ptr [esp+60h+var_43], ymm0\n    vmovups ymmword ptr [esp+60h+var_43+13h], ymm0\n  }\n  v10 = 32; /*0x1017c4ee*/\n  v11 = 0; /*0x1017c4f6*/\n  __asm { vzeroupper } /*0x1017c500*/\n  ((void (__fastcall *)(__int128 *, int *))sub_1017BCD0)(a1: &v4, a2: &v7); /*0x1017c503*/\n  return *(_DWORD *)((char *)&v4 + 6); /*0x1017c50c*/\n}",
+  "line_count": 31,
+  "total_lines": 31,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1017bcd0",
+      "name": "sub_1017BCD0"
+    }
+  ]
+}

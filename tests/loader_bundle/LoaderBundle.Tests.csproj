@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RollForward>Major</RollForward>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../loader/BundledModule.cs" Link="BundledModule.cs" />
+    <EmbeddedResource Include="../../build/compressed/lyn.dll" LogicalName="Lyn.Loader.Bundled.lyn.dll" />
+  </ItemGroup>
+</Project>

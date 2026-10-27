@@ -1,0 +1,248 @@
+{
+  "n": 60,
+  "matches": [
+    {
+      "addr": "0x102834a7",
+      "string": "Spy-Hack | Marked Players List"
+    },
+    {
+      "addr": "0x10283edb",
+      "string": "Filter enemy chat"
+    },
+    {
+      "addr": "0x10283eed",
+      "string": "Spam de chat"
+    },
+    {
+      "addr": "0x10283efa",
+      "string": "bPlayerEnemyChat"
+    },
+    {
+      "addr": "0x10283f0b",
+      "string": "CHudChat"
+    },
+    {
+      "addr": "0x10283f14",
+      "string": "Hide Prefix HudChat"
+    },
+    {
+      "addr": "0x10283f28",
+      "string": "Filter Enemy Chat"
+    },
+    {
+      "addr": "0x10283f3a",
+      "string": "HUD Chat"
+    },
+    {
+      "addr": "0x10284159",
+      "string": "bVisualSpyAlerts"
+    },
+    {
+      "addr": "0x10284268",
+      "string": "bSpyTargets"
+    },
+    {
+      "addr": "0x102845c9",
+      "string": "Spy-Hack | Lista de jugadores marcados"
+    },
+    {
+      "addr": "0x102849b8",
+      "string": "HUD Chat Settings"
+    },
+    {
+      "addr": "0x10284af4",
+      "string": "Chat spam | Your phrases"
+    },
+    {
+      "addr": "0x10284b0d",
+      "string": "Spam chat | Tus frases"
+    },
+    {
+      "addr": "0x10285929",
+      "string": "Chat spammer"
+    },
+    {
+      "addr": "0x10285936",
+      "string": "fSpeedChatSpammer"
+    },
+    {
+      "addr": "0x10285948",
+      "string": "bChatSpammer"
+    },
+    {
+      "addr": "0x10286529",
+      "string": "Filtrar chat enemigo"
+    },
+    {
+      "addr": "0x10286d5f",
+      "string": "ChatScrollRegion"
+    },
+    {
+      "addr": "0x10286e7a",
+      "string": "Show enemy chat in"
+    },
+    {
+      "addr": "0x10286fda",
+      "string": "Chat enemigo en"
+    },
+    {
+      "addr": "0x10287065",
+      "string": "bShowEnemyChatIn"
+    },
+    {
+      "addr": "0x10287f1b",
+      "string": "bEnableSpyHack"
+    },
+    {
+      "addr": "0x102886af",
+      "string": "CBaseHudChat_ChatPrintf"
+    },
+    {
+      "addr": "0x102895b6",
+      "string": "CUserMessages_DispatchUserMessage"
+    },
+    {
+      "addr": "0x1028a5c9",
+      "string": "Spy Camera"
+    },
+    {
+      "addr": "0x1028a929",
+      "string": "HUD Chat_"
+    },
+    {
+      "addr": "0x1028abd2",
+      "string": "iImGuiPanelChatPosY"
+    },
+    {
+      "addr": "0x1028ac01",
+      "string": "iSpyHackPosY"
+    },
+    {
+      "addr": "0x1028ac26",
+      "string": "iImGuiPanelChatSizeY"
+    },
+    {
+      "addr": "0x1028accb",
+      "string": "Pos chat Y"
+    },
+    {
+      "addr": "0x1028acdc",
+      "string": "o chat Y"
+    },
+    {
+      "addr": "0x1028aceb",
+      "string": "Chat Position Y"
+    },
+    {
+      "addr": "0x1028ad06",
+      "string": "Chat Size Y"
+    },
+    {
+      "addr": "0x1028ad12",
+      "string": "iImGuiPanelChatPosX"
+    },
+    {
+      "addr": "0x1028ad41",
+      "string": "iSpyHackPosX"
+    },
+    {
+      "addr": "0x1028ad66",
+      "string": "iImGuiPanelChatSizeX"
+    },
+    {
+      "addr": "0x1028ae49",
+      "string": "Pos chat X"
+    },
+    {
+      "addr": "0x1028ae5a",
+      "string": "o chat X"
+    },
+    {
+      "addr": "0x1028ae69",
+      "string": "Chat Position X"
+    },
+    {
+      "addr": "0x1028ae84",
+      "string": "Chat Size X"
+    },
+    {
+      "addr": "0x1028b558",
+      "string": "SPYHACK"
+    },
+    {
+      "addr": "0x1028bcc3",
+      "string": "Ajustes del chat HUD"
+    },
+    {
+      "addr": "0x1028bcd8",
+      "string": "Ocultar prefijo del chat HUD"
+    },
+    {
+      "addr": "0x1028e9ba",
+      "string": "Player votes will appear\nin the game chat."
+    },
+    {
+      "addr": "0x1028e9e5",
+      "string": "Player messages will be displayed\nin the game chat."
+    },
+    {
+      "addr": "0x1028f123",
+      "string": "n en el chat del juego."
+    },
+    {
+      "addr": "0x1028f165",
+      "string": "n en el chat del juego."
+    },
+    {
+      "addr": "0x10290550",
+      "string": "Spy-Hack | Marked Players List "
+    },
+    {
+      "addr": "0x10290576",
+      "string": "Filter enemy chat "
+    },
+    {
+      "addr": "0x10290692",
+      "string": "Filtrar chat enemigo "
+    },
+    {
+      "addr": "0x10291042",
+      "string": "local find_pattern   = find_pattern\nlocal find_interface = find_interface\nlocal get_vfunc      = get_vfunc\nlocal hook_add       = hook.add\n\nlocal PrintToChat = find_pattern(\"client.dll\",\n\"55 8B EC 81 EC 00 0C 00 00 B9 ? ? ? ? 56 68 ? ? ? ? E8 ? ? ? ? 8B F0 85 F6 74 ? 68 00 08 00 00 8D 85 00 F4 FF FF 6A 00 50 E8 ? ? ? ? 8B 0D ? ? ? ? 8D 95 00 F4 FF FF 83 C4 0C 8B 01 FF 75 0C\")\nlocal ClientModeSig = find_pattern(\"client.dll\", \"89 04 B5 ? ? ? ? E8\")\nlocal ClientModeShared = ClientModeSig ~= 0 and (ClientModeSig + 3) or 0\nlocal EngineTrace = find_interface(\"engine.dll\", \"EngineTraceClient003\")\nprint(\"[Lua] EngineTrace:\", EngineTrace)\nprint(\"[Lua] ClientModeShared:\", ClientModeShared)\n-- hooks\nhook_add(\"CreateMove\", function(cmd, sampleTime)\nend)\n\nhook_add(\"FrameStageNotify\", function(stage)\nend)\n\nhook_add(\"SendNetMsg\", function(msg, reliable, voice)\nend)\n\nhook_add(\"Paint\", function(mode)\nend)\n\nhook_add(\"SendMove\", function()\nend)\n\nhook_add(\"CL_Move\", function(extraSamples, finalTick)\nend)\n\nhook_add(\"RunCommand\", function(player, cmd, moveHelper)\nend)\n\nhook_add(\"SequenceChange\", function(hdr, sequence, forceNew, interpolate)\nend)\n\nhook_add(\"PostScreenEffects\", function(setup)\nend)\n\nhook_add(\"EndScene\", function(device)\nend)\n\nhook_add(\"ShouldDraw\", function()\nend)\n\nhook_add(\"DrawExecute\", function(waterHeight, viewID, waterZAdjust)\nend)\n\nhook_add(\"ParticleRender\", function(shadowDepth)\nend)\n\nhook_add(\"PlayerMove\", function()\nend)\n\nhook_add(\"DrawViewModels\", function(view, drawVM)\nend)\n\nhook_add(\"RenderView\", function(view, hudView, clearFlags, whatToDraw)\nend)\n\nhook_add(\"LevelShutdown\", function()\nend)\n\nhook_add(\"ShouldDrawFog\", function()\nend)\n\nhook_add(\"DrawModelExecute\", function(state, info, bones)\nend)\n\nhook_add(\"ParticleSimulate\", function(dt)\nend)\n\nhook_add(\"OverrideView\", function(setup)\nend)\n\nhook_add(\"CalcViewModelView\", function(owner, eyePos, eyeAngles)\nend)\n\nhook_add(\"CalcPlayerView\", function(origin, angles, fov)\nend)\n\nhook_add(\"LevelInit\", function()\nend)\n\nhook_add(\"LoadSkys\", function()\nend)\n\nhook_add(\"ChatPrintf\", function(playerIndex, filter, text)\nend)\n\nhook_add(\"MaterialOverride\", function(material, type)\nend)\n\nhook_add(\"ScreenSizeChanged\", function(oldW, oldH)\nend)\n\nhook_add(\"ParticleDrawModel\", function()\nend)\n"
+    },
+    {
+      "addr": "0x102a36c8",
+      "string": ".?AV?$_Func_impl_no_alloc@V<lambda_39>@?0??VisualsSpyCameraOne@@YAXXZ@X$$V@std@@"
+    },
+    {
+      "addr": "0x102a3728",
+      "string": ".?AV<lambda_39>@?0??VisualsSpyCameraOne@@YAXXZ@"
+    },
+    {
+      "addr": "0x102a3768",
+      "string": ".?AV?$_Func_impl_no_alloc@V<lambda_40>@?0??EventLoggerFilterChat@@YAXXZ@X$$V@std@@"
+    },
+    {
+      "addr": "0x102a37c8",
+      "string": ".?AV<lambda_40>@?0??EventLoggerFilterChat@@YAXXZ@"
+    },
+    {
+      "addr": "0x102a3948",
+      "string": ".?AV?$_Func_impl_no_alloc@V<lambda_45>@?0??SpyHackColumOne@@YAXXZ@X$$V@std@@"
+    },
+    {
+      "addr": "0x102a39a8",
+      "string": ".?AV<lambda_45>@?0??SpyHackColumOne@@YAXXZ@"
+    },
+    {
+      "addr": "0x102a39e8",
+      "string": ".?AV?$_Func_impl_no_alloc@V<lambda_46>@?0??SpyHackColumTwo@@YAXXZ@X$$V@std@@"
+    },
+    {
+      "addr": "0x102a3a48",
+      "string": ".?AV<lambda_46>@?0??SpyHackColumTwo@@YAXXZ@"
+    }
+  ],
+  "cursor": {
+    "done": true
+  }
+}

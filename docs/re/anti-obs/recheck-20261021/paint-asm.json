@@ -1,0 +1,607 @@
+{
+  "addr": "0x1016cc80",
+  "asm": {
+    "name": "StreamProof_PaintHook",
+    "start_ea": "0x1016cc80",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "1016cc80",
+        "instruction": "push ebx",
+        "label": "StreamProof_PaintHook"
+      },
+      {
+        "addr": "1016cc81",
+        "instruction": "mov ebx, [esp+4+arg_0]"
+      },
+      {
+        "addr": "1016cc85",
+        "instruction": "push ebx"
+      },
+      {
+        "addr": "1016cc86",
+        "instruction": "call dword_103F744C",
+        "refs": [
+          {
+            "addr": "0x103f744c",
+            "name": "dword_103F744C"
+          }
+        ]
+      },
+      {
+        "addr": "1016cc8c",
+        "instruction": "test bl, 1"
+      },
+      {
+        "addr": "1016cc8f",
+        "instruction": "jz loc_1016CDB3",
+        "refs": [
+          {
+            "addr": "0x1016cdb3",
+            "name": "loc_1016CDB3"
+          }
+        ]
+      },
+      {
+        "addr": "1016cc95",
+        "instruction": "mov ecx, ArgList",
+        "refs": [
+          {
+            "addr": "0x1029e00c",
+            "name": "ArgList"
+          }
+        ]
+      },
+      {
+        "addr": "1016cc9b",
+        "instruction": "call sub_10176E60",
+        "refs": [
+          {
+            "addr": "0x10176e60",
+            "name": "sub_10176E60"
+          }
+        ]
+      },
+      {
+        "addr": "1016cca0",
+        "instruction": "movzx eax, StreamProof_Enabled",
+        "refs": [
+          {
+            "addr": "0x103f5396",
+            "name": "StreamProof_Enabled"
+          }
+        ]
+      },
+      {
+        "addr": "1016cca7",
+        "instruction": "test al, al"
+      },
+      {
+        "addr": "1016cca9",
+        "instruction": "jnz loc_1016CD62",
+        "refs": [
+          {
+            "addr": "0x1016cd62",
+            "name": "loc_1016CD62"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccaf",
+        "instruction": "mov ecx, dword_103EC728",
+        "refs": [
+          {
+            "addr": "0x103ec728",
+            "name": "dword_103EC728"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccb5",
+        "instruction": "call dword_103EC158",
+        "refs": [
+          {
+            "addr": "0x103ec158",
+            "name": "dword_103EC158"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccbb",
+        "instruction": "mov ecx, off_103EBDF4",
+        "refs": [
+          {
+            "addr": "0x103ebdf4",
+            "name": "off_103EBDF4"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccc1",
+        "instruction": "call sub_101649F0",
+        "refs": [
+          {
+            "addr": "0x101649f0",
+            "name": "sub_101649F0"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccc6",
+        "instruction": "call sub_1016C900",
+        "refs": [
+          {
+            "addr": "0x1016c900",
+            "name": "sub_1016C900"
+          }
+        ]
+      },
+      {
+        "addr": "1016cccb",
+        "instruction": "mov ecx, off_103EBDF8",
+        "refs": [
+          {
+            "addr": "0x103ebdf8",
+            "name": "off_103EBDF8"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccd1",
+        "instruction": "call sub_1002EA20",
+        "refs": [
+          {
+            "addr": "0x1002ea20",
+            "name": "sub_1002EA20"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccd6",
+        "instruction": "mov ecx, off_103EBDFC",
+        "refs": [
+          {
+            "addr": "0x103ebdfc",
+            "name": "off_103EBDFC"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccdc",
+        "instruction": "call sub_10144A80",
+        "refs": [
+          {
+            "addr": "0x10144a80",
+            "name": "sub_10144A80"
+          }
+        ]
+      },
+      {
+        "addr": "1016cce1",
+        "instruction": "mov ecx, off_103EBE00",
+        "refs": [
+          {
+            "addr": "0x103ebe00",
+            "name": "off_103EBE00"
+          }
+        ]
+      },
+      {
+        "addr": "1016cce7",
+        "instruction": "call sub_10028860",
+        "refs": [
+          {
+            "addr": "0x10028860",
+            "name": "sub_10028860"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccec",
+        "instruction": "mov ecx, off_103EBE04",
+        "refs": [
+          {
+            "addr": "0x103ebe04",
+            "name": "off_103EBE04"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccf2",
+        "instruction": "call sub_10156830",
+        "refs": [
+          {
+            "addr": "0x10156830",
+            "name": "sub_10156830"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccf7",
+        "instruction": "mov ecx, off_103EBE08",
+        "refs": [
+          {
+            "addr": "0x103ebe08",
+            "name": "off_103EBE08"
+          }
+        ]
+      },
+      {
+        "addr": "1016ccfd",
+        "instruction": "call sub_1015C8E0",
+        "refs": [
+          {
+            "addr": "0x1015c8e0",
+            "name": "sub_1015C8E0"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd02",
+        "instruction": "mov ecx, off_103EBE0C",
+        "refs": [
+          {
+            "addr": "0x103ebe0c",
+            "name": "off_103EBE0C"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd08",
+        "instruction": "call sub_10161730",
+        "refs": [
+          {
+            "addr": "0x10161730",
+            "name": "sub_10161730"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd0d",
+        "instruction": "mov ecx, off_102A3C74",
+        "refs": [
+          {
+            "addr": "0x102a3c74",
+            "name": "off_102A3C74"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd13",
+        "instruction": "call sub_1014C0E0",
+        "refs": [
+          {
+            "addr": "0x1014c0e0",
+            "name": "sub_1014C0E0"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd18",
+        "instruction": "mov ecx, off_1029E01C; ArgList",
+        "comments": [
+          "ArgList"
+        ],
+        "refs": [
+          {
+            "addr": "0x1029e01c",
+            "name": "off_1029E01C"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd1e",
+        "instruction": "call sub_10041130",
+        "refs": [
+          {
+            "addr": "0x10041130",
+            "name": "sub_10041130"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd23",
+        "instruction": "mov ecx, off_103EBE10",
+        "refs": [
+          {
+            "addr": "0x103ebe10",
+            "name": "off_103EBE10"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd29",
+        "instruction": "call sub_1015B4D0",
+        "refs": [
+          {
+            "addr": "0x1015b4d0",
+            "name": "sub_1015B4D0"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd2e",
+        "instruction": "mov ecx, off_103EBE14",
+        "refs": [
+          {
+            "addr": "0x103ebe14",
+            "name": "off_103EBE14"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd34",
+        "instruction": "call sub_1015E420",
+        "refs": [
+          {
+            "addr": "0x1015e420",
+            "name": "sub_1015E420"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd39",
+        "instruction": "mov ecx, off_103EBE14",
+        "refs": [
+          {
+            "addr": "0x103ebe14",
+            "name": "off_103EBE14"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd3f",
+        "instruction": "call sub_1015DCB0",
+        "refs": [
+          {
+            "addr": "0x1015dcb0",
+            "name": "sub_1015DCB0"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd44",
+        "instruction": "mov ecx, off_103EBDFC",
+        "refs": [
+          {
+            "addr": "0x103ebdfc",
+            "name": "off_103EBDFC"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd4a",
+        "instruction": "call sub_101427F0",
+        "refs": [
+          {
+            "addr": "0x101427f0",
+            "name": "sub_101427F0"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd4f",
+        "instruction": "mov ecx, dword_103EC728",
+        "refs": [
+          {
+            "addr": "0x103ec728",
+            "name": "dword_103EC728"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd55",
+        "instruction": "call dword_103EC16C",
+        "refs": [
+          {
+            "addr": "0x103ec16c",
+            "name": "dword_103EC16C"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd5b",
+        "instruction": "movzx eax, StreamProof_Enabled",
+        "refs": [
+          {
+            "addr": "0x103f5396",
+            "name": "StreamProof_Enabled"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd62",
+        "instruction": "test al, 1",
+        "label": "loc_1016CD62"
+      },
+      {
+        "addr": "1016cd64",
+        "instruction": "jz short loc_1016CDB3; Stream proof disables ISurface drawing above and calls update/collection helpers here; the alternate DX9 visual pass runs in the selected EndScene call.",
+        "comments": [
+          "Stream proof disables ISurface drawing above and calls update/collection helpers here; the alternate DX9 visual pass runs in the selected EndScene call."
+        ],
+        "refs": [
+          {
+            "addr": "0x1016cdb3",
+            "name": "loc_1016CDB3"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd66",
+        "instruction": "mov ecx, off_103EBDF8",
+        "refs": [
+          {
+            "addr": "0x103ebdf8",
+            "name": "off_103EBDF8"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd6c",
+        "instruction": "call sub_10036160",
+        "refs": [
+          {
+            "addr": "0x10036160",
+            "name": "sub_10036160"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd71",
+        "instruction": "mov ecx, off_103EBDF8",
+        "refs": [
+          {
+            "addr": "0x103ebdf8",
+            "name": "off_103EBDF8"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd77",
+        "instruction": "call sub_1003BA20",
+        "refs": [
+          {
+            "addr": "0x1003ba20",
+            "name": "sub_1003BA20"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd7c",
+        "instruction": "mov ecx, off_103EBDF8",
+        "refs": [
+          {
+            "addr": "0x103ebdf8",
+            "name": "off_103EBDF8"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd82",
+        "instruction": "call sub_1003BF30",
+        "refs": [
+          {
+            "addr": "0x1003bf30",
+            "name": "sub_1003BF30"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd87",
+        "instruction": "mov ecx, off_103EBE04",
+        "refs": [
+          {
+            "addr": "0x103ebe04",
+            "name": "off_103EBE04"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd8d",
+        "instruction": "call sub_10159350",
+        "refs": [
+          {
+            "addr": "0x10159350",
+            "name": "sub_10159350"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd92",
+        "instruction": "mov ecx, off_103EBE04",
+        "refs": [
+          {
+            "addr": "0x103ebe04",
+            "name": "off_103EBE04"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd98",
+        "instruction": "call sub_10159FE0",
+        "refs": [
+          {
+            "addr": "0x10159fe0",
+            "name": "sub_10159FE0"
+          }
+        ]
+      },
+      {
+        "addr": "1016cd9d",
+        "instruction": "mov ecx, off_103EBE04",
+        "refs": [
+          {
+            "addr": "0x103ebe04",
+            "name": "off_103EBE04"
+          }
+        ]
+      },
+      {
+        "addr": "1016cda3",
+        "instruction": "call sub_1015A6E0",
+        "refs": [
+          {
+            "addr": "0x1015a6e0",
+            "name": "sub_1015A6E0"
+          }
+        ]
+      },
+      {
+        "addr": "1016cda8",
+        "instruction": "mov ecx, off_103EBE00",
+        "refs": [
+          {
+            "addr": "0x103ebe00",
+            "name": "off_103EBE00"
+          }
+        ]
+      },
+      {
+        "addr": "1016cdae",
+        "instruction": "call sub_1002A810",
+        "refs": [
+          {
+            "addr": "0x1002a810",
+            "name": "sub_1002A810"
+          }
+        ]
+      },
+      {
+        "addr": "1016cdb3",
+        "instruction": "pop ebx",
+        "label": "loc_1016CDB3"
+      },
+      {
+        "addr": "1016cdb4",
+        "instruction": "retn 4"
+      }
+    ],
+    "stack_frame": [
+      {
+        "name": "__return_address",
+        "offset": "0x4",
+        "size": "0x4",
+        "type": "_UNKNOWN *"
+      },
+      {
+        "name": "arg_0",
+        "offset": "0x8",
+        "size": "0x4",
+        "type": "_DWORD"
+      }
+    ],
+    "return_type": "int",
+    "arguments": [
+      {
+        "name": "arg0",
+        "type": "int"
+      }
+    ]
+  },
+  "instruction_count": 61,
+  "total_instructions": 61,
+  "cursor": {
+    "done": true
+  }
+}

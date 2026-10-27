@@ -1,0 +1,28 @@
+{
+  "addr": "0x10117760",
+  "code": "int __usercall sub_10117760@<eax>(int a1@<eax>)\n{\n  char v5; // [esp-2Ch] [ebp-4Ch]\n  char v6; // [esp-2Ch] [ebp-4Ch]\n  char v7; // [esp-2Ch] [ebp-4Ch]\n  int v8; // [esp-28h] [ebp-48h]\n  int v9; // [esp-28h] [ebp-48h]\n  int v10; // [esp-28h] [ebp-48h]\n  int v11; // [esp-24h] [ebp-44h]\n  int v12; // [esp-24h] [ebp-44h]\n  int v13; // [esp-24h] [ebp-44h]\n  int v14; // [esp-20h] [ebp-40h]\n  int v15; // [esp-20h] [ebp-40h]\n  int v16; // [esp-20h] [ebp-40h]\n  int v17; // [esp-1Ch] [ebp-3Ch]\n  int v18; // [esp-1Ch] [ebp-3Ch]\n  int v19; // [esp-1Ch] [ebp-3Ch]\n  int v20; // [esp-18h] [ebp-38h]\n  int v21; // [esp-18h] [ebp-38h]\n  int v22; // [esp-18h] [ebp-38h]\n  int v23; // [esp-14h] [ebp-34h]\n  int v24; // [esp-14h] [ebp-34h]\n  int v25; // [esp-14h] [ebp-34h]\n  int v26; // [esp-10h] [ebp-30h]\n  int v27; // [esp-10h] [ebp-30h]\n  int v28; // [esp-10h] [ebp-30h]\n  int v29; // [esp-Ch] [ebp-2Ch]\n  int v30; // [esp-Ch] [ebp-2Ch]\n  int v31; // [esp-Ch] [ebp-2Ch]\n  int v33; // [esp-4h] [ebp-24h]\n  int v34; // [esp-4h] [ebp-24h]\n  __int128 v35; // [esp+2h] [ebp-1Eh] BYREF\n  char v36[14]; // [esp+12h] [ebp-Eh] BYREF\n\n  __asm /*0x10117780*/\n  {\n    vmovaps xmm0, ds:xmmword_101971A0\n    vmovups xmmword ptr [ebp-1Eh], xmm0\n  }\n  strcpy(v36, \"Shake\"); /*0x1011778d*/\n  LOBYTE(a1) = 0; /*0x101177b1*/\n  v33 = sub_100630B0( /*0x101177c4*/\n          Str: (char *)&v35 + 1,\n          a2: (int)&byte_103F4BF4,\n          a3: 0,\n          a4: 0,\n          a5: v5,\n          a6: v8,\n          a7: v11,\n          a8: v14,\n          a9: v17,\n          a10: v20,\n          a11: v23,\n          a12: v26,\n          a13: v29,\n          a14: 0,\n          a15: a1);\n  __asm /*0x101177d1*/\n  {\n    vmovsd xmm0, ds:qword_101971B0\n    vmovsd qword ptr [ebp-1Eh], xmm0\n  }\n  strcpy((char *)&v35 + 8, \"ad\"); /*0x101177de*/\n  LOBYTE(v33) = 0; /*0x101177ff*/\n  v34 = sub_100630B0( /*0x10117812*/\n          Str: (char *)&v35 + 1,\n          a2: (int)&byte_103F4BF2,\n          a3: 0,\n          a4: 0,\n          a5: v6,\n          a6: v9,\n          a7: v12,\n          a8: v15,\n          a9: v18,\n          a10: v21,\n          a11: v24,\n          a12: v27,\n          a13: v30,\n          a14: 0,\n          a15: v33);\n  __asm /*0x1011781f*/\n  {\n    vmovsd xmm0, ds:qword_101971C0\n    vmovsd qword ptr [ebp-1Eh], xmm0\n  }\n  strcpy((char *)&v35 + 8, \"ll\"); /*0x1011782c*/\n  LOBYTE(v34) = 0; /*0x1011784d*/\n  return sub_100630B0( /*0x10117858*/\n           Str: (char *)&v35 + 1,\n           a2: (int)&byte_103F4BF3,\n           a3: 0,\n           a4: 0,\n           a5: v7,\n           a6: v10,\n           a7: v13,\n           a8: v16,\n           a9: v19,\n           a10: v22,\n           a11: v25,\n           a12: v28,\n           a13: v31,\n           a14: 0,\n           a15: v34);\n}",
+  "line_count": 104,
+  "total_lines": 104,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x100630b0",
+      "name": "sub_100630B0"
+    },
+    {
+      "addr": "0x103f4bf4",
+      "name": "byte_103F4BF4"
+    },
+    {
+      "addr": "0x103f4bf2",
+      "name": "byte_103F4BF2"
+    },
+    {
+      "addr": "0x103f4bf3",
+      "name": "byte_103F4BF3"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "addr": "0x1002d2b0",
+  "code": "_DWORD *__userpurge NoSpread_PredictionBegin@<eax>(int a1@<ecx>, __int128 _XMM1@<xmm1>, int a3)\n{\n  _DWORD *result; // eax\n  _DWORD *v5; // esi\n  void (__thiscall *v6)(int, _DWORD *); // eax\n  int v7; // ebx\n  int v8; // eax\n  _BYTE *v12; // ecx\n  int v13; // eax\n  void (__thiscall *v19)(int, _DWORD); // eax\n  int v20; // [esp+0h] [ebp-2Ch] BYREF\n  char v21; // [esp+6h] [ebp-26h]\n  char v22; // [esp+7h] [ebp-25h]\n  int v23; // [esp+8h] [ebp-24h]\n  _DWORD *v24; // [esp+Ch] [ebp-20h]\n  int *v25; // [esp+10h] [ebp-1Ch]\n  _DWORD v26[2]; // [esp+14h] [ebp-18h] BYREF\n  int v27; // [esp+1Ch] [ebp-10h]\n\n  _EDI = a1; /*0x1002d2b9*/\n  v25 = &v20; /*0x1002d2bb*/\n  v27 = -1; /*0x1002d2be*/\n  result = v26; /*0x1002d2c5*/\n  v26[1] = &loc_1002D8A0; /*0x1002d2c8*/\n  v26[0] = NtCurrentTeb()->NtTib.ExceptionList; /*0x1002d2d6*/\n  if ( dword_103EF050 != 0 )\n  {\n    result = (_DWORD *)sub_10179540(); /*0x1002d2f2*/\n    if ( result != nullptr )\n    {\n      v5 = result; /*0x1002d2ff*/\n      if ( dword_103EF058 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1002d31c*/\n      {\n        sub_101809C3(a1: &dword_103EF058); /*0x1002d52c*/\n        if ( dword_103EF058 == -1 ) /*0x1002d53b*/\n        {\n          v23 = _EDI; /*0x1002d541*/\n          v24 = v5; /*0x1002d544*/\n          v27 = 0; /*0x1002d547*/\n          dword_103EF054 = sub_1017C730(a1: \"CBasePlayer\", a2: \"m_fFlags\"); /*0x1002d560*/\n          sub_10180A43(a1: &dword_103EF058); /*0x1002d56a*/\n          v5 = v24; /*0x1002d572*/\n          _EDI = v23; /*0x1002d575*/\n        }\n      }\n      *(_DWORD *)(_EDI + 180) = *(_DWORD *)((char *)v5 + dword_103EF054); /*0x1002d32a*/\n      v6 = *(void (__thiscall **)(int, _DWORD *))(*(_DWORD *)dword_103EF050 + 4); /*0x1002d338*/\n      v27 = -1; /*0x1002d33b*/\n      v6(a1: dword_103EF050, a2: v5); /*0x1002d343*/\n      if ( dword_103EF060 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1002d360*/\n      {\n        sub_101809C3(a1: &dword_103EF060); /*0x1002d582*/\n        if ( dword_103EF060 == -1 ) /*0x1002d591*/\n        {\n          v23 = _EDI; /*0x1002d597*/\n          v24 = v5; /*0x1002d59a*/\n          v27 = 1; /*0x1002d59d*/\n          dword_103EF05C = sub_1017C730(a1: \"CBasePlayer\", a2: \"m_hConstraintEntity\") - 8; /*0x1002d5b9*/\n          sub_10180A43(a1: &dword_103EF060); /*0x1002d5c3*/\n          v5 = v24; /*0x1002d5cb*/\n          _EDI = v23; /*0x1002d5ce*/\n        }\n      }\n      v7 = a3; /*0x1002d366*/\n      *(_DWORD *)((char *)v5 + dword_103EF05C) = a3; /*0x1002d36e*/\n      v8 = *(_DWORD *)(a3 + 4); /*0x1002d371*/\n      v27 = -1; /*0x1002d374*/\n      *(_DWORD *)Prediction_SeedPointer = sub_1017C4A0(a1: v8) & 0x7FFFFFFF;// Set global prediction seed = MD5_PseudoRandom(original command_number) &0x7FFFFFFF. No fixed shotgun command-number replacement in this path. /*0x1002d38f*/\n      _EAX = dword_103EC8D0; /*0x1002d391*/\n      __asm /*0x1002d396*/\n      {\n        vmovss xmm0, dword ptr [eax+0Ch]\n        vmovss dword ptr [edi+0A8h], xmm0\n        vmovss xmm0, dword ptr [eax+10h]\n        vmovss dword ptr [edi+0ACh], xmm0\n      }\n      *(_DWORD *)(_EDI + 176) = *(_DWORD *)(_EAX + 24); /*0x1002d3b3*/\n      if ( dword_103EEAF0 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1002d3d4*/\n      {\n        sub_101809C3(a1: &dword_103EEAF0); /*0x1002d5db*/\n        if ( dword_103EEAF0 == -1 ) /*0x1002d5ea*/\n        {\n          v23 = _EDI; /*0x1002d5f0*/\n          v24 = v5; /*0x1002d5f3*/\n          v27 = 2; /*0x1002d5f6*/\n          dword_103EEAEC = sub_1017C730(a1: \"CBasePlayer\", a2: \"m_nTickBase\"); /*0x1002d60f*/\n          sub_10180A43(a1: &dword_103EEAF0); /*0x1002d619*/\n          v5 = v24; /*0x1002d621*/\n          _EDI = v23; /*0x1002d624*/\n          v7 = a3; /*0x1002d627*/\n        }\n      }\n      v20 = *(_DWORD *)((char *)v5 + dword_103EEAEC); /*0x1002d3e2*/\n      v12 = (_BYTE *)dword_103EC918; /*0x1002d3e5*/\n      v22 = *(_BYTE *)(dword_103EC918 + 8); /*0x1002d3ef*/\n      v21 = *(_BYTE *)(dword_103EC918 + 24); /*0x1002d3f6*/\n      if ( dword_103EEF90 != 0 && *(_BYTE *)(dword_103EEF90 + 60) != 1 ) /*0x1002d406*/\n      {\n        v13 = dword_103EEF8C + 1; /*0x1002d43e*/\n      }\n      else\n      {\n        if ( dword_103EEAF0 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1002d423*/\n        {\n          sub_101809C3(a1: &dword_103EEAF0); /*0x1002d684*/\n          if ( dword_103EEAF0 == -1 ) /*0x1002d693*/\n          {\n            v23 = _EDI; /*0x1002d699*/\n            v24 = v5; /*0x1002d69c*/\n            v27 = 3; /*0x1002d69f*/\n            dword_103EEAEC = sub_1017C730(a1: \"CBasePlayer\", a2: \"m_nTickBase\"); /*0x1002d6b8*/\n            sub_10180A43(a1: &dword_103EEAF0); /*0x1002d6c2*/\n            v5 = v24; /*0x1002d6ca*/\n            _EDI = v23; /*0x1002d6cd*/\n            v7 = a3; /*0x1002d6d0*/\n          }\n        }\n        v13 = *(_DWORD *)((char *)v5 + dword_103EEAEC); /*0x1002d42e*/\n        v12 = (_BYTE *)dword_103EC918; /*0x1002d431*/\n      }\n      v27 = -1; /*0x1002d43f*/\n      dword_103EEF8C = v13; /*0x1002d446*/\n      dword_103EEF90 = v7; /*0x1002d44b*/\n      _EDX = dword_103EC8D0; /*0x1002d451*/\n      __asm\n      { // Prediction context: current time=tick*interval; frame_time=interval or0 when prediction paused. NoSpread executes before PredictionEnd restores these globals.\n        vmovss xmm0, dword ptr [edx+1Ch]; Prediction context: current time=tick*interval; frame_time=interval or0 when prediction paused. NoSpread executes before PredictionEnd restores these globals.\n        vcvtsi2ss xmm1, xmm1, eax\n        vmulss xmm1, xmm0, xmm1\n        vmovss dword ptr [edx+0Ch], xmm1\n      }\n      __asm { vxorps xmm1, xmm1, xmm1 }\n      if ( v12[10] == 0 ) /*0x1002d471*/\n        __asm { vmovaps xmm1, xmm0 } /*0x1002d473*/\n      __asm { vmovss dword ptr [edx+10h], xmm1 } /*0x1002d477*/\n      *(_DWORD *)(_EDX + 24) = v13; /*0x1002d47c*/\n      v12[24] = 0; /*0x1002d47f*/\n      v12[8] = 1; /*0x1002d483*/\n      (*(void (__thiscall **)(_BYTE *, int))(*(_DWORD *)v12 + 52))(a1: v12, a2: v7 + 12); /*0x1002d48d*/\n      (*(void (__thiscall **)(int, _DWORD *, int, int, int))(*(_DWORD *)dword_103EC918 + 76))( /*0x1002d4a1*/\n        a1: dword_103EC918,\n        a2: v5,\n        a3: v7,\n        a4: dword_103EF050,\n        a5: _EDI);\n      (*(void (__thiscall **)(int, _DWORD *, int))(*(_DWORD *)dword_103EC930 + 4))(a1: dword_103EC930, a2: v5, a3: _EDI); /*0x1002d4ae*/\n      (*(void (__thiscall **)(int, _DWORD *, int, int))(*(_DWORD *)dword_103EC918 + 80))( /*0x1002d4bc*/\n        a1: dword_103EC918,\n        a2: v5,\n        a3: v7,\n        a4: _EDI);\n      if ( dword_103EEAF0 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1002d4da*/\n      {\n        sub_101809C3(a1: &dword_103EEAF0); /*0x1002d634*/\n        if ( dword_103EEAF0 == -1 ) /*0x1002d643*/\n        {\n          v24 = v5; /*0x1002d649*/\n          v27 = 4; /*0x1002d64c*/\n          dword_103EEAEC = sub_1017C730(a1: \"CBasePlayer\", a2: \"m_nTickBase\"); /*0x1002d665*/\n          sub_10180A43(a1: &dword_103EEAF0); /*0x1002d66f*/\n          v5 = v24; /*0x1002d677*/\n        }\n      }\n      *(_DWORD *)((char *)v5 + dword_103EEAEC) = v20; /*0x1002d4e8*/\n      v19 = *(void (__thiscall **)(int, _DWORD))(*(_DWORD *)dword_103EF050 + 4); /*0x1002d4f3*/\n      v27 = -1; /*0x1002d4f6*/\n      v19(a1: dword_103EF050, a2: 0); /*0x1002d4ff*/\n      result = (_DWORD *)dword_103EC918; /*0x1002d501*/\n      *(_BYTE *)(dword_103EC918 + 8) = v22; /*0x1002d50a*/\n      *((_BYTE *)result + 24) = v21; /*0x1002d511*/\n    }\n  }\n  return result; /*0x1002d514*/\n}",
+  "line_count": 174,
+  "total_lines": 174,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1002d8a0",
+      "name": "loc_1002D8A0"
+    },
+    {
+      "addr": "0x10179540",
+      "name": "sub_10179540"
+    },
+    {
+      "addr": "0x101809c3",
+      "name": "sub_101809C3"
+    },
+    {
+      "addr": "0x103ef058",
+      "name": "dword_103EF058"
+    },
+    {
+      "addr": "0x103ef054",
+      "name": "dword_103EF054"
+    },
+    {
+      "addr": "0x1017c730",
+      "name": "sub_1017C730"
+    },
+    {
+      "addr": "0x1028578f",
+      "name": "aCbaseplayer",
+      "string": "CBasePlayer"
+    },
+    {
+      "addr": "0x10284a36",
+      "name": "aMFflags",
+      "string": "m_fFlags"
+    },
+    {
+      "addr": "0x10180a43",
+      "name": "sub_10180A43"
+    },
+    {
+      "addr": "0x103f800c",
+      "name": "TlsIndex"
+    },
+    {
+      "addr": "0x103ef050",
+      "name": "dword_103EF050"
+    },
+    {
+      "addr": "0x103ef060",
+      "name": "dword_103EF060"
+    },
+    {
+      "addr": "0x103ef05c",
+      "name": "dword_103EF05C"
+    },
+    {
+      "addr": "0x10282bca",
+      "name": "aMHconstrainten",
+      "string": "m_hConstraintEntity"
+    },
+    {
+      "addr": "0x103ecbd4",
+      "name": "Prediction_SeedPointer"
+    },
+    {
+      "addr": "0x1017c4a0",
+      "name": "sub_1017C4A0"
+    },
+    {
+      "addr": "0x103ec8d0",
+      "name": "dword_103EC8D0"
+    },
+    {
+      "addr": "0x103eeaf0",
+      "name": "dword_103EEAF0"
+    },
+    {
+      "addr": "0x103eeaec",
+      "name": "dword_103EEAEC"
+    },
+    {
+      "addr": "0x10288d37",
+      "name": "aMNtickbase",
+      "string": "m_nTickBase"
+    },
+    {
+      "addr": "0x103ec918",
+      "name": "dword_103EC918"
+    },
+    {
+      "addr": "0x103eef8c",
+      "name": "dword_103EEF8C"
+    },
+    {
+      "addr": "0x103eef90",
+      "name": "dword_103EEF90"
+    },
+    {
+      "addr": "0x103ec930",
+      "name": "dword_103EC930"
+    }
+  ]
+}

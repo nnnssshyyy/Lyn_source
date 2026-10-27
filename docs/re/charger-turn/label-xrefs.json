@@ -1,0 +1,104 @@
+{
+  "result": [
+    {
+      "addr": "0x102868b6",
+      "xrefs": [
+        {
+          "addr": "0x10009a1f",
+          "type": "data",
+          "fn": {
+            "addr": "0x10003c90",
+            "name": "sub_10003C90",
+            "size": "0x7c8f"
+          }
+        },
+        {
+          "addr": "0x10009a35",
+          "type": "data",
+          "fn": {
+            "addr": "0x10003c90",
+            "name": "sub_10003C90",
+            "size": "0x7c8f"
+          }
+        },
+        {
+          "addr": "0x1010c658",
+          "type": "data",
+          "fn": {
+            "addr": "0x10102390",
+            "name": "sub_10102390",
+            "size": "0xce9a"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 3
+    },
+    {
+      "addr": "0x102868a9",
+      "xrefs": [
+        {
+          "addr": "0x101744c7",
+          "type": "data",
+          "fn": {
+            "addr": "0x101725b0",
+            "name": "sub_101725B0",
+            "size": "0x332e"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 1
+    },
+    {
+      "addr": "0x10285b3b",
+      "xrefs": [
+        {
+          "addr": "0x10009991",
+          "type": "data",
+          "fn": {
+            "addr": "0x10003c90",
+            "name": "sub_10003C90",
+            "size": "0x7c8f"
+          }
+        },
+        {
+          "addr": "0x100099a7",
+          "type": "data",
+          "fn": {
+            "addr": "0x10003c90",
+            "name": "sub_10003C90",
+            "size": "0x7c8f"
+          }
+        },
+        {
+          "addr": "0x1010c576",
+          "type": "data",
+          "fn": {
+            "addr": "0x10102390",
+            "name": "sub_10102390",
+            "size": "0xce9a"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 3
+    },
+    {
+      "addr": "0x10285b2e",
+      "xrefs": [
+        {
+          "addr": "0x101744c2",
+          "type": "data",
+          "fn": {
+            "addr": "0x101725b0",
+            "name": "sub_101725B0",
+            "size": "0x332e"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 1
+    }
+  ]
+}

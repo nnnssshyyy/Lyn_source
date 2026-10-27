@@ -1,0 +1,101 @@
+{
+  "result": [
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x10080e56",
+        "end": "0x10080e8d",
+        "offset": 0,
+        "count": 35,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x10080e56",
+          "end": "0x10080e8d"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x10080e56",
+          "disasm": "mov ecx, [edi+4A48h]"
+        },
+        {
+          "addr": "0x10080e5c",
+          "disasm": "add ecx, [edi+4A44h]"
+        },
+        {
+          "addr": "0x10080e62",
+          "disasm": "mov eax, [edi+0CCh]"
+        },
+        {
+          "addr": "0x10080e68",
+          "disasm": "mov edx, dword_104EE784"
+        },
+        {
+          "addr": "0x10080e6e",
+          "disasm": "mov edx, [edx]"
+        },
+        {
+          "addr": "0x10080e70",
+          "disasm": "mov edx, [edx+0Ch]"
+        },
+        {
+          "addr": "0x10080e73",
+          "disasm": "push ecx"
+        },
+        {
+          "addr": "0x10080e74",
+          "disasm": "mov ecx, [edi+4A4Ch]"
+        },
+        {
+          "addr": "0x10080e7a",
+          "disasm": "push ecx"
+        },
+        {
+          "addr": "0x10080e7b",
+          "disasm": "test eax, eax"
+        },
+        {
+          "addr": "0x10080e7d",
+          "disasm": "setnle cl"
+        },
+        {
+          "addr": "0x10080e80",
+          "disasm": "movzx ecx, cl"
+        },
+        {
+          "addr": "0x10080e83",
+          "disasm": "push ecx"
+        },
+        {
+          "addr": "0x10080e84",
+          "disasm": "mov ecx, dword_104EE784"
+        },
+        {
+          "addr": "0x10080e8a",
+          "disasm": "push eax"
+        },
+        {
+          "addr": "0x10080e8b",
+          "disasm": "call edx"
+        }
+      ],
+      "count": 16,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 16,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    }
+  ]
+}

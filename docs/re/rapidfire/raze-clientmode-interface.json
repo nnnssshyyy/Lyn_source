@@ -1,0 +1,30 @@
+{
+  "addr": "0x10001d60",
+  "code": "int sub_10001D60()\n{\n  __int128 v1; // [esp-14h] [ebp-14h]\n\n  HIDWORD(v1) = 3; /*0x10001d67*/\n  DWORD2(v1) = \"89 04 B5 ? ? ? ? E8\"; /*0x10001d69*/\n  DWORD1(v1) = \"client.dll\"; /*0x10001d6e*/\n  LODWORD(v1) = &dword_103EC840; /*0x10001d73*/\n  return sub_1017F5F0(a1: v1, a2: 2); /*0x10001d7d*/\n}",
+  "line_count": 10,
+  "total_lines": 10,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1028cd75",
+      "name": "a8904B5E8",
+      "string": "89 04 B5 ? ? ? ? E8"
+    },
+    {
+      "addr": "0x10287305",
+      "name": "aClientDll",
+      "string": "client.dll"
+    },
+    {
+      "addr": "0x103ec840",
+      "name": "dword_103EC840"
+    },
+    {
+      "addr": "0x1017f5f0",
+      "name": "sub_1017F5F0"
+    }
+  ]
+}

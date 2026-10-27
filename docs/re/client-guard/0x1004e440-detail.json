@@ -1,0 +1,10 @@
+{
+  "addr": "0x1004e440",
+  "code": "int __thiscall sub_1004E440(_DWORD **this)\n{\n  return (*(int (__thiscall **)(_DWORD, _DWORD **))(**(this + 20) + 8))(a1: *(this + 20), a2: this);\n}",
+  "line_count": 4,
+  "total_lines": 4,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  }
+}

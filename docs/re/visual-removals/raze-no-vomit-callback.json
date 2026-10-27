@@ -1,0 +1,91 @@
+{
+  "addr": "0x1016f8d0",
+  "code": "int __cdecl sub_1016F8D0(int a1, int a2, int a3, int a4, unsigned __int8 a5, unsigned __int8 a6)\n{\n  int v6; // eax\n  int v7; // edi\n  int v8; // esi\n  char v9; // al\n  char v10; // bl\n  bool v11; // zf\n  char v12; // bl\n  int v17; // [esp+4h] [ebp-28h]\n  _DWORD v18[4]; // [esp+Ch] [ebp-20h] BYREF\n  int v19; // [esp+1Ch] [ebp-10h]\n\n  v18[1] = v18; /*0x1016f8d9*/\n  v19 = -1; /*0x1016f8dc*/\n  v18[3] = &loc_101769F0; /*0x1016f8e6*/\n  v18[2] = NtCurrentTeb()->NtTib.ExceptionList; /*0x1016f8f4*/\n  v6 = sub_10179540(); /*0x1016f903*/\n  if ( v6 != 0 ) /*0x1016f90a*/\n  {\n    v7 = v6; /*0x1016f910*/\n    if ( dword_103EEAD8 > *(_DWORD *)(*((_DWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + TlsIndex) + 4) ) /*0x1016f92d*/\n    {\n      sub_101809C3(a1: &dword_103EEAD8); /*0x1016fa39*/\n      if ( dword_103EEAD8 == -1 ) /*0x1016fa48*/\n      {\n        v18[0] = v7; /*0x1016fa4e*/\n        v19 = 0; /*0x1016fa51*/\n        dword_103EEAD4 = sub_1017C730(a1: \"CBaseEntity\", a2: \"m_iTeamNum\"); /*0x1016fa6a*/\n        sub_10180A43(a1: &dword_103EEAD8); /*0x1016fa74*/\n        v7 = v18[0]; /*0x1016fa7c*/\n      }\n    }\n    v8 = *(_DWORD *)(dword_103EEAD4 + v7); /*0x1016f938*/\n    v9 = BYTE1(dword_103F50F8); /*0x1016f93b*/\n    if ( dword_103F50F4 == 2 && v8 == 2 ) /*0x1016f94e*/\n    {\n      v19 = -1; /*0x1016f950*/\n      v10 = BYTE1(dword_103F50F8); /*0x1016f958*/\n      v11 = sub_1016F390(a1: v7) == 0; /*0x1016f965*/\n      v9 = 1; /*0x1016f967*/\n      if ( v11 ) /*0x1016f96c*/\n        v9 = v10; /*0x1016f96c*/\n    }\n    v12 = v9 | BYTE2(dword_103F50F8) & (v8 == 3); /*0x1016f97b*/\n    if ( (v9 & 1 | BYTE2(dword_103F50F8) & (v8 == 3)) != 0 ) /*0x1016f987*/\n    {\n      v19 = -1; /*0x1016f989*/\n      if ( (byte_103F73E8 & 1) == 0 ) /*0x1016f992*/\n      {\n        (*(void (__thiscall **)(int, const char *))(*(_DWORD *)dword_103EC900 + 52))( /*0x1016f9a1*/\n          a1: dword_103EC900,\n          a2: \"mat_postprocess_enable\");\n        _XMM0 = sub_1017BAF0(a1: 0); /*0x1016f9a8*/\n        __asm { vxorps xmm0, xmm0, xmm0 } /*0x1016f9ad*/\nLABEL_12:\n        __asm { vmovss [ebp+var_20], xmm0 } /*0x1016f9c6*/\n        (*(void (__thiscall **)(int, const char *))(*(_DWORD *)dword_103EC900 + 52))( /*0x1016f9d8*/\n          a1: dword_103EC900,\n          a2: \"mat_postprocess_enable\");\n        __asm /*0x1016f9de*/\n        {\n          vmovss xmm0, [ebp+var_20]\n          vmovss [esp+28h+var_28], xmm0\n        }\n        sub_1017BAC0(a1: v17, a2: -1); /*0x1016f9f2*/\n        byte_103F73E8 = v12 & 1; /*0x1016f9fa*/\n      }\n    }\n    else\n    {\n      v19 = -1; /*0x1016f9b3*/\n      if ( (byte_103F73E8 & 1) != 0 ) /*0x1016f9bc*/\n      {\n        __asm { vmovss xmm0, ds:dword_10184184 } /*0x1016f9be*/\n        goto LABEL_12; /*0x1016f9be*/\n      }\n    }\n  }\n  return dword_103F74E0(a1, a2, a3, a4, a5, a6); /*0x1016fa22*/\n}",
+  "line_count": 81,
+  "total_lines": 81,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x101769f0",
+      "name": "loc_101769F0"
+    },
+    {
+      "addr": "0x10179540",
+      "name": "sub_10179540"
+    },
+    {
+      "addr": "0x101809c3",
+      "name": "sub_101809C3"
+    },
+    {
+      "addr": "0x103eead8",
+      "name": "dword_103EEAD8"
+    },
+    {
+      "addr": "0x103eead4",
+      "name": "dword_103EEAD4"
+    },
+    {
+      "addr": "0x1017c730",
+      "name": "sub_1017C730"
+    },
+    {
+      "addr": "0x10282c10",
+      "name": "aCbaseentity",
+      "string": "CBaseEntity"
+    },
+    {
+      "addr": "0x102870f9",
+      "name": "aMIteamnum",
+      "string": "m_iTeamNum"
+    },
+    {
+      "addr": "0x10180a43",
+      "name": "sub_10180A43"
+    },
+    {
+      "addr": "0x103f800c",
+      "name": "TlsIndex"
+    },
+    {
+      "addr": "0x103f50f8",
+      "name": "dword_103F50F8"
+    },
+    {
+      "addr": "0x1016f390",
+      "name": "sub_1016F390"
+    },
+    {
+      "addr": "0x103f50f4",
+      "name": "dword_103F50F4"
+    },
+    {
+      "addr": "0x103ec900",
+      "name": "dword_103EC900"
+    },
+    {
+      "addr": "0x1028931b",
+      "name": "aMatPostprocess",
+      "string": "mat_postprocess_enable"
+    },
+    {
+      "addr": "0x1017baf0",
+      "name": "sub_1017BAF0"
+    },
+    {
+      "addr": "0x1017bac0",
+      "name": "sub_1017BAC0"
+    },
+    {
+      "addr": "0x103f73e8",
+      "name": "byte_103F73E8"
+    },
+    {
+      "addr": "0x103f74e0",
+      "name": "dword_103F74E0"
+    }
+  ]
+}

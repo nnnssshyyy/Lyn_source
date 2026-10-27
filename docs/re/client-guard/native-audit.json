@@ -1,0 +1,24 @@
+{
+  "source": {
+    "C:\\Users\\User\\Desktop\\projectos c++\\l4d2Simple-s\\hl2sdk\\Features\\AntiAntiCheat.cpp": "730bf2c58579cb2f87e67cb1265848fc4dc8ab6fc700b411ccc1a102bfaf1e0e",
+    "C:\\Users\\User\\Desktop\\projectos c++\\l4d2Simple-s\\hl2sdk\\Features\\AntiAntiCheat.h": "1217c1bd9ade2fc75d594e91d6fec69b4f41ce47a25f0122a70f0465dff8d5bb"
+  },
+  "native": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\bin\\engine.dll": "8a6d468059394bf4cfce32f11dcba12ef45de88da1373084d5a2916d0bf7ba86",
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\left4dead2\\bin\\client.dll": "c0a8e1e88f7312db11bcfd4b0ec574d224a34b2d9a615d6088b28335eeb4af1f"
+  },
+  "checked": {
+    "send": "engine 0x101B19B0: x86 thiscall, three stack arguments",
+    "query_encoder": "engine 0x101D1330: name +88, value +92, type slot 8",
+    "set_handler": "engine 0x10055450: vector data +84, count +96, entries 520 bytes",
+    "message_processors": {
+      "net_StringCmd": "engine 0x1004E440 -> handler slot 2",
+      "net_SetConVar": "engine 0x1004FFA0 -> handler slot 3",
+      "svc_CrosshairAngle": "engine 0x10053970 -> handler slot 18, type 20"
+    },
+    "sound": "engine 0x10001AB0: 14 stack arguments, ret 0x38",
+    "user_messages": "client 0x1022E050: 65 registrations; Shake 11, Fade 12, BlurFade 46",
+    "unique_signatures": true
+  },
+  "runtime_game_tested": false
+}

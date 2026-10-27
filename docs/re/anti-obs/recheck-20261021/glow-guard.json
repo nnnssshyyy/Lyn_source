@@ -1,0 +1,113 @@
+{
+  "result": [
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1014e630",
+        "end": "0x1014e67e",
+        "offset": 0,
+        "count": 60,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1014e630",
+          "end": "0x1014e67e"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1014e630",
+          "disasm": "cmp StreamProof_Enabled, 0; Native material/glow-like renderer is gated off whenever StreamProof_Enabled is set; not all world effects are preserved in stream-proof mode."
+        },
+        {
+          "addr": "0x1014e637",
+          "disasm": "jnz locret_1014F00B"
+        },
+        {
+          "addr": "0x1014e63d",
+          "disasm": "cmp byte ptr word_103F4BDD+1, 1"
+        },
+        {
+          "addr": "0x1014e644",
+          "disasm": "jnz locret_1014F00B"
+        },
+        {
+          "addr": "0x1014e64a",
+          "disasm": "push ebp"
+        },
+        {
+          "addr": "0x1014e64b",
+          "disasm": "push ebx"
+        },
+        {
+          "addr": "0x1014e64c",
+          "disasm": "push edi"
+        },
+        {
+          "addr": "0x1014e64d",
+          "disasm": "push esi"
+        },
+        {
+          "addr": "0x1014e64e",
+          "disasm": "sub esp, 0A0h"
+        },
+        {
+          "addr": "0x1014e654",
+          "disasm": "mov edi, ecx"
+        },
+        {
+          "addr": "0x1014e656",
+          "disasm": "mov ecx, dword_103EC8A0"
+        },
+        {
+          "addr": "0x1014e65c",
+          "disasm": "mov eax, [ecx]"
+        },
+        {
+          "addr": "0x1014e65e",
+          "disasm": "call dword ptr [eax+8]"
+        },
+        {
+          "addr": "0x1014e661",
+          "disasm": "test al, al"
+        },
+        {
+          "addr": "0x1014e663",
+          "disasm": "jnz loc_1014F001"
+        },
+        {
+          "addr": "0x1014e669",
+          "disasm": "cmp byte_103EEF74, 0"
+        },
+        {
+          "addr": "0x1014e670",
+          "disasm": "jnz loc_1014F001"
+        },
+        {
+          "addr": "0x1014e676",
+          "disasm": "mov ecx, dword_103EC858"
+        },
+        {
+          "addr": "0x1014e67c",
+          "disasm": "mov eax, [ecx]"
+        }
+      ],
+      "count": 19,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 19,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    }
+  ]
+}

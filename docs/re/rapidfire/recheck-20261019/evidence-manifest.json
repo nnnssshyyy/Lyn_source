@@ -1,0 +1,62 @@
+{
+  "binary_sha256": "dfa8632e85c89c318577ef619f20bae2f4db5136042d680ee4dae4109234691a",
+  "ida_session": "raze-rapid-recheck",
+  "functions": [
+    {
+      "name": "move",
+      "address": "0x1016CE80",
+      "instructions": 24
+    },
+    {
+      "name": "arm",
+      "address": "0x101486E0",
+      "instructions": 331
+    },
+    {
+      "name": "channel",
+      "address": "0x10148C40",
+      "instructions": 108
+    },
+    {
+      "name": "run-command",
+      "address": "0x1016CF10",
+      "instructions": 220
+    },
+    {
+      "name": "create-move",
+      "address": "0x1016FF00",
+      "instructions": 749
+    }
+  ],
+  "total_instructions": 1432,
+  "original_byte_checks": [
+    {
+      "address": "0x10191CD0",
+      "bytes": 4,
+      "matches_original": true
+    },
+    {
+      "address": "0x10184EDC",
+      "bytes": 4,
+      "matches_original": true
+    },
+    {
+      "address": "0x1016CE90",
+      "bytes": 21,
+      "matches_original": true
+    },
+    {
+      "address": "0x1016FF8E",
+      "bytes": 11,
+      "matches_original": true
+    },
+    {
+      "address": "0x1017000C",
+      "bytes": 12,
+      "matches_original": true
+    }
+  ],
+  "interval_constant": 0.05999999865889549,
+  "rounding_constant": 0.5,
+  "annotated_database": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\raze\\raze-rapidfire-integrated-20261019.i64"
+}

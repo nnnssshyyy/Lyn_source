@@ -1,0 +1,171 @@
+{
+  "result": [
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1003e994",
+        "end": "0x1003e9a2",
+        "offset": 0,
+        "count": 20,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1003e994",
+          "end": "0x1003e9a2"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1003e994",
+          "disasm": "jz loc_1003EA73"
+        },
+        {
+          "addr": "0x1003e99a",
+          "disasm": "test bl, bl"
+        },
+        {
+          "addr": "0x1003e99c",
+          "disasm": "jz loc_1003EA73"
+        }
+      ],
+      "count": 3,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 3,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1003ea08",
+        "end": "0x1003ea1a",
+        "offset": 0,
+        "count": 20,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1003ea08",
+          "end": "0x1003ea1a"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1003ea08",
+          "disasm": "mov ecx, [ebp+Src]; Src"
+        },
+        {
+          "addr": "0x1003ea0b",
+          "disasm": "jb short loc_1003EA73"
+        },
+        {
+          "addr": "0x1003ea0d",
+          "disasm": "mov eax, [ecx+10h]"
+        },
+        {
+          "addr": "0x1003ea10",
+          "disasm": "mov esi, [ecx+14h]"
+        },
+        {
+          "addr": "0x1003ea13",
+          "disasm": "cmp eax, esi"
+        },
+        {
+          "addr": "0x1003ea15",
+          "disasm": "jnb short loc_1003EA30"
+        },
+        {
+          "addr": "0x1003ea17",
+          "disasm": "lea edx, [eax+1]"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1003e978",
+        "end": "0x1003e994",
+        "offset": 0,
+        "count": 20,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1003e978",
+          "end": "0x1003e994"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1003e978",
+          "disasm": "align 10h"
+        },
+        {
+          "addr": "0x1003e980",
+          "disasm": "mov [edx+eax], bh"
+        },
+        {
+          "addr": "0x1003e983",
+          "disasm": "mov byte ptr [edx+eax+1], 0"
+        },
+        {
+          "addr": "0x1003e988",
+          "disasm": "movzx ebx, word ptr [edi]"
+        },
+        {
+          "addr": "0x1003e98b",
+          "disasm": "add edi, 2"
+        },
+        {
+          "addr": "0x1003e98e",
+          "disasm": "test bx, bx"
+        },
+        {
+          "addr": "0x1003e991",
+          "disasm": "mov ecx, [ebp+Src]; Src"
+        }
+      ],
+      "count": 7,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 7,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "addr": "0x1015bbf0",
+  "code": "void sub_1015BBF0()\n{\n  int v0; // esi\n  int v5; // edi\n  __int128 v17; // [esp+0h] [ebp-64h]\n  __int128 v18; // [esp+10h] [ebp-54h]\n  int v19; // [esp+20h] [ebp-44h] BYREF\n  int v20[2]; // [esp+24h] [ebp-40h] BYREF\n  int v21; // [esp+2Ch] [ebp-38h] BYREF\n  int v22[4]; // [esp+30h] [ebp-34h] BYREF\n  int v23; // [esp+40h] [ebp-24h] BYREF\n  __int64 v24; // [esp+44h] [ebp-20h] BYREF\n  int v25; // [esp+4Ch] [ebp-18h] BYREF\n\n  if ( byte_103F5396 == 1 /*0x1015bc52*/\n    && byte_103F5AA8 == 1\n    && (byte_103F4BA8 != 1\n     || (*(unsigned __int8 (__thiscall **)(int))(*(_DWORD *)dword_103EC770 + 356))(a1: dword_103EC770) == 0)\n    && (*(_BYTE *)off_1029E02C != 0\n     || (*(unsigned __int8 (__thiscall **)(int))(*(_DWORD *)dword_103EC8A0 + 8))(a1: dword_103EC8A0) == 0) )\n  {\n    v0 = sub_10079720(); /*0x1015bc5d*/\n    v25 = v0; /*0x1015bc5f*/\n    __asm /*0x1015bc63*/\n    {\n      vmovsd xmm0, qword_103F5AAC\n      vcvtdq2ps xmm0, xmm0\n      vmovups [esp+64h+var_54], xmm0\n      vmovlps [esp+64h+var_20], xmm0\n      vmovss xmm0, dword ptr xmmword_103F5A3C+8\n      vmovsd xmm1, qword ptr xmmword_103F5A3C\n      vmovsd qword ptr [esp+64h+var_34], xmm1\n      vmovss [esp+64h+var_34+8], xmm0\n    }\n    v22[3] = 1065353216; /*0x1015bc97*/\n    v5 = sub_100711F0(a1: v22); /*0x1015bcac*/\n    v23 = v5; /*0x1015bcae*/\n    __asm /*0x1015bcb2*/\n    {\n      vmovaps xmm0, ds:xmmword_10184200\n      vmovups xmmword ptr [esp+64h+var_34], xmm0\n    }\n    v21 = sub_100711F0(a1: v22); /*0x1015bcc9*/\n    __asm /*0x1015bccd*/\n    {\n      vmovddup xmm0, ds:qword_101861A0\n      vmovups [esp+64h+var_64], xmm0\n      vaddps xmm0, xmm0, [esp+64h+var_54]\n      vmovlps qword ptr [esp+64h+var_34], xmm0\n    }\n    sub_100997B0(a1: &v24, a2: v22, a3: v21, a4: 0, a5: 0); /*0x1015bcf3*/\n    __asm /*0x1015bcf8*/\n    {\n      vmovsd xmm0, [esp+64h+var_20]\n      vaddps xmm0, xmm0, [esp+64h+var_64]\n      vmovlps qword ptr [esp+64h+var_34], xmm0\n    }\n    sub_100996C0(a1: &v24, a2: v22, a3: v5, a4: 0, a5: 0, a6: 1065353216); /*0x1015bd17*/\n    sub_100731A0(a1: (int)v20, a2: (char *)\"Binds\", a3: 0, a4: 0, a5: -1082130432); /*0x1015bd2f*/\n    __asm /*0x1015bd37*/\n    {\n      vmovsd xmm0, [esp+64h+var_20]\n      vaddps xmm0, xmm0, ds:xmmword_1019AC70\n      vmovsd xmm1, qword ptr [esp+64h+var_40]\n      vbroadcastss xmm2, ds:dword_10185558\n      vmulps xmm1, xmm1, xmm2\n      vaddps xmm0, xmm0, xmm1\n      vmovlps qword ptr [esp+64h+var_34], xmm0\n    }\n    sub_1009AF80(a1: v0, a2: (int)v22, a3: -1, a4: (char *)\"Binds\", a5: 0); /*0x1015bd6e*/\n    v19 = HIDWORD(qword_103F5AAC) + 14; /*0x1015bd7b*/\n    v22[0] = (int)&v19; /*0x1015bd83*/\n    v22[1] = (int)&v25; /*0x1015bd8b*/\n    v22[2] = (int)&v21; /*0x1015bd93*/\n    v22[3] = (int)&v23; /*0x1015bd9b*/\n    sub_1015BEF0(a1: (unsigned __int8)byte_103F5ADC, a2: (unsigned __int8)byte_103F5CDC, a3: dword_103F5AE0); /*0x1015bdc0*/\n    sub_1015BEF0(a1: (unsigned __int8)byte_103F5AE4, a2: (unsigned __int8)byte_103F4BFC, a3: dword_103F5AE8); /*0x1015bde5*/\n    sub_1015BEF0(a1: (unsigned __int8)byte_103F5AEC, a2: (unsigned __int8)byte_103F4BF2, a3: dword_103F5AF0); /*0x1015be0a*/\n    sub_1015BEF0(a1: (unsigned __int8)byte_103F5AF4, a2: (unsigned __int8)word_103F4BDD, a3: dword_103F5AF8); /*0x1015be2f*/\n    sub_1015BEF0(a1: (unsigned __int8)byte_103F5AFC, a2: HIBYTE(word_103F4BDD), a3: dword_103F5B00); /*0x1015be54*/\n    sub_1015BEF0(a1: (unsigned __int8)byte_103F5B04, a2: (unsigned __int8)byte_103F4BDF, a3: dword_103F5B08); /*0x1015be79*/\n    sub_1015BEF0(a1: (unsigned __int8)byte_103F5B0C, a2: (unsigned __int8)byte_103F5340, a3: dword_103F5B10); /*0x1015be9e*/\n    sub_1015BEF0(a1: (unsigned __int8)byte_103F5B14, a2: (unsigned __int8)byte_103F5350, a3: dword_103F5B18); /*0x1015bec3*/\n    if ( *(_BYTE *)off_1029E02C == 1 ) /*0x1015bed3*/\n      sub_1015BAE0( /*0x1015bed5*/\n        a1: v17,\n        a2: DWORD1(v17),\n        a3: DWORD2(v17),\n        a4: HIDWORD(v17),\n        a5: v18,\n        a6: DWORD1(v18),\n        a7: DWORD2(v18),\n        a8: HIDWORD(v18));\n  }\n}",
+  "line_count": 95,
+  "total_lines": 95,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x10079720",
+      "name": "sub_10079720"
+    },
+    {
+      "addr": "0x100711f0",
+      "name": "sub_100711F0"
+    },
+    {
+      "addr": "0x100997b0",
+      "name": "sub_100997B0"
+    },
+    {
+      "addr": "0x100996c0",
+      "name": "sub_100996C0"
+    },
+    {
+      "addr": "0x100731a0",
+      "name": "sub_100731A0"
+    },
+    {
+      "addr": "0x10284db1",
+      "name": "aKeyBinds_0",
+      "string": "Key Binds"
+    },
+    {
+      "addr": "0x1009af80",
+      "name": "sub_1009AF80"
+    },
+    {
+      "addr": "0x103f5aac",
+      "name": "qword_103F5AAC"
+    },
+    {
+      "addr": "0x1015bef0",
+      "name": "sub_1015BEF0"
+    },
+    {
+      "addr": "0x103f5adc",
+      "name": "byte_103F5ADC"
+    },
+    {
+      "addr": "0x103f5cdc",
+      "name": "byte_103F5CDC"
+    },
+    {
+      "addr": "0x103f5ae0",
+      "name": "dword_103F5AE0"
+    },
+    {
+      "addr": "0x103f5ae4",
+      "name": "byte_103F5AE4"
+    },
+    {
+      "addr": "0x103f4bfc",
+      "name": "byte_103F4BFC"
+    },
+    {
+      "addr": "0x103f5ae8",
+      "name": "dword_103F5AE8"
+    },
+    {
+      "addr": "0x103f5aec",
+      "name": "byte_103F5AEC"
+    },
+    {
+      "addr": "0x103f4bf2",
+      "name": "byte_103F4BF2"
+    },
+    {
+      "addr": "0x103f5af0",
+      "name": "dword_103F5AF0"
+    },
+    {
+      "addr": "0x103f5af4",
+      "name": "byte_103F5AF4"
+    },
+    {
+      "addr": "0x103f4bdd",
+      "name": "word_103F4BDD"
+    },
+    {
+      "addr": "0x103f5af8",
+      "name": "dword_103F5AF8"
+    },
+    {
+      "addr": "0x103f5afc",
+      "name": "byte_103F5AFC"
+    },
+    {
+      "addr": "0x103f5b00",
+      "name": "dword_103F5B00"
+    },
+    {
+      "addr": "0x103f5b04",
+      "name": "byte_103F5B04"
+    },
+    {
+      "addr": "0x103f4bdf",
+      "name": "byte_103F4BDF"
+    },
+    {
+      "addr": "0x103f5b08",
+      "name": "dword_103F5B08"
+    },
+    {
+      "addr": "0x103f5b0c",
+      "name": "byte_103F5B0C"
+    },
+    {
+      "addr": "0x103f5340",
+      "name": "byte_103F5340"
+    },
+    {
+      "addr": "0x103f5b10",
+      "name": "dword_103F5B10"
+    },
+    {
+      "addr": "0x103f5b14",
+      "name": "byte_103F5B14"
+    },
+    {
+      "addr": "0x103f5350",
+      "name": "byte_103F5350"
+    },
+    {
+      "addr": "0x103f5b18",
+      "name": "dword_103F5B18"
+    },
+    {
+      "addr": "0x1015bae0",
+      "name": "sub_1015BAE0"
+    },
+    {
+      "addr": "0x1029e02c",
+      "name": "off_1029E02C"
+    },
+    {
+      "addr": "0x103f5396",
+      "name": "byte_103F5396"
+    },
+    {
+      "addr": "0x103f5aa8",
+      "name": "byte_103F5AA8"
+    },
+    {
+      "addr": "0x103f4ba8",
+      "name": "byte_103F4BA8"
+    },
+    {
+      "addr": "0x103ec770",
+      "name": "dword_103EC770"
+    },
+    {
+      "addr": "0x103ec8a0",
+      "name": "dword_103EC8A0"
+    }
+  ]
+}

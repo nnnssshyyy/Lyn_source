@@ -1,0 +1,38 @@
+{
+  "addr": "0x101c0980",
+  "code": "int sub_101C0980()\n{\n  sub_101AC240(a1: off_106DE3A4, a2: \"Shake\", a3: sub_101BFF50);\n  return sub_101AC240(a1: off_106DE3A4, a2: \"Fade\", a3: sub_101C0320);\n}",
+  "line_count": 5,
+  "total_lines": 5,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x101ac240",
+      "name": "sub_101AC240"
+    },
+    {
+      "addr": "0x106de3a4",
+      "name": "off_106DE3A4"
+    },
+    {
+      "addr": "0x1058a8f0",
+      "name": "aShake",
+      "string": "Shake"
+    },
+    {
+      "addr": "0x101bff50",
+      "name": "sub_101BFF50"
+    },
+    {
+      "addr": "0x1058a8e8",
+      "name": "aFade_0",
+      "string": "Fade"
+    },
+    {
+      "addr": "0x101c0320",
+      "name": "sub_101C0320"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "result": [
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x1003ec2e",
+        "end": "0x1003ec4f",
+        "offset": 0,
+        "count": 20,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x1003ec2e",
+          "end": "0x1003ec4f"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x1003ec2e",
+          "disasm": "call sub_10047E00"
+        },
+        {
+          "addr": "0x1003ec33",
+          "disasm": "mov ecx, [ebp+var_20]"
+        },
+        {
+          "addr": "0x1003ec36",
+          "disasm": "mov eax, [ecx+48h]"
+        },
+        {
+          "addr": "0x1003ec39",
+          "disasm": "inc eax"
+        },
+        {
+          "addr": "0x1003ec3a",
+          "disasm": "mov [ecx+48h], eax"
+        },
+        {
+          "addr": "0x1003ec3d",
+          "disasm": "cmp eax, 0FBh"
+        },
+        {
+          "addr": "0x1003ec42",
+          "disasm": "jb short loc_1003EC4C"
+        },
+        {
+          "addr": "0x1003ec44",
+          "disasm": "mov ecx, [ebp+var_24]"
+        },
+        {
+          "addr": "0x1003ec47",
+          "disasm": "call sub_1003EF20"
+        },
+        {
+          "addr": "0x1003ec4c",
+          "disasm": "mov eax, [ebp+var_30]"
+        }
+      ],
+      "count": 10,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 10,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x101721bd",
+        "end": "0x101721e3",
+        "offset": 0,
+        "count": 20,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x101721bd",
+          "end": "0x101721e3"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x101721bd",
+          "disasm": "add esp, 0Ch"
+        },
+        {
+          "addr": "0x101721c0",
+          "disasm": "mov dword ptr [ebp+var_48], esi"
+        },
+        {
+          "addr": "0x101721c3",
+          "disasm": "mov ecx, off_1029E01C"
+        },
+        {
+          "addr": "0x101721c9",
+          "disasm": "mov [ebp+var_10], 2"
+        },
+        {
+          "addr": "0x101721d0",
+          "disasm": "push ebx"
+        },
+        {
+          "addr": "0x101721d1",
+          "disasm": "lea eax, [ebp+var_70]"
+        },
+        {
+          "addr": "0x101721d4",
+          "disasm": "push eax"
+        },
+        {
+          "addr": "0x101721d5",
+          "disasm": "call sub_1003EAB0"
+        },
+        {
+          "addr": "0x101721da",
+          "disasm": "mov eax, dword ptr [ebp+var_48+4]"
+        },
+        {
+          "addr": "0x101721dd",
+          "disasm": "cmp eax, 10h"
+        },
+        {
+          "addr": "0x101721e0",
+          "disasm": "mov edi, [ebp+Format]"
+        }
+      ],
+      "count": 11,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 11,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    },
+    {
+      "query": {
+        "mnem": null,
+        "op0": null,
+        "op1": null,
+        "op2": null,
+        "op_any": null,
+        "func": null,
+        "segment": null,
+        "start": "0x10040792",
+        "end": "0x100407e5",
+        "offset": 0,
+        "count": 40,
+        "max_scan_insns": 200000,
+        "allow_broad": false
+      },
+      "ranges": [
+        {
+          "start": "0x10040792",
+          "end": "0x100407e5"
+        }
+      ],
+      "matches": [
+        {
+          "addr": "0x10040792",
+          "disasm": "mov eax, [eax+24h]"
+        },
+        {
+          "addr": "0x10040795",
+          "disasm": "mov [ebp+var_10], 2"
+        },
+        {
+          "addr": "0x1004079c",
+          "disasm": "mov ecx, edi"
+        },
+        {
+          "addr": "0x1004079e",
+          "disasm": "push offset unk_1029205C"
+        },
+        {
+          "addr": "0x100407a3",
+          "disasm": "push (offset aContext+3); \"text\""
+        },
+        {
+          "addr": "0x100407a8",
+          "disasm": "call eax"
+        },
+        {
+          "addr": "0x100407aa",
+          "disasm": "test eax, eax"
+        },
+        {
+          "addr": "0x100407ac",
+          "disasm": "jz loc_10040C25"
+        },
+        {
+          "addr": "0x100407b2",
+          "disasm": "cmp word ptr [eax], 0"
+        },
+        {
+          "addr": "0x100407b6",
+          "disasm": "jz loc_10040C25"
+        },
+        {
+          "addr": "0x100407bc",
+          "disasm": "lea ecx, [ebp+Src]; void *"
+        },
+        {
+          "addr": "0x100407c2",
+          "disasm": "push eax; String"
+        },
+        {
+          "addr": "0x100407c3",
+          "disasm": "mov [ebp+var_24], eax"
+        },
+        {
+          "addr": "0x100407c6",
+          "disasm": "call sub_100387C0"
+        },
+        {
+          "addr": "0x100407cb",
+          "disasm": "mov ecx, [ebp+var_24]"
+        },
+        {
+          "addr": "0x100407ce",
+          "disasm": "mov [ebp+var_10], 3"
+        },
+        {
+          "addr": "0x100407d5",
+          "disasm": "lea eax, [ebp+var_B0]"
+        },
+        {
+          "addr": "0x100407db",
+          "disasm": "push ecx; int"
+        },
+        {
+          "addr": "0x100407dc",
+          "disasm": "push eax; Src"
+        },
+        {
+          "addr": "0x100407dd",
+          "disasm": "call sub_1003E910"
+        },
+        {
+          "addr": "0x100407e2",
+          "disasm": "add esp, 8"
+        }
+      ],
+      "count": 21,
+      "cursor": {
+        "done": true
+      },
+      "scanned": 21,
+      "truncated": false,
+      "next_start": null,
+      "error": null
+    }
+  ]
+}

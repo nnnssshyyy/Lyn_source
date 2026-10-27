@@ -1,0 +1,36 @@
+{
+  "addr": "0x10171850",
+  "code": "char sub_10171850()\n{\n  char result; // al\n\n  result = dword_103F750C(); /*0x10171850*/\n  if ( dword_103EC770 != 0 ) /*0x1017185e*/\n  {\n    result = (*(int (__thiscall **)(int))(*(_DWORD *)dword_103EC770 + 104))(a1: dword_103EC770); /*0x10171862*/\n    if ( result != 0 ) /*0x10171867*/\n      result = sub_10171720(); /*0x10171869*/\n  }\n  if ( *(_DWORD *)off_1029E01C != 0 ) /*0x10171876*/\n  {\n    sub_1003F480(); /*0x10171878*/\n    return sub_1003F550(this: *(_BYTE **)off_1029E01C); /*0x10171883*/\n  }\n  return result; /*0x10171888*/\n}",
+  "line_count": 18,
+  "total_lines": 18,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x103f750c",
+      "name": "dword_103F750C"
+    },
+    {
+      "addr": "0x103ec770",
+      "name": "dword_103EC770"
+    },
+    {
+      "addr": "0x10171720",
+      "name": "sub_10171720"
+    },
+    {
+      "addr": "0x1003f480",
+      "name": "sub_1003F480"
+    },
+    {
+      "addr": "0x1003f550",
+      "name": "sub_1003F550"
+    },
+    {
+      "addr": "0x1029e01c",
+      "name": "off_1029E01C"
+    }
+  ]
+}

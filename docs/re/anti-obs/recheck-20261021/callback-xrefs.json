@@ -1,0 +1,121 @@
+{
+  "result": [
+    {
+      "target": "0x1016e6d0",
+      "resolved_addr": "0x1016e6d0",
+      "direction": "to",
+      "xref_type": "any",
+      "data": [
+        {
+          "direction": "to",
+          "addr": "0x1016e6bc",
+          "from": "0x1016e6bc",
+          "to": "0x1016e6d0",
+          "type": "data",
+          "fn": {
+            "addr": "0x1016e6b0",
+            "name": "StreamProof_InstallEndScene",
+            "size": "0x1d"
+          }
+        }
+      ],
+      "next_offset": null,
+      "total": 1,
+      "error": null
+    },
+    {
+      "target": "0x103f746c",
+      "resolved_addr": "0x103f746c",
+      "direction": "to",
+      "xref_type": "any",
+      "data": [
+        {
+          "direction": "to",
+          "addr": "0x1016e6a0",
+          "from": "0x1016e6a0",
+          "to": "0x103f746c",
+          "type": "data",
+          "fn": {
+            "addr": "0x1016e6a0",
+            "name": "sub_1016E6A0",
+            "size": "0x10"
+          }
+        },
+        {
+          "direction": "to",
+          "addr": "0x1016e6b7",
+          "from": "0x1016e6b7",
+          "to": "0x103f746c",
+          "type": "data",
+          "fn": {
+            "addr": "0x1016e6b0",
+            "name": "StreamProof_InstallEndScene",
+            "size": "0x1d"
+          }
+        },
+        {
+          "direction": "to",
+          "addr": "0x1016e964",
+          "from": "0x1016e964",
+          "to": "0x103f746c",
+          "type": "data",
+          "fn": {
+            "addr": "0x1016e6d0",
+            "name": "StreamProof_EndSceneHook",
+            "size": "0x2f1"
+          }
+        }
+      ],
+      "next_offset": null,
+      "total": 3,
+      "error": null
+    },
+    {
+      "target": "0x103f73b0",
+      "resolved_addr": "0x103f73b0",
+      "direction": "to",
+      "xref_type": "any",
+      "data": [
+        {
+          "direction": "to",
+          "addr": "0x1016e700",
+          "from": "0x1016e700",
+          "to": "0x103f73b0",
+          "type": "data",
+          "fn": {
+            "addr": "0x1016e6d0",
+            "name": "StreamProof_EndSceneHook",
+            "size": "0x2f1"
+          }
+        },
+        {
+          "direction": "to",
+          "addr": "0x1016e763",
+          "from": "0x1016e763",
+          "to": "0x103f73b0",
+          "type": "data",
+          "fn": {
+            "addr": "0x1016e6d0",
+            "name": "StreamProof_EndSceneHook",
+            "size": "0x2f1"
+          }
+        },
+        {
+          "direction": "to",
+          "addr": "0x1016e774",
+          "from": "0x1016e774",
+          "to": "0x103f73b0",
+          "type": "data",
+          "fn": {
+            "addr": "0x1016e6d0",
+            "name": "StreamProof_EndSceneHook",
+            "size": "0x2f1"
+          }
+        }
+      ],
+      "next_offset": null,
+      "total": 3,
+      "error": null
+    }
+  ]
+}

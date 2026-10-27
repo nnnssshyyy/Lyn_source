@@ -1,0 +1,12 @@
+#include <windows.h>
+201 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/assets/hunter-preview.png"
+202 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/assets/hunter-model.bin"
+203 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/assets/hunter-diffuse.png"
+301 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/assets/weapons/ak47.png"
+302 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/assets/weapons/autoshotgun.png"
+303 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/assets/weapons/chrome.png"
+304 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/assets/weapons/pump.png"
+305 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/assets/weapons/silenced-smg.png"
+306 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/assets/weapons/uzi.png"
+307 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/assets/weapons/military-sniper.png"
+309 RCDATA "@CMAKE_CURRENT_SOURCE_DIR@/assets/weapons/hunting-rifle.png"

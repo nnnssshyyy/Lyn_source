@@ -1,0 +1,28 @@
+{
+  "addr": "0x1016ce80",
+  "code": "int __cdecl sub_1016CE80(int a1, unsigned __int8 a2)\n{\n  int result; // eax\n  int v4; // [esp+0h] [ebp-Ch]\n\n  result = -1; /*0x1016ce84*/\n  do /*0x1016ceb0*/\n  {\n    dword_103F6DBC = result; /*0x1016ceb2*/\n    if ( (_BYTE)word_103F538C == 1 ) /*0x1016cebe*/\n      sub_1014B6C0(a1: a2); /*0x1016cec9*/\n    __asm /*0x1016ce94*/\n    {\n      vmovss xmm0, [esp+0Ch+arg_0]\n      vmovss [esp+0Ch+var_C], xmm0\n    }\n    dword_103F7458(a1: v4, a2); /*0x1016ce9f*/\n    result = dword_103F6DBC - 1; /*0x1016ceab*/\n  }\n  while ( dword_103F6DBC > 0 ); /*0x1016ceb0*/\n  return result; /*0x1016ced3*/\n}",
+  "line_count": 22,
+  "total_lines": 22,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x103f6dbc",
+      "name": "dword_103F6DBC"
+    },
+    {
+      "addr": "0x1014b6c0",
+      "name": "sub_1014B6C0"
+    },
+    {
+      "addr": "0x103f538c",
+      "name": "word_103F538C"
+    },
+    {
+      "addr": "0x103f7458",
+      "name": "dword_103F7458"
+    }
+  ]
+}

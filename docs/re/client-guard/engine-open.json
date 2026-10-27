@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "session": {
+    "session_id": "l4d2-guard-engine",
+    "input_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\bin\\engine.dll",
+    "filename": "engine.dll",
+    "created_at": "2026-10-26T00:23:51.502368",
+    "last_accessed": "2026-10-26T00:23:51.502371",
+    "is_analyzing": false,
+    "metadata": {}
+  },
+  "warmup": {
+    "ok": true,
+    "steps": [
+      {
+        "step": "init_caches",
+        "ok": true,
+        "ms": 694.41
+      },
+      {
+        "step": "init_hexrays",
+        "ok": true,
+        "ms": 2.36
+      }
+    ],
+    "health": {
+      "status": "ok",
+      "uptime_sec": 66.814,
+      "idb_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\bin\\engine.dll.i64",
+      "module": "engine.dll",
+      "input_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\bin\\engine.dll",
+      "imagebase": "0x10000000",
+      "auto_analysis_ready": true,
+      "hexrays_ready": true,
+      "strings_cache_ready": true,
+      "strings_cache_size": 11260
+    }
+  },
+  "message": "Binary opened: engine.dll (l4d2-guard-engine)"
+}

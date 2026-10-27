@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><RuntimeIdentifier>win-x86</RuntimeIdentifier><PlatformTarget>x86</PlatformTarget>
+    <AssemblyName>Lyn.Loader</AssemblyName><Product>Lyn.Loader</Product><Version>3.1.5</Version>
+    <ApplicationManifest>../../loader/app.manifest</ApplicationManifest><ApplicationIcon>../../loader/Assets/vs3.ico</ApplicationIcon>
+    <PublishSingleFile>true</PublishSingleFile><SelfContained>true</SelfContained><EnableCompressionInSingleFile>false</EnableCompressionInSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract><DebugType>None</DebugType><DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../loader/LoaderCleanup.cs" Link="LoaderCleanup.cs" />
+    <Compile Include="../../loader/NativeMethods.cs" Link="NativeMethods.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,66 @@
+{
+  "addr": "0x10116c90",
+  "code": "char __userpurge sub_10116C90@<al>(int a1@<ecx>, int a2@<ebx>, int a3@<edi>, int a4)\n{\n  int v6; // eax\n  int v8; // edi\n  int v9; // eax\n  signed int v10; // ecx\n  signed int v11; // eax\n  int v15; // [esp+8h] [ebp-10h]\n  int v16; // [esp+10h] [ebp-8h]\n  signed int v17; // [esp+20h] [ebp+8h]\n\n  v16 = a1 - 4; /*0x10116ca8*/\n  if ( (*(unsigned __int8 (**)(void))(*(_DWORD *)(a1 - 4) + 132))() == 0 || *(_DWORD *)(a1 + 120644) == dword_10645564 ) /*0x10116cc5*/\n    return 1; /*0x10116cb1*/\n  *(_DWORD *)(a1 + 120644) = dword_10645564; /*0x10116cc8*/\n  v6 = sub_10134500(a1: a1 - 8); /*0x10116cd8*/\n  v8 = *(_DWORD *)(a4 + 88) + *(_DWORD *)(a4 + 84); /*0x10116ceb*/\n  v15 = (*(int (__thiscall **)(_DWORD, int, int))(**(_DWORD **)(v6 + 232) + 204))( /*0x10116cf8*/\n          a1: *(_DWORD *)(v6 + 232),\n          a2: a3,\n          a3: a2);\n  if ( dword_1064555C != 3 && dword_1064565C <= 1 ) /*0x10116d15*/\n    sub_100A2C60(); /*0x10116d17*/\n  flt_104292C4 = sub_10134170(a1: &dword_10645558); /*0x10116d34*/\n  dword_104292C8 = dword_1042FFBC; /*0x10116d45*/\n  v9 = *(_DWORD *)(a4 + 128); /*0x10116d4d*/\n  if ( v9 != 0 ) /*0x10116d52*/\n  {\n    v10 = *(_DWORD *)(a4 + 104); /*0x10116d75*/\n    v17 = 32 * ((unsigned int)(*(_DWORD *)(a4 + 120) - v9) >> 2) /*0x10116d78*/\n        - *(_DWORD *)(a4 + 116)\n        + 8 * (*(_DWORD *)(a4 + 108) & 3);\n    if ( v17 >= v10 ) /*0x10116d7d*/\n      v17 = v10; /*0x10116d7f*/\n  }\n  else\n  {\n    v17 = 0; /*0x10116d54*/\n  }\n  (*(void (__thiscall **)(int, _DWORD, int, _DWORD, int, int))(*(_DWORD *)dword_106BB8C4 + 36))( /*0x10116da9*/\n    a1: dword_106BB8C4,\n    a2: *(_DWORD *)(a1 + 120652),\n    a3: a4 + 96,\n    a4: *(_DWORD *)(a4 + 88),\n    a5: v8,\n    a6: v15);\n  if ( *(_BYTE *)(a4 + 100) != 0 )\n  {\n    (*(void (__cdecl **)(int, const char *))(*(_DWORD *)v16 + 52))(\n      a1: v16,\n      a2: \"ProcessUsercmds:  Overflowed reading usercmd data (check sending and receiving code for mismatches)!\\n\");\n    return 0; /*0x10116dc8*/\n  }\n  else\n  {\n    v11 = *(_DWORD *)(a4 + 128); /*0x10116dd1*/\n    if ( v11 != 0 ) /*0x10116dd6*/\n    {\n      v11 = 32 * ((unsigned int)(*(_DWORD *)(a4 + 120) - v11) >> 2) /*0x10116df5*/\n          - *(_DWORD *)(a4 + 116)\n          + 8 * (*(_DWORD *)(a4 + 108) & 3);\n      if ( v11 >= *(_DWORD *)(a4 + 104) ) /*0x10116df9*/\n        v11 = *(_DWORD *)(a4 + 104); /*0x10116dfb*/\n    }\n    if ( *(_DWORD *)(a4 + 92) == v11 - v17 )\n    {\n      return 1; /*0x10116e25*/\n    }\n    else\n    {\n      (*(void (__cdecl **)(int, const char *))(*(_DWORD *)v16 + 52))(\n        a1: v16,\n        a2: \"ProcessUsercmds:  Incorrect reading frame (check sending and receiving code for mismatches)!\\n\");\n      return 0; /*0x10116e1a*/\n    }\n  }\n}",
+  "line_count": 77,
+  "total_lines": 77,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x10645564",
+      "name": "dword_10645564"
+    },
+    {
+      "addr": "0x10134500",
+      "name": "sub_10134500"
+    },
+    {
+      "addr": "0x100a2c60",
+      "name": "sub_100A2C60"
+    },
+    {
+      "addr": "0x1064555c",
+      "name": "dword_1064555C"
+    },
+    {
+      "addr": "0x1064565c",
+      "name": "dword_1064565C"
+    },
+    {
+      "addr": "0x104292c4",
+      "name": "flt_104292C4"
+    },
+    {
+      "addr": "0x10134170",
+      "name": "sub_10134170"
+    },
+    {
+      "addr": "0x10645558",
+      "name": "dword_10645558"
+    },
+    {
+      "addr": "0x104292c8",
+      "name": "dword_104292C8"
+    },
+    {
+      "addr": "0x1042ffbc",
+      "name": "dword_1042FFBC"
+    },
+    {
+      "addr": "0x106bb8c4",
+      "name": "dword_106BB8C4"
+    },
+    {
+      "addr": "0x10377cb8",
+      "name": "aProcessusercmd",
+      "string": "ProcessUsercmds:  Overflowed reading usercmd data (check sending and receiving code for mismatches)!\n"
+    },
+    {
+      "addr": "0x10377c58",
+      "name": "aProcessusercmd_0",
+      "string": "ProcessUsercmds:  Incorrect reading frame (check sending and receiving code for mismatches)!\n"
+    }
+  ]
+}

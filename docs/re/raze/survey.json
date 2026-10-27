@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "path": "C:\\Users\\User\\.codex\\tools\\ida-analysis\\raze\\raze.dll.i64",
+    "module": "raze.dll",
+    "arch": "32",
+    "base_address": "0x10000000",
+    "image_size": "0x410000",
+    "md5": "3291ac7e77f4ceb57d5e1e9cf386a721",
+    "sha256": "dfa8632e85c89c318577ef619f20bae2f4db5136042d680ee4dae4109234691a"
+  },
+  "statistics": {
+    "total_functions": 2790,
+    "named_functions": 99,
+    "library_functions": 3,
+    "unnamed_functions": 2688,
+    "total_strings": 18094,
+    "total_segments": 6
+  },
+  "segments": [
+    {
+      "name": ".text",
+      "start": "0x10001000",
+      "end": "0x10184000",
+      "size": "0x183000",
+      "permissions": "rx"
+    },
+    {
+      "name": ".rdata",
+      "start": "0x10184000",
+      "end": "0x10293270",
+      "size": "0x10f270",
+      "permissions": "r"
+    },
+    {
+      "name": ".idata",
+      "start": "0x10293270",
+      "end": "0x10293704",
+      "size": "0x494",
+      "permissions": "r"
+    },
+    {
+      "name": ".rdata",
+      "start": "0x10293704",
+      "end": "0x1029e000",
+      "size": "0xa8fc",
+      "permissions": "r"
+    },
+    {
+      "name": ".data",
+      "start": "0x1029e000",
+      "end": "0x103f9000",
+      "size": "0x15b000",
+      "permissions": "rw"
+    },
+    {
+      "name": ".tls",
+      "start": "0x103f9000",
+      "end": "0x103fa000",
+      "size": "0x1000",
+      "permissions": "rw"
+    }
+  ],
+  "entrypoints": [
+    {
+      "addr": "0x101830d1",
+      "name": "DllEntryPoint",
+      "ordinal": 270020817
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "n": 25,
+  "matches": [
+    {
+      "addr": "0x10282c30",
+      "string": "Visuals_SkyBoxFog_Density"
+    },
+    {
+      "addr": "0x10282c4a",
+      "string": "Visuals_Fog_Density"
+    },
+    {
+      "addr": "0x10282d63",
+      "string": "No fog sky"
+    },
+    {
+      "addr": "0x10282d6e",
+      "string": "bNoFogSky"
+    },
+    {
+      "addr": "0x1028359d",
+      "string": "m_vomitStart"
+    },
+    {
+      "addr": "0x102835aa",
+      "string": "Visuals_FogStart"
+    },
+    {
+      "addr": "0x102835bb",
+      "string": "m_vomitFadeStart"
+    },
+    {
+      "addr": "0x10283aca",
+      "string": "particle/screenspaceboomervomit"
+    },
+    {
+      "addr": "0x10283aea",
+      "string": "No vomit"
+    },
+    {
+      "addr": "0x10283af3",
+      "string": "iSelectNoVomit"
+    },
+    {
+      "addr": "0x102854f9",
+      "string": "GetSkyboxFogColor"
+    },
+    {
+      "addr": "0x1028550b",
+      "string": "GetFogColor"
+    },
+    {
+      "addr": "0x10286007",
+      "string": "CItem_VomitJar"
+    },
+    {
+      "addr": "0x102863b6",
+      "string": "Sin vomito"
+    },
+    {
+      "addr": "0x102864f7",
+      "string": "Sin niebla cielo"
+    },
+    {
+      "addr": "0x10288372",
+      "string": "$nofog"
+    },
+    {
+      "addr": "0x10288379",
+      "string": "No fog"
+    },
+    {
+      "addr": "0x10288380",
+      "string": "Color_SkyFog"
+    },
+    {
+      "addr": "0x1028838d",
+      "string": "bNoFog"
+    },
+    {
+      "addr": "0x10288394",
+      "string": "Color_Fog"
+    },
+    {
+      "addr": "0x102889ae",
+      "string": "Visuals_Fog_Modulation_Active"
+    },
+    {
+      "addr": "0x102891ed",
+      "string": "CVomitJarProjectile"
+    },
+    {
+      "addr": "0x10289a3b",
+      "string": "Visuals_FogEnd"
+    },
+    {
+      "addr": "0x1028a6d1",
+      "string": "Sin niebla"
+    },
+    {
+      "addr": "0x10291042",
+      "string": "local find_pattern   = find_pattern\nlocal find_interface = find_interface\nlocal get_vfunc      = get_vfunc\nlocal hook_add       = hook.add\n\nlocal PrintToChat = find_pattern(\"client.dll\",\n\"55 8B EC 81 EC 00 0C 00 00 B9 ? ? ? ? 56 68 ? ? ? ? E8 ? ? ? ? 8B F0 85 F6 74 ? 68 00 08 00 00 8D 85 00 F4 FF FF 6A 00 50 E8 ? ? ? ? 8B 0D ? ? ? ? 8D 95 00 F4 FF FF 83 C4 0C 8B 01 FF 75 0C\")\nlocal ClientModeSig = find_pattern(\"client.dll\", \"89 04 B5 ? ? ? ? E8\")\nlocal ClientModeShared = ClientModeSig ~= 0 and (ClientModeSig + 3) or 0\nlocal EngineTrace = find_interface(\"engine.dll\", \"EngineTraceClient003\")\nprint(\"[Lua] EngineTrace:\", EngineTrace)\nprint(\"[Lua] ClientModeShared:\", ClientModeShared)\n-- hooks\nhook_add(\"CreateMove\", function(cmd, sampleTime)\nend)\n\nhook_add(\"FrameStageNotify\", function(stage)\nend)\n\nhook_add(\"SendNetMsg\", function(msg, reliable, voice)\nend)\n\nhook_add(\"Paint\", function(mode)\nend)\n\nhook_add(\"SendMove\", function()\nend)\n\nhook_add(\"CL_Move\", function(extraSamples, finalTick)\nend)\n\nhook_add(\"RunCommand\", function(player, cmd, moveHelper)\nend)\n\nhook_add(\"SequenceChange\", function(hdr, sequence, forceNew, interpolate)\nend)\n\nhook_add(\"PostScreenEffects\", function(setup)\nend)\n\nhook_add(\"EndScene\", function(device)\nend)\n\nhook_add(\"ShouldDraw\", function()\nend)\n\nhook_add(\"DrawExecute\", function(waterHeight, viewID, waterZAdjust)\nend)\n\nhook_add(\"ParticleRender\", function(shadowDepth)\nend)\n\nhook_add(\"PlayerMove\", function()\nend)\n\nhook_add(\"DrawViewModels\", function(view, drawVM)\nend)\n\nhook_add(\"RenderView\", function(view, hudView, clearFlags, whatToDraw)\nend)\n\nhook_add(\"LevelShutdown\", function()\nend)\n\nhook_add(\"ShouldDrawFog\", function()\nend)\n\nhook_add(\"DrawModelExecute\", function(state, info, bones)\nend)\n\nhook_add(\"ParticleSimulate\", function(dt)\nend)\n\nhook_add(\"OverrideView\", function(setup)\nend)\n\nhook_add(\"CalcViewModelView\", function(owner, eyePos, eyeAngles)\nend)\n\nhook_add(\"CalcPlayerView\", function(origin, angles, fov)\nend)\n\nhook_add(\"LevelInit\", function()\nend)\n\nhook_add(\"LoadSkys\", function()\nend)\n\nhook_add(\"ChatPrintf\", function(playerIndex, filter, text)\nend)\n\nhook_add(\"MaterialOverride\", function(material, type)\nend)\n\nhook_add(\"ScreenSizeChanged\", function(oldW, oldH)\nend)\n\nhook_add(\"ParticleDrawModel\", function()\nend)\n"
+    }
+  ],
+  "cursor": {
+    "done": true
+  }
+}

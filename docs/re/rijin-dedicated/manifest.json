@@ -1,0 +1,234 @@
+{
+  "created_at_utc": "2026-10-17T23:37:46.410013+00:00",
+  "analysis": "static source review; no RijiN build or execution; no server connection",
+  "rijin_root": "C:\\Users\\User\\Downloads\\RijiN-main\\RijiN-main",
+  "rijin_sources": [
+    {
+      "path": "README.md",
+      "sha256": "df133557c2e9d9743a61b546d537735e0bb989ea5c55f701ef455760aae212b0",
+      "bytes": 4020
+    },
+    {
+      "path": "src/cheats/left4dead2/CMakeLists.txt",
+      "sha256": "d94ebeb748c60b554f3b4a790366936a289dba6f0f663e6ef09d607ef38fd1c0",
+      "bytes": 945
+    },
+    {
+      "path": "src/cheats/left4dead2/hooks.cpp",
+      "sha256": "c03bbe4dc88b2f098eefe54a521a3a95e0073c862f8c44d8efa63aa08855f77b",
+      "bytes": 15401
+    },
+    {
+      "path": "src/cheats/left4dead2/misc.h",
+      "sha256": "e9cf3305b947d46b325c1c95762a86f3b74d4cf9172025a968b3f76e879d1ae1",
+      "bytes": 5815
+    },
+    {
+      "path": "src/cheats/left4dead2/main.cpp",
+      "sha256": "e4f238f3f5bb5381654d5029a03b5e1c5bd5d063ff1930967c8f74719e78695b",
+      "bytes": 11733
+    },
+    {
+      "path": "src/cheats/left4dead2/features/engine_prediction.cpp",
+      "sha256": "47a496d54dd8d4eb4446f0f95f989b0bb80b34e72dd0d2f3e39cbbc70ec000ea",
+      "bytes": 320
+    },
+    {
+      "path": "src/cheats/left4dead2/features/engine_prediction.h",
+      "sha256": "e0f437567574f56d3082f3aecf8d435feac86a33e1d5ac288f8dd8b8b9efc1ad",
+      "bytes": 140
+    },
+    {
+      "path": "src/cheats/left4dead2/features/packet_manager.cpp",
+      "sha256": "24a31d8f0a0182bdca2903d0eb603e6c2839b924d81e2f66e3ea3481c97a1e67",
+      "bytes": 689
+    },
+    {
+      "path": "src/cheats/left4dead2/features/tickbase_correction.cpp",
+      "sha256": "9d216ff9de8bcbffd3f48f2bf1d43767f265546d9e4c8499ac2a2f60c37894ca",
+      "bytes": 2511
+    },
+    {
+      "path": "src/cheats/left4dead2/features/tickbase_correction.h",
+      "sha256": "76cc8949736466bce0c70269ff24a36fd9de41df84b8be5532ab2b22fb167603",
+      "bytes": 4468
+    },
+    {
+      "path": "src/cheats/left4dead2/features/raytrace_aimbot.cpp",
+      "sha256": "ce3c9c89f3045bce543499bfb7645d06887c306962911a8f289413e821c311f0",
+      "bytes": 8912
+    },
+    {
+      "path": "src/cheats/left4dead2/features/lag_compensation.cpp",
+      "sha256": "d44705098b25893be6a501d74ebee299312eedd985bd4a658153c6d60c645c88",
+      "bytes": 1183
+    },
+    {
+      "path": "src/cheats/left4dead2/features/interpolation_manager.cpp",
+      "sha256": "fb41152934b03a525843dbcb6d4834869693a7a8accc41cd9c1f0c44b5e7ad98",
+      "bytes": 3399
+    },
+    {
+      "path": "src/cheats/left4dead2/structs/base_player.cpp",
+      "sha256": "75de2dfb3f85efa17c1648f62ed04e6abbee032db050e5b0093c69d6dfd73cba",
+      "bytes": 1385
+    },
+    {
+      "path": "src/cheats/left4dead2/structs/base_weapon.h",
+      "sha256": "3014787c128028214a9551a006a242b6761d4708c5cba2507027def03b3806a0",
+      "bytes": 4174
+    },
+    {
+      "path": "src/cheats/left4dead2/utils.cpp",
+      "sha256": "87f7332c7d3e4c24dacbe77073d1db0d3516ab2183fbc6dcfecce75dfcdee23b",
+      "bytes": 6721
+    },
+    {
+      "path": "src/base/cheats/source/managers/engine_prediction.cpp",
+      "sha256": "364af21ec665ca823618f3fee39475d7f2fb30814eb5d5e0913ebf7800e21491",
+      "bytes": 923
+    },
+    {
+      "path": "src/base/cheats/source/managers/engine_prediction.h",
+      "sha256": "e947658e312deb4ddeeafd2b90e57ca3f425b184b2063386f8836eb1aecc3d7a",
+      "bytes": 3954
+    },
+    {
+      "path": "src/base/cheats/source/managers/packet_manager.h",
+      "sha256": "8cdad751e99728afefa13fa67bbfd96c09427fe98e6b2f3f55cbad3cdbc19c92",
+      "bytes": 5927
+    },
+    {
+      "path": "src/base/cheats/source/managers/interpolation_manager.cpp",
+      "sha256": "cf50a2adaed2517442cd4bdfa59a3be18dacc84c3abcba6b4df12688502e3154",
+      "bytes": 2462
+    },
+    {
+      "path": "src/base/cheats/source/managers/interpolation_manager.h",
+      "sha256": "333d04d1622345822ee73ac87557f97c8c03f61840b51ac3b9e06a6c6d117ec6",
+      "bytes": 2943
+    },
+    {
+      "path": "src/base/cheats/source/managers/lag_compensation.cpp",
+      "sha256": "89c6e995e4ce144917a7146b9065767c3ba589cab00850cef94ed4333653ffd4",
+      "bytes": 2633
+    },
+    {
+      "path": "src/base/cheats/source/managers/lag_compensation.h",
+      "sha256": "6133b3b09e31da487cb0b0341b3538bf82986563f6700f16c459a10f182a34b7",
+      "bytes": 4789
+    },
+    {
+      "path": "src/base/cheats/source/structs/base.h",
+      "sha256": "d5087d383d12d6d6073cbb883793006cbb48357b7184a8593241341666b6ed77",
+      "bytes": 16888
+    },
+    {
+      "path": "src/loader/loader_stub/load_procedures/c_procedure_l4d2.h",
+      "sha256": "c4c70b7d0804431f8475a92663646b251ebbe7d3524acde56b5ccf5c00f736b3",
+      "bytes": 15998
+    }
+  ],
+  "official_repository": "SirPlease/L4D2-Competitive-Rework",
+  "official_commit": "3fd5dcb9801d0c401a7b3f2fc7196b71a97b5044",
+  "official_commit_date": "2026-10-15T16:27:23Z",
+  "official_sources": [
+    {
+      "path": "cfg/cfgogl/zonemod/shared_plugins.cfg",
+      "url": "https://raw.githubusercontent.com/SirPlease/L4D2-Competitive-Rework/3fd5dcb9801d0c401a7b3f2fc7196b71a97b5044/cfg/cfgogl/zonemod/shared_plugins.cfg",
+      "sha256": "c3d1c4efe272cb21b74247b1b10e714ef406c2700b7c04a74a1d217d4d0efbfb",
+      "bytes": 6029
+    },
+    {
+      "path": "cfg/cfgogl/zonemod/shared_settings.cfg",
+      "url": "https://raw.githubusercontent.com/SirPlease/L4D2-Competitive-Rework/3fd5dcb9801d0c401a7b3f2fc7196b71a97b5044/cfg/cfgogl/zonemod/shared_settings.cfg",
+      "sha256": "b4ea7d9d827ef543cc1cf4a99cb720af3b38e8512e4799a4786cb7b7eb0aa29c",
+      "bytes": 15350
+    },
+    {
+      "path": "cfg/cfgogl/zonemod/shared_cvars.cfg",
+      "url": "https://raw.githubusercontent.com/SirPlease/L4D2-Competitive-Rework/3fd5dcb9801d0c401a7b3f2fc7196b71a97b5044/cfg/cfgogl/zonemod/shared_cvars.cfg",
+      "sha256": "96853749da401a7c69140484ea88b4fcafca0feda72d9f9bb9bbba2ea1a5debc",
+      "bytes": 8926
+    },
+    {
+      "path": "addons/sourcemod/scripting/l4d2_static_shotgun_spread.sp",
+      "url": "https://raw.githubusercontent.com/SirPlease/L4D2-Competitive-Rework/3fd5dcb9801d0c401a7b3f2fc7196b71a97b5044/addons/sourcemod/scripting/l4d2_static_shotgun_spread.sp",
+      "sha256": "be0a782685a80bb5634cc838d80e4e429c7b2e5fa40ea4fe0ccec215d9a31728",
+      "bytes": 5654
+    },
+    {
+      "path": "addons/sourcemod/scripting/fix_engine.sp",
+      "url": "https://raw.githubusercontent.com/SirPlease/L4D2-Competitive-Rework/3fd5dcb9801d0c401a7b3f2fc7196b71a97b5044/addons/sourcemod/scripting/fix_engine.sp",
+      "sha256": "6d64fce174b025567204d9ef198b17b1f3e304da914d8fb212701e9d95fa823e",
+      "bytes": 16938
+    },
+    {
+      "path": "addons/sourcemod/scripting/ratemonitor.sp",
+      "url": "https://raw.githubusercontent.com/SirPlease/L4D2-Competitive-Rework/3fd5dcb9801d0c401a7b3f2fc7196b71a97b5044/addons/sourcemod/scripting/ratemonitor.sp",
+      "sha256": "a51bf54a44f88f11e8725b137b20f018949a8364e874b6116d04e25e1065a147",
+      "bytes": 13476
+    }
+  ],
+  "project_source_baseline": [
+    {
+      "path": "src/features.cpp",
+      "sha256": "aa75be03f695ac824632f175d40b3a393d7799125d2cea2940f9e18bb49f82cc"
+    },
+    {
+      "path": "src/game.cpp",
+      "sha256": "975ff573b4734e2a53f9c9f9687b4900c2219bf1088b73211fd2e2e87f41245e"
+    },
+    {
+      "path": "src/shot_clock.h",
+      "sha256": "12b7645da332d4b567e3cea050c0ab9a224267c2fc513298b6fef0f960b3aad7"
+    },
+    {
+      "path": "src/aimbot.cpp",
+      "sha256": "3b066a3cad9e971573df8913731c0db1ee85e690bd442d032af692526e1e1996"
+    },
+    {
+      "path": "src/aim_logic.h",
+      "sha256": "e253bef22efbfec45b9c07cc0bba5eb51b971e6f7574d2300d182136d6e05422"
+    },
+    {
+      "path": "src/rapid_fire.h",
+      "sha256": "7f64d33c3c125ab98096025cd65c636090b0bc14bb0b2455d9f2dcc920bc0fe8"
+    },
+    {
+      "path": "src/movement_batch.h",
+      "sha256": "cbe389a7cfe27615d29d9668b0c900a25657813d147336ffc333a727afab6c0c"
+    }
+  ],
+  "project_dll": {
+    "path": "C:\\Users\\User\\Desktop\\projectos c++\\free\\build\\loader\\lyn.dll",
+    "sha256": "560be18c087ca501defc6af059c24beeb96b2ab8806dd623362e3f472962fd49"
+  },
+  "runtime_changes": false,
+  "in_game_tested": false,
+  "dedicated_server_compatibility_verified": false,
+  "negative_search": {
+    "patterns": [
+      "zonemod",
+      "confogl"
+    ],
+    "scope": [
+      "src",
+      "configs",
+      "tests"
+    ],
+    "case_insensitive": true,
+    "tool": "rg (searchable non-ignored text)",
+    "literal_matches": 0,
+    "exit_code": 1
+  },
+  "report_sha256": "973ad028835f3e8eff628798977798a5d66c9d54e2379146d19e05c0c0429229",
+  "validation": {
+    "rijin_sources_unchanged": true,
+    "project_sources_unchanged": true,
+    "dll_unchanged": true,
+    "official_snapshots_verified": 6,
+    "local_report_links_checked": 17,
+    "literal_search_confirmed": true
+  }
+}

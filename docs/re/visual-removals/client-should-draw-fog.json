@@ -1,0 +1,115 @@
+{
+  "addr": "0x100c2ed0",
+  "asm": {
+    "name": "<no function>",
+    "start_ea": "0x100c2ed0",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "100c2ed0",
+        "instruction": "mov al, 1",
+        "label": "sub_100C2ED0"
+      },
+      {
+        "addr": "100c2ed2",
+        "instruction": "retn"
+      },
+      {
+        "addr": "100c2ed3",
+        "instruction": "align 10h"
+      },
+      {
+        "addr": "100c2ee0",
+        "instruction": "retn 10h",
+        "label": "nullsub_264"
+      },
+      {
+        "addr": "100c2ee3",
+        "instruction": "align 10h"
+      },
+      {
+        "addr": "100c2ef0",
+        "instruction": "retn 4",
+        "label": "nullsub_265"
+      },
+      {
+        "addr": "100c2ef3",
+        "instruction": "align 10h"
+      },
+      {
+        "addr": "100c2f00",
+        "instruction": "call sub_1015A1E0",
+        "label": "sub_100C2F00",
+        "refs": [
+          {
+            "addr": "0x1015a1e0",
+            "name": "sub_1015A1E0"
+          }
+        ]
+      },
+      {
+        "addr": "100c2f05",
+        "instruction": "mov ecx, eax"
+      },
+      {
+        "addr": "100c2f07",
+        "instruction": "jmp loc_10156B70",
+        "refs": [
+          {
+            "addr": "0x10156b70",
+            "name": "loc_10156B70"
+          }
+        ]
+      },
+      {
+        "addr": "100c2f0c",
+        "instruction": "align 10h"
+      },
+      {
+        "addr": "100c2f10",
+        "instruction": "retn",
+        "label": "nullsub_266"
+      },
+      {
+        "addr": "100c2f11",
+        "instruction": "align 10h"
+      },
+      {
+        "addr": "100c2f20",
+        "instruction": "retn 4",
+        "label": "nullsub_267"
+      },
+      {
+        "addr": "100c2f23",
+        "instruction": "align 10h"
+      },
+      {
+        "addr": "100c2f30",
+        "instruction": "retn",
+        "label": "nullsub_268"
+      },
+      {
+        "addr": "100c2f31",
+        "instruction": "align 10h"
+      },
+      {
+        "addr": "100c2f40",
+        "instruction": "fldz",
+        "label": "sub_100C2F40"
+      },
+      {
+        "addr": "100c2f42",
+        "instruction": "retn"
+      },
+      {
+        "addr": "100c2f43",
+        "instruction": "align 10h"
+      }
+    ]
+  },
+  "instruction_count": 20,
+  "total_instructions": null,
+  "cursor": {
+    "next": 20
+  }
+}

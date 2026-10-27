@@ -1,0 +1,85 @@
+{
+  "func": [
+    {
+      "addr": "0x10026d60",
+      "old": "sub_10026D60",
+      "name": "NoSpread_ApplyShotAngles",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x10026bb0",
+      "old": "sub_10026BB0",
+      "name": "NoSpread_ShouldRun",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x1002d2b0",
+      "old": "sub_1002D2B0",
+      "name": "NoSpread_PredictionBegin",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x1002d780",
+      "old": "sub_1002D780",
+      "name": "NoSpread_PredictionEnd",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x10001910",
+      "old": "sub_10001910",
+      "name": "NoSpread_ResolveUpdateSpread",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x10001930",
+      "old": "sub_10001930",
+      "name": "NoSpread_ResolveSharedRandomFloat",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x10023180",
+      "old": "sub_10023180",
+      "name": "Weapon_CanFireFromTickbase",
+      "dir": "vibe"
+    },
+    {
+      "addr": "0x10027ea0",
+      "old": "sub_10027EA0",
+      "name": "NoSpread_FixMovement",
+      "dir": "vibe"
+    }
+  ],
+  "data": [
+    {
+      "addr": "0x103f4bf2",
+      "old": "byte_103F4BF2",
+      "new": "NoSpread_Enabled"
+    },
+    {
+      "addr": "0x103ec680",
+      "old": "dword_103EC680",
+      "new": "NoSpread_NativeUpdateSpread"
+    },
+    {
+      "addr": "0x103ec694",
+      "old": "dword_103EC694",
+      "new": "NoSpread_SharedRandomFloat"
+    },
+    {
+      "addr": "0x103eef30",
+      "old": "dword_103EEF30",
+      "new": "NoSpread_CachedSharedRandomFloat"
+    },
+    {
+      "addr": "0x103ecbd4",
+      "old": "dword_103ECBD4",
+      "new": "Prediction_SeedPointer"
+    }
+  ],
+  "summary": {
+    "total": 13,
+    "ok": 13,
+    "failed": 0,
+    "stopped": false
+  }
+}

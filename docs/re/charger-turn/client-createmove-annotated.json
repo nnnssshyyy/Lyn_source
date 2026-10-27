@@ -1,0 +1,36 @@
+{
+  "addr": "0x10065cd0",
+  "code": "// Identified structurally as C_BasePlayer::CreateMove from prologue, weapon/vehicle view processing, cached angles and frozen flag handling. Corresponds to Valve Source SDK C_BasePlayer::CreateMove; symbols inferred.\nbool __thiscall L4D2_BasePlayer_CreateMove(void *self, float inputSampleTime, void *command)\n{\n  unsigned int v4; // ecx\n  int *v5; // eax\n  unsigned int v6; // ecx\n  int v7; // eax\n  int v8; // eax\n  int v9; // eax\n  int _8; // [esp+8h] [ebp+0h]\n  void *_8a; // [esp+8h] [ebp+0h]\n  char *_8b; // [esp+8h] [ebp+0h]\n  int _8c; // [esp+8h] [ebp+0h]\n  int _8d; // [esp+8h] [ebp+0h]\n  int v17; // [esp+18h] [ebp+10h]\n\n  v4 = *((_DWORD *)self + 1282); /*0x10065cd6*/\n  if ( v4 == -1 /*0x10065d07*/\n    || (v5 = (int *)((char *)off_106C50A8 + 16 * (v4 & 0xFFF) + 4),\n        (_UNKNOWN *)((char *)off_106C50A8 + 16 * (v4 & 0xFFF)) == (_UNKNOWN *)-4)\n    || (v6 = v4 >> 12, v5[1] != v6)\n    || *v5 == 0 )\n  {\n    if ( *(_DWORD *)(dword_107598D4 + 48) != 0 ) /*0x10065d50*/\n    {\n      _8a = &unk_10759FA0; /*0x10065d5d*/\n      if ( ((double (__thiscall *)(int *))*(_DWORD *)(*off_106E2F04 + 40))(a1: off_106E2F04) != 0.0 ) /*0x10065d70*/\n        *(_DWORD *)(v17 + 36) |= 0x20000u; /*0x10065d72*/\n    }\n    v9 = (*(int (__thiscall **)(void *))(*(_DWORD *)self + 980))(a1: self); /*0x10065d83*/\n    if ( v9 != 0 ) /*0x10065d87*/\n    {\n      _8b = (char *)self + 5308; /*0x10065d96*/\n      (*(void (__thiscall **)(int))(*(_DWORD *)v9 + 1056))(a1: v9); /*0x10065da2*/\n    }\n  }\n  else\n  {\n    if ( v5 != nullptr && v5[1] == v6 ) /*0x10065d10*/\n      v7 = *v5; /*0x10065d12*/\n    else\n      v7 = 0; /*0x10065d16*/\n    v8 = (*(int (__thiscall **)(int))(*(_DWORD *)v7 + 376))(a1: v7); /*0x10065d22*/\n    if ( v8 != 0 ) /*0x10065d26*/\n    {\n      (*(void (__thiscall **)(int))(*(_DWORD *)v8 + 36))(a1: v8); /*0x10065d31*/\n      _8 = v17 + 12; /*0x10065d3e*/\n      (*(void (__thiscall **)(int))(*(_DWORD *)dword_10735E3C + 80))(a1: dword_10735E3C); /*0x10065d42*/\n    }\n  }\n  if ( (*((_BYTE *)self + 240) & 0x20) != 0 ) /*0x10065dab*/\n  { // Raze Charger turn patches only opcode 74->EB here, leaving displacement 2D. Original JZ checks previous frozen state; EB always reaches 65DE3 and bypasses cmd old-angle copy + engine SetViewAngles while bit 20 is set. Bytes NOT patched in this analysis.\n    if ( *((_BYTE *)self + 5320) != 0 ) /*0x10065db4*/\n    {\n      *(float *)(v17 + 12) = *((float *)self + 1327);// Frozen view overwrite: player+14BC/14C0/14C4 -> cmd+0C/10/14; followed by engine vtable slot 20 SetViewAngles. Raze makes this block unreachable while enabled. /*0x10065dbf*/\n      _8c = v17 + 12; /*0x10065dc1*/\n      *(float *)(v17 + 16) = *((float *)self + 1328); /*0x10065dc8*/\n      *(float *)(v17 + 20) = *((float *)self + 1329); /*0x10065dd1*/\n      (*(void (__thiscall **)(int))(*(_DWORD *)dword_10735E3C + 80))(a1: dword_10735E3C); /*0x10065ddf*/\n    }\n    else\n    {\n      *((_BYTE *)self + 5320) = 1; /*0x10065de3*/\n    }\n  }\n  else\n  {\n    *((_BYTE *)self + 5320) = 0; /*0x10065dec*/\n  }\n  _8d = v17; /*0x10065df6*/\n  *((float *)self + 1327) = *(float *)(v17 + 12); /*0x10065df7*/\n  *((float *)self + 1328) = *(float *)(v17 + 16); /*0x10065e02*/\n  *((float *)self + 1329) = *(float *)(v17 + 20); /*0x10065e0b*/\n  sub_10065A90(a1: self); /*0x10065e11*/\n  return true; /*0x10065e16*/\n}",
+  "line_count": 76,
+  "total_lines": 76,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x10759fa0",
+      "name": "unk_10759FA0"
+    },
+    {
+      "addr": "0x106e2f04",
+      "name": "off_106E2F04"
+    },
+    {
+      "addr": "0x107598d4",
+      "name": "dword_107598D4"
+    },
+    {
+      "addr": "0x10735e3c",
+      "name": "dword_10735E3C"
+    },
+    {
+      "addr": "0x106c50a8",
+      "name": "off_106C50A8"
+    },
+    {
+      "addr": "0x10065a90",
+      "name": "sub_10065A90"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "addr": "0x1003f480",
+  "code": "int __thiscall sub_1003F480(unsigned __int8 *this)\n{\n  int result; // eax\n\n  if ( (*(this + 8) & 1) != 0 ) /*0x1003f484*/\n  {\n    if ( dword_103EC800 != 0 ) /*0x1003f491*/\n      (*(void (__thiscall **)(int, unsigned __int8 *))(*(_DWORD *)dword_103EC800 + 20))(a1: dword_103EC800, a2: this); /*0x1003f496*/\n    result = *(this + 8); /*0x1003f49b*/\n    *(this + 8) = 0; /*0x1003f49b*/\n  }\n  return result; /*0x1003f49f*/\n}",
+  "line_count": 13,
+  "total_lines": 13,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x103ec800",
+      "name": "dword_103EC800"
+    }
+  ]
+}

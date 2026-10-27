@@ -1,0 +1,63 @@
+{
+  "addr": "0x100e6480",
+  "code": "int sub_100E6480()\n{\n  sub_1008FE60(); /*0x100e6480*/\n  sub_10060380(a1: dword_103F5D4C, Str: \"Infected Damage Exploit\", a3: 0, a4: 0); /*0x100e6494*/\n  sub_100F4B70(); /*0x100e6499*/\n  sub_10060740(a1: dword_103F5D4C); /*0x100e64a4*/\n  sub_10060380(a1: dword_103F5D4C, Str: \"Survivor One-Shot\", a3: 0, a4: 0); /*0x100e64b8*/\n  sub_100F4E30(); /*0x100e64bd*/\n  sub_10060740(a1: dword_103F5D4C); /*0x100e64c8*/\n  sub_1008F0F0(); /*0x100e64cd*/\n  sub_1008F7B0(a1: 0, a2: -1082130432); /*0x100e64d9*/\n  sub_1008FE60(); /*0x100e64e1*/\n  sub_10060380(a1: dword_103F5D4C, Str: \"Rapid Fire\", a3: 0, a4: 0); /*0x100e64f5*/\n  sub_100F4F40(); /*0x100e64fa*/\n  sub_10060740(a1: dword_103F5D4C); /*0x100e6505*/\n  return sub_1008F0F0();\n}",
+  "line_count": 17,
+  "total_lines": 17,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1008fe60",
+      "name": "sub_1008FE60"
+    },
+    {
+      "addr": "0x10060380",
+      "name": "sub_10060380"
+    },
+    {
+      "addr": "0x103f5d4c",
+      "name": "dword_103F5D4C"
+    },
+    {
+      "addr": "0x10283ab2",
+      "name": "aInfectedDamage",
+      "string": "Infected Damage Exploit"
+    },
+    {
+      "addr": "0x100f4b70",
+      "name": "sub_100F4B70"
+    },
+    {
+      "addr": "0x10060740",
+      "name": "sub_10060740"
+    },
+    {
+      "addr": "0x102836ba",
+      "name": "aSurvivorOneSho",
+      "string": "Survivor One-Shot"
+    },
+    {
+      "addr": "0x100f4e30",
+      "name": "sub_100F4E30"
+    },
+    {
+      "addr": "0x1008f0f0",
+      "name": "sub_1008F0F0"
+    },
+    {
+      "addr": "0x1008f7b0",
+      "name": "sub_1008F7B0"
+    },
+    {
+      "addr": "0x10288e2c",
+      "name": "aRapidFire",
+      "string": "Rapid Fire"
+    },
+    {
+      "addr": "0x100f4f40",
+      "name": "sub_100F4F40"
+    }
+  ]
+}

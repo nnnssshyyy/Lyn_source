@@ -1,0 +1,98 @@
+{
+  "result": [
+    {
+      "data": [
+        {
+          "addr": "0x10293270",
+          "imported_name": "CallWindowProcA",
+          "module": "USER32"
+        },
+        {
+          "addr": "0x10293280",
+          "imported_name": "FindWindowA",
+          "module": "USER32"
+        },
+        {
+          "addr": "0x10293298",
+          "imported_name": "GetForegroundWindow",
+          "module": "USER32"
+        },
+        {
+          "addr": "0x102932ac",
+          "imported_name": "IsWindowUnicode",
+          "module": "USER32"
+        },
+        {
+          "addr": "0x102932dc",
+          "imported_name": "SetWindowLongA",
+          "module": "USER32"
+        },
+        {
+          "addr": "0x10293360",
+          "imported_name": "GetWindowsDirectoryA",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x10293534",
+          "imported_name": "ImmSetCandidateWindow",
+          "module": "IMM32"
+        },
+        {
+          "addr": "0x10293538",
+          "imported_name": "ImmSetCompositionWindow",
+          "module": "IMM32"
+        }
+      ],
+      "next_offset": null
+    },
+    {
+      "data": [],
+      "next_offset": null
+    },
+    {
+      "data": [
+        {
+          "addr": "0x10293388",
+          "imported_name": "InitOnceBeginInitialize",
+          "module": "KERNEL32"
+        },
+        {
+          "addr": "0x1029338c",
+          "imported_name": "InitOnceComplete",
+          "module": "KERNEL32"
+        }
+      ],
+      "next_offset": null
+    },
+    {
+      "data": [
+        {
+          "addr": "0x10293354",
+          "imported_name": "GetProcAddress",
+          "module": "KERNEL32"
+        }
+      ],
+      "next_offset": null
+    },
+    {
+      "data": [
+        {
+          "addr": "0x10293348",
+          "imported_name": "GetModuleFileNameA",
+          "module": "KERNEL32"
+        }
+      ],
+      "next_offset": null
+    },
+    {
+      "data": [
+        {
+          "addr": "0x102933e4",
+          "imported_name": "VirtualQuery",
+          "module": "KERNEL32"
+        }
+      ],
+      "next_offset": null
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "result": [
+    {
+      "addr": "0x103ecbd4",
+      "xrefs": [
+        {
+          "addr": "0x100022d3",
+          "type": "data",
+          "fn": {
+            "addr": "0x100022c0",
+            "name": "sub_100022C0",
+            "size": "0x1e"
+          }
+        },
+        {
+          "addr": "0x1002d389",
+          "type": "data",
+          "fn": {
+            "addr": "0x1002d2b0",
+            "name": "sub_1002D2B0",
+            "size": "0x428"
+          }
+        },
+        {
+          "addr": "0x1002d811",
+          "type": "data",
+          "fn": {
+            "addr": "0x1002d780",
+            "name": "sub_1002D780",
+            "size": "0xf9"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 3
+    },
+    {
+      "addr": "0x1002d2b0",
+      "xrefs": [
+        {
+          "addr": "0x10170117",
+          "type": "code",
+          "fn": {
+            "addr": "0x1016ff00",
+            "name": "RapidFire_Hook_CreateMove",
+            "size": "0xb84"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 1
+    },
+    {
+      "addr": "0x1002d780",
+      "xrefs": [
+        {
+          "addr": "0x101701d6",
+          "type": "code",
+          "fn": {
+            "addr": "0x1016ff00",
+            "name": "RapidFire_Hook_CreateMove",
+            "size": "0xb84"
+          }
+        }
+      ],
+      "more": false,
+      "xref_count": 1
+    }
+  ]
+}

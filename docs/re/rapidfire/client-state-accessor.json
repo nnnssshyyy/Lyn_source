@@ -1,0 +1,16 @@
+{
+  "addr": "0x10082ca0",
+  "code": "int sub_10082CA0()\n{\n  return dword_104268EC + 8; /*0x10082ca8*/\n}",
+  "line_count": 4,
+  "total_lines": 4,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x104268ec",
+      "name": "dword_104268EC"
+    }
+  ]
+}

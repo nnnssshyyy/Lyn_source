@@ -1,0 +1,35 @@
+{
+  "result": [
+    {
+      "pattern": "FF 41 1C C3",
+      "matches": [],
+      "n": 0,
+      "cursor": {
+        "done": true
+      }
+    },
+    {
+      "pattern": "FF 41 08 FF 41 1C C3",
+      "matches": [],
+      "n": 0,
+      "cursor": {
+        "done": true
+      }
+    },
+    {
+      "pattern": "8B 41 1C C3",
+      "matches": [
+        "0x101da260",
+        "0x101dfbd0",
+        "0x101ecde0",
+        "0x1024db80",
+        "0x10286a94",
+        "0x1030ac80"
+      ],
+      "n": 6,
+      "cursor": {
+        "done": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,607 @@
+{
+  "addr": "0x10009970",
+  "asm": {
+    "name": "sub_10003C90",
+    "start_ea": "0x10009970",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "10009974",
+        "instruction": "add esp, 8"
+      },
+      {
+        "addr": "10009977",
+        "instruction": "movzx eax, byte ptr [esi+10h]"
+      },
+      {
+        "addr": "1000997b",
+        "instruction": "mov byte ptr dword_103F53C8+2, al"
+      },
+      {
+        "addr": "10009980",
+        "instruction": "mov eax, [esi+4]",
+        "label": "loc_10009980"
+      },
+      {
+        "addr": "10009983",
+        "instruction": "cmp byte ptr [eax], 1"
+      },
+      {
+        "addr": "10009986",
+        "instruction": "jnz loc_1000A428",
+        "refs": [
+          {
+            "addr": "0x1000a428",
+            "name": "loc_1000A428"
+          }
+        ]
+      },
+      {
+        "addr": "1000998c",
+        "instruction": "mov eax, [esi+8]"
+      },
+      {
+        "addr": "1000998f",
+        "instruction": "mov ecx, [eax]"
+      },
+      {
+        "addr": "10009991",
+        "instruction": "push offset aBautoteleportc; \"bAutoTeleportCharger\"",
+        "refs": [
+          {
+            "addr": "0x10285b3b",
+            "name": "aBautoteleportc",
+            "string": "bAutoTeleportCharger"
+          }
+        ]
+      },
+      {
+        "addr": "10009996",
+        "instruction": "call sub_1001C200",
+        "refs": [
+          {
+            "addr": "0x1001c200",
+            "name": "sub_1001C200"
+          }
+        ]
+      },
+      {
+        "addr": "1000999b",
+        "instruction": "mov ecx, [esi+8]"
+      },
+      {
+        "addr": "1000999e",
+        "instruction": "mov ecx, [ecx]"
+      },
+      {
+        "addr": "100099a0",
+        "instruction": "cmp eax, [ecx]"
+      },
+      {
+        "addr": "100099a2",
+        "instruction": "jz short loc_100099C7",
+        "refs": [
+          {
+            "addr": "0x100099c7",
+            "name": "loc_100099C7"
+          }
+        ]
+      },
+      {
+        "addr": "100099a4",
+        "instruction": "mov ecx, [esi+4]"
+      },
+      {
+        "addr": "100099a7",
+        "instruction": "push offset aBautoteleportc; \"bAutoTeleportCharger\"",
+        "refs": [
+          {
+            "addr": "0x10285b3b",
+            "name": "aBautoteleportc",
+            "string": "bAutoTeleportCharger"
+          }
+        ]
+      },
+      {
+        "addr": "100099ac",
+        "instruction": "call sub_1000C550",
+        "refs": [
+          {
+            "addr": "0x1000c550",
+            "name": "sub_1000C550"
+          }
+        ]
+      },
+      {
+        "addr": "100099b1",
+        "instruction": "lea ecx, [esi+10h]"
+      },
+      {
+        "addr": "100099b4",
+        "instruction": "push ecx"
+      },
+      {
+        "addr": "100099b5",
+        "instruction": "push eax"
+      },
+      {
+        "addr": "100099b6",
+        "instruction": "call sub_1001D760",
+        "refs": [
+          {
+            "addr": "0x1001d760",
+            "name": "sub_1001D760"
+          }
+        ]
+      },
+      {
+        "addr": "100099bb",
+        "instruction": "add esp, 8"
+      },
+      {
+        "addr": "100099be",
+        "instruction": "movzx eax, byte ptr [esi+10h]"
+      },
+      {
+        "addr": "100099c2",
+        "instruction": "mov byte ptr dword_103F53C8+3, al"
+      },
+      {
+        "addr": "100099c7",
+        "instruction": "mov eax, [esi+4]",
+        "label": "loc_100099C7"
+      },
+      {
+        "addr": "100099ca",
+        "instruction": "cmp byte ptr [eax], 1"
+      },
+      {
+        "addr": "100099cd",
+        "instruction": "jnz loc_1000A428",
+        "refs": [
+          {
+            "addr": "0x1000a428",
+            "name": "loc_1000A428"
+          }
+        ]
+      },
+      {
+        "addr": "100099d3",
+        "instruction": "mov eax, [esi+8]"
+      },
+      {
+        "addr": "100099d6",
+        "instruction": "mov ecx, [eax]"
+      },
+      {
+        "addr": "100099d8",
+        "instruction": "push offset aBinvisiblejock; \"bInvisibleJockey\"",
+        "refs": [
+          {
+            "addr": "0x10282db2",
+            "name": "aBinvisiblejock",
+            "string": "bInvisibleJockey"
+          }
+        ]
+      },
+      {
+        "addr": "100099dd",
+        "instruction": "call sub_1001C200",
+        "refs": [
+          {
+            "addr": "0x1001c200",
+            "name": "sub_1001C200"
+          }
+        ]
+      },
+      {
+        "addr": "100099e2",
+        "instruction": "mov ecx, [esi+8]"
+      },
+      {
+        "addr": "100099e5",
+        "instruction": "mov ecx, [ecx]"
+      },
+      {
+        "addr": "100099e7",
+        "instruction": "cmp eax, [ecx]"
+      },
+      {
+        "addr": "100099e9",
+        "instruction": "jz short loc_10009A0E",
+        "refs": [
+          {
+            "addr": "0x10009a0e",
+            "name": "loc_10009A0E"
+          }
+        ]
+      },
+      {
+        "addr": "100099eb",
+        "instruction": "mov ecx, [esi+4]"
+      },
+      {
+        "addr": "100099ee",
+        "instruction": "push offset aBinvisiblejock; \"bInvisibleJockey\"",
+        "refs": [
+          {
+            "addr": "0x10282db2",
+            "name": "aBinvisiblejock",
+            "string": "bInvisibleJockey"
+          }
+        ]
+      },
+      {
+        "addr": "100099f3",
+        "instruction": "call sub_1000C550",
+        "refs": [
+          {
+            "addr": "0x1000c550",
+            "name": "sub_1000C550"
+          }
+        ]
+      },
+      {
+        "addr": "100099f8",
+        "instruction": "lea ecx, [esi+10h]"
+      },
+      {
+        "addr": "100099fb",
+        "instruction": "push ecx"
+      },
+      {
+        "addr": "100099fc",
+        "instruction": "push eax"
+      },
+      {
+        "addr": "100099fd",
+        "instruction": "call sub_1001D760",
+        "refs": [
+          {
+            "addr": "0x1001d760",
+            "name": "sub_1001D760"
+          }
+        ]
+      },
+      {
+        "addr": "10009a02",
+        "instruction": "add esp, 8"
+      },
+      {
+        "addr": "10009a05",
+        "instruction": "movzx eax, byte ptr [esi+10h]"
+      },
+      {
+        "addr": "10009a09",
+        "instruction": "mov byte_103F53CC, al",
+        "refs": [
+          {
+            "addr": "0x103f53cc",
+            "name": "byte_103F53CC"
+          }
+        ]
+      },
+      {
+        "addr": "10009a0e",
+        "instruction": "mov eax, [esi+4]",
+        "label": "loc_10009A0E"
+      },
+      {
+        "addr": "10009a11",
+        "instruction": "cmp byte ptr [eax], 1"
+      },
+      {
+        "addr": "10009a14",
+        "instruction": "jnz loc_1000A428",
+        "refs": [
+          {
+            "addr": "0x1000a428",
+            "name": "loc_1000A428"
+          }
+        ]
+      },
+      {
+        "addr": "10009a1a",
+        "instruction": "mov eax, [esi+8]"
+      },
+      {
+        "addr": "10009a1d",
+        "instruction": "mov ecx, [eax]"
+      },
+      {
+        "addr": "10009a1f",
+        "instruction": "push offset aBchargerturn; \"bChargerTurn\"",
+        "refs": [
+          {
+            "addr": "0x102868b6",
+            "name": "aBchargerturn",
+            "string": "bChargerTurn"
+          }
+        ]
+      },
+      {
+        "addr": "10009a24",
+        "instruction": "call sub_1001C200",
+        "refs": [
+          {
+            "addr": "0x1001c200",
+            "name": "sub_1001C200"
+          }
+        ]
+      },
+      {
+        "addr": "10009a29",
+        "instruction": "mov ecx, [esi+8]"
+      },
+      {
+        "addr": "10009a2c",
+        "instruction": "mov ecx, [ecx]"
+      },
+      {
+        "addr": "10009a2e",
+        "instruction": "cmp eax, [ecx]"
+      },
+      {
+        "addr": "10009a30",
+        "instruction": "jz short loc_10009A55",
+        "refs": [
+          {
+            "addr": "0x10009a55",
+            "name": "loc_10009A55"
+          }
+        ]
+      },
+      {
+        "addr": "10009a32",
+        "instruction": "mov ecx, [esi+4]"
+      },
+      {
+        "addr": "10009a35",
+        "instruction": "push offset aBchargerturn; \"bChargerTurn\"",
+        "refs": [
+          {
+            "addr": "0x102868b6",
+            "name": "aBchargerturn",
+            "string": "bChargerTurn"
+          }
+        ]
+      },
+      {
+        "addr": "10009a3a",
+        "instruction": "call sub_1000C550",
+        "refs": [
+          {
+            "addr": "0x1000c550",
+            "name": "sub_1000C550"
+          }
+        ]
+      },
+      {
+        "addr": "10009a3f",
+        "instruction": "lea ecx, [esi+10h]"
+      },
+      {
+        "addr": "10009a42",
+        "instruction": "push ecx"
+      },
+      {
+        "addr": "10009a43",
+        "instruction": "push eax"
+      },
+      {
+        "addr": "10009a44",
+        "instruction": "call sub_1001D760",
+        "refs": [
+          {
+            "addr": "0x1001d760",
+            "name": "sub_1001D760"
+          }
+        ]
+      },
+      {
+        "addr": "10009a49",
+        "instruction": "add esp, 8"
+      },
+      {
+        "addr": "10009a4c",
+        "instruction": "movzx eax, byte ptr [esi+10h]"
+      },
+      {
+        "addr": "10009a50",
+        "instruction": "mov byte_103F53CD, al",
+        "refs": [
+          {
+            "addr": "0x103f53cd",
+            "name": "byte_103F53CD"
+          }
+        ]
+      },
+      {
+        "addr": "10009a55",
+        "instruction": "mov eax, [esi+4]",
+        "label": "loc_10009A55"
+      },
+      {
+        "addr": "10009a58",
+        "instruction": "cmp byte ptr [eax], 1"
+      },
+      {
+        "addr": "10009a5b",
+        "instruction": "jnz loc_1000A428",
+        "refs": [
+          {
+            "addr": "0x1000a428",
+            "name": "loc_1000A428"
+          }
+        ]
+      },
+      {
+        "addr": "10009a61",
+        "instruction": "mov eax, [esi+8]"
+      },
+      {
+        "addr": "10009a64",
+        "instruction": "mov ecx, [eax]"
+      },
+      {
+        "addr": "10009a66",
+        "instruction": "push offset aBtankcomboatta; \"bTankComboAttack\"",
+        "refs": [
+          {
+            "addr": "0x10287ec2",
+            "name": "aBtankcomboatta",
+            "string": "bTankComboAttack"
+          }
+        ]
+      },
+      {
+        "addr": "10009a6b",
+        "instruction": "call sub_1001C200",
+        "refs": [
+          {
+            "addr": "0x1001c200",
+            "name": "sub_1001C200"
+          }
+        ]
+      },
+      {
+        "addr": "10009a70",
+        "instruction": "mov ecx, [esi+8]"
+      },
+      {
+        "addr": "10009a73",
+        "instruction": "mov ecx, [ecx]"
+      },
+      {
+        "addr": "10009a75",
+        "instruction": "cmp eax, [ecx]"
+      },
+      {
+        "addr": "10009a77",
+        "instruction": "jz short loc_10009A9C",
+        "refs": [
+          {
+            "addr": "0x10009a9c",
+            "name": "loc_10009A9C"
+          }
+        ]
+      },
+      {
+        "addr": "10009a79",
+        "instruction": "mov ecx, [esi+4]"
+      },
+      {
+        "addr": "10009a7c",
+        "instruction": "push offset aBtankcomboatta; \"bTankComboAttack\"",
+        "refs": [
+          {
+            "addr": "0x10287ec2",
+            "name": "aBtankcomboatta",
+            "string": "bTankComboAttack"
+          }
+        ]
+      },
+      {
+        "addr": "10009a81",
+        "instruction": "call sub_1000C550",
+        "refs": [
+          {
+            "addr": "0x1000c550",
+            "name": "sub_1000C550"
+          }
+        ]
+      },
+      {
+        "addr": "10009a86",
+        "instruction": "lea ecx, [esi+10h]"
+      },
+      {
+        "addr": "10009a89",
+        "instruction": "push ecx"
+      },
+      {
+        "addr": "10009a8a",
+        "instruction": "push eax"
+      },
+      {
+        "addr": "10009a8b",
+        "instruction": "call sub_1001D760",
+        "refs": [
+          {
+            "addr": "0x1001d760",
+            "name": "sub_1001D760"
+          }
+        ]
+      },
+      {
+        "addr": "10009a90",
+        "instruction": "add esp, 8"
+      },
+      {
+        "addr": "10009a93",
+        "instruction": "movzx eax, byte ptr [esi+10h]"
+      },
+      {
+        "addr": "10009a97",
+        "instruction": "mov byte_103F53CE, al",
+        "refs": [
+          {
+            "addr": "0x103f53ce",
+            "name": "byte_103F53CE"
+          }
+        ]
+      },
+      {
+        "addr": "10009a9c",
+        "instruction": "mov eax, [esi+4]",
+        "label": "loc_10009A9C"
+      },
+      {
+        "addr": "10009a9f",
+        "instruction": "cmp byte ptr [eax], 1"
+      },
+      {
+        "addr": "10009aa2",
+        "instruction": "jnz loc_1000A428",
+        "refs": [
+          {
+            "addr": "0x1000a428",
+            "name": "loc_1000A428"
+          }
+        ]
+      }
+    ],
+    "stack_frame": [
+      {
+        "name": "var_10C",
+        "offset": "0x10",
+        "size": "0x1",
+        "type": "_BYTE"
+      },
+      {
+        "name": "__saved_registers",
+        "offset": "0x11c",
+        "size": "0x4",
+        "type": "_DWORD"
+      },
+      {
+        "name": "__return_address",
+        "offset": "0x120",
+        "size": "0x4",
+        "type": "_UNKNOWN *"
+      }
+    ],
+    "return_type": "int",
+    "arguments": [
+      {
+        "name": "arg0",
+        "type": "char *"
+      }
+    ]
+  },
+  "instruction_count": 90,
+  "total_instructions": null,
+  "cursor": {
+    "next": 90
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "addr": "0x100018d0",
+  "asm": {
+    "name": "sub_100018D0",
+    "start_ea": "0x100018d0",
+    "segment": ".text",
+    "lines": [
+      {
+        "addr": "100018d0",
+        "instruction": "mov ecx, offset dword_103EC658",
+        "label": "sub_100018D0",
+        "refs": [
+          {
+            "addr": "0x103ec658",
+            "name": "dword_103EC658"
+          }
+        ]
+      },
+      {
+        "addr": "100018d5",
+        "instruction": "push offset aCbasehudchatCh; \"CBaseHudChat_ChatPrintf\"",
+        "refs": [
+          {
+            "addr": "0x102886af",
+            "name": "aCbasehudchatCh",
+            "string": "CBaseHudChat_ChatPrintf"
+          }
+        ]
+      },
+      {
+        "addr": "100018da",
+        "instruction": "push 0"
+      },
+      {
+        "addr": "100018dc",
+        "instruction": "push offset a558bEcB8E8A133_0; \"55 8B EC B8 ? ? ? ? E8 ? ? ? ? A1 ? ? ?\"...",
+        "refs": [
+          {
+            "addr": "0x1028de81",
+            "name": "a558bEcB8E8A133_0",
+            "string": "55 8B EC B8 ? ? ? ? E8 ? ? ? ? A1 ? ? ? ? 33 C5 89 45 ? 8B 4D ? 53"
+          }
+        ]
+      },
+      {
+        "addr": "100018e1",
+        "instruction": "push offset aClientDll; \"client.dll\"",
+        "refs": [
+          {
+            "addr": "0x10287305",
+            "name": "aClientDll",
+            "string": "client.dll"
+          }
+        ]
+      },
+      {
+        "addr": "100018e6",
+        "instruction": "call sub_101804E0",
+        "refs": [
+          {
+            "addr": "0x101804e0",
+            "name": "sub_101804E0"
+          }
+        ]
+      },
+      {
+        "addr": "100018eb",
+        "instruction": "retn"
+      }
+    ],
+    "stack_frame": [
+      {
+        "name": "__return_address",
+        "offset": "0x0",
+        "size": "0x4",
+        "type": "_UNKNOWN *"
+      }
+    ],
+    "return_type": "int",
+    "arguments": []
+  },
+  "instruction_count": 7,
+  "total_instructions": null,
+  "cursor": {
+    "done": true
+  }
+}

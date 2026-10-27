@@ -1,0 +1,20 @@
+{
+  "addr": "0x1016ce50",
+  "code": "int sub_1016CE50()\n{\n  return sub_1017D4F0(a1: sub_1016CE60); /*0x1016ce5f*/\n}",
+  "line_count": 4,
+  "total_lines": 4,
+  "truncated": false,
+  "cursor": {
+    "done": true
+  },
+  "refs": [
+    {
+      "addr": "0x1017d4f0",
+      "name": "sub_1017D4F0"
+    },
+    {
+      "addr": "0x1016ce60",
+      "name": "sub_1016CE60"
+    }
+  ]
+}

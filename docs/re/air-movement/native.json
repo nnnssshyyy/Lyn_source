@@ -1,0 +1,14 @@
+{
+  "client_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Left 4 Dead 2\\left4dead2\\bin\\client.dll",
+  "sha256": "c0a8e1e88f7312db11bcfd4b0ec574d224a34b2d9a615d6088b28335eeb4af1f",
+  "image_base": "0x10000000",
+  "terror_movement_vtable": "0x105bdb44",
+  "air_accelerate_slot": 24,
+  "air_accelerate_address": "0x100fdd00",
+  "air_speed_cap": 30.0,
+  "execution": "read-only PE/RTTI + Capstone; no game injection",
+  "cap_constant_address": "0x1054c188",
+  "surface_friction_read_offset": "0x13c4",
+  "native_frame_time_offset": "0x10",
+  "assembly_sha256": "bfc091a7d0582c45d2de1eefbf9b71262c6326faa592a5b05e9b342672e9d827"
+}

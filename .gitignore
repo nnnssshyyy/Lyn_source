@@ -1,0 +1,53 @@
+# Compilación C++
+/build/
+/build-current/
+/.vs/
+*.log
+imgui.ini
+
+# Loader (.NET)
+/loader/bin/
+/loader/obj/
+/loader/build/
+
+# Pruebas del loader
+/tests/**/bin/
+/tests/**/obj/
+
+# Sitios web
+/sites/
+/web/
+/website/
+/frontend/
+/dashboard/
+/tools/publish-vs3-module.mjs
+/tools/qa-vs3-*.mjs
+/tools/verify-vs3-publication.mjs
+/docs/DASHBOARDS_WEB.md
+node_modules/
+.next/
+.wrangler/
+*.tsbuildinfo
+
+# Utilidades Python
+__pycache__/
+*.pyc
+/tools/inspection/inspection-deps/
+
+# Organización local (no forma parte de la compilación)
+/archive/
+/dist/
+*.tar.gz
+
+# Credenciales y configuración privada
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.privatekey
+*.pfx
+*.p12
+*.user
+*.suo
+.npmrc
